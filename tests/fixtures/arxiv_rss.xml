@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>cs.IR, cs.LG, cs.CL, cs.AI, cs.CV, stat.ML updates on arXiv.org</title>
+    <link>http://rss.arxiv.org/rss/cs.IR+cs.LG+cs.CL+cs.AI+cs.CV+stat.ML</link>
+    <description>cs.IR, cs.LG, cs.CL, cs.AI, cs.CV, stat.ML updates on the arXiv.org e-print archive.</description>
+    <atom:link href="http://rss.arxiv.org/rss/cs.IR+cs.LG+cs.CL+cs.AI+cs.CV+stat.ML" rel="self" type="application/rss+xml"/>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 07 Nov 2026 04:29:35 +0000</lastBuildDate>
+    <managingEditor>rss-help@arxiv.org</managingEditor>
+    <pubDate>Fri, 06 Nov 2026 00:00:00 -0500</pubDate>
+    <skipDays>
+      <day>Saturday</day>
+      <day>Sunday</day>
+    </skipDays>
+    <item>
+      <title>SteelAgent: LLM-Orchestrated, Physics-Informed Steel Property Prediction with Audited Generalization and Calibrated Uncertainty</title>
+      <link>https://arxiv.org/abs/2611.06953</link>
+      <description>arXiv:2611.06953v1 Announce Type: new 
+Abstract: Steel property models can perform well on random test splits even when they extrapolate poorly to unfamiliar alloys. SteelAgent couples metallurgical descriptors and machine-learning models with a language-model interface for property prediction, uncertainty reporting and inverse design. We examine how the choice of held-out unit changes the conclusions drawn from SteelBench tensile-strength evaluations. For gradient boosting, pooled out-of-fold $R^2$ fell from 0.859 on a random split to 0.113 when steel families were held out. Empirical coverage of nominal 90% prediction intervals ranged from 91.0% under random splitting to 37.6% on held-out sources. The effect of physics-derived features depended on the evaluation. They increased gradient-boosting $R^2$ by 0.2534 in a 17-family holdout analysis and decreased it by 0.358 in a separate four-grade laboratory analysis. We report group-level errors and a synthetic regression experiment illustrating how calibration can deteriorate on held-out groups. These results motivate reporting the evaluation population alongside a property estimate or compliance score.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2611.06953v1</guid>
+      <category>cs.LG</category>
+      <category>cond-mat.mtrl-sci</category>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 -0500</pubDate>
+      <arxiv:announce_type>new</arxiv:announce_type>
+      <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
+      <dc:creator>Aleksandr Volkov, Roman Sultimov, Mikhail Kuzin, Yury Maximov</dc:creator>
+    </item>
+<item>
+      <title>Octopus: One Brain, Many Branches for Latent-KV Multi-Agent Reinforcement Learning</title>
+      <link>https://arxiv.org/abs/2611.06956</link>
+      <description>arXiv:2611.06956v1 Announce Type: new 
+Abstract: Multi-agent LLM systems explore in parallel by spawning sub-agents with isolated context windows, whereas single-agent systems append every search and verification step into one growing trajectory. However, existing multi-agent frameworks duplicate prefix KV caches across branches, exchange findings by re-prefilling text summaries, and flatten or drop cross-branch dependencies during reinforcement learning (RL).
+  We introduce Octopus, a single-model multi-agent RL framework in which all threads share one backbone and coordinate over a GPU-resident directed acyclic graph (DAG) of KV states through five primitives (fork, read_thread, wait_threads, rewind, commit). Octopus combines three co-designed mechanisms: (1) Zero-Copy Radix Forking, which spawns branches as $\mathcal{O}(1)$ cursor views over shared physical KV pages; (2) Attention-Only KV Mounting, which mounts a sibling thread's terminal KV blocks directly into full-attention layers while bypassing linear-recurrent states (Gated DeltaNet / Mamba-2), cutting off-task hijacking by $21\times$ ($57.9\% \to 2.7\%$) while retaining $92.2\%$ of full-text mutual information at zero extra KV allocation; and (3) a Packed DAG-GRPO Trainer, which packs all episode branches into one block-sparse attention pass and assigns counterfactual branch credit via leave-one-branch-out marginal rewards.
+  Trained end-to-end with GRPO on Qwen3.5-4B over a sparse BM25 corpus, Octopus reaches $49.6\%$ accuracy on BrowseComp-Plus ($+17.5$ points over single-agent GRPO at 143K context and $+12.5$ points over text-summary multi-agent RL) and $51.2\%$ on OpenResearcher, outperforming dense-retrieval agents up to $250\times$ larger while increasing training throughput $3.3\times$ and cutting peak KV memory $2.8\times$.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2611.06956v1</guid>
+      <category>cs.LG</category>
+      <category>cs.CL</category>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 -0500</pubDate>
+      <arxiv:announce_type>new</arxiv:announce_type>
+      <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:creator>Tianming Sha</dc:creator>
+    </item>
+<item>
+      <title>Efficient Kernelized Learning in Polyhedral Games Beyond Full-Information: From Colonel Blotto to Congestion Games</title>
+      <link>https://arxiv.org/abs/2509.20919</link>
+      <description>arXiv:2509.20919v2 Announce Type: cross 
+Abstract: We examine the problem of efficiently learning coarse correlated equilibria (CCE) in polyhedral games, that is, normal-form games with an exponentially large number of actions per player and an underlying combinatorial structure. Prominent examples of such games are the classical Colonel Blotto and congestion games. To achieve computational efficiency, the learning algorithms must exhibit regret and per-iteration complexity that scale polylogarithmically in the size of the players' action sets. This challenge has recently been addressed in the full-information setting, primarily through the use of kernelization. However, in the case of the realistic, but mathematically challenging, partial-information setting, existing approaches result in suboptimal and impractical runtime complexity to learn CCE. We tackle this limitation by building a framework based on the kernelization paradigm. We apply this framework to prominent examples of polyhedral games -- namely the Colonel Blotto, graphic matroid and network congestion games -- and provide computationally efficient payoff-based learning algorithms, which significantly improve upon prior works in terms of the runtime for learning CCE in these settings.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2509.20919v2</guid>
+      <category>cs.GT</category>
+      <category>cs.LG</category>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 -0500</pubDate>
+      <arxiv:announce_type>cross</arxiv:announce_type>
+      <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:creator>Andreas Kontogiannis, Vasilis Pollatos, Gabriele Farina, Panayotis Mertikopoulos, Ioannis Panageas</dc:creator>
+    </item>
+<item>
+      <title>Studying word order through iterative shuffling</title>
+      <link>https://arxiv.org/abs/2109.04867</link>
+      <description>arXiv:2109.04867v2 Announce Type: replace 
+Abstract: As neural language models approach human performance on NLP benchmark tasks, their advances are widely seen as evidence of an increasingly complex understanding of syntax. This view rests upon a hypothesis that has not yet been empirically tested: that word order encodes meaning essential to performing these tasks. We refute this hypothesis in many cases: in the GLUE suite and in various genres of English text, the words in a sentence or phrase can rarely be permuted to form a phrase carrying substantially different information. Our surprising result relies on inference by iterative shuffling (IBIS), a novel, efficient procedure that finds the ordering of a bag of words having the highest likelihood under a fixed language model. IBIS can use any black-box model without additional training and is superior to existing word ordering algorithms. Coalescing our findings, we discuss how shuffling inference procedures such as IBIS can benefit language modeling and constrained generation.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2109.04867v2</guid>
+      <category>cs.CL</category>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 -0500</pubDate>
+      <arxiv:announce_type>replace</arxiv:announce_type>
+      <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <arxiv:DOI>10.18653/v1/2021.emnlp-main.809</arxiv:DOI>
+      <dc:creator>Esmeralda S. Whitammer, Sameera Lanka, Pranav Goel, Nebojsa Jojic</dc:creator>
+    </item>
+<item>
+      <title>Mirror Descent-Ascent for mean-field min-max problems</title>
+      <link>https://arxiv.org/abs/2402.08106</link>
+      <description>arXiv:2402.08106v4 Announce Type: replace-cross 
+Abstract: We study two variants of the mirror descent-ascent (MDA) algorithm for solving min-max problems on the space of measures: simultaneous and alternating. We work under assumptions of convexity-concavity and relative smoothness of the payoff function with respect to a suitable Bregman divergence, defined on the space of measures via flat derivatives. We establish non-asymptotic convergence rates to mixed Nash equilibria, measured in the Nikaid\^{o}-Isoda error, proving an $\mathcal{O}(N^{-1/2})$ rate for simultaneous MDA and an improved $\mathcal{O}(N^{-2/3})$ rate for alternating MDA. The main technical contribution is an infinite-dimensional dual space analysis that relates Bregman divergences on measures to dual Bregman divergences on spaces of bounded continuous functions, allowing us to control asymmetric commutator terms created by alternating updates. The results substantially generalize prior analyses restricted to bilinear objectives and also apply to nonlinear convex-concave problems on measure spaces, thereby providing a unified theoretical foundation for MDA in mean-field min-max optimization.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2402.08106v4</guid>
+      <category>math.OC</category>
+      <category>cs.LG</category>
+      <category>math.PR</category>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 -0500</pubDate>
+      <arxiv:announce_type>replace-cross</arxiv:announce_type>
+      <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
+      <dc:creator>Razvan-Andrei Lascu, Mateusz B. Majka, {\L}ukasz Szpruch</dc:creator>
+    </item>
+</channel>
+</rss>

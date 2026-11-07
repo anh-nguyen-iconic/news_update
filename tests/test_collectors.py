@@ -369,3 +369,38 @@ def test_bluesky_collect_dedupes(client):
     items = bluesky.collect({"queries": ["a", "b"], "min_likes": 0}, datetime(2026, 11, 1, tzinfo=UTC), client)
     assert len(items) == 3 and route.call_count == 2
     assert route.calls[0].request.url.params["since"] == "2026-11-01T00:00:00Z"
+
+
+def test_arxiv_rss_keeps_new_and_cross_only():
+    from pathlib import Path
+
+    from news_agent.collectors import arxiv
+
+    items = arxiv.parse_rss(Path(__file__).with_name("fixtures").joinpath("arxiv_rss.xml").read_bytes())
+    assert len(items) == 3  # 2 new + 1 cross; replace/replace-cross skipped
+    it = items[0]
+    assert it.key.startswith("arxiv:") and it.url == f"https://arxiv.org/abs/{it.key[6:]}"
+    assert it.links["PDF"] == f"https://arxiv.org/pdf/{it.key[6:]}"
+    assert it.summary and not it.summary.startswith("arXiv:") and "Announce Type" not in it.summary
+    assert it.authors and it.tags and it.source == "arxiv" and it.kind == "paper"
+
+
+def test_arxiv_collect_prefers_rss_and_falls_back_to_api(respx_mock):
+    from datetime import datetime, timezone
+    from pathlib import Path
+
+    import httpx
+
+    from news_agent.collectors import arxiv
+
+    fixtures = Path(__file__).with_name("fixtures")
+    cfg = {"categories": ["cs.IR", "cs.LG"], "retry_sleep_s": 0}
+    rss = respx_mock.get("https://rss.arxiv.org/rss/cs.IR+cs.LG")
+    rss.mock(return_value=httpx.Response(200, content=(fixtures / "arxiv_rss.xml").read_bytes()))
+    with httpx.Client() as c:
+        assert len(arxiv.collect(cfg, datetime(2000, 1, 1, tzinfo=timezone.utc), c)) == 3
+    rss.mock(return_value=httpx.Response(503))
+    api = respx_mock.get(arxiv.API_URL).mock(return_value=httpx.Response(200, content=(fixtures / "arxiv.xml").read_bytes()))
+    with httpx.Client() as c:
+        got = arxiv.collect(cfg, datetime(2000, 1, 1, tzinfo=timezone.utc), c)
+    assert api.called and got and all(i.source == "arxiv" for i in got)

@@ -7,7 +7,9 @@ http:
 
 arxiv:
   enabled: true
-  categories: [cs.IR, cs.LG, cs.CL, cs.AI, cs.CV, stat.ML]
+  categories: [cs.IR, cs.LG, cs.CL, cs.AI, cs.CV, stat.ML, stat.ME]
+  mode: rss                  # rss: latest daily announcement (new + cross-listed); API is the fallback
+                             # (the API often returns 429 on GitHub-hosted runners)
   max_results: 1000          # ~500 papers/day across these categories; 1000 covers window + grace in one request
   grace_hours: 24            # arXiv announces in daily batches: keep papers published >= since - 24h
   # Only arXiv items whose title/abstract match an interests.yaml keyword survive the prefilter.

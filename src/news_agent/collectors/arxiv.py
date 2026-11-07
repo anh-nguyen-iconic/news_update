@@ -113,7 +113,65 @@ def build_query(categories: list[str]) -> str:
     return " OR ".join(f"cat:{c}" for c in categories)
 
 
+RSS_URL = "https://rss.arxiv.org/rss/"
+RSS_TYPES = {"new", "cross"}  # skip "replace" / "replace-cross" (revisions of older papers)
+_ABSTRACT = re.compile(r"^.*?Abstract:\s*", re.S)
+
+
+def parse_rss(content: bytes | str) -> list[Item]:
+    """Parse the arXiv RSS daily announcement (new + cross-listed papers only)."""
+    parsed = feedparser.parse(content)
+    items: list[Item] = []
+    for e in parsed.entries:
+        if (e.get("arxiv_announce_type") or "new").strip() not in RSS_TYPES:
+            continue
+        aid = arxiv_id(e.get("link") or e.get("id") or "")
+        if not aid or not re.match(r"^\d{4}\.\d{4,5}$|^[a-z-]+(\.[A-Z]{2})?/\d{7}$", aid):
+            continue
+        authors = [a.strip() for a in (e.get("author") or "").split(",") if a.strip()]
+        items.append(
+            Item(
+                key=f"arxiv:{aid}",
+                source="arxiv",
+                source_name="arXiv",
+                kind="paper",
+                title=clean_text(e.get("title"), 300),
+                url=f"https://arxiv.org/abs/{aid}",
+                summary=clean_text(_ABSTRACT.sub("", e.get("summary") or "")),
+                authors=authors,
+                published=to_utc(_struct_to_dt(e.get("published_parsed"))),
+                tags=[t.get("term") for t in e.get("tags", []) if t.get("term")],
+                links={"PDF": f"https://arxiv.org/pdf/{aid}"},
+            )
+        )
+    return items
+
+
+def collect_rss(cfg: dict[str, Any], client: httpx.Client) -> list[Item]:
+    categories = cfg.get("categories") or ["cs.IR", "cs.LG"]
+    resp = client.get(cfg.get("rss_url", RSS_URL) + "+".join(categories), timeout=float(cfg.get("timeout_s", 60)))
+    resp.raise_for_status()
+    items = parse_rss(resp.content)
+    if not items:
+        raise RuntimeError("arXiv RSS returned no new papers")
+    return items
+
+
 def collect(cfg: dict[str, Any], since: datetime, client: httpx.Client) -> list[Item]:
+    """RSS (latest daily announcement; not rate-limited like the API) first, API as fallback.
+
+    GitHub-hosted runners share IPs that the arXiv API often answers with 429. Each weekday run sees
+    a different announcement, and the paper pool keeps relevant unshown papers for 30 days.
+    """
+    if cfg.get("mode", "rss") == "rss":
+        try:
+            return collect_rss(cfg, client)
+        except Exception as exc:  # noqa: BLE001
+            log.warning("arxiv: RSS failed (%s); falling back to the API", exc)
+    return collect_api(cfg, since, client)
+
+
+def collect_api(cfg: dict[str, Any], since: datetime, client: httpx.Client) -> list[Item]:
     categories = cfg.get("categories") or ["cs.IR", "cs.LG"]
     params = {
         "search_query": build_query(categories),
