@@ -1,0 +1,677 @@
+{
+ "meta": {
+  "count": 7,
+  "page": 1,
+  "per_page": 50
+ },
+ "results": [
+  {
+   "id": "https://openalex.org/W7225161487",
+   "doi": "https://doi.org/10.48550/arxiv.2611.02453",
+   "title": "RecGroupMemory: Feedback-Aware Cohort Memory for E-Commerce Recommendation",
+   "publication_date": "2026-11-02",
+   "cited_by_count": 0,
+   "authorships": [
+    {
+     "author": {
+      "display_name": "Wendong Zhang"
+     },
+     "institutions": [],
+     "raw_affiliation_strings": []
+    },
+    {
+     "author": {
+      "display_name": "Weipeng Huang"
+     },
+     "institutions": [],
+     "raw_affiliation_strings": []
+    },
+    {
+     "author": {
+      "display_name": "Zhixin Ma"
+     },
+     "institutions": [],
+     "raw_affiliation_strings": []
+    },
+    {
+     "author": {
+      "display_name": "Bin Zhang"
+     },
+     "institutions": [],
+     "raw_affiliation_strings": []
+    }
+   ],
+   "abstract_inverted_index": {
+    "Cohort": [
+     0
+    ],
+    "memory": [
+     1
+    ],
+    "can": [
+     2
+    ],
+    "support": [
+     3
+    ],
+    "LLM-based": [
+     4
+    ],
+    "recommendation": [
+     5
+    ],
+    "planning": [
+     6
+    ],
+    "through": [
+     7
+    ],
+    "group-level": [
+     8
+    ],
+    "user": [
+     9
+    ],
+    "profiles": [
+     10
+    ],
+    "and": [
+     11
+    ],
+    "advice.": [
+     12
+    ],
+    "As": [
+     13
+    ],
+    "outcome": [
+     14
+    ],
+    "feedback": [
+     15
+    ],
+    "becomes": [
+     16
+    ],
+    "available,": [
+     17
+    ],
+    "this": [
+     18
+    ],
+    "guidance": [
+     19
+    ],
+    "may": [
+     20
+    ],
+    "need": [
+     21
+    ],
+    "to": [
+     22
+    ],
+    "be": [
+     23
+    ],
+    "updated": [
+     24
+    ],
+    "while": [
+     25
+    ],
+    "preserving": [
+     26
+    ],
+    "the": [
+     27
+    ],
+    "underlying": [
+     28
+    ],
+    "observations.": [
+     29
+    ]
+   },
+   "primary_location": {
+    "landing_page_url": "https://arxiv.org/abs/2611.02453",
+    "pdf_url": "https://arxiv.org/pdf/2611.02453",
+    "source": {
+     "id": "https://openalex.org/S4306400194",
+     "display_name": "arXiv (Cornell University)"
+    }
+   },
+   "ids": {
+    "openalex": "https://openalex.org/W7225161487",
+    "doi": "https://doi.org/10.48550/arxiv.2611.02453"
+   },
+   "type": "preprint"
+  },
+  {
+   "id": "https://openalex.org/W7224948145",
+   "doi": "https://doi.org/10.48550/arxiv.2610.39426",
+   "title": "UGR: Unified Generative Ranking for Heterogeneous E-commerce Recommendation",
+   "publication_date": "2026-10-29",
+   "cited_by_count": 0,
+   "authorships": [
+    {
+     "author": {
+      "display_name": "Zonghe Shao"
+     },
+     "institutions": [
+      {
+       "display_name": "Alibaba Group (China)"
+      }
+     ],
+     "raw_affiliation_strings": [
+      "Alibaba Group Hangzhou , China"
+     ]
+    },
+    {
+     "author": {
+      "display_name": "Huabin Chen"
+     },
+     "institutions": [
+      {
+       "display_name": "Alibaba Group (China)"
+      }
+     ],
+     "raw_affiliation_strings": [
+      "Alibaba Group Hangzhou , China"
+     ]
+    },
+    {
+     "author": {
+      "display_name": "Sitong Lu"
+     },
+     "institutions": [
+      {
+       "display_name": "Alibaba Group (China)"
+      }
+     ],
+     "raw_affiliation_strings": [
+      "Alibaba Group Hangzhou , China"
+     ]
+    },
+    {
+     "author": {
+      "display_name": "Fangmei Zhu"
+     },
+     "institutions": [
+      {
+       "display_name": "Alibaba Group (China)"
+      }
+     ],
+     "raw_affiliation_strings": [
+      "Alibaba Group Hangzhou , China"
+     ]
+    }
+   ],
+   "abstract_inverted_index": {
+    "List-wise": [
+     0
+    ],
+    "ranking": [
+     1
+    ],
+    "in": [
+     2
+    ],
+    "e-commerce": [
+     3
+    ],
+    "recommendation": [
+     4
+    ],
+    "must": [
+     5
+    ],
+    "balance": [
+     6
+    ],
+    "user": [
+     7
+    ],
+    "utility": [
+     8
+    ],
+    "and": [
+     9,
+     16,
+     25
+    ],
+    "commercial": [
+     10
+    ],
+    "value": [
+     11
+    ],
+    "across": [
+     12
+    ],
+    "organic": [
+     13
+    ],
+    "content,": [
+     14
+    ],
+    "ads,": [
+     15
+    ],
+    "candidates": [
+     17
+    ],
+    "from": [
+     18
+    ],
+    "other": [
+     19
+    ],
+    "businesses,": [
+     20
+    ],
+    "while": [
+     21
+    ],
+    "modeling": [
+     22
+    ],
+    "candidate": [
+     23
+    ],
+    "interactions": [
+     24
+    ],
+    "sequential": [
+     26
+    ],
+    "dependencies.": [
+     27
+    ],
+    "Existing": [
+     28
+    ],
+    "generative": [
+     29
+    ]
+   },
+   "primary_location": {
+    "landing_page_url": "https://arxiv.org/abs/2610.39426",
+    "pdf_url": "https://arxiv.org/pdf/2610.39426",
+    "source": {
+     "id": "https://openalex.org/S4306400194",
+     "display_name": "arXiv (Cornell University)"
+    }
+   },
+   "ids": {
+    "openalex": "https://openalex.org/W7224948145",
+    "doi": "https://doi.org/10.48550/arxiv.2610.39426"
+   },
+   "type": "preprint"
+  },
+  {
+   "id": "https://openalex.org/W7221162940",
+   "doi": "https://doi.org/10.5281/zenodo.23262396",
+   "title": "Machine Learning Based E-Commerce Recommendation System & Web Scrapper",
+   "publication_date": "2026-10-09",
+   "cited_by_count": 0,
+   "authorships": [
+    {
+     "author": {
+      "display_name": "Hassan Sagheer"
+     },
+     "institutions": [],
+     "raw_affiliation_strings": []
+    }
+   ],
+   "abstract_inverted_index": {
+    "This": [
+     0
+    ],
+    "research": [
+     1
+    ],
+    "presents": [
+     2
+    ],
+    "an": [
+     3,
+     15
+    ],
+    "automated": [
+     4
+    ],
+    "framework": [
+     5
+    ],
+    "that": [
+     6
+    ],
+    "combines": [
+     7
+    ],
+    "web": [
+     8
+    ],
+    "scraping": [
+     9
+    ],
+    "with": [
+     10
+    ],
+    "machine": [
+     11
+    ],
+    "learning": [
+     12
+    ],
+    "to": [
+     13
+    ],
+    "build": [
+     14
+    ],
+    "intelligent": [
+     16
+    ],
+    "e-commerce": [
+     17
+    ],
+    "recommendation": [
+     18
+    ],
+    "system.": [
+     19
+    ],
+    "By": [
+     20
+    ],
+    "automatically": [
+     21
+    ],
+    "harvesting": [
+     22
+    ],
+    "real-time": [
+     23
+    ],
+    "product": [
+     24
+    ],
+    "data,": [
+     25
+    ],
+    "pricing,": [
+     26
+    ],
+    "and": [
+     27
+    ],
+    "customer": [
+     28
+    ],
+    "reviews": [
+     29
+    ]
+   },
+   "primary_location": {
+    "landing_page_url": "https://doi.org/10.5281/zenodo.23262396",
+    "pdf_url": null,
+    "source": {
+     "id": "https://openalex.org/S4306400562",
+     "display_name": "Zenodo (CERN European Organization for Nuclear Research)"
+    }
+   },
+   "ids": {
+    "openalex": "https://openalex.org/W7221162940",
+    "doi": "https://doi.org/10.5281/zenodo.23262396"
+   },
+   "type": "article"
+  },
+  {
+   "id": "https://openalex.org/W7221503079",
+   "doi": "https://doi.org/10.5281/zenodo.23314095",
+   "title": "AI Powered Personalised E-Commerce Recommendation System",
+   "publication_date": "2026-10-12",
+   "cited_by_count": 0,
+   "authorships": [
+    {
+     "author": {
+      "display_name": "Murugan Vel"
+     },
+     "institutions": [],
+     "raw_affiliation_strings": [
+      "P.S.R.Engineering College"
+     ]
+    },
+    {
+     "author": {
+      "display_name": "Raj Alagar"
+     },
+     "institutions": [],
+     "raw_affiliation_strings": [
+      "P.S.R.Engineering College"
+     ]
+    },
+    {
+     "author": {
+      "display_name": "Dhas Edwin"
+     },
+     "institutions": [],
+     "raw_affiliation_strings": [
+      "P.S.R.Engineering College"
+     ]
+    },
+    {
+     "author": {
+      "display_name": "victorraj joseph"
+     },
+     "institutions": [],
+     "raw_affiliation_strings": [
+      "P.S.R.Engineering College"
+     ]
+    }
+   ],
+   "abstract_inverted_index": null,
+   "primary_location": {
+    "landing_page_url": "https://doi.org/10.5281/zenodo.23314095",
+    "pdf_url": null,
+    "source": {
+     "id": "https://openalex.org/S4306400562",
+     "display_name": "Zenodo (CERN European Organization for Nuclear Research)"
+    }
+   },
+   "ids": {
+    "openalex": "https://openalex.org/W7221503079",
+    "doi": "https://doi.org/10.5281/zenodo.23314095"
+   },
+   "type": "conference-paper"
+  },
+  {
+   "id": "https://openalex.org/W7225122106",
+   "doi": "https://doi.org/10.1145/3799682.3840628",
+   "title": "EBD: Engagement-aware Bidirectional Debiasing with User Micro-Behaviors in E-commerce Recommendations",
+   "publication_date": "2026-11-03",
+   "cited_by_count": 0,
+   "authorships": [
+    {
+     "author": {
+      "display_name": "Weiqiu Wang"
+     },
+     "institutions": [
+      {
+       "display_name": "Alibaba Group (China)"
+      }
+     ],
+     "raw_affiliation_strings": [
+      "Taobao &amp;#38; Tmall Group of Alibaba, Beijing, China"
+     ]
+    },
+    {
+     "author": {
+      "display_name": "Runfeng Zhang"
+     },
+     "institutions": [
+      {
+       "display_name": "Alibaba Group (China)"
+      }
+     ],
+     "raw_affiliation_strings": [
+      "Taobao &amp;#38; Tmall Group of Alibaba, Beijing, China"
+     ]
+    },
+    {
+     "author": {
+      "display_name": "Yifei Liu"
+     },
+     "institutions": [
+      {
+       "display_name": "University of Chinese Academy of Sciences"
+      }
+     ],
+     "raw_affiliation_strings": [
+      "University of Chinese Academy of Sciences, Beijing, China"
+     ]
+    },
+    {
+     "author": {
+      "display_name": "Anqi Zhu"
+     },
+     "institutions": [
+      {
+       "display_name": "Alibaba Group (China)"
+      }
+     ],
+     "raw_affiliation_strings": [
+      "Taobao &amp;#38; Tmall Group of Alibaba, Hangzhou, Zhejiang, China"
+     ]
+    }
+   ],
+   "abstract_inverted_index": {
+    "Click-through": [
+     0
+    ],
+    "Rate": [
+     1,
+     6
+    ],
+    "(CTR)": [
+     2
+    ],
+    "prediction": [
+     3
+    ],
+    "and": [
+     4
+    ],
+    "Conversion": [
+     5
+    ],
+    "(CVR)": [
+     7
+    ],
+    "prediction,": [
+     8
+    ],
+    "as": [
+     9,
+     20
+    ],
+    "core": [
+     10
+    ],
+    "tasks": [
+     11,
+     23
+    ],
+    "in": [
+     12
+    ],
+    "modern": [
+     13
+    ],
+    "e-commerce": [
+     14
+    ],
+    "recommender": [
+     15
+    ],
+    "systems,": [
+     16
+    ],
+    "are": [
+     17
+    ],
+    "conventionally": [
+     18
+    ],
+    "formulated": [
+     19
+    ],
+    "binary": [
+     21
+    ],
+    "classification": [
+     22
+    ],
+    "using": [
+     24
+    ],
+    "click/purchase": [
+     25
+    ],
+    "labels.": [
+     26
+    ],
+    "However,": [
+     27
+    ],
+    "this": [
+     28
+    ],
+    "approach": [
+     29
+    ]
+   },
+   "primary_location": {
+    "landing_page_url": "https://doi.org/10.1145/3799682.3840628",
+    "pdf_url": null,
+    "source": {
+     "id": "https://openalex.org/S4393918199",
+     "display_name": "ACM International Conference on Information and Knowledge Management (CIKM)"
+    }
+   },
+   "ids": {
+    "openalex": "https://openalex.org/W7225122106",
+    "doi": "https://doi.org/10.1145/3799682.3840628"
+   },
+   "type": "conference-paper"
+  },
+  {
+   "id": "https://openalex.org/W1",
+   "doi": null,
+   "title": null,
+   "publication_date": "2026-10-20",
+   "cited_by_count": 0,
+   "authorships": [],
+   "abstract_inverted_index": null,
+   "primary_location": null,
+   "ids": {},
+   "type": "article"
+  },
+  {
+   "id": "https://openalex.org/W2",
+   "doi": null,
+   "title": "No URL at all",
+   "publication_date": "2026-10-20",
+   "cited_by_count": 0,
+   "authorships": [],
+   "abstract_inverted_index": null,
+   "primary_location": {
+    "landing_page_url": null
+   },
+   "ids": {},
+   "type": "article"
+  }
+ ]
+}

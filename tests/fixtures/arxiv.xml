@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/HSy9bAvERI1dFZ5YGcnRmngzHHk</id>
+  <title>arXiv Query: search_query=cat:cs.IR OR cat:cs.LG&amp;id_list=&amp;start=0&amp;max_results=2</title>
+  <updated>2026-11-06T10:02:41Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=cat:cs.IR+OR+cat:cs.LG&amp;start=0&amp;max_results=2&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>2</opensearch:itemsPerPage>
+  <opensearch:totalResults>318046</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2611.08487v1</id>
+    <title>User Embeddings are Superpositions of Interpretable Behavioral Modes</title>
+    <updated>2026-11-05T18:59:42Z</updated>
+    <link href="https://arxiv.org/abs/2611.08487v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.08487v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>User embeddings are central components of modern recommendation, personalization, and behavioral modeling systems. Though these embeddings can compactly encode rich behavioral information, they are inherently dense and opaque, limiting interpretability. To address this gap, we argue that user embeddings can be understood as sparse superpositions of interpretable behavioral modes. This structure is directly predicted by generative models of user behavior for linear embeddings and extends approximately to deep-learning representations by the superposition hypothesis. Superimposed modes can naturally be recovered by sparse dictionary learning methods, such as sparse autoencoders (SAEs), and recovered modes can be automatically named and queried in natural language. We validate mode recovery against known ground truth on synthetic data, where SAEs recover modes better than classical sparse baselines, including on transformer-encoded embeddings. We then apply the method to classical and transformer-based user embeddings from two real-world datasets. We also show how the corresponding natural-language labels enable zero-shot audience retrieval and characterization over embeddings never trained on text. The framework is post-hoc and model-agnostic, requiring no modification to the upstream embedding system.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-05T18:59:42Z</published>
+    <arxiv:comment>Accepted to NeurIPS 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Jonathan Kozaczuk</name>
+    </author>
+    <author>
+      <name>Zheng Dong</name>
+    </author>
+    <author>
+      <name>Noyan Evirgen</name>
+    </author>
+    <author>
+      <name>Keivan Majidi</name>
+    </author>
+    <author>
+      <name>Eddie K. H. Ng</name>
+    </author>
+    <author>
+      <name>Chris Porter</name>
+    </author>
+    <author>
+      <name>Qi Zhao</name>
+    </author>
+    <author>
+      <name>Jia Geng</name>
+    </author>
+    <author>
+      <name>Changmao Li</name>
+    </author>
+    <author>
+      <name>Brandon R. Feng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.08478v1</id>
+    <title>Scientist World: Grow a Research World for AI-Scientists</title>
+    <updated>2026-11-05T18:58:17Z</updated>
+    <link href="https://arxiv.org/abs/2611.08478v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.08478v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>AI-Scientists arrived, but a world for them to grow in did not. Human scientists take theirs for granted $-$ centuries of open problems and shared ideas, waiting in the scientific literature. To AI-Scientists, that world is readable but not runnable, so we build Scientist World for them: every research paper becomes an executable environment. Our autonomous pipeline extracts each paper's open-ended research question and reproduces its proposed method as the baseline; an AI-Scientist entering the environment is evaluated against what the human authors achieved. We release the first 1,000 verified environments. With the world as an evaluation, we found that frontier AI-Scientists can already surpass the human researchers 74% of the time. As a record of how AI does science, it contains 6,400 hours of research traces, with every idea, experiment, failure, and success. As a training ground, we are able to raise (+158%) a small model to match frontier models in research ideation. At last, AI-Scientists' own world has arrived, grown from and growing with science itself.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-05T18:58:17Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Taiming Lu</name>
+    </author>
+    <author>
+      <name>Sachin Konan</name>
+    </author>
+    <author>
+      <name>Zhuang Liu</name>
+    </author>
+  </entry>
+</feed>

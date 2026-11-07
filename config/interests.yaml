@@ -1,0 +1,255 @@
+# Topic profile used by the prefilter (keyword match) and passed to Gemini.
+# weight: base importance (1-3). Feedback adjusts a multiplier in data/feedback.json (0.5x-2x).
+# keywords: case-insensitive substrings / phrases matched against title + summary + tags.
+
+profile: |
+  Reader: data scientist at THE ICONIC, a large Australian online fashion & lifestyle retailer.
+  Works on recommender systems, search/ranking, personalisation and ML/LLM applications for ecommerce.
+  Wants practical, high-signal updates: research they could apply, tools worth trying, important
+  model releases and AI industry moves. Low interest in hype, crypto, generic "AI will change X" opinion pieces.
+
+# Topics = semantic queries. Every item is embedded (local model) and scored by cosine similarity to each
+# topic's `query`. `iconic: true` marks THE ICONIC business problems (shown as 🎯 on matching items).
+# weight: 1-3 importance. Feedback adjusts a per-topic multiplier (0.5x-2x) in data/feedback.json.
+topics:
+  - id: recsys
+    label: Recommendations & personalisation
+    iconic: true
+    weight: 3
+    query: >-
+      Recommender systems for an online fashion retailer: personalised product recommendations on the homepage,
+      product detail page "you may also like", sequential and session-based recommendation, two-tower retrieval,
+      generative recommendation, cold-start items, ranking models, CTR and conversion prediction.
+  - id: search_ranking
+    label: Search & query understanding
+    iconic: true
+    weight: 3
+    query: >-
+      E-commerce product search: query understanding, query rewriting and intent classification, semantic and
+      hybrid retrieval, learning to rank for product search results, relevance, search personalisation,
+      autocomplete and zero-result queries.
+  - id: size_fit
+    label: Size & fit, returns
+    iconic: true
+    weight: 3
+    query: >-
+      Size and fit recommendation for clothing and shoes, predicting the right size for a customer, fit feedback,
+      reducing product returns, return prediction and return reasons in online fashion retail.
+  - id: visual_multimodal
+    label: Visual search & product understanding
+    iconic: true
+    context: true   # generic outside retail: needs an e-commerce context to count fully
+    weight: 3
+    query: >-
+      Visual search and image similarity for fashion products, multimodal product embeddings combining images and
+      text, vision-language models for product attributes, virtual try-on, style and complete-the-look outfit
+      recommendation.
+  - id: catalog_genai
+    label: GenAI for catalogue & content
+    iconic: true
+    context: true   # generic outside retail: needs an e-commerce context to count fully
+    weight: 2
+    query: >-
+      Generative AI for e-commerce catalogue content: generating product descriptions and titles, product attribute
+      extraction and tagging, taxonomy classification, image generation for product photography, LLMs for
+      merchandising and content at scale.
+  - id: shopping_agents
+    label: Shopping agents & conversational commerce
+    iconic: true
+    context: true   # generic outside retail: needs an e-commerce context to count fully
+    weight: 3
+    query: >-
+      AI shopping assistants for online retail: conversational product search and discovery for shoppers, agents
+      that compare and buy products on e-commerce sites, agentic checkout and payment protocols, retail customer
+      service chatbots.
+  - id: forecasting_pricing
+    label: Forecasting, pricing & inventory
+    iconic: true
+    context: true   # generic outside retail: needs an e-commerce context to count fully
+    weight: 2
+    query: >-
+      Demand forecasting for retail and fashion, time-series forecasting of sales, inventory and stock optimisation,
+      dynamic pricing, markdown and promotion optimisation, supply chain planning.
+  - id: marketing_clv
+    label: Marketing, CLV & customer analytics
+    iconic: true
+    context: true   # generic outside retail: needs an e-commerce context to count fully
+    weight: 2
+    query: >-
+      Customer lifetime value prediction, churn and retention modelling, marketing campaign targeting, uplift
+      modelling, marketing mix modelling and attribution, CRM personalisation of emails and push notifications.
+  - id: experimentation
+    label: Experimentation & causal inference
+    iconic: true
+    context: true   # generic outside retail: needs an e-commerce context to count fully
+    weight: 2
+    query: >-
+      Online A/B testing and experimentation platforms, variance reduction (CUPED), causal inference and
+      treatment effect estimation, off-policy evaluation of recommenders, bandits for online decision making.
+  - id: agents_production
+    label: LLM agents & tooling in production
+    weight: 2
+    query: >-
+      Building and evaluating LLM agents in production: agent frameworks, tool calling, Model Context Protocol,
+      multi-agent systems, agent memory, reliability, guardrails and evaluation of agents and LLM applications.
+  - id: model_releases
+    label: New model releases
+    weight: 2
+    query: >-
+      Release of a new AI model: new open-weight or frontier LLM, multimodal or embedding model launch, model card,
+      benchmark results of a newly released model.
+  - id: ai_industry
+    label: AI industry news
+    weight: 1.5
+    query: >-
+      AI industry news: AI company funding, acquisitions, product launches by OpenAI, Google, Anthropic, Meta,
+      Microsoft, NVIDIA, AI regulation and policy, AI adoption in retail and business.
+  - id: ml_tooling
+    label: ML/DS tooling & MLOps
+    weight: 1
+    query: >-
+      Data science and machine learning tooling: Python libraries, MLOps, feature stores, model serving and
+      inference optimisation, fine-tuning, vector databases, data pipelines.
+
+# Semantic ranking (local embeddings; no API calls).
+semantic:
+  model: BAAI/bge-small-en-v1.5
+  cache_dir: .cache/fastembed   # relative to the repo root (cached in GitHub Actions)
+  # Cosine similarity -> relevance 0..1: below `floor` = 0, at/above `ceil` = 1 (calibrated for bge-small).
+  floor: 0.70
+  ceil: 0.82
+  # Short texts (headlines, repo/model names) have lower similarities: per-kind [floor, ceil] from live data.
+  kind_calibration:
+    news: [0.62, 0.74]
+    blog: [0.63, 0.75]
+    community: [0.64, 0.78]
+    repo: [0.68, 0.80]
+    model: [0.60, 0.72]
+  match_min: 0.35             # relevance needed to list a topic as matched (and 🎯 for iconic topics on papers)
+  problem_min_short: 0.6      # 🎯 on news/posts/repos/models (short texts) needs a stronger match
+  # Topics marked `context: true` count fully only for items set in a retail / e-commerce context; e.g. a generic
+  # agent benchmark matching "shopping agents" is scaled down to `context_min_factor`.
+  context_query: >-
+    Online retail and e-commerce: shoppers and customers buying products on a website or app, product catalogue,
+    fashion and apparel, marketplace, purchases, orders, conversion and revenue.
+  context_min_factor: 0.6
+  ctx_floor: 0.48             # context similarity has its own scale (median ~0.47, strong retail ~0.63)
+  ctx_ceil: 0.60
+  # Papers are ranked by THE ICONIC problems: general interests (agents, models, MLOps) are scaled for papers only.
+  paper_general_factor: 0.6
+  ecommerce_min: 0.5          # papers/blogs whose best iconic match >= this go to the Ecommerce section
+  engagement_max: 0.5         # small bonus for HN points / likes / upvotes / stars today
+
+ranking:
+  score_threshold: 5          # min score (0-10) to appear in the digest
+  top_n: 5
+  max_top_per_section: 3      # Top must-reads: at most 3 from one section
+  max_top_per_source: 3       # ... and at most 3 from one source (e.g. HF Daily Papers)
+  max_source_share: 0.5       # paper sections: one source fills at most half while alternatives qualify
+  section_caps:
+    ecommerce: 6
+    papers: 4
+    models: 4
+    industry: 4
+    engineering: 3
+    repos: 4
+    community: 3
+
+# Gemini is used only to summarise (selected items, deep reads, Today in brief, weekly trends).
+llm:
+  # gemini-2.5-flash is deprecated (re-routed to gemini-3.5-flash-lite from 1 Dec 2026, same price).
+  model: gemini-3.5-flash-lite
+  weekly_model: gemini-3.5-flash-lite
+  temperature: 0.2
+  max_retries: 4
+  # Gemini 3.x: thinking level (minimal | low | medium | high). For Gemini 2.5 models use an int token budget
+  # instead (e.g. thinking: 0, deep_thinking: 512).
+  thinking: minimal           # batch TL;DR summaries (fast)
+  # Cost log (data/llm_usage.csv) uses paid-tier prices in USD per 1M tokens; output includes thinking tokens.
+  pricing:
+    gemini-3.5-flash-lite: {input: 0.30, output: 2.50}
+    gemini-2.5-flash: {input: 0.30, output: 2.50}
+  deep_thinking: low          # deep reads, Today in brief, weekly trends
+
+# Read the full text of the top items and write a detailed summary (key ideas, results, how to apply).
+deep_read:
+  enabled: true
+  max_items: 6                # Top must-reads first, then the best papers/blogs/repos from the sections
+  kinds: [paper, blog, news, repo]
+  max_chars: 40000            # full-text budget per item sent to Gemini (~10k tokens)
+  max_pdf_mb: 15              # papers without arXiv HTML: Gemini reads the PDF directly (LLM mode only)
+  sleep_between_s: 2          # pause between Gemini calls (free-tier RPM)
+  fetch_timeout_s: 30
+
+feedback:
+  step: 0.05                  # multiplier change per vote
+  min_multiplier: 0.5
+  max_multiplier: 2.0
+  subject_tag: "[news-agent-feedback]"
+
+# Paper prioritisation (rolling window, industry research and popularity first).
+papers:
+  rolling_days: 30            # unshown relevant papers stay in data/paper_pool.json this long
+  pool_min_score: 4           # papers scoring >= this are kept in the pool for later days
+  # Added to the semantic score (0-10, capped at 10).
+  industry_boost: 0.7         # paper from / deployed at a listed company
+  popularity_boost_max: 0.6   # full boost at `popular_upvotes` HF upvotes (log-scaled); relevance comes first
+  popular_upvotes: 100
+  popular_citations: 20
+  popular_github_stars: 500
+  # Canonical company name -> lowercase aliases matched against affiliations and title/abstract.
+  # Aliases match whole words. Affiliations match directly; title/abstract mentions only count in a
+  # sentence that also has a deployment cue (deployed, online A/B, production, ...), so "evaluated
+  # on Amazon reviews" does not count but "deployed in Taobao" does.
+  companies:
+    Alibaba: [alibaba, taobao, tmall, alimama, aliexpress, lazada, ant group, alipay, damo academy, qwen team, cainiao]
+    Amazon: [amazon, aws ai, amazon science, alexa ai]
+    Google: [google, deepmind, youtube]
+    Meta: [meta, meta ai, meta platforms, facebook, instagram, meta superintelligence]
+    Microsoft: [microsoft, linkedin, bing]
+    Netflix: [netflix]
+    Spotify: [spotify]
+    Pinterest: [pinterest]
+    Airbnb: [airbnb]
+    Uber: [uber]
+    Booking: [booking.com]
+    Zalando: [zalando]
+    Shopify: [shopify]
+    Etsy: [etsy]
+    eBay: [ebay]
+    Walmart: [walmart]
+    Instacart: [instacart]
+    DoorDash: [doordash]
+    ByteDance: [bytedance, tiktok, douyin]
+    Kuaishou: [kuaishou, kwai]
+    JD.com: [jd.com, jingdong, jd retail, jd explore]
+    Meituan: [meituan]
+    Pinduoduo: [pinduoduo, temu]
+    Tencent: [tencent, wechat]
+    Baidu: [baidu]
+    Huawei: [huawei, noah's ark lab]
+    Apple: [apple]
+    NVIDIA: [nvidia]
+    Salesforce: [salesforce]
+    Snap: [snap inc, snapchat]
+    Coupang: [coupang]
+    Rakuten: [rakuten]
+    Mercado Libre: [mercado libre, mercadolibre]
+    Wayfair: [wayfair]
+    Shopee: [shopee, sea ai lab, sea limited]
+    Flipkart: [flipkart, myntra]
+    Target: [target corporation]
+    Stitch Fix: [stitch fix]
+    ASOS: [asos]
+    H&M: [h&m group, hennes]
+    Inditex: [inditex, zara]
+    Farfetch: [farfetch]
+    Criteo: [criteo]
+    Yandex: [yandex]
+    Naver: [naver]
+    Grab: [grab holdings, grabtaxi]
+    Expedia: [expedia]
+    Xiaohongshu: [xiaohongshu, rednote]
+    OpenAI: [openai]
+    Anthropic: [anthropic]
+    IBM: [ibm research, ibm]

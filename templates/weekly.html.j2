@@ -1,0 +1,136 @@
+{% macro card(v) -%}
+{% set it = v.item %}
+<tr><td style="padding:0 0 10px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px solid #e5e7eb;border-radius:8px;background:#ffffff;">
+<tr><td style="padding:10px 14px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+<td valign="top" style="font-size:15px;line-height:1.35;font-weight:600;"><a href="{{ it.url }}" style="color:#111827;text-decoration:none;">{{ it.title }}</a></td>
+<td valign="top" align="right" width="44" style="padding-left:8px;"><span style="display:inline-block;min-width:28px;text-align:center;background:{{ it.score|score_color }};color:#ffffff;font-size:12px;font-weight:700;border-radius:10px;padding:2px 7px;">{{ it.score|score_fmt }}</span></td>
+</tr></table>
+<div style="font-size:12px;color:#6b7280;padding-top:3px;">{{ it.source_name }} · {{ it.kind }}{% if it.published %} · {{ it.published|short_date }}{% endif %}{% for l in v.links %} · <a href="{{ l.url }}" style="color:#6b7280;">{{ l.label }}</a>{% endfor %}</div>
+{% if v.metrics_line %}<div style="font-size:12px;color:#374151;padding-top:4px;">{{ v.metrics_line }}</div>{% endif %}
+{% if it.tldr %}<div style="font-size:14px;line-height:1.5;color:#1f2937;padding-top:6px;">{{ it.tldr }}</div>{% endif %}
+{% if it.why_iconic %}<div style="font-size:13px;line-height:1.5;color:#1f2937;background:#f0fdf4;border-left:3px solid #22c55e;padding:6px 8px;margin-top:6px;"><strong>Why it matters:</strong> {{ it.why_iconic }}</div>{% endif %}
+{% if v.up %}
+<div style="padding-top:8px;font-size:12px;">
+<a href="{{ v.up }}" style="color:#15803d;text-decoration:none;border:1px solid #bbf7d0;border-radius:12px;padding:2px 9px;">👍 More like this</a>&nbsp;
+<a href="{{ v.down }}" style="color:#b91c1c;text-decoration:none;border:1px solid #fecaca;border-radius:12px;padding:2px 9px;">👎 Less like this</a>
+</div>
+{% endif %}
+</td></tr>
+</table>
+</td></tr>
+{%- endmacro %}
+{% macro heading(title) -%}
+<tr><td style="padding:16px 2px 8px 2px;font-size:17px;font-weight:700;color:#111827;border-bottom:2px solid #e5e7eb;">{{ title }}</td></tr>
+<tr><td style="height:8px;line-height:8px;font-size:0;">&nbsp;</td></tr>
+{%- endmacro %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ subject }}</title>
+</head>
+<body style="margin:0;padding:0;background:#f3f4f6;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#111827;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f3f4f6;">
+<tr><td align="center" style="padding:16px 8px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:680px;">
+<tr><td style="padding:18px 16px;background:#312e81;border-radius:8px;color:#ffffff;">
+<div style="font-size:20px;font-weight:700;">AI × Ecommerce weekly trends</div>
+<div style="font-size:13px;color:#e0e7ff;padding-top:4px;">{{ weekly.week }} · {{ date_range }}</div>
+<div style="font-size:12px;color:#c7d2fe;padding-top:4px;">{{ weekly.total_items }} items this week · {{ mode }}</div>
+</td></tr>
+
+{% if trends %}
+{{ heading("📈 Trends this week") }}
+<tr><td style="padding:12px 14px;background:#ffffff;border:1px solid #e5e7eb;border-radius:8px;">
+<ul style="margin:0 0 0 18px;padding:0;font-size:14px;line-height:1.55;color:#1f2937;">
+{% for e in trends %}
+<li style="margin-bottom:8px;">{{ e.html }}{% if e['items'] %}<div style="font-size:12px;color:#6b7280;padding-top:2px;">🔗 {% for it in e['items'] %}<a href="{{ it.url }}" style="color:#1d4ed8;text-decoration:none;">{{ it.title|truncate(70, True, "…", 0) }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</div>{% endif %}</li>
+{% endfor %}
+</ul>
+</td></tr>
+{% endif %}
+
+{% if themes %}
+{{ heading("🧭 Themes") }}
+{% for th in themes %}
+<tr><td style="padding:0 0 10px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px solid #e5e7eb;border-radius:8px;background:#ffffff;">
+<tr><td style="padding:12px 14px;">
+<div style="font-size:15px;font-weight:700;color:#111827;">{{ th.title }}</div>
+{% if th.summary %}<div style="font-size:14px;line-height:1.5;color:#1f2937;padding-top:4px;">{{ th.summary }}</div>{% endif %}
+{% if th['items'] %}
+<ul style="margin:6px 0 0 18px;padding:0;font-size:13px;line-height:1.5;">
+{% for it in th['items'] %}
+<li><a href="{{ it.url }}" style="color:#1d4ed8;text-decoration:none;">{{ it.title }}</a> <span style="color:#9ca3af;">({{ it.source_name }})</span></li>
+{% endfor %}
+</ul>
+{% endif %}
+</td></tr>
+</table>
+</td></tr>
+{% endfor %}
+{% endif %}
+
+{% if ideas %}
+{{ heading("🛠 Try at THE ICONIC") }}
+<tr><td style="padding:12px 14px;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;">
+<ol style="margin:0 0 0 18px;padding:0;font-size:14px;line-height:1.55;color:#1f2937;">
+{% for e in ideas %}
+<li style="margin-bottom:8px;">{{ e.text }}{% if e['items'] %}<div style="font-size:12px;color:#6b7280;padding-top:2px;">🔗 {% for it in e['items'] %}<a href="{{ it.url }}" style="color:#1d4ed8;text-decoration:none;">{{ it.title|truncate(70, True, "…", 0) }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</div>{% endif %}</li>
+{% endfor %}
+</ol>
+</td></tr>
+{% endif %}
+
+{% if top %}
+{{ heading("🏆 Top 10 of the week") }}
+<tr><td><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+{% for v in top %}{{ card(v) }}
+{% endfor %}
+</table></td></tr>
+{% endif %}
+
+{% if models %}
+{{ heading(section_titles["models"]) }}
+<tr><td><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+{% for v in models %}{{ card(v) }}
+{% endfor %}
+</table></td></tr>
+{% endif %}
+
+{% if repos %}
+{{ heading("⭐ Repos of the week") }}
+<tr><td><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+{% for v in repos %}{{ card(v) }}
+{% endfor %}
+</table></td></tr>
+{% endif %}
+
+{{ heading("🗳 Your feedback") }}
+<tr><td style="padding:12px 14px;background:#ffffff;border:1px solid #e5e7eb;border-radius:8px;font-size:13px;line-height:1.6;color:#1f2937;">
+<div>👍 {{ feedback.up }} · 👎 {{ feedback.down }} votes this week</div>
+{% if feedback.top_up %}<div><strong>Most liked topics:</strong> {{ feedback.top_up|join(", ") }}</div>{% endif %}
+{% if feedback.top_down %}<div><strong>Least liked topics:</strong> {{ feedback.top_down|join(", ") }}</div>{% endif %}
+{% if feedback.multipliers %}
+<div style="padding-top:4px;"><strong>Current weight adjustments:</strong></div>
+<ul style="margin:2px 0 0 18px;padding:0;">
+{% for m in feedback.multipliers %}
+<li>{{ m.kind }} <em>{{ m.name }}</em>: {{ m.value }}</li>
+{% endfor %}
+</ul>
+{% else %}
+<div style="color:#6b7280;">All topic/source weights at default (1.0×).</div>
+{% endif %}
+</td></tr>
+
+<tr><td style="padding:16px 4px;font-size:12px;line-height:1.6;color:#6b7280;">
+Weekly roll-up of your daily AI × Ecommerce digests.{% if archive_url %} <a href="{{ archive_url }}" style="color:#1d4ed8;">Browse the archive</a>.{% endif %}
+</td></tr>
+</table>
+</td></tr>
+</table>
+</body>
+</html>

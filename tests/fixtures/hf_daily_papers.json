@@ -1,0 +1,240 @@
+[
+ {
+  "paper": {
+   "id": "2611.06728",
+   "authors": [
+    {
+     "_id": "6aec1660870269964d13ad5e",
+     "user": {
+      "_id": "66e02f04ec26df895d24e86a",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/NgRs6uIChjP8_fpxw_3p-.png",
+      "isPro": false,
+      "fullname": "dong",
+      "user": "shuai22",
+      "type": "user",
+      "name": "shuai22"
+     },
+     "name": "Shuai Dong",
+     "status": "claimed_verified",
+     "statusLastChangedAt": "2026-11-05T11:33:58.741Z",
+     "hidden": false
+    },
+    {
+     "_id": "6aec1660870269964d13ad5f",
+     "name": "Kanghui Tian",
+     "hidden": false
+    },
+    {
+     "_id": "6aec1660870269964d13ad60",
+     "name": "Linghan Chen",
+     "hidden": false
+    }
+   ],
+   "publishedAt": "2026-11-04T00:00:00.000Z",
+   "submittedOnDailyAt": "2026-11-05T00:00:00.000Z",
+   "title": "Turns Matter: Advancing Streaming Video RL via Turn-Level Credit",
+   "submittedOnDailyBy": {
+    "_id": "67d62da597767f49259a55d6",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/3bsqzf_J0Kv9tZ3qvZsE8.png",
+    "isPro": false,
+    "fullname": "Xiangnan Wu",
+    "user": "XiangnanW",
+    "type": "user",
+    "name": "XiangnanW"
+   },
+   "summary": "Streaming video understanding requires models to repeatedly decide whether to respond or continue observing. Recently, Group Relative Policy Optimization (GRPO) has been applied to this setting, with existing approaches emphasizing reward design while retaining a single trajectory-level advantage across turns. Such shared credit can reinforce redundant replies after earlier successes and discourage useful follow-ups after earlier failures. We propose TurnWise, a turn-level GRPO framework that aligns learning with individual streaming decisions. TurnWise addresses the mismatch between trajectory-level feedback and turn-level interaction, promoting informative responses and reducing redundancy. Specifically, turn-level credit assignment uses silence-completed prefix scoring to construct group-relative advantages from each decision's remaining return, separating its learning signal from earlier rewards. Turn-mean policy optimization averages token losses within each turn and then across turns, giving response and waiting decisions equal weight regardless of output length. These complementary designs improve streaming policy learning without a learned critic or additional rollouts. Extensive experiments show our method outperforms prior RL approaches for streaming video understanding.",
+   "upvotes": 126,
+   "discussionId": "6aec1666870269964d13ad75",
+   "githubRepo": "https://github.com/XD111ds/turn-wise-rl",
+   "githubRepoAddedBy": "user",
+   "ai_summary": "TurnWise improves streaming video understanding by assigning turn-level credit and balancing decision weights in group relative policy optimization.",
+   "ai_keywords": [
+    "Group Relative Policy Optimization",
+    "turn-level credit assignment",
+    "silence-completed prefix scoring",
+    "turn-mean policy optimization",
+    "streaming video understanding"
+   ],
+   "ai_summary_model": "thinkingmachines/Inkling-Small",
+   "githubStars": 63
+  },
+  "publishedAt": "2026-11-03T19:00:00.000Z",
+  "title": "Turns Matter: Advancing Streaming Video RL via Turn-Level Credit",
+  "summary": "Streaming video understanding requires models to repeatedly decide whether to respond or continue observing. Recently, Group Relative Policy Optimization (GRPO) has been applied to this setting, with existing approaches emphasizing reward design while retaining a single trajectory-level advantage across turns. Such shared credit can reinforce redundant replies after earlier successes and discourage useful follow-ups after earlier failures. We propose TurnWise, a turn-level GRPO framework that aligns learning with individual streaming decisions. TurnWise addresses the mismatch between trajectory-level feedback and turn-level interaction, promoting informative responses and reducing redundancy. Specifically, turn-level credit assignment uses silence-completed prefix scoring to construct group-relative advantages from each decision's remaining return, separating its learning signal from earlier rewards. Turn-mean policy optimization averages token losses within each turn and then across turns, giving response and waiting decisions equal weight regardless of output length. These complementary designs improve streaming policy learning without a learned critic or additional rollouts. Extensive experiments show our method outperforms prior RL approaches for streaming video understanding.",
+  "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.06728.png",
+  "numComments": 1,
+  "submittedBy": {
+   "_id": "67d62da597767f49259a55d6",
+   "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/3bsqzf_J0Kv9tZ3qvZsE8.png",
+   "fullname": "Xiangnan Wu",
+   "name": "XiangnanW",
+   "type": "user",
+   "isPro": false,
+   "isHf": false,
+   "isHfAdmin": false,
+   "isMod": false,
+   "followerCount": 3,
+   "isUserFollowing": false
+  },
+  "isAuthorParticipating": false
+ },
+ {
+  "paper": {
+   "id": "2611.02075",
+   "authors": [
+    {
+     "_id": "6aea95af870269964d13a343",
+     "user": {
+      "_id": "663b5baee6257fa86a2a7267",
+      "avatarUrl": "/avatars/41c30fc832fb15348aee62588ef57ba6.svg",
+      "isPro": false,
+      "fullname": "MoLang",
+      "user": "Jacksooooff",
+      "type": "user",
+      "name": "Jacksooooff"
+     },
+     "name": "Lang Mo",
+     "status": "claimed_verified",
+     "statusLastChangedAt": "2026-11-04T08:45:05.242Z",
+     "hidden": false
+    },
+    {
+     "_id": "6aea95af870269964d13a344",
+     "name": "Xingxuan Zhang",
+     "hidden": false
+    },
+    {
+     "_id": "6aea95af870269964d13a345",
+     "name": "Qi Wang",
+     "hidden": false
+    }
+   ],
+   "publishedAt": "2026-11-01T00:00:00.000Z",
+   "submittedOnDailyAt": "2026-11-06T00:00:00.000Z",
+   "title": "Decoupled Predictive Decision Making: A Shared Conditional Predictor for Agents",
+   "submittedOnDailyBy": {
+    "_id": "660aa3852d0769b9c675ece5",
+    "avatarUrl": "/avatars/fc30d4e5e586259296f040183a1a81b5.svg",
+    "isPro": false,
+    "fullname": "haomingchao",
+    "user": "mingchaocc",
+    "type": "user",
+    "name": "mingchaocc"
+   },
+   "summary": "Agent decisions depend on empirical relationships that deployment observations reveal and task descriptions alone may leave unresolved. We introduce Decoupled Predictive Decision Making (DPDM), an architecture that formulates heterogeneous agent decisions as conditional prediction with a shared pretrained learner. Language models provide semantic representations of current and historical records, while a general-purpose conditional predictor predicts task-defined targets from the represented evidence. Pretraining supplies reusable inference capability; deployment evidence instantiates problem-specific predictions without updating either model's neural parameters. Tool judgments, candidate preferences, and reasoning assessments share an evidence-and-query interface, with predictions mapped to choices by a decision rule. This architecture establishes complementary sources of agent capability: semantic knowledge acquired through language pretraining and empirical inference acquired through structured-data pretraining. A single frozen LimiX-2 predictor serves all five task categories. With Qwen3.5-27B as the semantic encoder, DPDM raises mean accuracy across 50 benchmarks from 78.80% with few-shot prompting to 84.92% under their respective evaluated history budgets, and reaches 82.33% with identical histories and queries. On ToolPRMBench's BFCL and ToolSandbox tasks, absolute accuracy gains are 34.26% and 28.87%, respectively, at the methods' respective evaluated history budgets. Accuracy improves as history grows. With identical imbalanced histories, mean balanced accuracy improves by an absolute 14.51% across five reasoning-step assessment tasks and four encoders. DPDM makes learning from experience an independently improvable foundation-model capability, creating a shared route for advances in conditional prediction to improve decisions across agent tasks.",
+   "upvotes": 112,
+   "discussionId": "6aea95af870269964d13a34b",
+   "ai_summary": "DPDM improves agent decision accuracy by combining frozen language-model representations with a shared pretrained conditional predictor that learns from deployment evidence without parameter updates.",
+   "ai_keywords": [
+    "Decoupled Predictive Decision Making",
+    "conditional prediction",
+    "shared pretrained learner",
+    "language models",
+    "semantic representations",
+    "general-purpose conditional predictor",
+    "pretraining",
+    "deployment evidence",
+    "frozen predictor",
+    "LimiX-2",
+    "Qwen3.5-27B"
+   ],
+   "ai_summary_model": "thinkingmachines/Inkling-Small",
+   "organization": {
+    "_id": "6911d3dc57d393d3cfe628bf",
+    "name": "stable-ai",
+    "fullname": "Stable AI",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68aa772042ec888900da6a6b/ykANVIVEnhVZ1fdsEz7BQ.png"
+   }
+  },
+  "publishedAt": "2026-10-31T20:00:00.000Z",
+  "title": "Decoupled Predictive Decision Making: A Shared Conditional Predictor for Agents",
+  "summary": "Agent decisions depend on empirical relationships that deployment observations reveal and task descriptions alone may leave unresolved. We introduce Decoupled Predictive Decision Making (DPDM), an architecture that formulates heterogeneous agent decisions as conditional prediction with a shared pretrained learner. Language models provide semantic representations of current and historical records, while a general-purpose conditional predictor predicts task-defined targets from the represented evidence. Pretraining supplies reusable inference capability; deployment evidence instantiates problem-specific predictions without updating either model's neural parameters. Tool judgments, candidate preferences, and reasoning assessments share an evidence-and-query interface, with predictions mapped to choices by a decision rule. This architecture establishes complementary sources of agent capability: semantic knowledge acquired through language pretraining and empirical inference acquired through structured-data pretraining. A single frozen LimiX-2 predictor serves all five task categories. With Qwen3.5-27B as the semantic encoder, DPDM raises mean accuracy across 50 benchmarks from 78.80% with few-shot prompting to 84.92% under their respective evaluated history budgets, and reaches 82.33% with identical histories and queries. On ToolPRMBench's BFCL and ToolSandbox tasks, absolute accuracy gains are 34.26% and 28.87%, respectively, at the methods' respective evaluated history budgets. Accuracy improves as history grows. With identical imbalanced histories, mean balanced accuracy improves by an absolute 14.51% across five reasoning-step assessment tasks and four encoders. DPDM makes learning from experience an independently improvable foundation-model capability, creating a shared route for advances in conditional prediction to improve decisions across agent tasks.",
+  "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.02075.png",
+  "numComments": 1,
+  "submittedBy": {
+   "_id": "660aa3852d0769b9c675ece5",
+   "avatarUrl": "/avatars/fc30d4e5e586259296f040183a1a81b5.svg",
+   "fullname": "haomingchao",
+   "name": "mingchaocc",
+   "type": "user",
+   "isPro": false,
+   "isHf": false,
+   "isHfAdmin": false,
+   "isMod": false,
+   "isUserFollowing": false
+  },
+  "organization": {
+   "_id": "6911d3dc57d393d3cfe628bf",
+   "name": "stable-ai",
+   "fullname": "Stable AI",
+   "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68aa772042ec888900da6a6b/ykANVIVEnhVZ1fdsEz7BQ.png"
+  },
+  "isAuthorParticipating": true
+ },
+ {
+  "paper": {
+   "id": "2611.04169",
+   "authors": [
+    {
+     "_id": "6aeb94f9870269964d13aad8",
+     "name": "Yinuo Liu",
+     "hidden": false
+    }
+   ],
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/6ae17ed0428a06451d6f8a7c/J2NJ9FUhrT7m8M182nUW4.png"
+   ],
+   "publishedAt": "2026-11-03T00:00:00.000Z",
+   "submittedOnDailyAt": "2026-11-04T00:00:00.000Z",
+   "title": "Length Is Cheap, Competition Is Not: Attention Predicts Context Rot in Retrieval",
+   "submittedOnDailyBy": {
+    "_id": "6ae17ed0428a06451d6f8a7c",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6ae17ed0428a06451d6f8a7c/RJPJjGyzjX5Gvxv3PWBSq.jpeg",
+    "isPro": false,
+    "fullname": "Yinuo Liu",
+    "user": "yliusci",
+    "type": "user",
+    "name": "yliusci"
+   },
+   "summary": "Why do language models fail on long inputs? The common answer is length. We show that, for retrieval, length is cheap and competition is not. On five open models (0.5B to 3B parameters, four families), neutral filler costs nothing: accuracy stays at 0.97 to 1.00, up to 32K tokens on Qwen2.5-1.5B. Statements in the format of the evidence, placed at the same positions, drop it to 0.16 to 0.33. A single statement that gives the queried key a rival value multiplies the loss by 9 to 110, and every additional rival adds to it. Inside the model, one quantity tracks the failure: the attention mass left on the evidence. Across 126,473 trials it explains up to 58% of the variance in loss; log length explains at most 8%. The masked-filler protocol behind the claim that length alone hurts reproduces on MMLU (11 to 18 points lost at 30K tokens), but fails a visible control in retrieval: masking costs 45 accuracy points at 32K tokens, while the same filler left visible costs none. In retrieval, context rot is a competition for attention. We release the probe and all 126K trial-level measurements.",
+   "upvotes": 0,
+   "discussionId": "6aeb94f9870269964d13aad9",
+   "projectPage": "https://arxiv.org/html/2611.04169v1",
+   "githubRepo": "https://github.com/yliusci/length-is-cheap",
+   "githubRepoAddedBy": "user",
+   "ai_summary": "In retrieval tasks, language model failure on long inputs stems from attention competition rather than sequence length, as rival evidence statements sharply reduce accuracy while neutral filler does not.",
+   "ai_keywords": [
+    "retrieval",
+    "attention mass",
+    "context rot",
+    "masked-filler protocol",
+    "rival value",
+    "open models",
+    "probe"
+   ],
+   "ai_summary_model": "thinkingmachines/Inkling-Small",
+   "githubStars": 0
+  },
+  "publishedAt": "2026-11-02T19:00:00.000Z",
+  "title": "Length Is Cheap, Competition Is Not: Attention Predicts Context Rot in Retrieval",
+  "summary": "Why do language models fail on long inputs? The common answer is length. We show that, for retrieval, length is cheap and competition is not. On five open models (0.5B to 3B parameters, four families), neutral filler costs nothing: accuracy stays at 0.97 to 1.00, up to 32K tokens on Qwen2.5-1.5B. Statements in the format of the evidence, placed at the same positions, drop it to 0.16 to 0.33. A single statement that gives the queried key a rival value multiplies the loss by 9 to 110, and every additional rival adds to it. Inside the model, one quantity tracks the failure: the attention mass left on the evidence. Across 126,473 trials it explains up to 58% of the variance in loss; log length explains at most 8%. The masked-filler protocol behind the claim that length alone hurts reproduces on MMLU (11 to 18 points lost at 30K tokens), but fails a visible control in retrieval: masking costs 45 accuracy points at 32K tokens, while the same filler left visible costs none. In retrieval, context rot is a competition for attention. We release the probe and all 126K trial-level measurements.",
+  "mediaUrls": [
+   "https://cdn-uploads.huggingface.co/production/uploads/6ae17ed0428a06451d6f8a7c/J2NJ9FUhrT7m8M182nUW4.png"
+  ],
+  "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.04169.png",
+  "numComments": 2,
+  "submittedBy": {
+   "_id": "6ae17ed0428a06451d6f8a7c",
+   "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6ae17ed0428a06451d6f8a7c/RJPJjGyzjX5Gvxv3PWBSq.jpeg",
+   "fullname": "Yinuo Liu",
+   "name": "yliusci",
+   "type": "user",
+   "isPro": false,
+   "isHf": false,
+   "isHfAdmin": false,
+   "isMod": false,
+   "isUserFollowing": false
+  },
+  "isAuthorParticipating": false
+ }
+]

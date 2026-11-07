@@ -1,0 +1,79 @@
+name: Weekly trends
+
+on:
+  schedule:
+    # 21:00 UTC Friday = Saturday ~7am (AEST) / ~8am (AEDT) in Sydney.
+    - cron: "0 21 * * 5"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Ignore Saturday guard"
+        type: boolean
+        default: true
+      dry_run:
+        description: "Dry run (no email, no commit)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: news-agent-state
+  cancel-in-progress: false
+
+jobs:
+  weekly:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        run: pip install .
+
+      - name: Cache embedding model
+        uses: actions/cache@v4
+        with:
+          path: .cache/fastembed
+          key: fastembed-bge-small-en-v1.5
+
+      - name: Run weekly digest
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          DIGEST_TO: ${{ secrets.DIGEST_TO }}
+          ARCHIVE_URL: ${{ github.server_url }}/${{ github.repository }}/tree/${{ github.ref_name }}/digests
+          NEWS_AGENT_ROOT: ${{ github.workspace }}
+        run: |
+          ARGS=""
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            [ "${{ inputs.force }}" = "true" ] && ARGS="$ARGS --force"
+            [ "${{ inputs.dry_run }}" = "true" ] && ARGS="$ARGS --dry-run"
+          fi
+          python -m news_agent weekly $ARGS
+
+      - name: Upload preview (dry run)
+        if: ${{ inputs.dry_run }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: preview
+          path: out/
+
+      - name: Commit weekly digest
+        if: ${{ always() && !inputs.dry_run }}
+        run: |
+          git config user.name "news-agent[bot]"
+          git config user.email "news-agent[bot]@users.noreply.github.com"
+          git add digests
+          if [ -f data/llm_usage.csv ]; then git add data/llm_usage.csv; fi
+          if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
+          git commit -m "digest: weekly $(TZ=Australia/Sydney date +%G-W%V)"
+          for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 5; done
+          exit 1

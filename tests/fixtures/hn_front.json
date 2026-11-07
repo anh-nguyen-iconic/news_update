@@ -1,0 +1,59 @@
+{
+ "hits": [
+  {
+   "_tags": [
+    "story",
+    "author_josemrb",
+    "story_50378228",
+    "front_page"
+   ],
+   "author": "josemrb",
+   "created_at": "2026-11-05T12:19:02Z",
+   "created_at_i": 1793881142,
+   "num_comments": 648,
+   "objectID": "50378228",
+   "points": 2700,
+   "story_id": 50378228,
+   "title": "sshole",
+   "updated_at": "2026-11-06T10:02:43Z",
+   "url": "https://sshhole.com"
+  },
+  {
+   "_tags": [
+    "story",
+    "author_motoroco",
+    "story_50385272",
+    "front_page"
+   ],
+   "author": "motoroco",
+   "created_at": "2026-11-05T22:17:15Z",
+   "created_at_i": 1793917035,
+   "num_comments": 347,
+   "objectID": "50385272",
+   "points": 1137,
+   "story_id": 50385272,
+   "title": "Claude Code sends your email address to websites",
+   "updated_at": "2026-11-06T10:02:43Z",
+   "url": "https://github.com/anthropics/claude-code/issues/107757"
+  },
+  {
+   "_tags": [
+    "story",
+    "author_mkeeter",
+    "story_50383739",
+    "front_page"
+   ],
+   "author": "mkeeter",
+   "created_at": "2026-11-05T20:03:29Z",
+   "created_at_i": 1793909009,
+   "num_comments": 228,
+   "objectID": "50383739",
+   "points": 580,
+   "story_id": 50383739,
+   "title": "Goodbye from Salon",
+   "updated_at": "2026-11-06T10:00:11Z",
+   "url": "https://www.salon.com/2026/11/05/goodbye-from-salon/"
+  }
+ ],
+ "nbHits": 30
+}

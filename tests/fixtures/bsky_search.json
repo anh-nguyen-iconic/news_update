@@ -1,0 +1,206 @@
+{
+ "posts": [
+  {
+   "uri": "at://did:plc:6ugh2rv2vcmoljsoqxrv36k4/app.bsky.feed.post/3mzhroa6qwk25",
+   "cid": "bafyreigol3jrd3crfwavb5t2b63oobiidohvefkgdm6dbfwpb5kwvuczs4",
+   "author": {
+    "did": "did:plc:6ugh2rv2vcmoljsoqxrv36k4",
+    "handle": "guillaumesalhagalvan.com",
+    "displayName": "Guillaume Salha-Galvan",
+    "associated": {
+     "activitySubscription": {
+      "allowSubscriptions": "followers"
+     }
+    },
+    "labels": [],
+    "createdAt": "2024-11-11T22:41:30.110Z"
+   },
+   "record": {
+    "$type": "app.bsky.feed.post",
+    "createdAt": "2026-11-04T06:58:35.096Z",
+    "embed": {
+     "$type": "app.bsky.embed.images",
+     "images": [
+      {
+       "alt": "",
+       "aspectRatio": {
+        "height": 1144,
+        "width": 2042
+       },
+       "image": {
+        "$type": "blob",
+        "ref": {
+         "$link": "bafkreifgoplhbtbpo7vr67ylsnxijmo4avcaaeuihtcczzf3l5un2kfyie"
+        },
+        "mimeType": "image/jpeg",
+        "size": 689479
+       }
+      }
+     ]
+    },
+    "facets": [
+     {
+      "features": [
+       {
+        "$type": "app.bsky.richtext.facet#link",
+        "uri": "https://earl-workshop.github.io/"
+       }
+      ],
+      "index": {
+       "byteEnd": 283,
+       "byteStart": 260
+      }
+     }
+    ],
+    "langs": [
+     "en"
+    ],
+    "text": "Delighted to welcome Bum Jun Kim from the University of Tokyo as our invited speaker for the 3rd edition of EARL, our Workshop on Evaluating and Applying Recommender Systems with Large Language Models, this Sunday, November 8, in Rome! \ud83c\uddee\ud83c\uddf9\n\nFull program: earl-workshop.github.io\n\nDetails below \ud83d\udc47\n\n(1/4)"
+   },
+   "embed": {
+    "images": [
+     {
+      "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:6ugh2rv2vcmoljsoqxrv36k4/bafkreifgoplhbtbpo7vr67ylsnxijmo4avcaaeuihtcczzf3l5un2kfyie",
+      "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:6ugh2rv2vcmoljsoqxrv36k4/bafkreifgoplhbtbpo7vr67ylsnxijmo4avcaaeuihtcczzf3l5un2kfyie",
+      "alt": "",
+      "aspectRatio": {
+       "height": 1144,
+       "width": 2042
+      }
+     }
+    ],
+    "$type": "app.bsky.embed.images#view"
+   },
+   "bookmarkCount": 0,
+   "replyCount": 1,
+   "repostCount": 1,
+   "likeCount": 3,
+   "quoteCount": 0,
+   "indexedAt": "2026-11-04T06:58:55.073Z",
+   "labels": []
+  },
+  {
+   "uri": "at://did:plc:gd6m4mw3km2betcnbbs6362q/app.bsky.feed.post/3mzlr7xnx6j2x",
+   "cid": "bafyreiflzooekl4tnrukgkejynl5lpqxqbprrs5asfdlpeggsq7wdketme",
+   "author": {
+    "did": "did:plc:gd6m4mw3km2betcnbbs6362q",
+    "handle": "minomobi.com",
+    "displayName": "mino lab (bot)",
+    "associated": {
+     "activitySubscription": {
+      "allowSubscriptions": "followers"
+     }
+    },
+    "labels": [
+     {
+      "src": "did:plc:gd6m4mw3km2betcnbbs6362q",
+      "uri": "at://did:plc:gd6m4mw3km2betcnbbs6362q/app.bsky.actor.profile/self",
+      "cid": "bafyreiagp2vq4xmo6pdsyjrsyvdijssx55zv36nuicwq2lammutqd7e4vu",
+      "val": "bot",
+      "cts": "2026-07-27T21:22:15.904Z"
+     }
+    ],
+    "createdAt": "2026-07-27T21:22:16.375Z"
+   },
+   "record": {
+    "$type": "app.bsky.feed.post",
+    "createdAt": "2026-11-05T21:01:15.244Z",
+    "embed": {
+     "$type": "app.bsky.embed.external",
+     "external": {
+      "description": "arXiv:2611.06696 \u00b7 cs.HC",
+      "title": "You Know What You Will Like: People Predict Their Own Ratings Better Than Recommender Systems",
+      "uri": "https://arxiv.org/abs/2611.06696"
+     }
+    },
+    "facets": [],
+    "text": "predict your rating for an unseen movie and store it, then come back after watching to score that guess against what an algorithm would've predicted. people beat any recommender at predicting their own taste"
+   },
+   "embed": {
+    "external": {
+     "uri": "https://arxiv.org/abs/2611.06696",
+     "title": "You Know What You Will Like: People Predict Their Own Ratings Better Than Recommender Systems",
+     "description": "arXiv:2611.06696 \u00b7 cs.HC"
+    },
+    "$type": "app.bsky.embed.external#view"
+   },
+   "bookmarkCount": 0,
+   "replyCount": 0,
+   "repostCount": 0,
+   "likeCount": 0,
+   "quoteCount": 0,
+   "indexedAt": "2026-11-05T21:01:15.570Z",
+   "labels": []
+  },
+  {
+   "uri": "at://did:plc:iakjx7d3ypfa5ycegrylvt2m/app.bsky.feed.post/3mzjdc3acm22x",
+   "cid": "bafyreicvdswb6sppgfzsaiopav5ythzslumy7ufy3uzbek74skfjoea4fi",
+   "author": {
+    "did": "did:plc:iakjx7d3ypfa5ycegrylvt2m",
+    "handle": "reachsumit.com",
+    "displayName": "Sumit",
+    "associated": {
+     "activitySubscription": {
+      "allowSubscriptions": "followers"
+     }
+    },
+    "labels": [],
+    "createdAt": "2024-11-25T00:20:05.146Z"
+   },
+   "record": {
+    "$type": "app.bsky.feed.post",
+    "createdAt": "2026-11-04T21:46:34.344Z",
+    "embed": {
+     "$type": "app.bsky.embed.external",
+     "external": {
+      "description": "Conventional recommender systems operate within platform-specific catalogs, limiting access to potentially valuable resources across platforms. We propose user-centered agentic recommendation, a parad...",
+      "thumb": {
+       "$type": "blob",
+       "ref": {
+        "$link": "bafkreidqmqwy3yg4tl3phag6b33z4zqxmqu4b2m6eya4gutzr2weqdsdui"
+       },
+       "mimeType": "image/jpeg",
+       "size": 88160
+      },
+      "title": "Toward User-Centered Agentic Recommendation: When Does Platform Competition Benefit Users?",
+      "uri": "https://arxiv.org/abs/2611.04203"
+     }
+    },
+    "facets": [
+     {
+      "features": [
+       {
+        "$type": "app.bsky.richtext.facet#link",
+        "uri": "https://arxiv.org/abs/2611.04203"
+       }
+      ],
+      "index": {
+       "byteEnd": 281,
+       "byteStart": 257
+      }
+     }
+    ],
+    "langs": [
+     "en"
+    ],
+    "text": "Toward User-Centered Agentic Recommendation: When Does Platform Competition Benefit Users?\n\nProposes user agents that compare competing platforms' recommendations, and analyzes when credibility assessment helps users despite exaggerated descriptions.\n\n\ud83d\udcdd arxiv.org/abs/2611.04203"
+   },
+   "embed": {
+    "external": {
+     "uri": "https://arxiv.org/abs/2611.04203",
+     "title": "Toward User-Centered Agentic Recommendation: When Does Platform Competition Benefit Users?",
+     "description": "Conventional recommender systems operate within platform-specific catalogs, limiting access to potentially valuable resources across platforms. We propose user-centered agentic recommendation, a parad...",
+     "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:iakjx7d3ypfa5ycegrylvt2m/bafkreidqmqwy3yg4tl3phag6b33z4zqxmqu4b2m6eya4gutzr2weqdsdui"
+    },
+    "$type": "app.bsky.embed.external#view"
+   },
+   "bookmarkCount": 0,
+   "replyCount": 0,
+   "repostCount": 0,
+   "likeCount": 2,
+   "quoteCount": 0,
+   "indexedAt": "2026-11-04T21:46:32.838Z",
+   "labels": []
+  }
+ ]
+}

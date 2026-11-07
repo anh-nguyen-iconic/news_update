@@ -1,0 +1,151 @@
+{#- Daily digest email: long-read layout. Inline CSS only (Gmail strips <style> in some clients). -#}
+{% set SERIF = "Georgia,serif" %}
+{% set SANS = "-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" %}
+
+{% macro source_links(v, color="#1d4ed8") -%}
+{% for l in v.links %}<a href="{{ l.url }}" style="color:{{ color }};text-decoration:none;font-weight:600;">{{ l.label }}&nbsp;↗</a>{% if not loop.last %}<span style="color:#cbd5e1;">&nbsp;&nbsp;·&nbsp;&nbsp;</span>{% endif %}{% endfor %}
+{%- endmacro %}
+
+{% macro feedback(v) -%}
+{% if v.up %}<a href="{{ v.up }}" style="display:inline-block;border:1px solid #bbf7d0;background:#f0fdf4;color:#166534;border-radius:999px;padding:4px 12px;font-size:12px;text-decoration:none;">👍 More like this</a>&nbsp;<a href="{{ v.down }}" style="display:inline-block;border:1px solid #fecaca;background:#fef2f2;color:#991b1b;border-radius:999px;padding:4px 12px;font-size:12px;text-decoration:none;">👎 Less like this</a>{% endif %}
+{%- endmacro %}
+
+{#- Long-read article for a deep-read item -#}
+{% macro article(v) -%}
+{% set it = v.item %}
+<tr><td style="background:#ffffff;padding:28px 28px 24px 28px;border-top:1px solid #e7e5e4;">
+<div style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#4338ca;font-weight:700;">{{ v.kicker }}<span style="color:#a8a29e;font-weight:400;">&nbsp;&nbsp;{{ v.n }}/{{ v.total }}</span></div>
+<h2 style="margin:8px 0 6px 0;font-family:{{ SERIF }};font-size:23px;line-height:1.3;font-weight:700;color:#0f172a;"><a href="{{ it.url }}" style="color:#0f172a;text-decoration:none;">{{ it.title }}</a></h2>
+<div style="font-size:12px;color:#78716c;">{% if it.published %}{{ it.published|short_date }}{% endif %}{% if it.published and v.metrics_line %} · {% endif %}{{ v.metrics_line }}</div>
+{% if it.image_url %}
+<div style="padding-top:16px;"><a href="{{ it.url }}"><img src="{{ it.image_url }}" alt="{{ it.image_caption or it.title }}" width="616" style="display:block;width:100%;max-width:616px;height:auto;border:1px solid #e7e5e4;border-radius:6px;"></a></div>
+{% if it.image_caption %}<div style="font-size:12px;line-height:1.5;color:#78716c;padding-top:6px;font-style:italic;">{{ it.image_caption }}</div>{% endif %}
+{% endif %}
+<p style="margin:16px 0 0 0;font-family:{{ SERIF }};font-size:17px;line-height:1.7;color:#1c1917;">{{ it.deep_summary }}</p>
+{% if it.key_ideas %}
+<div style="margin-top:18px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;font-weight:700;color:#44403c;">Key ideas</div>
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-top:6px;">
+{% for k in it.key_ideas %}
+<tr><td valign="top" style="width:26px;padding:6px 0;font-family:{{ SERIF }};font-size:18px;font-weight:700;color:#4338ca;">{{ loop.index }}</td>
+<td style="padding:6px 0;font-size:15px;line-height:1.6;color:#292524;">{{ k }}</td></tr>
+{% endfor %}
+</table>
+{% endif %}
+{% if it.results %}
+<div style="margin-top:16px;background:#eff6ff;border-left:4px solid #3b82f6;border-radius:4px;padding:12px 14px;font-size:15px;line-height:1.6;color:#1e3a8a;"><b>📊 Results</b><br>{{ it.results }}</div>
+{% endif %}
+{% if it.apply_at_iconic %}
+<div style="margin-top:12px;background:#ecfdf5;border-left:4px solid #10b981;border-radius:4px;padding:12px 14px;font-size:15px;line-height:1.6;color:#064e3b;"><b>🛍 How to apply at THE ICONIC</b>
+<ul style="margin:6px 0 0 18px;padding:0;">{% for a in it.apply_at_iconic %}<li style="margin-bottom:4px;">{{ a }}</li>{% endfor %}</ul></div>
+{% elif it.why_iconic and it.llm_scored %}
+<div style="margin-top:12px;background:#ecfdf5;border-left:4px solid #10b981;border-radius:4px;padding:12px 14px;font-size:15px;line-height:1.6;color:#064e3b;"><b>🛍 Why it matters</b><br>{{ it.why_iconic }}</div>
+{% endif %}
+{% if not it.llm_scored and it.topics %}<div style="margin-top:14px;font-size:12px;color:#78716c;">Topics: {{ it.topics|map("topic_label")|join(" · ") }}</div>{% endif %}
+<div style="margin-top:16px;font-size:13px;line-height:1.8;">🔗 {{ source_links(v) }}</div>
+{% if v.up %}<div style="margin-top:10px;">{{ feedback(v) }}</div>{% endif %}
+</td></tr>
+{%- endmacro %}
+
+{#- Compact card for everything else -#}
+{% macro card(v) -%}
+{% set it = v.item %}
+<tr><td style="padding:16px 0;border-bottom:1px solid #f1f5f9;">
+<div style="font-size:16px;line-height:1.4;font-weight:600;"><a href="{{ it.url }}" style="color:#0f172a;text-decoration:none;">{{ it.title }}</a></div>
+<div style="font-size:12px;color:#78716c;padding-top:3px;">{% if it.problem %}<span style="color:#4338ca;font-weight:600;">🎯 {{ it.problem }}</span> · {% endif %}{{ it.source_name }}{% if it.published %} · {{ it.published|short_date }}{% endif %}{% if v.metrics_line %} · {{ v.metrics_line }}{% endif %}</div>
+{% if it.tldr %}
+<div style="font-size:15px;line-height:1.6;color:#292524;padding-top:8px;">{{ it.tldr }}</div>
+{% endif %}
+{% if it.why_iconic and it.llm_scored %}
+<div style="font-size:14px;line-height:1.55;color:#065f46;padding-top:6px;"><b>Why it matters:</b> {{ it.why_iconic }}</div>
+{% elif it.topics %}
+<div style="font-size:12px;color:#78716c;padding-top:6px;">Topics: {{ it.topics|map("topic_label")|join(" · ") }}</div>
+{% endif %}
+<div style="font-size:12px;padding-top:8px;line-height:1.8;">🔗 {{ source_links(v) }}{% if v.up %}<span style="color:#cbd5e1;">&nbsp;&nbsp;|&nbsp;&nbsp;</span><a href="{{ v.up }}" style="color:#166534;text-decoration:none;">👍</a>&nbsp;&nbsp;<a href="{{ v.down }}" style="color:#991b1b;text-decoration:none;">👎</a>{% endif %}</div>
+</td></tr>
+{%- endmacro %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ subject }}</title>
+</head>
+<body style="margin:0;padding:0;background:#f5f5f4;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f5f5f4;">
+<tr><td align="center" style="padding:20px 8px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:680px;font-family:{{ SANS }};">
+
+<!-- Masthead -->
+<tr><td style="background:#0f172a;padding:28px 28px 22px 28px;border-radius:10px 10px 0 0;">
+<div style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#a5b4fc;font-weight:700;">{{ date_label }}</div>
+<div style="font-family:{{ SERIF }};font-size:30px;line-height:1.2;color:#ffffff;font-weight:700;padding-top:6px;">AI × Ecommerce Daily</div>
+<div style="font-size:13px;color:#94a3b8;padding-top:8px;">{{ stats_line }}</div>
+</td></tr>
+
+<!-- Today in brief -->
+{% if overview or highlights %}
+<tr><td style="background:#fffbeb;padding:24px 28px;border-bottom:1px solid #fde68a;">
+<div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#b45309;font-weight:800;">⚡ Today in brief</div>
+{% if overview %}<p style="margin:10px 0 0 0;font-family:{{ SERIF }};font-size:18px;line-height:1.65;color:#1c1917;">{{ overview }}</p>{% endif %}
+{% if highlights %}
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-top:12px;">
+{% for h in highlights %}
+<tr><td valign="top" style="width:22px;padding:7px 0;font-size:15px;color:#b45309;font-weight:800;">•</td>
+<td style="padding:7px 0;font-size:15px;line-height:1.6;color:#292524;">{{ h.text }}<br><span style="font-size:13px;">{% for it in h['items'] %}<a href="{{ it.url }}" style="color:#1d4ed8;text-decoration:none;">→ {{ it.title|truncate(80, True, "…", 0) }}</a>{% if not loop.last %}&nbsp;&nbsp;{% endif %}{% endfor %}</span></td></tr>
+{% endfor %}
+</table>
+{% endif %}
+{% if in_this_issue %}<div style="margin-top:14px;font-size:12px;color:#78716c;"><b>In this issue:</b> {{ in_this_issue|join(" · ") }}</div>{% endif %}
+</td></tr>
+{% endif %}
+
+{% if not deep and not more %}
+<tr><td style="background:#ffffff;padding:24px 28px;font-size:15px;color:#44403c;">Nothing made the cut today.</td></tr>
+{% endif %}
+
+<!-- In depth -->
+{% if deep %}
+<tr><td style="background:#ffffff;padding:26px 28px 4px 28px;">
+<div style="font-family:{{ SERIF }};font-size:22px;font-weight:700;color:#0f172a;">📖 In depth</div>
+<div style="font-size:13px;color:#78716c;padding-top:2px;">Today's must-reads, read in full and summarised.</div>
+</td></tr>
+{% for v in deep %}{{ article(v) }}
+{% endfor %}
+{% endif %}
+
+<!-- More to read -->
+{% if more %}
+<tr><td style="background:#ffffff;padding:30px 28px 8px 28px;border-top:6px solid #f5f5f4;">
+<div style="font-family:{{ SERIF }};font-size:22px;font-weight:700;color:#0f172a;">More to read</div>
+</td></tr>
+{% for s in more %}
+<tr><td style="background:#ffffff;padding:14px 28px 4px 28px;">
+<div style="font-size:13px;letter-spacing:.06em;text-transform:uppercase;font-weight:800;color:#44403c;border-bottom:2px solid #0f172a;padding-bottom:6px;">{{ s.title }} <span style="color:#a8a29e;font-weight:400;">{{ s['items']|length }}</span></div>
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+{% for v in s['items'] %}{{ card(v) }}
+{% endfor %}
+</table>
+</td></tr>
+{% endfor %}
+{% endif %}
+
+<!-- Footer -->
+<tr><td style="background:#ffffff;padding:8px 28px 0 28px;border-radius:0 0 10px 10px;">&nbsp;</td></tr>
+<tr><td style="padding:18px 12px;font-size:12px;line-height:1.7;color:#78716c;">
+<div><b>Run stats:</b> {{ stats.collected }} collected · {{ stats.after_dedupe }} after dedupe · {{ stats.candidates }} candidates · {{ stats.ranked }} ranked · {{ stats.selected }} selected · {{ stats.window_hours }}h window · {{ stats.feedback_ingested }} feedback votes ingested · ranked semantically for THE ICONIC · {{ "summaries by Gemini" if stats.llm_used else "extractive summaries (Gemini unavailable)" }}</div>
+{% if stats.failed_sources %}
+<div style="padding-top:6px;color:#b45309;"><b>Failed sources:</b></div>
+<ul style="margin:2px 0 0 18px;padding:0;color:#b45309;">
+{% for name, err in stats.failed_sources.items() %}
+<li>{{ name }}: {{ err|truncate(200, True, "…", 0) }}</li>
+{% endfor %}
+</ul>
+{% endif %}
+{% if archive_url %}<div style="padding-top:6px;"><a href="{{ archive_url }}" style="color:#1d4ed8;">Browse the archive</a></div>{% endif %}
+{% if feedback_enabled %}<div style="padding-top:6px;">👍/👎 open a pre-filled email to yourself — just hit send. Votes are read on the next run and nudge topic &amp; source weights for future digests.</div>{% endif %}
+</td></tr>
+</table>
+</td></tr>
+</table>
+</body>
+</html>

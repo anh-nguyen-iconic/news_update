@@ -1,0 +1,124 @@
+# Sources. Every collector is fail-soft: a failing source is logged and skipped.
+# Set `enabled: false` to disable a source without deleting it.
+
+http:
+  timeout_s: 20
+  user_agent: "news-agent/0.1 (+https://github.com/anh-nguyen-iconic/news_update)"
+
+arxiv:
+  enabled: true
+  categories: [cs.IR, cs.LG, cs.CL, cs.AI, cs.CV, stat.ML]
+  max_results: 1000          # ~500 papers/day across these categories; 1000 covers window + grace in one request
+  grace_hours: 24            # arXiv announces in daily batches: keep papers published >= since - 24h
+  # Only arXiv items whose title/abstract match an interests.yaml keyword survive the prefilter.
+
+hf_papers:
+  enabled: true
+  min_upvotes: 5
+  # Rolling window (replaces the run's `since`): one ?week=YYYY-Www request per ISO week overlapping
+  # the last `rolling_days` + the latest-day list. Papers stay eligible while they gain upvotes.
+  rolling_days: 30
+  limit: 100                 # per request; the API answers 400 above 100
+  pages_per_week: 2          # fetch page 2 of a week only if page 1 is full and still above min_upvotes
+
+openalex:
+  enabled: true
+  # Recent ecommerce-DS works with author affiliations and citations (rolling window, `since` ignored).
+  # OpenAlex lags arXiv by a few days. Unauthenticated calls share a small daily budget per IP;
+  # set OPENALEX_API_KEY (or api_key here) for a personal budget. Also used to enrich arXiv/HF papers.
+  rolling_days: 30
+  per_page: 50
+  mailto: "anhnguyen.workmail@gmail.com"
+  arxiv_only: false          # true: only arXiv preprints (primary_location.source.id:S4306400194)
+  # Unreviewed upload repositories (Zenodo, Figshare) add noise; ACM (10.1145) brings KDD/RecSys/SIGIR papers.
+  exclude_doi_prefixes: ["10.5281/", "10.6084/"]
+  queries:
+    - "e-commerce recommendation"
+    - "recommender system"
+    - "product search ranking"
+    - "click-through rate prediction"
+    - "fashion recommendation"
+    - "size recommendation"
+    - "generative recommendation"
+    - "uplift modeling marketing"
+    - "demand forecasting retail"
+    - "query understanding e-commerce search"
+
+hf_models:
+  enabled: true
+  limit: 50
+  max_age_days: 21           # only trending models created recently
+  min_likes: 20
+  sort: trendingScore        # falls back to likes7d / likes if the API rejects it
+
+rss:
+  enabled: true
+  max_items_per_feed: 20
+  feeds:
+    # --- AI labs & big-tech research (kind: blog -> section decided by LLM) ---
+    # openai.com and anthropic.com answer 403 (bot protection) to non-browser clients; Anthropic has
+    # no official feed. Use the community-maintained mirrors from github.com/Olshansk/rss-feeds.
+    - {id: openai, name: OpenAI, url: "https://openai.com/news/rss.xml", fallback_urls: ["https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_openai_main.xml"], kind: news}
+    - {id: anthropic, name: Anthropic, url: "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml", kind: news}
+    - {id: anthropic_research, name: Anthropic Research, url: "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_research.xml", kind: blog}
+    - {id: google_research, name: Google Research, url: "https://research.google/blog/rss/", kind: blog}
+    - {id: google_ai, name: Google AI Blog, url: "https://blog.google/innovation-and-ai/technology/ai/rss/", kind: news}
+    - {id: deepmind, name: Google DeepMind, url: "https://deepmind.google/blog/rss.xml", kind: news}
+    - {id: meta_ai, name: Meta AI, url: "https://engineering.fb.com/category/ml-applications/feed/", kind: blog}
+    - {id: microsoft_research, name: Microsoft Research, url: "https://www.microsoft.com/en-us/research/feed/", kind: blog}
+    - {id: nvidia, name: NVIDIA Technical Blog, url: "https://developer.nvidia.com/blog/feed", kind: blog}
+    - {id: ibm_research, name: IBM Research, url: "https://research.ibm.com/rss", kind: blog}
+    - {id: aws_ml, name: AWS Machine Learning, url: "https://aws.amazon.com/blogs/machine-learning/feed/", kind: blog}
+    - {id: amazon_science, name: Amazon Science, url: "https://www.amazon.science/index.rss", kind: blog}
+    - {id: huggingface_blog, name: Hugging Face Blog, url: "https://huggingface.co/blog/feed.xml", kind: blog}
+    # --- AI industry news ---
+    - {id: techcrunch_ai, name: TechCrunch AI, url: "https://techcrunch.com/category/artificial-intelligence/feed/", kind: news}
+    - {id: verge_ai, name: The Verge AI, url: "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", kind: news}
+    # VentureBeat answers 429 to every feed request (bot protection); feedburner mirror is stale since 2026-09.
+    - {id: venturebeat_ai, name: VentureBeat AI, url: "https://venturebeat.com/category/ai/feed/", kind: news, enabled: false}
+    # --- Newsletters ---
+    - {id: import_ai, name: Import AI, url: "https://importai.substack.com/feed", kind: news}
+    - {id: latent_space, name: Latent Space, url: "https://latent.space/feed", kind: news}
+    # The Batch has no official feed (/the-batch/feed/ is 404) and the Olshansk mirror stopped updating in 2026-10.
+    - {id: the_batch, name: The Batch, url: "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_the_batch.xml", kind: news, enabled: false}
+    # --- Ecommerce & tech engineering blogs ---
+    - {id: zalando, name: Zalando Engineering, url: "https://engineering.zalando.com/atom.xml", kind: blog}
+    - {id: shopify, name: Shopify Engineering, url: "https://shopify.engineering/blog.atom", kind: blog}
+    - {id: etsy, name: Etsy Code as Craft, url: "https://www.etsy.com/codeascraft/rss", kind: blog}
+    - {id: instacart, name: Instacart Tech, url: "https://tech.instacart.com/feed", kind: blog}
+    - {id: pinterest, name: Pinterest Engineering, url: "https://medium.com/feed/pinterest-engineering", kind: blog}
+    - {id: airbnb, name: Airbnb Tech, url: "https://medium.com/feed/airbnb-engineering", kind: blog}
+    - {id: netflix, name: Netflix Tech Blog, url: "https://netflixtechblog.com/feed", kind: blog}
+    - {id: spotify, name: Spotify Engineering, url: "https://engineering.atspotify.com/feed", kind: blog}
+    - {id: booking, name: Booking.com Tech, url: "https://medium.com/feed/booking-com-development", kind: blog}
+    # /engineering-blog/feed/ is an empty feed; the engineering category feed has the posts.
+    - {id: doordash, name: DoorDash Engineering, url: "https://careersatdoordash.com/blog/category/engineering/feed/", kind: blog}
+
+goodailist:
+  enabled: true
+  base_url: "https://goodailist.com/api/repos"
+  limit: 100
+  min_star_1d: 300
+  min_star_7d_pct: 50
+  resurface_multiplier: 2.0
+
+hackernews:
+  enabled: true
+  min_points: 50
+  # Stories matching any of these queries in the window (Algolia search); front page always included.
+  queries: [LLM, "AI agent", recommender, "machine learning", embeddings, ecommerce, OpenAI, Anthropic, Gemini, "open source model"]
+
+reddit:
+  enabled: true
+  min_score: 30              # unused: the RSS feed (only unauthenticated option; .json is 403) has no scores
+  limit: 10                  # top-N posts of the day per subreddit
+  # All subreddits are fetched in ONE multireddit RSS request: unauthenticated reddit allows ~1 request/minute/IP.
+  max_wait_s: 60             # on HTTP 429, wait for x-ratelimit-reset (capped) and retry once
+  subreddits: [MachineLearning, LocalLLaMA, datascience, recommendersystems]
+
+bluesky:
+  enabled: true
+  min_likes: 20
+  api_base: "https://api.bsky.app"   # public.api.bsky.app returns 403 for searchPosts; api.bsky.app works unauthenticated
+  # Niche queries rarely reach min_likes on Bluesky; broad ones ("LLM", "AI agents") carry most of the signal.
+  queries: [LLM, "AI agents", "LLM agents", "open source model", "new model release", "recommender systems", "ecommerce AI"]

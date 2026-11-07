@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/test</id>
+  <title>arXiv Query: test</title>
+  <updated>2026-11-06T10:02:41Z</updated>
+  <entry>
+    <id>http://arxiv.org/abs/2611.01111v2</id>
+    <title>Generative Retrieval for Fashion Search at Scale</title>
+    <updated>2026-11-05T12:00:00Z</updated>
+    <link href="https://arxiv.org/abs/2611.01111v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.01111v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We deploy generative retrieval in a large fashion marketplace.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-04T12:00:00Z</published>
+    <arxiv:comment>Accepted by KDD 2026 (Applied Data Science track). 10 pages, 4 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Alice Example</name>
+      <arxiv:affiliation>Zalando SE</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Bob Example</name>
+      <arxiv:affiliation>Zalando SE</arxiv:affiliation>
+      <arxiv:affiliation>TU Berlin</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Carol Example</name>
+    </author>
+  </entry>
+</feed>
