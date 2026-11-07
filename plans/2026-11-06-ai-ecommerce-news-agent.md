@@ -167,7 +167,9 @@ Sydney daylight saving moves delivery between ~7am (winter) and ~8am (summer).
   - [ ] One real email (needs Gmail app password)
   - [ ] Feedback round trip (👍 → multiplier changes in `data/feedback.json`)
   - [x] Pushed to GitHub (2026-11-07, commit 13f2a92); both workflows active
-  - [ ] Add repo secrets (GOOGLE_API_KEY, GMAIL_USER, GMAIL_APP_PASSWORD, DIGEST_TO), then a manual `workflow_dispatch` run of both workflows
+  - [x] Repo secrets set (GOOGLE_API_KEY, GMAIL_USER, GMAIL_APP_PASSWORD, DIGEST_TO)
+  - [x] Actions dry run OK (run 42338325750); first real run sent the email and committed state (run 42338778995 → aa35ae9)
+  - [ ] Weekly workflow: first scheduled run Sat 14 Nov (or trigger manually)
 
 ## v1.1 Requirements (2026-11-07)
 
@@ -291,4 +293,5 @@ User setup required:
 - 2026-11-07: HTML weight: fonts set once on the container (inherited), section caps trimmed to about 33 picks; the Gmail size guard still trims the lowest items if needed.
 - 2026-11-07: LLM cost log: `data/llm_usage.csv`, one row per run (datetime, input tokens, output tokens, estimated USD), written in a `finally` so failed runs are logged too; committed by both workflows. Prices from the Gemini pricing page (gemini-2.5-flash $0.30/$2.50 per 1M, thinking billed as output). First live run: 42,178 in / 10,574 out ≈ $0.039. Note: gemini-2.5-flash is deprecated and from 1 Dec 2026 is billed as gemini-3.5-flash-lite (same $0.30/$2.50); consider switching `llm.model` before then.
 - 2026-11-07: Switched `llm.model` to `gemini-3.5-flash-lite` (gemini-2.5-flash is deprecated and re-routed from 1 Dec 2026). Gemini 3.x rejects `thinking_budget` (400), so the config takes `thinking` / `deep_thinking` as a level string (`minimal` / `low`) or an int budget for 2.5 models. Live run: deep reads 25s (was 45s), 42,113 in / 6,417 out ≈ $0.029 (was $0.039), with similar summary quality.
+- 2026-11-07: arXiv collector uses the RSS daily announcement (`rss.arxiv.org`, new + cross-listed only) because the arXiv API returned 429 on GitHub-hosted runners; the API is the fallback. On runners, `import_ai` (Substack) and `doordash` feeds return 403 (datacenter IPs); they fail soft.
 - Later (v2+): VS Code chat agent / MCP over the digest archive; X/Twitter if a free option appears; embedding-based prefilter.
