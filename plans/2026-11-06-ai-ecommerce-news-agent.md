@@ -166,7 +166,8 @@ Sydney daylight saving moves delivery between ~7am (winter) and ~8am (summer).
   - [ ] Real Gemini-ranked run (needs `GOOGLE_API_KEY`)
   - [ ] One real email (needs Gmail app password)
   - [ ] Feedback round trip (👍 → multiplier changes in `data/feedback.json`)
-  - [ ] Push to GitHub, add secrets, manual `workflow_dispatch` run of both workflows
+  - [x] Pushed to GitHub (2026-11-07, commit 13f2a92); both workflows active
+  - [ ] Add repo secrets (GOOGLE_API_KEY, GMAIL_USER, GMAIL_APP_PASSWORD, DIGEST_TO), then a manual `workflow_dispatch` run of both workflows
 
 ## v1.1 Requirements (2026-11-07)
 
