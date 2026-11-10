@@ -51,10 +51,10 @@ Schedules (in UTC, so the Sydney delivery time moves by an hour with daylight sa
 
 | Workflow | Cron | Sydney time |
 |---|---|---|
-| `daily.yml` | `0 21 * * 0-4` | Mon–Fri ~7am (AEST) / ~8am (AEDT) |
-| `weekly.yml` | `0 21 * * 5` | Sat ~7am / ~8am |
+| `daily.yml` | `23 20 * * 0-4` + backups `47 22 * * 0-4`, `17 1 * * 1-5` | Mon–Fri ~7:23am (AEDT), backups ~9:47am / ~12:17pm |
+| `weekly.yml` | `29 21 * * 5` + backup `41 23 * * 5` | Sat ~8:29am (AEDT), backup ~10:41am |
 
-The code also checks the Sydney weekday, so a late scheduled run never sends on the wrong day. Monday's digest covers 74 hours (since Friday).
+GitHub delays scheduled runs under load, and sometimes drops them, especially at the top of the hour. So the slots are off the hour and backed up. A run **skips itself if that day's (or week's) digest already exists** on `main`, so you get one email; manual runs with `force` always run. The code also checks the Sydney weekday, so a late run never sends on the wrong day. The look-back window reaches back to the last successful run (`data/last_run.json`, +2h overlap, max 7 days), so a missed day is caught up next time. Monday's digest covers at least 74 hours (since Friday).
 
 ## Run locally
 

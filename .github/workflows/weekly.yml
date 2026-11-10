@@ -2,8 +2,9 @@ name: Weekly trends
 
 on:
   schedule:
-    # 21:00 UTC Friday = Saturday ~7am (AEST) / ~8am (AEDT) in Sydney.
-    - cron: "0 21 * * 5"
+    # Saturday Sydney, off the hour + a backup (a run skips itself if this week's digest exists).
+    - cron: "29 21 * * 5"   # ~08:29 AEDT / 07:29 AEST
+    - cron: "41 23 * * 5"   # backup ~10:41 AEDT / 09:41 AEST
   workflow_dispatch:
     inputs:
       force:
@@ -28,6 +29,8 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: actions/setup-python@v5
         with:

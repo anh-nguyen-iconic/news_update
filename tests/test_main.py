@@ -123,3 +123,52 @@ def test_render_fitted_keeps_email_under_gmail_clip(monkeypatch):
     assert len(html.encode()) <= m.GMAIL_CLIP_BYTES
     assert digest.sections["papers"][0].key == "url:papers0"  # best items kept
     assert digest.stats.selected == sum(len(v) for v in digest.sections.values())
+
+
+def test_window_catches_up_after_missed_run(tmp_path):
+    import json
+    from dataclasses import replace
+    from datetime import date, datetime, timezone
+
+    from news_agent.config import load_settings
+    from news_agent.main import MAX_WINDOW_HOURS, _record_run, window_hours
+
+    s = replace(load_settings(), root=tmp_path)
+    tue = date(2026, 11, 10)
+    now = datetime(2026, 11, 10, 2, 0, tzinfo=timezone.utc)
+    assert window_hours(tue, s, now) == 26  # no state yet -> default
+    _record_run(s, datetime(2026, 11, 9, 0, 30, tzinfo=timezone.utc))  # last run 25.5h ago
+    assert window_hours(tue, s, now) == 28  # since last run + 2h overlap
+    _record_run(s, datetime(2026, 11, 6, 0, 30, tzinfo=timezone.utc))  # missed days
+    assert window_hours(tue, s, now) == 100
+    _record_run(s, datetime(2026, 10, 1, tzinfo=timezone.utc))
+    assert window_hours(tue, s, now) == MAX_WINDOW_HOURS
+    (tmp_path / "data" / "last_run.json").write_text("not json")
+    assert window_hours(tue, s, now) == 26
+
+
+def test_daily_skips_when_today_already_sent(tmp_path, monkeypatch):
+    m, s, sent = _setup(tmp_path, monkeypatch, [])
+    today = m.local_today()
+    archive = tmp_path / "digests" / "daily" / f"{today.isoformat()}.html"
+    archive.parent.mkdir(parents=True)
+    archive.write_text("<html>sent</html>")
+    called = []
+    monkeypatch.setattr(m, "run_all", lambda *a, **k: called.append(1) or ([], {}))
+    # Scheduled backup run on a weekday: skipped before collecting anything.
+    monkeypatch.setattr(m, "DAILY_WEEKDAYS", set(range(7)))
+    assert m.main(["daily"]) == 0 and not called and not sent
+    # --force (manual run) still runs.
+    assert m.main(["daily", "--force"]) == 0 and called
+
+
+def test_weekly_skips_when_this_week_already_sent(tmp_path, monkeypatch):
+    m, s, sent = _setup(tmp_path, monkeypatch, [])
+    iso = m.local_today().isocalendar()
+    archive = tmp_path / "digests" / "weekly" / f"{iso[0]}-W{iso[1]:02d}.html"
+    archive.parent.mkdir(parents=True)
+    archive.write_text("<html>sent</html>")
+    monkeypatch.setattr(m, "WEEKLY_WEEKDAY", m.local_today().weekday())
+    built = []
+    monkeypatch.setattr(m, "build_weekly", lambda *a, **k: built.append(1))
+    assert m.main(["weekly"]) == 0 and not built and not sent

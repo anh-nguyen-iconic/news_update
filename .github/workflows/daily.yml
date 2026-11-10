@@ -2,8 +2,13 @@ name: Daily digest
 
 on:
   schedule:
-    # 21:00 UTC Sun-Thu = Mon-Fri ~7am (AEST) / ~8am (AEDT) in Sydney.
-    - cron: "0 21 * * 0-4"
+    # GitHub delays (and under load drops) scheduled runs, especially at the top of the hour, so the
+    # primary slot is off the hour and two backups follow. A run skips itself when today's digest
+    # (digests/daily/<Sydney date>.html on main) already exists, so you still get one email per day.
+    # Sydney (AEDT, UTC+11 / AEST, UTC+10), Mon-Fri:
+    - cron: "23 20 * * 0-4"   # primary  ~07:23 AEDT / 06:23 AEST
+    - cron: "47 22 * * 0-4"   # backup 1 ~09:47 AEDT / 08:47 AEST
+    - cron: "17 1 * * 1-5"    # backup 2 ~12:17 AEDT / 11:17 AEST
   workflow_dispatch:
     inputs:
       force:
@@ -32,6 +37,8 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # latest state (a delayed run must see commits made by earlier runs)
 
       - uses: actions/setup-python@v5
         with:

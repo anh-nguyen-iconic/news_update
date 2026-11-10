@@ -2,7 +2,9 @@
 from __future__ import annotations
 
 import argparse
+import json
 import logging
+import math
 import sys
 from datetime import date, datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
@@ -35,6 +37,33 @@ def local_today(override: str | None = None) -> date:
 def default_window_hours(today: date) -> int:
     # Monday covers Friday morning -> Monday morning.
     return 74 if today.weekday() == 0 else 26
+
+
+MAX_WINDOW_HOURS = 168
+
+
+def _last_run_path(settings: Settings):
+    return settings.data_dir / "last_run.json"
+
+
+def window_hours(today: date, settings: Settings, now: datetime | None = None) -> int:
+    """Look-back window: at least the default, and back to the last successful run (+2h overlap) if that
+    was longer ago (e.g. a dropped scheduled run), capped at a week. Overlaps are removed by seen.json."""
+    default = default_window_hours(today)
+    path = _last_run_path(settings)
+    try:
+        last = datetime.fromisoformat(json.loads(path.read_text())["daily"])
+    except (OSError, ValueError, KeyError, TypeError):
+        return default
+    now = now or datetime.now(timezone.utc)
+    since_last = (now - last).total_seconds() / 3600 + 2
+    return int(min(MAX_WINDOW_HOURS, max(default, math.ceil(since_last))))
+
+
+def _record_run(settings: Settings, now: datetime) -> None:
+    path = _last_run_path(settings)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps({"daily": now.isoformat(timespec="seconds")}) + "\n", encoding="utf-8")
 
 
 def _feedback_store(settings: Settings) -> FeedbackStore:
@@ -96,7 +125,12 @@ def run_daily(settings: Settings, args: argparse.Namespace) -> int:
         log.info("%s is a weekend in Sydney - skipping daily run (use --force to override)", today)
         return 0
 
-    window = args.since or default_window_hours(today)
+    archive = settings.digests_dir / "daily" / f"{today.isoformat()}.html"
+    if archive.exists() and not args.force and not args.dry_run:
+        log.info("today's digest (%s) was already sent - skipping (use --force to resend)", archive.name)
+        return 0
+
+    window = args.since or window_hours(today, settings)
     since = datetime.now(timezone.utc) - timedelta(hours=window)
     stats = RunStats(window_hours=window)
     history = History(settings.data_dir / "items")
@@ -179,6 +213,7 @@ def run_daily(settings: Settings, args: argparse.Namespace) -> int:
     seen.save()
     pool.update(ranked, shown, today, float(settings.papers.get("pool_min_score", 4)))
     pool.save()
+    _record_run(settings, datetime.now(timezone.utc))
     return 0
 
 
@@ -186,6 +221,11 @@ def run_weekly(settings: Settings, args: argparse.Namespace) -> int:
     today = local_today(args.today)
     if today.weekday() != WEEKLY_WEEKDAY and not args.force:
         log.info("%s is not Saturday in Sydney - skipping weekly run (use --force to override)", today)
+        return 0
+    iso = today.isocalendar()
+    archive = settings.digests_dir / "weekly" / f"{iso[0]}-W{iso[1]:02d}.html"
+    if archive.exists() and not args.force and not args.dry_run:
+        log.info("this week's digest (%s) was already sent - skipping (use --force to resend)", archive.name)
         return 0
     if args.no_llm:
         settings.google_api_key, settings.use_vertex = None, False
