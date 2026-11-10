@@ -4,11 +4,11 @@ on:
   schedule:
     # GitHub delays (and under load drops) scheduled runs, especially at the top of the hour, so the
     # primary slot is off the hour and two backups follow. A run skips itself when today's digest
-    # (digests/daily/<Sydney date>.html on main) already exists, so you still get one email per day.
-    # Sydney (AEDT, UTC+11 / AEST, UTC+10), Mon-Fri:
-    - cron: "23 20 * * 0-4"   # primary  ~07:23 AEDT / 06:23 AEST
-    - cron: "47 22 * * 0-4"   # backup 1 ~09:47 AEDT / 08:47 AEST
-    - cron: "17 1 * * 1-5"    # backup 2 ~12:17 AEDT / 11:17 AEST
+    # (digests/daily/<local date>.html on main) already exists, so you still get one email per day.
+    # Vietnam time (ICT, UTC+7, no daylight saving), Mon-Fri; a run takes ~5 min:
+    - cron: "53 0 * * 1-5"    # primary  07:53 ICT -> email ~08:00
+    - cron: "31 1 * * 1-5"    # backup 1 08:31 ICT
+    - cron: "11 2 * * 1-5"    # backup 2 09:11 ICT
   workflow_dispatch:
     inputs:
       force:
@@ -87,6 +87,6 @@ jobs:
           git config user.email "news-agent[bot]@users.noreply.github.com"
           git add data digests
           if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
-          git commit -m "digest: daily $(TZ=Australia/Sydney date +%F)"
+          git commit -m "digest: daily $(TZ=Asia/Ho_Chi_Minh date +%F)"
           for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 5; done
           exit 1

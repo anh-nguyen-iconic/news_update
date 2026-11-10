@@ -5,6 +5,7 @@ import argparse
 import json
 import logging
 import math
+import os
 import sys
 from datetime import date, datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
@@ -25,9 +26,10 @@ from .weekly import build_weekly
 
 log = logging.getLogger("news_agent")
 
-TZ = ZoneInfo("Australia/Sydney")
-DAILY_WEEKDAYS = {0, 1, 2, 3, 4}  # Mon-Fri (Sydney)
-WEEKLY_WEEKDAY = 5  # Saturday (Sydney)
+# Local time of the reader: digest dates, weekday guard and the cost log use it. Override with NEWS_AGENT_TZ.
+TZ = ZoneInfo(os.getenv("NEWS_AGENT_TZ") or "Asia/Ho_Chi_Minh")
+DAILY_WEEKDAYS = {0, 1, 2, 3, 4}  # Mon-Fri (local)
+WEEKLY_WEEKDAY = 5  # Saturday (local)
 
 
 def local_today(override: str | None = None) -> date:
@@ -122,7 +124,7 @@ def render_fitted(digest: DailyDigest, settings: Settings) -> tuple[str, str, st
 def run_daily(settings: Settings, args: argparse.Namespace) -> int:
     today = local_today(args.today)
     if today.weekday() not in DAILY_WEEKDAYS and not args.force:
-        log.info("%s is a weekend in Sydney - skipping daily run (use --force to override)", today)
+        log.info("%s is a weekend (%s) - skipping daily run (use --force to override)", today, TZ.key)
         return 0
 
     archive = settings.digests_dir / "daily" / f"{today.isoformat()}.html"
@@ -220,7 +222,7 @@ def run_daily(settings: Settings, args: argparse.Namespace) -> int:
 def run_weekly(settings: Settings, args: argparse.Namespace) -> int:
     today = local_today(args.today)
     if today.weekday() != WEEKLY_WEEKDAY and not args.force:
-        log.info("%s is not Saturday in Sydney - skipping weekly run (use --force to override)", today)
+        log.info("%s is not Saturday (%s) - skipping weekly run (use --force to override)", today, TZ.key)
         return 0
     iso = today.isocalendar()
     archive = settings.digests_dir / "weekly" / f"{iso[0]}-W{iso[1]:02d}.html"
@@ -255,7 +257,7 @@ def build_parser() -> argparse.ArgumentParser:
         sp = sub.add_parser(name, help=help_)
         sp.add_argument("--dry-run", action="store_true", help="write HTML preview to out/, no email, no state changes")
         sp.add_argument("--no-llm", action="store_true", help="keyword-only ranking (no Gemini calls)")
-        sp.add_argument("--force", action="store_true", help="ignore the Sydney weekday schedule guard")
+        sp.add_argument("--force", action="store_true", help="ignore the weekday schedule guard (local time)")
         sp.add_argument("--today", help="override local date (YYYY-MM-DD), for testing")
         sp.add_argument("-v", "--verbose", action="store_true")
         if name == "daily":

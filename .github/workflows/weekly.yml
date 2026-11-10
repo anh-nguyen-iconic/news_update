@@ -2,9 +2,9 @@ name: Weekly trends
 
 on:
   schedule:
-    # Saturday Sydney, off the hour + a backup (a run skips itself if this week's digest exists).
-    - cron: "29 21 * * 5"   # ~08:29 AEDT / 07:29 AEST
-    - cron: "41 23 * * 5"   # backup ~10:41 AEDT / 09:41 AEST
+    # Saturday, Vietnam time (UTC+7), off the hour + a backup (a run skips itself if this week's digest exists).
+    - cron: "57 0 * * 6"    # 07:57 ICT -> email ~08:00
+    - cron: "39 1 * * 6"    # backup 08:39 ICT
   workflow_dispatch:
     inputs:
       force:
@@ -77,6 +77,6 @@ jobs:
           git add digests
           if [ -f data/llm_usage.csv ]; then git add data/llm_usage.csv; fi
           if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
-          git commit -m "digest: weekly $(TZ=Australia/Sydney date +%G-W%V)"
+          git commit -m "digest: weekly $(TZ=Asia/Ho_Chi_Minh date +%G-W%V)"
           for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 5; done
           exit 1

@@ -2,8 +2,8 @@
 
 A personal, free, automated digest of **AI, agents and data-science news, tailored to ecommerce and fashion** (built for a data scientist at THE ICONIC).
 
-- **Daily digest** (Mon–Fri, ~7–8am Sydney): papers, model releases, AI industry news, engineering blogs, rising GitHub repos and community buzz, **ranked semantically against THE ICONIC's problems** (recommendations, search, size & fit, visual search, catalogue GenAI, shopping agents, forecasting, marketing, experimentation) and **summarised by Gemini**.
-- **Weekly trends email** (Saturday ~8am Sydney): themes of the week, top 10, models, repos, and "what to try at THE ICONIC".
+- **Daily digest** (Mon–Fri, ~8am Vietnam time): papers, model releases, AI industry news, engineering blogs, rising GitHub repos and community buzz, **ranked semantically against THE ICONIC's problems** (recommendations, search, size & fit, visual search, catalogue GenAI, shopping agents, forecasting, marketing, experimentation) and **summarised by Gemini**.
+- **Weekly trends email** (Saturday ~8am Vietnam time): themes of the week, top 10, models, repos, and "what to try at THE ICONIC".
 - **👍 / 👎 feedback**: every item has two buttons that open a pre-filled email to yourself. Hit send, and the next run adjusts topic and source weights.
 - **Every summary links back to its source**: each item has a 🔗 *Source* row (e.g. arXiv · PDF · HF · Code, GitHub, article, HN discussion), and every weekly trend and idea cites the items behind it.
 - **Long-read email**: it opens with **Today in brief** (an overview and 4–6 linked highlights), then **In depth** articles with a relevant figure from the paper or post, key ideas, results and how to apply them, then **More to read** as compact cards.
@@ -47,14 +47,14 @@ To use Vertex AI instead (billed to a GCP project), leave `GOOGLE_API_KEY` empty
 3. *Settings → Actions → General → Workflow permissions* → **Read and write permissions**.
 4. *Actions* tab → **Daily digest** → *Run workflow* to test it now.
 
-Schedules (in UTC, so the Sydney delivery time moves by an hour with daylight saving):
+Schedules (cron is in UTC; Vietnam is UTC+7 with no daylight saving). Dates, the weekday check and the cost log use `Asia/Ho_Chi_Minh` (override with the `NEWS_AGENT_TZ` env var):
 
-| Workflow | Cron | Sydney time |
+| Workflow | Cron (UTC) | Vietnam time |
 |---|---|---|
-| `daily.yml` | `23 20 * * 0-4` + backups `47 22 * * 0-4`, `17 1 * * 1-5` | Mon–Fri ~7:23am (AEDT), backups ~9:47am / ~12:17pm |
-| `weekly.yml` | `29 21 * * 5` + backup `41 23 * * 5` | Sat ~8:29am (AEDT), backup ~10:41am |
+| `daily.yml` | `53 0 * * 1-5` + backups `31 1 * * 1-5`, `11 2 * * 1-5` | Mon–Fri ~8:00am Vietnam time, backups 8:31 / 9:11am |
+| `weekly.yml` | `57 0 * * 6` + backup `39 1 * * 6` | Sat ~8:00am, backup 8:39am |
 
-GitHub delays scheduled runs under load, and sometimes drops them, especially at the top of the hour. So the slots are off the hour and backed up. A run **skips itself if that day's (or week's) digest already exists** on `main`, so you get one email; manual runs with `force` always run. The code also checks the Sydney weekday, so a late run never sends on the wrong day. The look-back window reaches back to the last successful run (`data/last_run.json`, +2h overlap, max 7 days), so a missed day is caught up next time. Monday's digest covers at least 74 hours (since Friday).
+GitHub delays scheduled runs under load, and sometimes drops them, especially at the top of the hour. So the slots are off the hour and backed up. A run **skips itself if that day's (or week's) digest already exists** on `main`, so you get one email; manual runs with `force` always run. The code also checks the local weekday, so a late run never sends on the wrong day. The look-back window reaches back to the last successful run (`data/last_run.json`, +2h overlap, max 7 days), so a missed day is caught up next time. Monday's digest covers at least 74 hours (since Friday).
 
 ## Run locally
 
@@ -74,7 +74,7 @@ cp .env.example .env   # fill in keys (git-ignored)
 |---|---|
 | `--dry-run` | Write the HTML preview to `out/`; no email, no IMAP, no state changes |
 | `--no-llm` | Keyword-only ranking |
-| `--force` | Ignore the Sydney weekday guard |
+| `--force` | Ignore the weekday guard and the already-sent check |
 | `--since N` | Look-back window in hours (daily) |
 | `--only a b` | Run only these collectors (daily) |
 | `--no-feedback` | Skip Gmail feedback ingestion (daily) |
@@ -90,7 +90,7 @@ cp .env.example .env   # fill in keys (git-ignored)
 - **Model:** `config/interests.yaml` → `llm.model`.
 - **Deep read:** `config/interests.yaml` → `deep_read` (`max_items`, `kinds`, `max_chars`, `max_pdf_mb`). Each item is one Gemini call. If a page can't be fetched (paywall or 403), the summary is based on the abstract or feed text and labelled as such. The email is kept under Gmail's ~102KB clipping limit by dropping the lowest-ranked section items if needed.
 - **Paper priority:** `config/interests.yaml` → `papers` sets `rolling_days`, the industry and popularity boosts, and the `companies` list (canonical name → aliases). A company counts when it appears in the author affiliations, or in a title/abstract sentence that also says the work was deployed (so "evaluated on Amazon reviews" doesn't count).
-- **LLM cost log:** every run appends one row to `data/llm_usage.csv` (`datetime, input_tokens, output_tokens, estimated_cost_usd`; Sydney time). Output tokens include Gemini "thinking" tokens. The cost uses paid-tier prices from `llm.pricing` ($0.30 / $2.50 per 1M tokens for `gemini-3.5-flash-lite`), so on the free tier it is what the run *would* cost. A typical daily run is about 42k input + 6k output tokens, roughly $0.03.
+- **LLM cost log:** every run appends one row to `data/llm_usage.csv` (`datetime, input_tokens, output_tokens, estimated_cost_usd`; Vietnam time). Output tokens include Gemini "thinking" tokens. The cost uses paid-tier prices from `llm.pricing` ($0.30 / $2.50 per 1M tokens for `gemini-3.5-flash-lite`), so on the free tier it is what the run *would* cost. A typical daily run is about 42k input + 6k output tokens, roughly $0.03.
 - **Model:** `llm.model` (default `gemini-3.5-flash-lite`). `llm.thinking` / `llm.deep_thinking` take a Gemini 3.x level (`minimal`/`low`/`medium`/`high`) or, for Gemini 2.5 models, an int token budget.
 - **Feedback strength:** `config/interests.yaml` → `feedback.step` (default ±5% per vote, clamped to 0.5×–2×). The current multipliers are in `data/feedback.json`.
 
