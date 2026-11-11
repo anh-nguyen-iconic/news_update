@@ -1,7 +1,65 @@
 {
  "multipliers": {
-  "topics": {},
-  "sources": {}
+  "topics": {
+   "recsys": 0.95,
+   "visual_multimodal": 0.95,
+   "search_ranking": 0.9975,
+   "catalog_genai": 1.05,
+   "model_releases": 1.05,
+   "agents_production": 1.1025,
+   "ml_tooling": 1.05
+  },
+  "sources": {
+   "openalex": 0.95,
+   "hf_papers": 1.1025,
+   "reddit:LocalLLaMA": 1.05
+  }
  },
- "votes": []
+ "votes": [
+  {
+   "ts": "2026-11-11T02:23:22+00:00",
+   "item_id": "a9e9c8da6bd8",
+   "direction": "down",
+   "topics": [
+    "recsys",
+    "visual_multimodal",
+    "search_ranking"
+   ],
+   "source": "openalex",
+   "title": "FASHION-RQ: Mining Hierarchical Semantic Structure for Automated Evaluation of Fashion Retrieval"
+  },
+  {
+   "ts": "2026-11-11T02:23:22+00:00",
+   "item_id": "134ea7df8241",
+   "direction": "up",
+   "topics": [
+    "catalog_genai",
+    "search_ranking"
+   ],
+   "source": "hf_papers",
+   "title": "CommerceGen-Studio: An End-to-End Framework for Commercial-Grade Main-Image Generation"
+  },
+  {
+   "ts": "2026-11-11T02:23:22+00:00",
+   "item_id": "c923429fe131",
+   "direction": "up",
+   "topics": [
+    "model_releases",
+    "agents_production",
+    "ml_tooling"
+   ],
+   "source": "reddit:LocalLLaMA",
+   "title": "We are in the golden age of Local LLM"
+  },
+  {
+   "ts": "2026-11-11T02:23:23+00:00",
+   "item_id": "5528c0b1bf54",
+   "direction": "up",
+   "topics": [
+    "agents_production"
+   ],
+   "source": "hf_papers",
+   "title": "Harness^2: Recursive Agent Harnessing for an Open World"
+  }
+ ]
 }
