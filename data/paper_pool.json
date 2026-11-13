@@ -91,81 +91,6 @@
    }
   }
  },
- "doi:10.1145/3799682.3840129": {
-  "first_seen": "2026-11-07",
-  "item": {
-   "key": "doi:10.1145/3799682.3840129",
-   "source": "openalex",
-   "source_name": "OpenAlex",
-   "kind": "paper",
-   "title": "Resolving Price-Segment Blindspot in Search Ranking for Value-Driven Marketplaces",
-   "url": "https://doi.org/10.1145/3799682.3840129",
-   "summary": "On value-driven marketplaces, user-product interactions concentrate heavily around affordable products. Search ranking systems trained on such engagement data therefore learn relevance patterns that primarily reflect the preferences of the dominant value conscious user cohort, limiting their ability to accurately personalize results for users whose intent aligns with relatively higher-priced products. We refer to this failure mode as the Price-Segment Blindspot. This challenge cannot be addressed through static promotion of higher-priced products, because price preference is highly contextual. A value-conscious user may occasionally search for an expensive ''silk saree'' before a wedding, while users with affinity toward high-priced products may still prefer inexpensive products for routine purchases. Effective ranking therefore requires modeling latent user affinity and real-time query intent to infer when different price segments are relevant. We address this challenge by incorporating user-level affinity and query-level intent signals into a production ranking system. However, on-platform interactions alone provide weak evidence of user's price-segment affinity due to sparse in…",
-   "authors": [
-    "Shubhendu Pandey",
-    "Satyendra Yadav",
-    "Virri Pranav",
-    "Sagnik Sarkar",
-    "Bhavuk Singhal",
-    "Abhay Shukla",
-    "Ravindra Kumar Yadav",
-    "Debdoot Mukherjee"
-   ],
-   "published": "2026-11-03T00:00:00Z",
-   "tags": [
-    "conference-paper"
-   ],
-   "metrics": {
-    "citations": 0.0
-   },
-   "affiliations": [
-    "Meesho, Bengaluru, India"
-   ],
-   "links": {
-    "OpenAlex": "https://openalex.org/W7225098674"
-   }
-  }
- },
- "arxiv:2610.16569": {
-  "first_seen": "2026-11-07",
-  "item": {
-   "key": "arxiv:2610.16569",
-   "source": "openalex",
-   "source_name": "OpenAlex",
-   "kind": "paper",
-   "title": "From a Large-Scale Teacher to Efficient Multimodal Students for Search Relevance Prediction",
-   "url": "https://arxiv.org/abs/2610.16569",
-   "summary": "Relevance prediction between user queries and items is a fundamental component of e-commerce search systems. Traditionally, high-quality relevance labels are obtained through human judgment, which is reliable but expensive, slow, and difficult to scale. Recent advances in large language models (LLMs) enable automated relevance judgment at scale, achieving performance comparable to human annotators. However, such systems often rely on large commercial LLMs with complex prompts, resulting in high inference costs and limited throughput. In this work, we propose a framework that bridges this gap by distilling a high-performing LLM-based relevance judgment system into efficient multimodal student models. We first curate a small, high-quality human-annotated dataset to serve as ground truth. Using this dataset, we develop a reliable LLM-as-a-judge pipeline through careful prompt engineering and iterative refinement. This pipeline is then used to generate large-scale relevance labels, which serve as training data for compact multimodal models. Our distilled models achieve performance close to the teacher system while significantly improving latency, cost, and scalability. This approach e…",
-   "authors": [
-    "Tomasz Gniazdowski",
-    "Mohammadreza Momenifar",
-    "Nadia Vase",
-    "Shahram Khadivi",
-    "Wiktor Walentynowicz",
-    "Nicola Ueffing",
-    "Jan Pawłowski",
-    "Piotr Szymański",
-    "Abraham Bagherjeiran"
-   ],
-   "published": "2026-10-12T00:00:00Z",
-   "tags": [
-    "preprint"
-   ],
-   "metrics": {
-    "citations": 0.0
-   },
-   "affiliations": [
-    "eBay (United States)",
-    "eBay Tooploox Wroclaw , Poland",
-    "eBay San Jose , USA",
-    "eBay Aachen , Germany"
-   ],
-   "links": {
-    "PDF": "https://arxiv.org/pdf/2610.16569",
-    "OpenAlex": "https://openalex.org/W7221752790"
-   }
-  }
- },
  "doi:10.1007/978-981-92-7738-4_10": {
   "first_seen": "2026-11-07",
   "item": {
@@ -340,7 +265,7 @@
    "source": "openalex",
    "source_name": "OpenAlex",
    "kind": "paper",
-   "title": "Generative AI-Driven Marketing Content Generation and User Response Prediction",
+   "title": "Generative AI-Driven Marketing Content Generation and User Response Prediction: A Case Study of Visual Communication Design in E-Commerce Brand Marketing",
    "url": "https://doi.org/10.4018/joeuc.426057",
    "summary": "This paper presents a generative AI-driven framework designed for e-commerce brand marketing, which integrates marketing content generation with user response prediction. By combining product information, brand characteristics, user behavior data, and contextual information, the framework generates semantically aligned marketing content and predicts user responses, such as click-through rates and purchase intentions. Experimental results demonstrate that the proposed method outperforms several baseline models in content generation and user response prediction tasks. The framework provides practical support for personalized marketing, content delivery, and decision-making. Moreover, it exhibits strong robustness under challenging scenarios, such as missing user data and content perturbation. This study highlights the potential of generative AI for optimizing both content creation and marketing performance in digital commerce environments.",
    "authors": [
@@ -1707,60 +1632,6 @@
    }
   }
  },
- "arxiv:2611.04894": {
-  "first_seen": "2026-11-07",
-  "item": {
-   "key": "arxiv:2611.04894",
-   "source": "hf_papers",
-   "source_name": "HF Daily Papers",
-   "kind": "paper",
-   "title": "VisSearch-Bench: Evaluating Long Horizon Visual Search in Multimodal Agents",
-   "url": "https://arxiv.org/abs/2611.04894",
-   "summary": "Multimodal agents use web and image tools to answer questions beyond their internal knowledge. Some search tasks use images mainly to identify an initial entity, then rely on text retrieval. These tasks offer limited insight into how agents connect information across images, objects, and search steps. We therefore focus on visual context management. This involves organizing and using visual information and linking it to other findings during search. Visually intensive tasks require agents to combine object appearance, local details, or spatial relations with external information. We introduce VisSearch-Bench, with 204 human-written tasks across 7 main domains and 25 subdomains. It covers Set-wise Visual Search, Sequential Visual Search, Hybrid Wide-Deep Search, Competitive Visual Disambiguation, and Visual-Structure-Guided Search. Each task provides a reference answer, traceable evidence, and scoring rules. Accuracy measures complete task success, while Process Score measures the correctness and completeness of individual results and subquestion answers. Across 16 multimodal models, the best system fully solves only 26.47% of tasks, even with search tools. These results highlight …",
-   "authors": [
-    "ZhengXian Wu",
-    "Qianhao Nie",
-    "Zhuohong Chen",
-    "Junjie Gao",
-    "Yuyao Zhang",
-    "Yunyao Yu",
-    "Hangrui Xu",
-    "Cheng Cheng",
-    "Guiyu Ma",
-    "Jin Zhang",
-    "Xingzhong Xu",
-    "Kai Yang",
-    "Haoqian Wang"
-   ],
-   "published": "2026-11-06T00:00:00Z",
-   "tags": [
-    "multimodal agents",
-    "multimodal models",
-    "visual context management",
-    "VisSearch-Bench",
-    "Set-wise Visual Search",
-    "Sequential Visual Search",
-    "Hybrid Wide-Deep Search",
-    "Competitive Visual Disambiguation",
-    "Visual-Structure-Guided Search",
-    "Process Score"
-   ],
-   "metrics": {
-    "upvotes": 22.0,
-    "comments": 5.0,
-    "github_stars": 112.0
-   },
-   "affiliations": [
-    "Ant Group"
-   ],
-   "links": {
-    "HF": "https://huggingface.co/papers/2611.04894",
-    "PDF": "https://arxiv.org/pdf/2611.04894",
-    "Code": "https://github.com/antins-labs/VisSearch-Bench-v1",
-    "Project": "https://dingwu1021.github.io/VisSearch-Bench/"
-   }
-  }
- },
  "doi:10.1016/j.jretconser.2026.105165": {
   "first_seen": "2026-11-07",
   "item": {
@@ -2139,7 +2010,7 @@
     "quantized weights"
    ],
    "metrics": {
-    "upvotes": 34.0,
+    "upvotes": 35.0,
     "comments": 3.0
    },
    "affiliations": [
@@ -3365,50 +3236,6 @@
    }
   }
  },
- "arxiv:2610.28763": {
-  "first_seen": "2026-11-07",
-  "item": {
-   "key": "arxiv:2610.28763",
-   "source": "hf_papers",
-   "source_name": "HF Daily Papers",
-   "kind": "paper",
-   "title": "Automating ML for Science: Can Frontier Agents Climb Scientific Hills in the Wild?",
-   "url": "https://arxiv.org/abs/2610.28763",
-   "summary": "Frontier coding agents are increasingly framed as end-to-end automated researchers, and ML for science offers a demanding test of that promise: improving a scientific model often requires domain insight beyond routine ML engineering. We introduce Agent4Sci, a long-horizon testbed for measuring how far today's agents can improve the published best models on scientific ML benchmarks, spanning 20 benchmarks across 11 domains. Rather than ranking agents on a leaderboard, Agent4Sci asks what kinds of progress agents can make on these tasks under in-the-wild conditions, and where they fall short. Empirically, today's frontier agents advance the published best on every benchmark, with Claude Opus reaching 10.4% mean relative improvement and no run flagged for academic misconduct. These gains, however, come almost entirely from a bag of ML-engineering tricks rather than research-level insight. Trajectory analysis surfaces three recurring limitations in this setting: novelty miscalibration, resource under-utilization, and rapid collapse into local engineering sweeps. Lightweight plug-in skills for research ideation, experiment management, and scheduled checklists raise Claude Opus from 10.…",
-   "authors": [
-    "Ming Zhong",
-    "Stacy Li",
-    "Nicholas Carlini",
-    "Matthew Jagielski"
-   ],
-   "published": "2026-10-22T00:00:00Z",
-   "tags": [
-    "Agent4Sci",
-    "long-horizon testbed",
-    "scientific ML benchmarks",
-    "ML-engineering tricks",
-    "novelty miscalibration",
-    "resource under-utilization",
-    "local engineering sweeps",
-    "plug-in skills",
-    "research ideation",
-    "experiment management"
-   ],
-   "metrics": {
-    "upvotes": 18.0,
-    "comments": 2.0,
-    "github_stars": 113.0
-   },
-   "affiliations": [
-    "Anthropic"
-   ],
-   "links": {
-    "HF": "https://huggingface.co/papers/2610.28763",
-    "PDF": "https://arxiv.org/pdf/2610.28763",
-    "Code": "https://github.com/maszhongming/agent4sci"
-   }
-  }
- },
  "arxiv:2610.35218": {
   "first_seen": "2026-11-07",
   "item": {
@@ -4503,7 +4330,7 @@
    "metrics": {
     "upvotes": 23.0,
     "comments": 2.0,
-    "github_stars": 99.0,
+    "github_stars": 114.0,
     "citations": 3.0
    },
    "affiliations": [
@@ -4851,7 +4678,7 @@
    "metrics": {
     "upvotes": 22.0,
     "comments": 2.0,
-    "github_stars": 86.0
+    "github_stars": 85.0
    },
    "affiliations": [
     "University of Illinois at Urbana-Champaign"
@@ -5415,7 +5242,7 @@
    "metrics": {
     "upvotes": 43.0,
     "comments": 2.0,
-    "github_stars": 359.0
+    "github_stars": 364.0
    },
    "affiliations": [
     "ByteDance"
@@ -5460,7 +5287,7 @@
    "metrics": {
     "upvotes": 19.0,
     "comments": 3.0,
-    "github_stars": 48.0
+    "github_stars": 51.0
    },
    "affiliations": [
     "Microsoft Research"
@@ -5793,7 +5620,7 @@
    "metrics": {
     "upvotes": 102.0,
     "comments": 1.0,
-    "github_stars": 460.0
+    "github_stars": 478.0
    },
    "affiliations": [
     "Apple"
@@ -5942,7 +5769,7 @@
    "metrics": {
     "upvotes": 12.0,
     "comments": 2.0,
-    "github_stars": 10.0
+    "github_stars": 11.0
    },
    "affiliations": [
     "Case Western Reserve University"
@@ -6269,7 +6096,7 @@
     "GAIA-Text-103"
    ],
    "metrics": {
-    "upvotes": 6.0,
+    "upvotes": 7.0,
     "comments": 3.0,
     "citations": 0.0
    },
@@ -6982,9 +6809,9 @@
     "multi-agent coordination"
    ],
    "metrics": {
-    "upvotes": 75.0,
+    "upvotes": 76.0,
     "comments": 2.0,
-    "github_stars": 59.0
+    "github_stars": 60.0
    },
    "affiliations": [
     "Video Rebirth"
@@ -7207,8 +7034,8 @@
    ],
    "metrics": {
     "upvotes": 49.0,
-    "comments": 1.0,
-    "github_stars": 369.0,
+    "comments": 2.0,
+    "github_stars": 388.0,
     "citations": 0.0
    },
    "affiliations": [
@@ -7529,7 +7356,7 @@
     "scaling analyses"
    ],
    "metrics": {
-    "upvotes": 40.0,
+    "upvotes": 41.0,
     "comments": 6.0,
     "github_stars": 23.0
    },
@@ -7616,7 +7443,7 @@
    "metrics": {
     "upvotes": 38.0,
     "comments": 3.0,
-    "github_stars": 202.0
+    "github_stars": 203.0
    },
    "affiliations": [
     "National University of Singapore"
@@ -8157,7 +7984,7 @@
    "metrics": {
     "upvotes": 18.0,
     "comments": 2.0,
-    "github_stars": 290.0
+    "github_stars": 291.0
    },
    "affiliations": [
     "Show Lab"
@@ -8242,9 +8069,9 @@
     "tool-integrated agentic capabilities"
    ],
    "metrics": {
-    "upvotes": 33.0,
+    "upvotes": 34.0,
     "comments": 2.0,
-    "github_stars": 488.0
+    "github_stars": 492.0
    },
    "affiliations": [
     "Stanford University"
@@ -8723,9 +8550,9 @@
     "Reasoning State"
    ],
    "metrics": {
-    "upvotes": 35.0,
+    "upvotes": 36.0,
     "comments": 5.0,
-    "github_stars": 31.0
+    "github_stars": 32.0
    },
    "affiliations": [],
    "links": {
@@ -9087,7 +8914,7 @@
    "metrics": {
     "upvotes": 23.0,
     "comments": 2.0,
-    "github_stars": 27.0,
+    "github_stars": 28.0,
     "citations": 0.0
    },
    "affiliations": [
@@ -9133,7 +8960,7 @@
    "metrics": {
     "upvotes": 18.0,
     "comments": 2.0,
-    "github_stars": 277.0
+    "github_stars": 278.0
    },
    "affiliations": [
     "Multimedia Computing Group-Nanjing University"
@@ -9434,7 +9261,7 @@
    "kind": "paper",
    "title": "Repair Demand Forecasting in Retail Operations: Insights from a Retail Case Study",
    "url": "http://hdl.handle.net/10362/207194",
-   "summary": "Dissertation presented as the partial requirement for obtaining a Master's degree in Data Science and Advanced Analytics, specialization in Business Analytics",
+   "summary": "After-sales repair operations in the retail sector are characterized by high levels of uncertainty, driven by fluctuating sales patterns, product lifecycle dynamics, and seasonal effects. This variability creates significant challenges for operational planning, particularly in the allocation of technicians and logistics coordination. In this context, this study aims to develop a data-driven forecasting solution to predict future repair demand in a large Portuguese repair company, enabling more proactive and efficient decision-making. Following the CRISP-DM methodology, the research integrates historical repair data (2019–2025) and sales data (2023–2025), which were preprocessed and aggregated at a monthly level. Multiple forecasting approaches were evaluated, including univariate time-series models (ARIMA, SARIMA, Exponential Smoothing, and Prophet) and multivariate models (SARIMAX and Long Short-Term Memory – LSTM), incorporating lagged sales as exogenous variables. The results show that SARIMA outperforms the remaining models in terms of relative accuracy, achieving the lowest sMAPE and demonstrating the highest consistency across product categories. In contrast, the LSTM model …",
    "authors": [
     "André Alexandre Loureiro Lourenço"
    ],
@@ -9578,9 +9405,9 @@
     "Action-Preserving Training"
    ],
    "metrics": {
-    "upvotes": 7.0,
+    "upvotes": 8.0,
     "comments": 4.0,
-    "github_stars": 12.0
+    "github_stars": 13.0
    },
    "affiliations": [
     "Tsinghua University"
@@ -9609,9 +9436,9 @@
    "published": "2026-11-06T00:00:00Z",
    "tags": [],
    "metrics": {
-    "upvotes": 11.0,
+    "upvotes": 12.0,
     "comments": 5.0,
-    "github_stars": 42.0
+    "github_stars": 44.0
    },
    "affiliations": [
     "Brown University"
@@ -9699,7 +9526,12 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Beihang University",
+    "Baidu (China)",
+    "Baidu , Beijing , China",
+    "School of Artificial Intelligence , Beihang University , Beijing , China"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.09006",
     "OpenAlex": "https://openalex.org/W7225664633"
@@ -9799,58 +9631,15 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Centre National de la Recherche Scientifique",
+    "Université Paris Sciences et Lettres",
+    "Lamsade",
+    "Université Paris Dauphine-PSL",
+    "Paris-Dauphine University , PSL Research University UMR CNRS 7243 , LAMSADE Paris , France"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.08785"
-   }
-  }
- },
- "arxiv:2611.09113": {
-  "first_seen": "2026-11-10",
-  "item": {
-   "key": "arxiv:2611.09113",
-   "source": "hf_papers",
-   "source_name": "HF Daily Papers",
-   "kind": "paper",
-   "title": "Authorization Drift in LLM Agents: Evaluating Boundary Compliance in Multi-Step Tool Use",
-   "url": "https://arxiv.org/abs/2611.09113",
-   "summary": "LLM agents can exceed their authorization boundaries while pursuing user goals without an adversary. We formalize this phenomenon as authorization drift across data, tool, scope, and time, and introduce the Authorization Drift Benchmark (ADB): 648 samples across seven domains, each pairing a sufficient compliant path with an attractive unauthorized shortcut. To ensure executable tasks, tempting shortcuts, and feasible compliant paths, Staged Execution-Reflective Synthesis (SERS) grounds benchmark validation in real agent rollouts rather than LLM self-critique. Across 13 LLMs and three frameworks (25,207 trajectories), greater capability accompanies greater drift, with frontier-capable models exhibiting drift rates of 0.43 to 0.61. Yet 86.18% of tasks admit an observed clean-success trajectory, showing that drift is avoidable. Drift is persistent and dominated by early data over-collection; apparent improvements under agentic scaffolds coincide with collapsing clean-completion performance. To understand potential harms to individuals and society, we map drift points to legal provisions across four jurisdictions, connecting overreach to privacy and information-security concerns. Dat…",
-   "authors": [
-    "Chuxue Cao",
-    "Jingru Zeng",
-    "Boqin Yin",
-    "Yujin Zhou",
-    "Yidan Huang",
-    "Sujin Chen",
-    "Jinluan Yang",
-    "Haoran Li",
-    "Yike Guo",
-    "Sirui Han"
-   ],
-   "published": "2026-11-09T00:00:00Z",
-   "tags": [
-    "LLM agents",
-    "authorization drift",
-    "Authorization Drift Benchmark (ADB)",
-    "Staged Execution-Reflective Synthesis (SERS)",
-    "agent rollouts",
-    "LLM self-critique",
-    "agentic scaffolds",
-    "frontier-capable models",
-    "clean-success trajectory",
-    "clean-completion performance"
-   ],
-   "metrics": {
-    "upvotes": 7.0,
-    "comments": 5.0,
-    "github_stars": 1.0,
-    "citations": 0.0
-   },
-   "affiliations": [],
-   "links": {
-    "HF": "https://huggingface.co/papers/2611.09113",
-    "PDF": "https://arxiv.org/pdf/2611.09113",
-    "Code": "https://github.com/ZJR-FZD/AgentDrift"
    }
   }
  },
@@ -9879,7 +9668,13 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "University of Washington",
+    "Google (United States)",
+    "University of Washington USA",
+    "Google Research USA",
+    "Google USA"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.08877"
    }
@@ -9950,7 +9745,7 @@
     "continually trainable"
    ],
    "metrics": {
-    "upvotes": 10.0,
+    "upvotes": 11.0,
     "comments": 5.0
    },
    "affiliations": [
@@ -9991,7 +9786,10 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Workday (United States)",
+    "Workday AI Research"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.08566"
    }
@@ -10048,7 +9846,10 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "San Jose State University",
+    "Department of Computer Science , San José State University , One Washington Square , San José , 95192 , California , USA"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.08498"
    }
@@ -10186,7 +9987,13 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Beijing Jiaotong University",
+    "Tencent (China)",
+    "Key Laboratory of Big Data & Artificial Intelligence in Transportation ( Beijing Jiaotong University) , Ministry of Edu…",
+    "School of Computer Science and Technology , Beijing Jiaotong University",
+    "Pattern Recognition Center , WeChat AI , Tencent Inc. , China"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.09090"
    }
@@ -10218,7 +10025,12 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Universidade Federal de Santa Maria",
+    "École Centrale d'Électronique",
+    "Federal University of Santa Maria , Roraima Avenue , 1000 , Santa Maria , 97105-800 , Rio Grande do Sul , Brazil",
+    "LyRIDS lab , ECE Engineering School , 10 Rue Sextius Michel , Paris , 75015 , Île-de-France , France"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.09791"
    }
@@ -10245,7 +10057,9 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Georgian AI Lab"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.08644"
    }
@@ -10352,7 +10166,7 @@
     "lightweight detector"
    ],
    "metrics": {
-    "upvotes": 21.0,
+    "upvotes": 22.0,
     "comments": 4.0
    },
    "affiliations": [
@@ -10416,7 +10230,12 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Peking University",
+    "Shanghai Artificial Intelligence Laboratory",
+    "is with Peking University , Beijing , China",
+    "Shanghai Artificial Intelligence Laboratory , Shanghai , China"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.08908"
    }
@@ -10445,7 +10264,10 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Paderborn University",
+    "Paderborn University Paderborn , Germany"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.09264"
    }
@@ -10476,7 +10298,11 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Manipal University Jaipur",
+    "Tata Consultancy Services (India)",
+    "TCS Research"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.08971"
    }
@@ -10506,7 +10332,15 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Adelaide University",
+    "The University of Adelaide",
+    "Commonwealth Scientific and Industrial Research Organisation",
+    "UNSW Sydney",
+    "Responsible AI Research Centre",
+    "CSIRO",
+    "UNSW"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.09088"
    }
@@ -10605,52 +10439,12 @@
    }
   }
  },
- "arxiv:2610.36980": {
-  "first_seen": "2026-11-11",
-  "item": {
-   "key": "arxiv:2610.36980",
-   "source": "hf_papers",
-   "source_name": "HF Daily Papers",
-   "kind": "paper",
-   "title": "AutoVend: Benchmarking LLM Agents on Long-Horizon Autonomous Vending Operations",
-   "url": "https://arxiv.org/abs/2610.36980",
-   "summary": "Large language model (LLM) agents are extending agent-mediated commerce on the Web from shopping for consumers to operating businesses for sellers. In online-to-offline (O2O) commerce, decisions are issued through Web-based platforms but realized through costly physical execution. Evaluating such agents requires going beyond individual transactions to ask whether decisions made online turn into sustained economic returns. We introduce AutoVend, a benchmark in which one LLM agent manages 20 vending machines across five site types through a Web-based operating interface for 180 simulated days. Its data-grounded simulator combines a shared warehouse, procurement lead times, paid replenishment, inventory expiration, and recurring operating costs. We evaluate five LLM agents against a rule-based inventory-control baseline and diagnose their site coordination, execution, and performance over time. Four of five evaluated LLM agents fall short of this baseline, and returns per dollar of inference cost rank models differently from returns alone. Operational analyses show that gains in individual metrics do not consistently yield stronger economic growth, as inventory and execution costs er…",
-   "authors": [
-    "Qiming Shi",
-    "Yikun Li",
-    "Beidi Luan",
-    "Rui Sun",
-    "Sinuo Wang",
-    "Delin Wang",
-    "Yan Ma",
-    "Jing Li",
-    "Daxin Jiang",
-    "Zuo Bai"
-   ],
-   "published": "2026-11-10T00:00:00Z",
-   "tags": [],
-   "metrics": {
-    "upvotes": 8.0,
-    "comments": 4.0,
-    "citations": 0.0
-   },
-   "affiliations": [
-    "Zhejiang University",
-    "Xi’an Jiaotong-Liverpool University",
-    "Xi'an Jiaotong-Liverpool University , 4 FinStep"
-   ],
-   "links": {
-    "HF": "https://huggingface.co/papers/2610.36980",
-    "PDF": "https://arxiv.org/pdf/2610.36980"
-   }
-  }
- },
  "arxiv:2611.10356": {
   "first_seen": "2026-11-11",
   "item": {
    "key": "arxiv:2611.10356",
-   "source": "arxiv",
-   "source_name": "arXiv",
+   "source": "openalex",
+   "source_name": "OpenAlex",
    "kind": "paper",
    "title": "SepLRM: A Foundation Model Paradigm for Recommendation",
    "url": "https://arxiv.org/abs/2611.10356",
@@ -10683,16 +10477,25 @@
     "Zheng Chai",
     "Yuchao Zheng"
    ],
-   "published": "2026-11-10T05:00:00Z",
+   "published": "2026-11-07T00:00:00Z",
    "tags": [
-    "cs.IR"
+    "preprint"
    ],
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Chinese Academy of Sciences",
+    "Institute of Software",
+    "ByteDance (China)",
+    "Institute of Software , Chinese Academy of Sciences {chendi.666 , xiaoxijun",
+    "liuxuyang.plt , wangtao.0911 , huangyunwen.eleanor , fanghao.nice , wangyichao.0402 , zhanghao . 5577 , wusiyuan",
+    "ByteDance",
+    "renqin.97 , laiweijiang , panzhijian , panzhentao , niepengfei.797 , yuancheng.spoon , tanzixuan"
+   ],
    "links": {
-    "PDF": "https://arxiv.org/pdf/2611.10356"
+    "PDF": "https://arxiv.org/pdf/2611.10356",
+    "OpenAlex": "https://openalex.org/W7225731295"
    }
   }
  },
@@ -10727,8 +10530,8 @@
   "first_seen": "2026-11-11",
   "item": {
    "key": "arxiv:2611.11013",
-   "source": "arxiv",
-   "source_name": "arXiv",
+   "source": "openalex",
+   "source_name": "OpenAlex",
    "kind": "paper",
    "title": "Slim Foundation Models for Latency-Critical Recommendation Serving",
    "url": "https://arxiv.org/abs/2611.11013",
@@ -10739,52 +10542,23 @@
     "Assadig Abakr",
     "Steven Davy"
    ],
-   "published": "2026-11-10T05:00:00Z",
+   "published": "2026-11-07T00:00:00Z",
    "tags": [
-    "cs.IR",
-    "cs.AI"
+    "preprint"
    ],
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
-   "links": {
-    "PDF": "https://arxiv.org/pdf/2611.11013"
-   }
-  }
- },
- "arxiv:2611.12125": {
-  "first_seen": "2026-11-11",
-  "item": {
-   "key": "arxiv:2611.12125",
-   "source": "arxiv",
-   "source_name": "arXiv",
-   "kind": "paper",
-   "title": "CARE-PO: Controllable Tool-Call Efficiency for LLM Agents",
-   "url": "https://arxiv.org/abs/2611.12125",
-   "summary": "External tool calls are a major running cost of an LLM agent, while its training objectives align almost exclusively with task completion. In a step-level diagnosis of Qwen3.5 trajectories at two model sizes on GAIA, a long-horizon tool-use benchmark, we find that most contain removable calls, at a similar rate at both sizes. Some methods add an efficiency reward to the objective to reduce the call count, but introduce problems of their own: the anchor they price calls against is computed from the policy's own rollouts (e.g., the group's shortest correct rollout) and so moves with the policy; training can drift toward a collapsed policy that issues no tool call at all, a degeneracy seen in published reports and in our 27B baseline; and a training run delivers a single operating point, so the user cannot trade efficiency against capability. We present CARE-PO (Controllable Anchored Relative Efficiency Policy Optimization) to mitigate these problems. The efficiency reward prices calls against a reference budget anchored to the task's own difficulty and fixed before training. Injecting a successful trajectory from the training data into each online GRPO rollout group and charging for…",
-   "authors": [
-    "Xiaoyang Ye",
-    "Xiao Yao",
-    "Hairui Zhu",
-    "Yiying Yang",
-    "Bei Gan",
-    "Jinliang Lu",
-    "Tengjin Weng",
-    "Yuan Yao",
-    "Wenhao Jiang"
+   "affiliations": [
+    "Technological University Dublin",
+    "National University of Computer and Emerging Sciences",
+    "Assadig Abakr Technological University Dublin Dublin , Ireland",
+    "Technological University Dublin Dublin , Ireland",
+    "National University of Computer and Emerging Science Karachi , Pakistan"
    ],
-   "published": "2026-11-10T05:00:00Z",
-   "tags": [
-    "cs.LG",
-    "cs.AI"
-   ],
-   "metrics": {
-    "citations": 0.0
-   },
-   "affiliations": [],
    "links": {
-    "PDF": "https://arxiv.org/pdf/2611.12125"
+    "PDF": "https://arxiv.org/pdf/2611.11013",
+    "OpenAlex": "https://openalex.org/W7225747942"
    }
   }
  },
@@ -10907,7 +10681,11 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Northeastern University",
+    "Department of Mechanical and Industrial Engineering , Northeastern University , Boston , MA , USA",
+    "Network Science Institute , Northeastern University , Boston , MA , USA"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.11714"
    }
@@ -11034,7 +10812,16 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Zhejiang University",
+    "University of Oxford",
+    "Xidian University",
+    "Equal contribution",
+    "Zhejiang University , China",
+    "Zhejiang Key Laboratory of Digital-Intelligence Service Technology",
+    "University of Oxford , UK",
+    "Xidian University , China"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.10884"
    }
@@ -11128,7 +10915,13 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "University of California, Los Angeles",
+    "National University of Singapore",
+    "University of California, Berkeley",
+    "University of California , Los Angeles",
+    "University of California , Berkeley"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.10026"
    }
@@ -11346,7 +11139,11 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "University of California San Diego",
+    "University of California , San Diego , La Jolla , CA , USA",
+    "GenseeAI"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.10453"
    }
@@ -11413,7 +11210,13 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "National Sun Yat-sen University",
+    "National Chung Hsing University",
+    "Dept. of Information Management National Sun Yat-sen University Kaohsiung , Taiwan",
+    "Graduate Institute of Data Science and Information Computing National Chung Hsing University Taichung , Taiwan",
+    "Graduate Institute of Library and Information Science National Chung Hsing University Taichung , Taiwan"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.10628"
    }
@@ -11593,7 +11396,12 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "University of Misan",
+    "ICT Department , Missan Oil Company , Missan , Iraq",
+    "University of Misan , Maysan , Iraq",
+    "National Center for Artificial Intelligence , Baghdad , Iraq"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.11571"
    }
@@ -11633,7 +11441,7 @@
    "metrics": {
     "upvotes": 23.0,
     "comments": 2.0,
-    "github_stars": 66.0
+    "github_stars": 67.0
    },
    "affiliations": [
     "University of Central Florida"
@@ -11666,7 +11474,7 @@
    "published": "2026-11-10T00:00:00Z",
    "tags": [],
    "metrics": {
-    "upvotes": 31.0,
+    "upvotes": 32.0,
     "comments": 3.0
    },
    "affiliations": [
@@ -11856,7 +11664,10 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "University of Washington",
+    "University of Washington , School of Engineering and Technology"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.11720"
    }
@@ -11920,7 +11731,12 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Renmin University of China",
+    "Baidu (China)",
+    "Renmin University of China Gaoling School of Artificial Intelligence China",
+    "Baidu Inc . China"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.10715"
    }
@@ -12201,7 +12017,7 @@
    ],
    "metrics": {
     "upvotes": 5.0,
-    "comments": 7.0
+    "comments": 8.0
    },
    "affiliations": [
     "logitly-ai"
@@ -12263,7 +12079,7 @@
    "metrics": {
     "upvotes": 43.0,
     "comments": 4.0,
-    "github_stars": 122.0
+    "github_stars": 159.0
    },
    "affiliations": [
     "Renmin University of China"
@@ -12379,8 +12195,8 @@
    ],
    "metrics": {
     "upvotes": 32.0,
-    "comments": 1.0,
-    "github_stars": 116.0
+    "comments": 2.0,
+    "github_stars": 121.0
    },
    "affiliations": [
     "beipo-ai"
@@ -12541,7 +12357,7 @@
     "preprint"
    ],
    "metrics": {
-    "upvotes": 40.0,
+    "upvotes": 41.0,
     "comments": 2.0,
     "citations": 0.0
    },
@@ -12645,7 +12461,10 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Universidade Estadual de Campinas (UNICAMP)",
+    "School of Chemical Engineering , University of Campinas (UNICAMP) , Campinas , SP , Brazil"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.10721"
    }
@@ -12905,7 +12724,7 @@
     "judge agent"
    ],
    "metrics": {
-    "upvotes": 8.0,
+    "upvotes": 9.0,
     "comments": 5.0,
     "github_stars": 2.0
    },
@@ -13037,9 +12856,9 @@
    "published": "2026-11-10T00:00:00Z",
    "tags": [],
    "metrics": {
-    "upvotes": 35.0,
-    "comments": 8.0,
-    "github_stars": 25.0
+    "upvotes": 37.0,
+    "comments": 9.0,
+    "github_stars": 27.0
    },
    "affiliations": [
     "University of Washington"
@@ -13078,7 +12897,16 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "University of Oslo",
+    "Aalborg University",
+    "Hong Kong Polytechnic University",
+    "Shandong University",
+    "Simula Research Laboratory",
+    "Department of Informatics , University of Oslo , Norway",
+    "Department of Computer Science , Aalborg University , Denmark",
+    "Department of Computing , The Hong Kong Polytechnic University , Hong Kong SAR , China"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.10748"
    }
@@ -14149,7 +13977,7 @@
    "metrics": {
     "upvotes": 159.0,
     "comments": 3.0,
-    "github_stars": 66.0
+    "github_stars": 68.0
    },
    "affiliations": [
     "National University of Singapore"
@@ -14278,7 +14106,7 @@
     "Recursive Swarm Evolution"
    ],
    "metrics": {
-    "upvotes": 18.0,
+    "upvotes": 19.0,
     "comments": 2.0,
     "citations": 2.0
    },
@@ -14490,7 +14318,11 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Bar-Ilan University",
+    "New York University",
+    "NYU Center for Data Science"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.11396"
    }
@@ -14556,9 +14388,9 @@
    "published": "2026-11-10T00:00:00Z",
    "tags": [],
    "metrics": {
-    "upvotes": 33.0,
+    "upvotes": 32.0,
     "comments": 5.0,
-    "github_stars": 42.0
+    "github_stars": 61.0
    },
    "affiliations": [
     "TokenRhythm"
@@ -14687,7 +14519,7 @@
    "metrics": {
     "upvotes": 42.0,
     "comments": 8.0,
-    "github_stars": 54.0,
+    "github_stars": 57.0,
     "citations": 0.0
    },
    "affiliations": [
@@ -14797,7 +14629,7 @@
     "physics benchmark"
    ],
    "metrics": {
-    "upvotes": 61.0,
+    "upvotes": 62.0,
     "comments": 4.0
    },
    "affiliations": [
@@ -14841,7 +14673,7 @@
    "metrics": {
     "upvotes": 82.0,
     "comments": 3.0,
-    "github_stars": 20.0,
+    "github_stars": 21.0,
     "citations": 0.0
    },
    "affiliations": [
@@ -14893,7 +14725,7 @@
    "metrics": {
     "upvotes": 50.0,
     "comments": 3.0,
-    "github_stars": 70.0,
+    "github_stars": 72.0,
     "citations": 0.0
    },
    "affiliations": [
@@ -14935,7 +14767,9 @@
     "cs.IR",
     "cs.LG"
    ],
-   "metrics": {},
+   "metrics": {
+    "citations": 0.0
+   },
    "affiliations": [],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.13539"
@@ -14962,7 +14796,9 @@
     "cs.CL",
     "comment:19 pages"
    ],
-   "metrics": {},
+   "metrics": {
+    "citations": 0.0
+   },
    "affiliations": [],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.14477"
@@ -14991,7 +14827,9 @@
     "cs.AI",
     "comment:Submitted to Knowledge-Based Systems. Code: https://github.com/bschaarmann/TIGA"
    ],
-   "metrics": {},
+   "metrics": {
+    "citations": 0.0
+   },
    "affiliations": [],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.13966"
@@ -15026,7 +14864,9 @@
     "cs.CL",
     "cs.SE"
    ],
-   "metrics": {},
+   "metrics": {
+    "citations": 0.0
+   },
    "affiliations": [],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.14356"
@@ -15054,7 +14894,9 @@
    "tags": [
     "cs.AI"
    ],
-   "metrics": {},
+   "metrics": {
+    "citations": 0.0
+   },
    "affiliations": [],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.14419"
@@ -15087,7 +14929,9 @@
     "cs.SE",
     "comment:Accepted to KDD 2026, Jeju, Korea. 9 pages, 3 figures"
    ],
-   "metrics": {},
+   "metrics": {
+    "citations": 0.0
+   },
    "affiliations": [],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.14493"
@@ -15118,7 +14962,9 @@
     "cs.AI",
     "cs.LG"
    ],
-   "metrics": {},
+   "metrics": {
+    "citations": 0.0
+   },
    "affiliations": [],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.14326"
@@ -15147,7 +14993,10 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Can Tho University",
+    "College of Information and Communication Technology , Can Tho University , Viet Nam"
+   ],
    "links": {
     "OpenAlex": "https://openalex.org/W7225721342"
    }
@@ -15175,7 +15024,9 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Student of BBA , Indian Academy Degree College Autonomous , (Affiliated to Bangalore North University) , Hennur Main Rd…"
+   ],
    "links": {
     "OpenAlex": "https://openalex.org/W7225731753"
    }
@@ -15224,8 +15075,8 @@
   "first_seen": "2026-11-12",
   "item": {
    "key": "arxiv:2611.13972",
-   "source": "arxiv",
-   "source_name": "arXiv",
+   "source": "openalex",
+   "source_name": "OpenAlex",
    "kind": "paper",
    "title": "Data Quality Challenges in Multimodal Tourism Recommender Systems",
    "url": "https://arxiv.org/abs/2611.13972",
@@ -15235,17 +15086,17 @@
     "Wolfram Höpken",
     "Dietmar Jannach"
    ],
-   "published": "2026-11-10T12:08:40Z",
+   "published": "2026-11-10T00:00:00Z",
    "tags": [
-    "cs.IR",
-    "cs.LG",
-    "cs.MM",
-    "comment:4 pages. Presented at the DaQuaMRec Workshop, co-located with ACM RecSys 2025"
+    "preprint"
    ],
-   "metrics": {},
+   "metrics": {
+    "citations": 0.0
+   },
    "affiliations": [],
    "links": {
-    "PDF": "https://arxiv.org/pdf/2611.13972"
+    "PDF": "https://arxiv.org/pdf/2611.13972",
+    "OpenAlex": "https://openalex.org/W7225827203"
    }
   }
  },
@@ -15274,7 +15125,9 @@
     "cs.AI",
     "comment:17 pages, 6 figures, 5 tables"
    ],
-   "metrics": {},
+   "metrics": {
+    "citations": 0.0
+   },
    "affiliations": [],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.14019"
@@ -15302,7 +15155,9 @@
     "cs.LG",
     "comment:12 pages, 8 figures"
    ],
-   "metrics": {},
+   "metrics": {
+    "citations": 0.0
+   },
    "affiliations": [],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.13412"
@@ -15336,7 +15191,9 @@
     "cs.LG",
     "comment:21 pages, 8 figures, 18 tables, including appendices"
    ],
-   "metrics": {},
+   "metrics": {
+    "citations": 0.0
+   },
    "affiliations": [],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.13615"
@@ -15364,7 +15221,9 @@
    "tags": [
     "cs.CL"
    ],
-   "metrics": {},
+   "metrics": {
+    "citations": 0.0
+   },
    "affiliations": [],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.13426"
@@ -15389,7 +15248,9 @@
     "cs.AI",
     "comment:44 pages, 15 tables, 4 figures"
    ],
-   "metrics": {},
+   "metrics": {
+    "citations": 0.0
+   },
    "affiliations": [],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.14256"
@@ -15424,7 +15285,7 @@
    "metrics": {
     "upvotes": 5.0,
     "comments": 2.0,
-    "github_stars": 419.0
+    "github_stars": 477.0
    },
    "affiliations": [
     "Zhejiang University"
@@ -15434,6 +15295,915 @@
     "PDF": "https://arxiv.org/pdf/2610.14018",
     "Code": "https://github.com/BinceQu/RoboHarness",
     "Project": "https://bincequ.github.io/RoboHarness/"
+   }
+  }
+ },
+ "arxiv:2611.15426": {
+  "first_seen": "2026-11-13",
+  "item": {
+   "key": "arxiv:2611.15426",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "SimRec: Learning to Search, Ask, and Recommend from Simulated Interaction",
+   "url": "https://arxiv.org/abs/2611.15426",
+   "summary": "LLM-based recommendation agents can search catalogs, inspect products, ask users, and revise rejected recommendations. However, these behaviors are often governed by hand-designed workflows, while existing training methods optimize isolated components such as query rewriting or list ranking rather than the interaction policy as a whole. We present SimRec, a reinforcement learning framework that trains the full interaction policy of a tool-integrated recommendation agent. SimRec introduces two components. A task-anchored user simulator provides feedback on every recommendation: conditioned on the current task need rather than on user profile, and it can be an external LLM or the recommender itself under self-play. A task-aligned reward optimizes the whole trajectory with GRPO, crediting natural retrieval quality and valid tool use alongside the final hit, with training-only target injection to handle sparse hits over large catalogs. On ESCI and Amazon C4, SimRec improves the NDCG@100 of a Qwen3-4B agent from 32.23% to 35.42% and from 22.94% to 24.72%}, outperforming training-free agents on far larger backbones and task-aligned baselines on NDCG. Analysis shows that the trained agen…",
+   "authors": [
+    "Yaxin Zhang",
+    "Xingyu Wu",
+    "Yuchen Yan",
+    "Yuqin Dai",
+    "Hong Zhao",
+    "Lixing Shen",
+    "Zhan Chen",
+    "Jian Shao",
+    "Yongliang Shen"
+   ],
+   "published": "2026-11-11T12:53:52Z",
+   "tags": [
+    "cs.CL",
+    "cs.AI",
+    "cs.IR",
+    "comment:19 pages,5 figures,16 tables. Code: https://github.com/ZJU-REAL/SimRec"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.15426"
+   }
+  }
+ },
+ "arxiv:2611.12304": {
+  "first_seen": "2026-11-13",
+  "item": {
+   "key": "arxiv:2611.12304",
+   "source": "hf_papers",
+   "source_name": "HF Daily Papers",
+   "kind": "paper",
+   "title": "Evolving Infra: Agent-Adaptive LLM Serving at Scale",
+   "url": "https://arxiv.org/abs/2611.12304",
+   "summary": "Agentic workloads are a major source of LLM inference demand. Existing prefill--decode (PD) disaggregated serving systems offer limited flexibility for runtime adaptation of compute allocation and KV cache management, and rely on coarse signals that only partly capture the diverse and dynamic agent workload. These limitations lead to load imbalance between prefill and decode nodes and eviction of KV caches that agents will reuse. We present Evolving Infra, an agent-adaptive serving framework that adapts compute allocation to agent workloads and KV cache management to agent context management at runtime. We decouple compute allocation from key--value (KV) cache management, allowing nodes to switch efficiently between prefill and decode. Building on this design, an online planner matches the PD split to workload composition, while an agent-aware distributed KV manager guides cache eviction and transfer with signals from agent context management. Across coding, math, and computer-use tasks with GLM-5.2 and Kimi K2.6 on up to 256 GB300 GPUs, Evolving Infra reduces mean end-to-end request latency and P95 TTFT by up to 4.1x and 14x over Dynamo, NVIDIA's production framework.",
+   "authors": [
+    "Hao Kang",
+    "Weili Xu",
+    "Ziyang Li",
+    "Zheng Du",
+    "Hanchen Li",
+    "Tian Xia",
+    "Song Bian",
+    "Tushar Krishna",
+    "Huizi Mao",
+    "Ion Stoica",
+    "Song Han"
+   ],
+   "published": "2026-11-12T00:00:00Z",
+   "tags": [],
+   "metrics": {
+    "upvotes": 13.0,
+    "comments": 2.0,
+    "github_stars": 12.0
+   },
+   "affiliations": [
+    "MIT HAN Lab"
+   ],
+   "links": {
+    "HF": "https://huggingface.co/papers/2611.12304",
+    "PDF": "https://arxiv.org/pdf/2611.12304",
+    "Code": "https://github.com/mit-han-lab/EvolvingInfra",
+    "Project": "https://inference-rsi.com/"
+   }
+  }
+ },
+ "arxiv:2611.16795": {
+  "first_seen": "2026-11-13",
+  "item": {
+   "key": "arxiv:2611.16795",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "KuaiRecV2: Benchmarking Large-Scale Continual Learning for Diversified and Multi-task Recommendation",
+   "url": "https://arxiv.org/abs/2611.16795",
+   "summary": "Recommender systems, which retrieve items of interest to users based on their interaction histories, have recently witnessed several key technological advancements, benefiting from the semantic representation space and model-data scaling. Nevertheless, practitioners and researchers have frequently encountered critical inconsistencies between simple offline evaluations and complex online results, and this gap still exists in the era of large models. In this work, we address several key factors that contribute to this inconsistency: 1) the \\textit{large-scale continual learning challenge} that assumes a practical demand to maintain long-term model effectiveness under dynamic item pools and distributional shifts; 2) the \\textit{combinatorial diversity challenge} that requires the generation strategy to solve the accuracy-diversity trade-off in both the finer token level and the holistic item level; and 3) the \\textit{multi-task reward balancing challenge}, which is particularly critical for modern generative models that can accurately model the sequence distribution but are less controllable for the multi-task demands. To address these challenges and further pave the way for the deve…",
+   "authors": [
+    "Chenxu Li",
+    "Shuchang Liu",
+    "Hantao Shu",
+    "Wei Yuan",
+    "Zhe Xu",
+    "Guoqing Hu",
+    "Yan Wang",
+    "Biao Yang",
+    "Xiang Li",
+    "Cheng Ling",
+    "Fan Yang",
+    "Yongqi Liu",
+    "Lantao Hu",
+    "Han Li",
+    "Kaiqiao Zhan",
+    "Kun Gai",
+    "An Zhang",
+    "Xiang Wang"
+   ],
+   "published": "2026-11-12T13:39:12Z",
+   "tags": [
+    "cs.IR",
+    "comment:This paper has been accepted to NeurIPS 2026"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.16795"
+   }
+  }
+ },
+ "arxiv:2611.16404": {
+  "first_seen": "2026-11-13",
+  "item": {
+   "key": "arxiv:2611.16404",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "ReSID: Rethinking Long-Tail Retrieval in Generative Recommendation through Item Reachability",
+   "url": "https://arxiv.org/abs/2611.16404",
+   "summary": "Generative recommendation (GR) represents items with discrete Semantic IDs (SIDs) and casts retrieval as sequence generation. Under skewed interaction distributions and tight serving budgets, GR struggles to retrieve long-tail items. In this work, we are the first to study long-tail reachability across the complete pipeline of SID construction, decoding, and matching. We find that under equal code lengths, parallel SID construction consistently outperforms sequential SIDs on tail items. Moreover, even when full generation fails, decoded sequences carry locally consistent information that retrieves relevant tail items via partial matching. Yet this recovery is bounded by upstream search, failing once beam search prunes all prefixes completable within a fixed mismatch tolerance. Motivated by these findings, we propose ReSID to jointly preserve and recover tail candidates. Built on long parallel SIDs, ReSID pairs popularity-debiased and user-semantic-aware beam search to keep promising paths alive with partial SID matching to recover items from surviving tokens. ReSID achieves state-of-the-art long-tail retrieval while maintaining competitive overall accuracy, with lower latency and …",
+   "authors": [
+    "Muyu Zou",
+    "Shunye Tang",
+    "Yi Xu",
+    "Haibo Xing",
+    "Yandong Wang",
+    "Lingyu Mu",
+    "Jinxin Hu"
+   ],
+   "published": "2026-11-12T07:12:15Z",
+   "tags": [
+    "cs.IR"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.16404"
+   }
+  }
+ },
+ "arxiv:2611.16661": {
+  "first_seen": "2026-11-13",
+  "item": {
+   "key": "arxiv:2611.16661",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "Reducing Batch Makespan for LLM Agent Workloads through Inference-Environment Coordination",
+   "url": "https://arxiv.org/abs/2611.16661",
+   "summary": "Efficient batch execution of agent tasks is critical to LLM training and development workflows, including benchmark evaluation, synthetic-data generation, and RL rollouts. Since these tasks alternate between LLM inference and environment interaction, we present coordinated optimizations to reduce batch makespan, the time required to complete all tasks in a batch. For hybrid LLMs, a workload-based resource model guides GPU-memory allocation between key-value (KV) cache and recurrent state and provides a reference sample concurrency to exploit parallelism while limiting recomputation. Trajectory-aware routing and scheduling promote cache reuse while balancing worker load. Under constrained environment capacity, we decouple sample admission from environment execution and introduce Chain-Advancing Action Scheduling (CAAS), which prioritizes long chains using observed progress to shorten the batch tail. Controlled replay combines actual inference with recorded environment responses and durations for ablations of individual optimizations. Live evaluations with Ling-3.0-Flash and Ling-3.1-Flash on the BFCL, SWE-bench Multilingual, WideSearch, and MCP-Atlas benchmarks demonstrate makespan…",
+   "authors": [
+    "Wei Feng",
+    "Meiling Chen",
+    "Boxiao Chen",
+    "Lu Liu",
+    "Bin Zi",
+    "Libin Ye",
+    "Xingyu Lu",
+    "Lei Xu",
+    "Jun Zhou"
+   ],
+   "published": "2026-11-12T11:38:21Z",
+   "tags": [
+    "cs.DC",
+    "cs.AI",
+    "comment:26 pages, 12 figures. Technical report"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.16661"
+   }
+  }
+ },
+ "arxiv:2611.16123": {
+  "first_seen": "2026-11-13",
+  "item": {
+   "key": "arxiv:2611.16123",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "SwarmSafe-Delta: Isolating Message Effects on LLM Agent Safety",
+   "url": "https://arxiv.org/abs/2611.16123",
+   "summary": "When a tool-using LLM agent team violates policy, aggregate outcomes do not reveal whether an upstream message changed the executor's action. We introduce SwarmSafe-Delta, a paired executable protocol that freezes upstream computation, varies real, hidden, and format-matched placebo delivery, and scores a single committed action against deterministic benign and risky policy states under preassigned budgets. Across four models and constructed optional tasks, real delivery at $N=4$ produces 21.4% risky-world violations, versus 5.0% with placebo and 1.0% with hidden delivery (paired differences +16.4 and +20.3 percentage points). Real delivery also improves benign task success, illustrating that suppressing communication sacrifices utility. In a second regime constructed to require an upstream lookup route, real delivery improves safe completion by 74.2 points relative to hidden delivery. These effects quantify message-delivery contrasts under specified information dependencies, not naturally occurring failure rates. Exploratory action-level analyses show that the effect depends strongly on whether the upstream message recommends a prerequisite check or direct execution; model differ…",
+   "authors": [
+    "Junru Zhu"
+   ],
+   "published": "2026-11-12T00:17:32Z",
+   "tags": [
+    "cs.MA",
+    "cs.AI",
+    "comment:10 pages, 3 figures, 3 tables"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.16123"
+   }
+  }
+ },
+ "arxiv:2611.15223": {
+  "first_seen": "2026-11-13",
+  "item": {
+   "key": "arxiv:2611.15223",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "guardscope: Measuring Which Actions Runtime Controls Check in LLM Agent Systems",
+   "url": "https://arxiv.org/abs/2611.15223",
+   "summary": "Large-language model (LLM) agents execute actions on external systems through tool calls, and enterprises deploy runtime controls, such as agent gateways, to check this behavior in real time. However, a control can only evaluate the actions that cross the point where it is placed, and an agent can act through more paths than the tool-call channel; no existing work measures this coverage against kernel-level ground truth. In this paper, we present guardscope, a framework that makes this coverage measurable. guardscope works in two stages: a static stage that predicts which of an agent's 15 action paths a control can check from its source, and an empirical stage that runs a fixed workload on a deployment that realizes one of eight topology designs and classifies every executed action as checked, bypassed, or prevented by reconciling the control's decision records against kernel-level ground truth. guardscope makes a control's coverage claim verifiable: a runtime control developer can publish which paths its product inspects under a kernel-verified protocol. We conducted experiments with two agent harnesses and real runtime controls, including Microsoft's agent governance toolkit and…",
+   "authors": [
+    "Kentaroh Toyoda",
+    "Alex Leung",
+    "Bhuvaneswari U"
+   ],
+   "published": "2026-11-11T09:16:29Z",
+   "tags": [
+    "cs.AI",
+    "comment:Code is available at https://github.com/VulcanLab/guardscope"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.15223"
+   }
+  }
+ },
+ "arxiv:2611.15460": {
+  "first_seen": "2026-11-13",
+  "item": {
+   "key": "arxiv:2611.15460",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "Read and Ignore: What Self-Directed LLM Agents Do in Public Service Scenarios",
+   "url": "https://arxiv.org/abs/2611.15460",
+   "summary": "Underspecified instructions leave LLM agents to decide what to do. In public services, staff write these instructions, but the agent's decisions affect residents, patients, and students. We build four expert-validated public-service scenarios with records and decision levers that can be checked in the files, collect $2{,}400$ trajectories from ten LLMs under four prompt conditions, and compare them with $1{,}000$ runs in a context-free sandbox. Agents read the records in $96.9\\%$ of open-ended runs and produce an artifact or a self-chosen task in $18.7\\%$; with an explicit task, $86.0\\%$ produce. Domain context does not change how many runs produce ($18.7\\%$ vs.\\ $16.0\\%$), and the production ranking of the models largely carries over (Spearman $0.79$), while the ranking by whether a model reads the records does not ($0.19$). Context cuts boundary-probing turns per run by $60\\%$, and some artifacts contradict the records. We contribute a test that a public-service institution can run on its own records before procurement; its rule-based taxonomy needs no labeled data, and scenarios, code, and trajectories are released.",
+   "authors": [
+    "Diana Kozachek",
+    "Kinjalk Srivastava"
+   ],
+   "published": "2026-11-11T13:31:32Z",
+   "tags": [
+    "cs.AI",
+    "cs.HC",
+    "cs.MA",
+    "comment:Trustworthy AI for Good @ NeurIPS 2026"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.15460"
+   }
+  }
+ },
+ "arxiv:2611.15417": {
+  "first_seen": "2026-11-13",
+  "item": {
+   "key": "arxiv:2611.15417",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "When Direction Matters: Diagnosing Relational Instruction Following in Dense Retrieval",
+   "url": "https://arxiv.org/abs/2611.15417",
+   "summary": "Dense retrievers increasingly claim the ability to condition retrieval on natural-language relevance criteria beyond a short query. We identify a specific weakness in this capability: the evaluated models perform well when lexical or attribute cues distinguish the target, but become much less reliable when relevance depends on a directional relation over the same entities. We introduce SwitchIR, a controlled diagnostic that contrasts Constraint Shift and Explicit Filtering with Relational Flip, where the query and document pair remain fixed while the requested relation direction reverses. Across representative embedding and late-interaction retrievers, the primary joint metric is high on the two cue-available controls and consistently low on Relational Flip; the same ordering persists in an LLM-assisted, manually reviewed realistic variant. An exact margin decomposition shows that both directions are correct only when the direction-sensitive query--document interaction exceeds the direction-invariant pair preference. Empirically, direction-sensitive changes are common, but their aligned interaction is usually too weak to overcome that preference. Diagnostic fine-tuning shows that …",
+   "authors": [
+    "Zhanyu Wu",
+    "Richong Zhang"
+   ],
+   "published": "2026-11-11T12:44:22Z",
+   "tags": [
+    "cs.IR"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.15417"
+   }
+  }
+ },
+ "arxiv:2611.17007": {
+  "first_seen": "2026-11-13",
+  "item": {
+   "key": "arxiv:2611.17007",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "Skill Adapter: Personalized Modification and Online Routing of General-Purpose Skills",
+   "url": "https://arxiv.org/abs/2611.17007",
+   "summary": "Large language model (LLM) agents use external skills to reuse task procedures and experience with tools. General-purpose skills describe shared execution procedures, while specific tool choices, operating practices, and output requirements vary across users. In long-horizon tasks, subgoals, available inputs, and environmental states change as execution progresses. Agents must select currently applicable skills from an expanding skill pool and prepare candidates for subsequent steps. We propose Skill Adapter, which enables personalized modification and online routing of general-purpose skills. The system distills local adjustments from user requirements and execution feedback and stores them as Adapters linked to general-purpose skills. The routing agent selects general-purpose skills and applicable Adapters based on the current subtask, execution progress, and environmental feedback, incrementally maintaining a task-level online skill library that the main LLM reads on demand. The system preloads candidates for subsequent nodes and rechecks their applicability once actual inputs are determined. Reinforcement learning optimizes the two types of decisions using modification gains a…",
+   "authors": [
+    "Qijia Zhuang",
+    "Yanyi Gou",
+    "Wenbin Ma",
+    "Yuxiang Ren"
+   ],
+   "published": "2026-11-12T16:05:23Z",
+   "tags": [
+    "cs.AI",
+    "comment:9 pages, 3 figures, 3 tables"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.17007"
+   }
+  }
+ },
+ "arxiv:2611.16148": {
+  "first_seen": "2026-11-13",
+  "item": {
+   "key": "arxiv:2611.16148",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "Calibrated Early Termination with Bounded Optimality Gaps for Constrained Vector Search",
+   "url": "https://arxiv.org/abs/2611.16148",
+   "summary": "Vector search over learned embeddings is the retrieval layer of recommendation and retrieval-augmented generation, and many applications cap how many answer items one category may contribute. Graph indexes answer a query by best-first traversal, and where it stops determines its cost and whether its answer is exact. We study early termination for such constrained $k$-nearest-neighbor ($k$-NN) queries, with plain $k$-NN as a special case, and seek the cheapest stopping rule whose answer is exact with probability at least $1-\\varepsilon$. Learned early-termination methods instead target average recall, which does not guarantee exact answers. Multiple testing can calibrate any parameterized stopping rule to our target, but it cannot tell how much a better rule with the same risk and observations would save. Answering this needs a lower bound on the optimum of a rule family too large to enumerate, valid for the query population. Our key idea is to declare the observations a rule may use and to consider every rule monotone in them. Risk-constrained stopping then becomes a linear program over an order polytope, whose Lagrangian minimizers form a nested chain of staircase rules computed …",
+   "authors": [
+    "Xinyu Zhang",
+    "Jingze Li",
+    "Baihua Zheng",
+    "Weiwei Sun"
+   ],
+   "published": "2026-11-12T01:15:23Z",
+   "tags": [
+    "cs.DB",
+    "cs.IR",
+    "cs.LG",
+    "comment:14 pages, 5 figures, 3 tables. Code available at https://github.com/zhangshea/CaST"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.16148"
+   }
+  }
+ },
+ "arxiv:2611.16405": {
+  "first_seen": "2026-11-13",
+  "item": {
+   "key": "arxiv:2611.16405",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "AntEmbed: Dual-Mode Multimodal Embedding Model for Efficient and Fine-Grained Retrieval",
+   "url": "https://arxiv.org/abs/2611.16405",
+   "summary": "Discriminative embeddings encode original multimodal inputs efficiently but struggle with fine-grained semantics. Generative embeddings use reasoning to capture query intent and relevance evidence, but incur higher computational costs. We propose AntEmbed, a dual-mode multimodal embedding model that supports efficient retrieval and reasoning-enhanced fine-grained matching in a unified embedding space. First, we construct retrieval-oriented reasoning content that captures query intent and confusion-aware semantic evidence. We treat original and reasoning-enhanced candidate inputs as semantically equivalent views, and use multi-positive contrastive learning with a single embedding token to align discriminative and generative embeddings. Second, cross-mode self-distillation transfers fine-grained semantic information from reasoning-enhanced to original representations through candidate similarity-distribution distillation and query representation alignment. This strengthens discriminative embeddings without requiring additional online reasoning. Both retrieval modes share a single candidate index. On MMEB-v2, AntEmbed-8B achieves an overall score of 81.5 with reasoning-enhanced embed…",
+   "authors": [
+    "Kehang Jia",
+    "Teng Liu",
+    "Juntao Li",
+    "Hua Chen",
+    "Jinxiong Chang",
+    "Xiaobo Liang",
+    "Min Zhang"
+   ],
+   "published": "2026-11-12T07:12:37Z",
+   "tags": [
+    "cs.IR",
+    "comment:13 pages"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.16405"
+   }
+  }
+ },
+ "arxiv:2611.15568": {
+  "first_seen": "2026-11-13",
+  "item": {
+   "key": "arxiv:2611.15568",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "Can We Make an LLM Dumber, or Is It Just Playing Dumb? An Empirical Study of Believable Performance Throttling",
+   "url": "https://arxiv.org/abs/2611.15568",
+   "summary": "A benchmark score is commonly read as a proxy for model capability. We study the inverse problem: can a model be driven to a target score, and do its failures resemble those of a naturally weaker model? We operationalize believable performance reduction along three axes: target calibration, item-difficulty structure, and error-distribution similarity to a real weak reference. We introduce CapLadder, an IRT-calibrated suite of 1,985 items spanning mathematics, code, multiple-choice reasoning, and tool use. A simple weak-teacher LoRA dial reaches unseen target levels on reasoning with a 1.9-point held-out calibration error, whereas prompting, temperature, and weight noise cannot combine comparable range and precision. Yet on multiple choice, the dial converges to an answer-token attractor: up to 97% of its newly introduced errors land on one letter, with the attractor changing from D in Qwen to A in Llama. Logit interventions identify a dominant near-constant shift: subtracting the estimated shift on held-out items recovers 52 to 59% of lost accuracy and removes the dominant attractor, while option permutation confirms that the bias tracks token position rather than option content. …",
+   "authors": [
+    "Chengguang Gan",
+    "Yunhao Liang",
+    "Hanjun Wei",
+    "QingHao Zhang",
+    "Shiwen Ni"
+   ],
+   "published": "2026-11-11T14:53:50Z",
+   "tags": [
+    "cs.CL"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.15568"
+   }
+  }
+ },
+ "arxiv:2611.16526": {
+  "first_seen": "2026-11-13",
+  "item": {
+   "key": "arxiv:2611.16526",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "Lost in Delegation: Studying the Effectiveness of Task Orchestration in Generative Search",
+   "url": "https://arxiv.org/abs/2611.16526",
+   "summary": "LLMs have quickly evolved from models used in isolation to agentic systems that delegate tasks to external tools and other LLMs to solve complex assignments. This agentic augmentation has led to impressive capability gains. However, when and how delegation improves performance remains poorly understood. For example, it is unclear whether delegation helps when tasks involve post-cutoff information that the orchestrating LLM cannot reliably resolve from its own knowledge. In this work, we use purpose-built datasets with pre- and post-cutoff splits to compare various delegation modes. We find that delegation provides no consistent accuracy improvement over non-delegated setups, with effects varying across models and tasks. When tasks involve knowledge unavailable to the orchestrator, delegation can substantially degrade accuracy, while direct tool use with the same LLM performs much better. Our analysis identifies distorted delegated queries, inefficient tool use, and failures to preserve and use information between agents as recurring failure modes. These findings suggest that effective orchestration requires both well-calibrated delegation decisions and effective exchange of inform…",
+   "authors": [
+    "Tamara Stojanovska",
+    "Elisabeth Kirsten",
+    "Leon Swazinna",
+    "Muhammad Bilal Zafar"
+   ],
+   "published": "2026-11-12T09:25:33Z",
+   "tags": [
+    "cs.AI",
+    "cs.CL"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.16526"
+   }
+  }
+ },
+ "doi:10.3390/info17111132": {
+  "first_seen": "2026-11-13",
+  "item": {
+   "key": "doi:10.3390/info17111132",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Reinforcement Learning in Recommender Systems for Personalized Financial Decision Support: A Systematic Mapping Study",
+   "url": "https://doi.org/10.3390/info17111132",
+   "summary": "Reinforcement learning (RL) and bandit-based methods enable recommender systems to adapt to user and environmental feedback, offering opportunities for personalized financial decision support. However, evidence concerning their methodological integration, decision formulation, and evaluation remains fragmented across application domains. This systematic mapping study examines empirical RL-enabled recommender systems across four dimensions: RL approach, integration role, decision formulation, and evaluation practices. A systematic search of Scopus, ACM Digital Library, ScienceDirect, SpringerLink, and IEEE Xplore identified 7531 records covering peer-reviewed publications from 2015 to 2025. Following deduplication, screening, eligibility assessment, and quality appraisal, 50 studies were retained, of which 28 underwent focused empirical mapping. Bandit-based methods were the most prevalent approaches (39.3%), followed by value-based RL (32.1%), policy-gradient and policy-optimization methods (14.3%), model-based planning and tree search (7.1%), actor–critic methods (3.6%), and mixed value-based and policy-optimization RL (3.6%). RL-related mechanisms supported direct recommendation…",
+   "authors": [
+    "Mathias Busubiri Mutembete",
+    "Simon Nyaga Mwendia",
+    "Edwin Juma Omol"
+   ],
+   "published": "2026-11-11T00:00:00Z",
+   "tags": [
+    "article"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [],
+   "links": {
+    "OpenAlex": "https://openalex.org/W7220916010"
+   }
+  }
+ },
+ "arxiv:2611.16591": {
+  "first_seen": "2026-11-13",
+  "item": {
+   "key": "arxiv:2611.16591",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "Singularity-Bench: Can Agents Build Agents?",
+   "url": "https://arxiv.org/abs/2611.16591",
+   "summary": "Frontier AI agents increasingly succeed on realistic, long-horizon tasks and are beginning to improve the systems through which they operate. Yet existing benchmarks often restrict agents to narrow action spaces, use simplified environments, or rely on verification methods that are unreliable for evaluating arbitrary agent-generated systems. We introduce Singularity-Bench, an open-ended benchmark for autonomous AI development with six end-to-end tasks spanning pre-training, mid-training, post-training, inference, the agent harness, and cluster orchestration. Each task requires agents to implement core systems from a minimal starting point and evaluates them against mature human-engineered baselines on identical hardware. Additionally, through extensive red-teaming covering 9 of the 10 categories in the OWASP Top 10 for Agentic Applications, we expose reward-hacking vulnerabilities in the conventional Harbor framework and develop Breakwater, an extension of Harbor that blocks all attacks tested in our study. Across 11 agents built from 7 frontier models and 2 harnesses, Opus 5.5 with Claude Code matches or outperforms the human baseline on all six tasks with a Singularity-Index of …",
+   "authors": [
+    "Yang Zhou",
+    "Krish Agarwal",
+    "Zhuoming Chen",
+    "Zerui Wang",
+    "Zhenyu Zhang",
+    "Wenshuang Li",
+    "Xinpeng Wei",
+    "Zhichen Zeng",
+    "Jingyu Liu",
+    "Jue Wang",
+    "Sen Wu",
+    "Ziheng Jiang",
+    "Zhen Dong",
+    "Han Cai",
+    "Binhang Yuan",
+    "Ying Sheng",
+    "Ce Zhang",
+    "Bo Li",
+    "Beidi Chen"
+   ],
+   "published": "2026-11-12T10:24:51Z",
+   "tags": [
+    "cs.AI"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.16591"
+   }
+  }
+ },
+ "arxiv:2611.13410": {
+  "first_seen": "2026-11-13",
+  "item": {
+   "key": "arxiv:2611.13410",
+   "source": "hf_papers",
+   "source_name": "HF Daily Papers",
+   "kind": "paper",
+   "title": "SteerDistill: Quantizing LLM Agents via Closed-Loop Teacher Steering",
+   "url": "https://arxiv.org/abs/2611.13410",
+   "summary": "Low-bit quantization reduces the inference cost of LLM agents but can compromise task success. Examining failed rollouts, we find that quantized agents overlook task requirements or environmental conditions, producing environment transitions that diverge from successful full-precision references. Correcting these behavioral divergences remains difficult: offline data may miss the student's failure contexts, while its own rollouts may provide few correct responses in those contexts. We introduce SteerDistill, a quantization-aware distillation method in which a full-precision teacher guides the student to revise failed responses and iteratively refines its guidance using feedback from student execution. This closed-loop teacher steering produces locally verified behavioral corrections. We internalize these corrections by training the student without guidance to match the steered student's predictions at corrected turns and the full-precision teacher's at other turns, enabling unassisted inference. Across five agentic benchmarks and three models, SteerDistill exceeds the strongest quantized baseline by 1.67--2.18 points in average score under W4A16 and stays within one point of BF16.…",
+   "authors": [
+    "Genming Cui",
+    "Xiangyu Li",
+    "Zixu Hao",
+    "Xin Ding",
+    "Yunxin Liu",
+    "Ting Cao"
+   ],
+   "published": "2026-11-12T00:00:00Z",
+   "tags": [
+    "low-bit quantization",
+    "LLM agents",
+    "quantization-aware distillation",
+    "full-precision teacher",
+    "student model",
+    "rollouts",
+    "environment transitions",
+    "full-precision references",
+    "closed-loop teacher steering",
+    "behavioral corrections"
+   ],
+   "metrics": {
+    "upvotes": 34.0,
+    "comments": 3.0,
+    "github_stars": 7.0
+   },
+   "affiliations": [],
+   "links": {
+    "HF": "https://huggingface.co/papers/2611.13410",
+    "PDF": "https://arxiv.org/pdf/2611.13410",
+    "Code": "https://github.com/air-embodied-brain/SteerDistill",
+    "Project": "https://air-embodied-brain.github.io/SteerDistill"
+   }
+  }
+ },
+ "arxiv:2611.16493": {
+  "first_seen": "2026-11-13",
+  "item": {
+   "key": "arxiv:2611.16493",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "ReA-Bench: Benchmarking Responsible Agent Auditing",
+   "url": "https://arxiv.org/abs/2611.16493",
+   "summary": "As agents perform tasks autonomously in local and cloud environments, auditing their execution trajectories can help service providers identify risks and improve agent harnesses and foundation models. Our analysis of production and red-team trajectories shows that some risks are repeatedly missed across auditing configurations. Overall recall obscures which risks are missed and whether higher recall comes with more false positives on legitimate behavior. Existing benchmarks offer limited insight into these failures. Generated trajectories can contain inconsistent tool calls and responses, conspicuous risky actions, or repetitive attack patterns. Grouping results by risk type also makes it difficult to tell whether auditors overlooked evidence, accepted an unsupported conclusion, or lacked information needed to make a judgment. We introduce ReA-Bench, a diagnostic benchmark for auditing responsible agent behavior. It organizes auditing challenges into six tiers: internal safety knowledge, contradictions within trajectories, evidence retrieval in long contexts, verification of sources and reasoning, indirect steering, and missing information. It includes challenging benign cases in …",
+   "authors": [
+    "Zipeng Ye",
+    "Shenyu Dai",
+    "Yong Xie",
+    "Kun Wang",
+    "Jiyang Guan",
+    "Zhikai Chen",
+    "Jiaqi Weng",
+    "Jialing Tao",
+    "Hui Xue"
+   ],
+   "published": "2026-11-12T09:01:24Z",
+   "tags": [
+    "cs.AI"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.16493"
+   }
+  }
+ },
+ "arxiv:2611.16488": {
+  "first_seen": "2026-11-13",
+  "item": {
+   "key": "arxiv:2611.16488",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "Active Learning of Approximate LLM Ranking for Energy-Efficient Retrieval of Long Queries",
+   "url": "https://arxiv.org/abs/2611.16488",
+   "summary": "Search engines and Large Language Models (LLMs) offer complementary strengths for document retrieval: lexical retrievers which rely on keyword matching are fast and energy-efficient, whereas LLMs capture semantic meaning and excel at interpreting long, context-rich queries. However, this comes at a cost that is computationally and energetically prohibitive. We propose the LLM Active Approximation Model (LAAM), a hybrid retrieval framework that introduces a lightweight learned predictor which serves as an intermediary between semantic retrieval and LLM retrieval. LAAM is refined through an active learning loop where an LLM labels a small number of documents. By concentrating LLM evaluations on the most informative documents, the framework substantially reduces inference cost while preserving retrieval effectiveness. We evaluate the proposed framework on TREC Robust 2004 using Lucene with BM25 retrieval and DeepSeek v3 as the LLM, under three levels of query verbosity. For verbose queries, LAAM achieves 87% of average P@10 achieved by DeepSeek's reranking (0.459 vs. 0.526), while requiring only 3.3% of the per-query energy consumption. LAAM is statistically significantly better than…",
+   "authors": [
+    "Ohad Porat",
+    "Elad Yom-Tov"
+   ],
+   "published": "2026-11-12T08:59:23Z",
+   "tags": [
+    "cs.IR"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.16488"
+   }
+  }
+ },
+ "arxiv:2611.15342": {
+  "first_seen": "2026-11-13",
+  "item": {
+   "key": "arxiv:2611.15342",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "MechBench: A Domain-Specific LLM Benchmark for Parallel Mechanisms",
+   "url": "https://arxiv.org/abs/2611.15342",
+   "summary": "Parallel mechanisms pose distinctive challenges to large language models (LLMs), as valid reasoning depends jointly on mechanism topology, loop closure, geometry, joint types, and modeling assumptions. Yet existing LLM benchmarks provide little systematic coverage of such domain-specific knowledge, constraint-sensitive analysis, and constructive design. To fill this gap, we introduce MECHBENCH, a 2,541-question benchmark for evaluating LLMs in parallel mechanisms across professional knowledge, mechanism analysis, and design. MECHBENCH contains standard and challenge tiers spanning six capability categories and nine executable analysis and design tasks. It is constructed through MECHFORGE, a domain-grounded framework that combines expert-organized knowledge, LLM-assisted question generation, programmatic instance generation, two-stage expert review, and task-aware scoring with exact matching, rubric-based evaluation, and program verification. We further develop MECHGPT as a diagnostic domain-adapted model. Experiments show that strong knowledge performance does not directly translate into executable mechanism reasoning: leading closed-service models achieve over 95 on the standard …",
+   "authors": [
+    "Zhihao Xia",
+    "Tingting Wang",
+    "Hui Li",
+    "Yongheng Xing",
+    "Chunxu Tian"
+   ],
+   "published": "2026-11-11T11:20:34Z",
+   "tags": [
+    "cs.LG"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.15342"
+   }
+  }
+ },
+ "arxiv:2611.17239": {
+  "first_seen": "2026-11-13",
+  "item": {
+   "key": "arxiv:2611.17239",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "When Both Sides Adapt: The Challenges of Evaluating Interactive LLM Systems",
+   "url": "https://arxiv.org/abs/2611.17239",
+   "summary": "In interactive systems where users engage with LLMs, users are adaptive and, after observing LLM responses, can change their prompting strategy, as well as the type and difficulty of subsequent tasks. Thus model responses can influence the set of prompts on which the model is subsequently evaluated. We study the implications of this user adaptivity and prompt endogeneity for the evaluation of LLMs. We define two classes of estimands for comparing models: the common-distribution effect, which compares model performance on the same distribution of prompts, and the induced-distribution effect, which compares each model on the prompt distribution generated through user interaction. We show that offline benchmark evaluation and live A/B testing target different quantities, with the standard difference-in-means estimators for the two methods converging to the common-distribution effect and the induced-distribution effect, respectively. This distinction can affect decision-making: the two comparisons can rank models differently and lead to discrepancies in deployment recommendations. We characterize when such ranking reversals occur and provide a sufficient condition under which the rank…",
+   "authors": [
+    "Hannah Li"
+   ],
+   "published": "2026-11-12T18:26:51Z",
+   "tags": [
+    "stat.ME",
+    "cs.AI"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.17239"
+   }
+  }
+ },
+ "arxiv:2611.16318": {
+  "first_seen": "2026-11-13",
+  "item": {
+   "key": "arxiv:2611.16318",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "Benchmarking AI risk behaviors",
+   "url": "https://arxiv.org/abs/2611.16318",
+   "summary": "We evaluate LLM risk propensities across a range of contexts and task demands. We evaluate models for how risk averse or risk tolerant they are in various conditions, as well as how stable and consistent their behavior is across conditions. We present a toolkit for developing model risk profiles that can be used to predict model behavior and which can be adapted to include new evaluations of risk propensities. We also examine how these properties have changed across model generations and families. We observe that 2026 state-of-the-art models tend to be more stable, more consistent, and more risk neutral than older models. These trends appear to be related; newer models are more stable and consistent because they are more likely to use expected value maximization as a decision procedure.",
+   "authors": [
+    "Luhan Mikaelson",
+    "Robert Adragna",
+    "Emmett Brosowsky",
+    "Hayley Clatterbuck"
+   ],
+   "published": "2026-11-12T05:27:44Z",
+   "tags": [
+    "cs.AI",
+    "cs.LG"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.16318"
+   }
+  }
+ },
+ "arxiv:2611.16442": {
+  "first_seen": "2026-11-13",
+  "item": {
+   "key": "arxiv:2611.16442",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "DesignTaste: Benchmarking AI-Generator Visual Design Against Award-Wining Works",
+   "url": "https://arxiv.org/abs/2611.16442",
+   "summary": "Text-to-image benchmarks commonly assess text-image alignment or overall preference. Whether models can produce good designs when a brief leaves the appearance open remains less well understood. We introduce DesignTaste, a visual design benchmark that compares generated images with award-winning works. From these works and their publicly available context, we derive 403 design briefs: 100 poster tasks from 100 Beste Plakate 2025 and 303 tasks spanning 20 categories from ADC 2026. Six leading commercial text-to-image models each generate an image from the same brief. A single model judge scores each output and the corresponding award-winning work independently on five evaluation dimensions. On each dataset, only ArtArk achieves a higher mean overall score than the award-winning works. All six models score lower in Creative Originality on both datasets. These results show that producing finished, visually appealing images does not imply that a model can develop good design solutions.",
+   "authors": [
+    "Zhou Chen",
+    "JiaXiang Li",
+    "DanYing Pan",
+    "Ye Li",
+    "TianRui Yang",
+    "EnBao Zhang",
+    "YaNan Xiao",
+    "LiXin Sun",
+    "Anqi Liu",
+    "Dong Zhao",
+    "JianYuan Li",
+    "YuanYuan Ding",
+    "Kai Kong",
+    "Xinwen Xu",
+    "HuiTang Du",
+    "Min Zhou",
+    "Zhiqiang Li"
+   ],
+   "published": "2026-11-12T07:52:27Z",
+   "tags": [
+    "cs.CV",
+    "cs.AI",
+    "comment:31 pages, 12 figures, including appendices. Code and data: https://github.com/ArtArk-AI/DesignTaste"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.16442"
+   }
+  }
+ },
+ "arxiv:2611.17267": {
+  "first_seen": "2026-11-13",
+  "item": {
+   "key": "arxiv:2611.17267",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "LiveGeo: Benchmarking Geographic Agents in Continuously Evolving Worlds",
+   "url": "https://arxiv.org/abs/2611.17267",
+   "summary": "We introduce GeoWorld, a controllable and continuously evolving geographic environment platform for LLM agents, and LiveGeo, a benchmark for evaluating reliable decision-making in real-world geographic environments using GeoWorld. Unlike existing evaluations that largely reason and plan over fixed geographic states, GeoWorld is grounded in real-world geographic structure and allows external world states to evolve along their own temporal processes while preserving verifiable state histories. LiveGeo places geographic tasks within this evolving environment, requiring agents to actively acquire task-relevant information, verify whether the evidence supporting prior decisions remains valid, and revise their plans when necessary. Our results reveal that even frontier LLMs struggle with static tasks, with no model consistently excelling across tasks, while strong static performance does not ensure dynamic reliability. Further analysis identifies a key bottleneck: agents struggle to acquire and translate relevant evidence into valid decisions and maintain their correctness as the world evolves. By releasing LiveGeo together with its GeoWorld platform, we aim to provide the community wit…",
+   "authors": [
+    "Pengcheng Zhou",
+    "Xuanyu Liu",
+    "Yanchen Yin",
+    "Tianjie Ju",
+    "Bobo Li",
+    "Shengqiong Wu",
+    "Hao Fei",
+    "Mong-Li Lee",
+    "Wynne Hsu"
+   ],
+   "published": "2026-11-12T18:45:58Z",
+   "tags": [
+    "cs.AI"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.17267"
+   }
+  }
+ },
+ "arxiv:2611.17068": {
+  "first_seen": "2026-11-13",
+  "item": {
+   "key": "arxiv:2611.17068",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "Discovering Effective Agent Memory Designs through Program Evolution",
+   "url": "https://arxiv.org/abs/2611.17068",
+   "summary": "Program evolution provides a promising approach to discover agent memory designs and study the choices underlying their effectiveness. We introduce MAPE, a framework that evolves whole memory programs from minimal seeds through a standardized lifecycle interface and an iterative diagnosis-proposal loop. Experiments on LoCoMo and LongMemEval yield an absolute accuracy gain of up to 12% over manually designed baselines at 35% of the serving cost, with further evaluations supporting transfer across serving backbones and benchmarks. Empirical analyses and ablations identify and validate two recurring design patterns: retaining raw conversations as retrievable evidence preserves details omitted from extracted memories, while composing retrieved evidence according to query intent helps the answering model use it effectively. Transplanting the composition module into five existing memory systems improves accuracy across all five. Beyond these patterns, the search objective shapes where computation goes: optimizing serving cost alongside accuracy shifts computation from LLM-based memory construction to selective processing at query time while retaining competitive accuracy. Together, thes…",
+   "authors": [
+    "Xinheng Ding",
+    "Seyyed Saeid Cheshmi",
+    "Ziyang Zhang",
+    "Tairan Chen",
+    "Wenya Xie",
+    "Yu Hou",
+    "Rui Zhang",
+    "Zirui Liu"
+   ],
+   "published": "2026-11-12T16:42:04Z",
+   "tags": [
+    "cs.CL",
+    "cs.AI",
+    "comment:24 pages, 8 figures, 10 tables"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.17068"
+   }
+  }
+ },
+ "arxiv:2611.15600": {
+  "first_seen": "2026-11-13",
+  "item": {
+   "key": "arxiv:2611.15600",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "MemCredit: From Relevance to Utility for Decision-Time Memory in Long-Horizon Web Agents",
+   "url": "https://arxiv.org/abs/2611.15600",
+   "summary": "Large language model (LLM) agents increasingly operate over long Web interaction histories, making memory management critical for reliable and efficient decision making. Existing methods primarily optimize storage, retrieval, or compression, but the memories most semantically relevant to the current state are not necessarily those that most improve the agent's action. We introduce MemCredit, a decision-centric memory framework that shifts memory selection from semantic relevance to decision utility. MemCredit estimates the state-, reference-context-, and policy-conditional marginal contribution of individual memories through controlled counterfactual interventions, and distills these intervention-derived credits into a lightweight utility estimator. At inference time, semantic relevance is used only for high-recall candidate generation, while predicted utility arbitrates which memories are retained under a fixed token budget, without modifying the underlying agent policy or requiring additional environment interaction. We evaluate MemCredit on ALFWorld and WebShop against representative memory baselines. On ALFWorld, MemCredit achieves 86.57 SR@50 under a 500-token historical-memo…",
+   "authors": [
+    "Quanjiang Guo",
+    "Sijie Wang",
+    "Qianyang Zhu",
+    "Ben Zhang",
+    "Jinchuan Zhang",
+    "Ke Yan",
+    "Zhao Kang"
+   ],
+   "published": "2026-11-11T15:17:38Z",
+   "tags": [
+    "cs.AI"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.15600"
+   }
+  }
+ },
+ "arxiv:2611.15521": {
+  "first_seen": "2026-11-13",
+  "item": {
+   "key": "arxiv:2611.15521",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "DecArena: Evaluating Large-Scale Decentralized Multi-Agent Collaboration",
+   "url": "https://arxiv.org/abs/2611.15521",
+   "summary": "Emerging personal AI agents raise fundamental scalability and privacy concerns for centralized multi-agent systems (MASs), which rely on a global orchestrator with broad access to agents, resources, and communication. In decentralized environments, global visibility is unavailable. Agents need to proactively discover non-local resources (e.g. tools, skills), and collaborate with other agents to solve tasks. We study decentralized multi-agent collaboration under graph-constrained communication, a natural reflection of human structures. Each agent observes only its local state and can interact only with neighboring agents. We introduce a benchmark with synthetic scalable distributed tool calling with 100K+ tools. Our experiments reveal that recent LLM agents struggle to discover non-local relevant resources and collaborate in decentralized setting. Moreover, standard reinforcement learning fails to reliably overcome this limitation, suggesting that decentralized MAS needs more explicit harness mechanisms for effective collaboration, even using SOTA LLMs. We then present a strong baseline \\textbf{GraphHarness}, combining topology-aware warmup with self-improving LLM-based routing. Re…",
+   "authors": [
+    "Jiali Cheng",
+    "Oleg Rokhlenko",
+    "Joo-Kyung Kim",
+    "Hadi Amiri",
+    "Xingzhi Guo"
+   ],
+   "published": "2026-11-11T14:13:26Z",
+   "tags": [
+    "cs.MA",
+    "cs.AI",
+    "cs.CL"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.15521"
+   }
+  }
+ },
+ "arxiv:2611.17323": {
+  "first_seen": "2026-11-13",
+  "item": {
+   "key": "arxiv:2611.17323",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "AgentSSL: Can MLE Agents Leverage Unlabeled Data?",
+   "url": "https://arxiv.org/abs/2611.17323",
+   "summary": "Applying machine learning systems to new domains introduces bottlenecks in both labeled data acquisition and manual pipeline engineering. While recent MLE agents show promise in automating pipeline design, they have been studied almost exclusively in fully supervised settings, leaving them untested in realistic regimes where labeled data is scarce but unlabeled data is abundant. In this work, we introduce Agentic Semi-Supervised Learning (AgentSSL), framing SSL as a program search problem and studying how agents navigate this space under limited supervision. We find that even under weak feedback and matched compute, agents can synthesize code that combines and adapts established SSL techniques, exceeding the strongest human-engineered baselines in 8 of 12 settings by up to +21.8%. However, our results identify program selection as a critical bottleneck in AgentSSL, where performance drops by as much as 47% when selecting based on the agent's feedback metric. To systematically study this bottleneck, we introduce ProgramSelectBench, a large-scale benchmark with a combined total of 16,977 agent-generated and human-engineered SSL programs, and evaluate both unsupervised and active pro…",
+   "authors": [
+    "Ethan Lin",
+    "Akanksha Sarkar",
+    "Ziang Liu",
+    "Kristin Branson",
+    "Jennifer J. Sun"
+   ],
+   "published": "2026-11-12T18:59:06Z",
+   "tags": [
+    "cs.AI",
+    "cs.LG",
+    "comment:NeurIPS 2026. Project Website: https://codiscovery.ai/AgentSSL"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.17323"
+   }
+  }
+ },
+ "arxiv:2611.15515": {
+  "first_seen": "2026-11-13",
+  "item": {
+   "key": "arxiv:2611.15515",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "Incentive-Responsive Agents: A Principal-Agent Framework, Metric Suite, and Runtime Architecture for Long-Lived Personal AI Agents",
+   "url": "https://arxiv.org/abs/2611.15515",
+   "summary": "Personal AI agents now persist: they hold accounts, mailboxes, long-term memory, and open-ended task streams, yet the dominant way to improve them remains capability-side: prompt engineering, larger models, longer thinking, and retrieval. We argue that long-lived agents are missing an incentive layer. We formalize an incentive not as text in a prompt but as a runtime contract over the agent's operating point (model tier, test-time compute, memory budget, tool authority, task priority, verification, and compensation) that the agent's policy must causally consume. We develop a principal-agent model with hidden effort, a contractible operating point, and costly verification. We derive (i) a non-consumption invariance principle separating genuine incentives from prompt-level persuasion, (ii) a persistence-as-discount theorem making identity continuity a precondition for sustained effort, (iii) an incentive-capability exchange-rate frontier yielding a per-task routing rule, and (iv) a Goodhart bound for multi-channel verification, plus a three-channel decomposition of mechanism gains (allocation, verification, continuation). A 240-run real-LLM experiment with two models and 60 verifiab…",
+   "authors": [
+    "Jipu Su"
+   ],
+   "published": "2026-11-11T14:09:13Z",
+   "tags": [
+    "cs.AI",
+    "cs.MA",
+    "comment:33 pages, 8 figures, 6 tables. Real-LLM experiment (240 runs) plus simulation; code and data included. Correspondence: jipu.su@geely.com; jeepsu@cityu.edu.hk"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.15515"
    }
   }
  }
