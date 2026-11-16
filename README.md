@@ -56,6 +56,19 @@ Schedules (cron is in UTC; Vietnam is UTC+7 with no daylight saving). Dates, the
 
 GitHub delays scheduled runs under load, and sometimes drops them, especially at the top of the hour. So the slots are off the hour and backed up. A run **skips itself if that day's (or week's) digest already exists** on `main`, so you get one email; manual runs with `force` always run. The code also checks the local weekday, so a late run never sends on the wrong day. The look-back window reaches back to the last successful run (`data/last_run.json`, +2h overlap, max 7 days), so a missed day is caught up next time. Monday's digest covers at least 74 hours (since Friday).
 
+### Mac backup trigger (09:00 Vietnam time)
+
+GitHub often starts scheduled runs hours late. A launchd job on the Mac checks at **09:00 Mon–Fri**: if today's digest isn't on GitHub yet and no run is in progress, it starts the *Daily digest* workflow (`force=false`, so it can never send a second email). It uses the GitHub login git stores in the macOS keychain; no extra token.
+
+```bash
+scripts/install_mac_backup.sh                 # install / update (re-run after editing the script)
+launchctl kickstart gui/$(id -u)/com.news-agent.daily-backup   # run it now
+tail ~/Library/Logs/news-agent-backup.log     # what it did
+scripts/install_mac_backup.sh --uninstall     # remove
+```
+
+If the Mac is asleep at 09:00 the job runs when it wakes; if it's shut down that day, the GitHub schedule still runs (late). Change the time with `NEWS_AGENT_BACKUP_HOUR=9 NEWS_AGENT_BACKUP_MINUTE=0 scripts/install_mac_backup.sh`.
+
 ## Run locally
 
 ```bash
