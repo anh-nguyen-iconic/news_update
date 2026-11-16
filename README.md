@@ -2,7 +2,7 @@
 
 A personal, free, automated digest of **AI, agents and data-science news, tailored to ecommerce and fashion** (built for a data scientist at THE ICONIC).
 
-- **Daily digest** (Mon–Fri, ~8am Vietnam time): papers, model releases, AI industry news, engineering blogs, rising GitHub repos and community buzz, **ranked semantically against THE ICONIC's problems** (recommendations, search, size & fit, visual search, catalogue GenAI, shopping agents, forecasting, marketing, experimentation) and **summarised by Gemini**.
+- **Daily digest** (Mon–Fri, ~8am Vietnam time): papers, model releases, AI industry news, engineering blogs, rising GitHub repos and community buzz, **ranked semantically against THE ICONIC's problems** (18 problems: recommendations, homepage/tile personalisation, search, product attributes & catalogue data, trend detection, customer intent, size & fit, visual search, outfits, GenAI content, shopping agents, marketing/CRM, ads, reviews, fraud, forecasting/pricing, fulfilment, experimentation) and **summarised by Gemini**.
 - **Weekly trends email** (Saturday ~8am Vietnam time): themes of the week, top 10, models, repos, and "what to try at THE ICONIC".
 - **👍 / 👎 feedback**: every item has two buttons that open a pre-filled email to yourself. Hit send, and the next run adjusts topic and source weights.
 - **Every summary links back to its source**: each item has a 🔗 *Source* row (e.g. arXiv · PDF · HF · Code, GitHub, article, HN discussion), and every weekly trend and idea cites the items behind it.

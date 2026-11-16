@@ -45,6 +45,10 @@ openalex:
     - "uplift modeling marketing"
     - "demand forecasting retail"
     - "query understanding e-commerce search"
+    - "product attribute value extraction e-commerce"
+    - "homepage personalization whole-page optimization"
+    - "fashion trend detection search queries"
+    - "e-commerce purchase intent prediction"
 
 hf_models:
   enabled: true

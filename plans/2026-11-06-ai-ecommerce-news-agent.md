@@ -68,15 +68,17 @@ Deliver an automated, personalised digest of AI, agent and data-science news, fi
 
 Good AI List rules: keep a repo if `is_new`, or `star_1d ≥ 300`, or `star_7d_pct ≥ 50`. Report a repo again only if its stars reach 2× the count when it was first reported.
 
-### Topic profile (`config/interests.yaml`)
-| Base weight | Topics |
-|---|---|
-| 3 | RecSys, search & ranking, personalisation, agentic commerce, LLM agents in production |
-| 3 | Fashion: size & fit, visual search, outfit/complementary recs, return prediction |
-| 2 | Forecasting, pricing/markdown, causal inference/uplift, experimentation, CLV/churn |
-| 2 | GenAI for catalogue, multimodal, LLM/agent evaluation |
-| 2 | New model releases, AI industry news |
-| 1 | General ML/DS tooling, MLOps |
+### Topic profile (`config/interests.yaml`; semantic queries since R5, broadened 2026-11-16)
+THE ICONIC problems (🎯), by area and weight:
+
+| Area | Weight 3 | Weight 2 | Weight 1–1.5 |
+|---|---|---|---|
+| Discovery & personalisation | Recommendations; homepage, tile & content personalisation; search & query understanding; shopping agents | | |
+| Product & catalogue | Product attributes & catalogue data; size & fit, returns | GenAI product content & creative; visual search & multimodal; outfits, style & try-on | |
+| Trends & customers | | Trend detection & demand signals; customer behaviour & intent; marketing, CRM & CLV | Ads & retail media; reviews & customer experience; fraud, abuse & trust |
+| Operations & decisions | | Forecasting, pricing & inventory; experimentation & causal inference | Fulfilment & delivery |
+
+General interests (no 🎯): LLM agents & tooling (2), new model releases (2), AI industry news (1.5), ML/DS tooling (1).
 
 ### Daily digest layout
 1. 🔥 Top 5 must-reads
@@ -297,4 +299,5 @@ User setup required:
 - 2026-11-10: The Tuesday scheduled run was dropped by GitHub (cron `0 21` on the hour; Monday's ran 3.5h late). Fix: off-hour primary cron + 2 backups (weekly: + 1), runs skip themselves when today's/this week's archive exists on `main` (checkout `ref: main` for the latest state), and the look-back window extends to the last successful run (`data/last_run.json`).
 - 2026-11-10: Delivery moved to the reader's local morning: Vietnam time (Asia/Ho_Chi_Minh, UTC+7). Daily crons 00:53 / 01:31 / 02:11 UTC Mon–Fri (≈ 08:00 email, backups 08:31 / 09:11); weekly Sat 00:57 / 01:39 UTC. `TZ` in main.py is configurable via `NEWS_AGENT_TZ`.
 - 2026-11-11: None of the new Vietnam-time cron slots (00:53/01:31/02:11 UTC) fired, so GitHub didn't pick up the schedule change. Sent today's digest manually (run 42945612689) and disabled/re-enabled both workflows to force GitHub to re-register the schedule. Decision: wait and see before adding a backup trigger (options: a macOS launchd job that runs `gh workflow run` if today's archive is missing, or an external cron service with a repo-scoped token). Check on 2026-11-12.
+- 2026-11-16: Broadened THE ICONIC problems from 9 to 18 (new: homepage/tile personalisation, product attributes & catalogue data, trend detection & demand signals, customer behaviour & intent, outfits & style, ads & retail media, reviews & CX, fraud & trust, fulfilment; existing IDs kept so feedback multipliers still apply). On the same 1,816 live items: relevant 183 → 198, 🎯 labels spread across 16 problems instead of 8 (recommendations + search went from 59% to 51% of relevant items). Added 4 OpenAlex queries (attribute extraction, whole-page personalisation, trend detection, purchase intent), because these papers are rare in the daily feeds.
 - Later (v2+): VS Code chat agent / MCP over the digest archive; X/Twitter if a free option appears; embedding-based prefilter.

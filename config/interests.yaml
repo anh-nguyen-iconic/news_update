@@ -1,10 +1,10 @@
-# Topic profile used by the prefilter (keyword match) and passed to Gemini.
-# weight: base importance (1-3). Feedback adjusts a multiplier in data/feedback.json (0.5x-2x).
-# keywords: case-insensitive substrings / phrases matched against title + summary + tags.
+# Reader profile + topics for semantic ranking (see `semantic` below) and the Gemini summaries.
 
 profile: |
   Reader: data scientist at THE ICONIC, a large Australian online fashion & lifestyle retailer.
-  Works on recommender systems, search/ranking, personalisation and ML/LLM applications for ecommerce.
+  Works across e-commerce data science: product recommendations and homepage/tile personalisation, search and
+  query understanding, product data (attribute extraction, catalogue quality), trend detection, visual search,
+  size & fit, customer modelling, marketing/CRM, forecasting & pricing, experimentation, and LLM/agent applications.
   Wants practical, high-signal updates: research they could apply, tools worth trying, important
   model releases and AI industry moves. Low interest in hype, crypto, generic "AI will change X" opinion pieces.
 
@@ -12,22 +12,74 @@ profile: |
 # topic's `query`. `iconic: true` marks THE ICONIC business problems (shown as 🎯 on matching items).
 # weight: 1-3 importance. Feedback adjusts a per-topic multiplier (0.5x-2x) in data/feedback.json.
 topics:
+  # --- THE ICONIC problems: discovery & personalisation
   - id: recsys
     label: Recommendations & personalisation
     iconic: true
     weight: 3
     query: >-
-      Recommender systems for an online fashion retailer: personalised product recommendations on the homepage,
-      product detail page "you may also like", sequential and session-based recommendation, two-tower retrieval,
+      Product recommender systems for an online fashion retailer: personalised product recommendations, "you may also
+      like" and similar items on the product page, sequential and session-based recommendation, two-tower retrieval,
       generative recommendation, cold-start items, ranking models, CTR and conversion prediction.
+  - id: page_personalisation
+    label: Homepage, tile & content personalisation
+    iconic: true
+    weight: 3
+    query: >-
+      Personalising the homepage and app layout: which tiles, banners, carousels and collections to show each customer,
+      whole-page ranking and slate re-ranking of mixed content (products, tiles, ads) in one feed, contextual bandits
+      for content and creative selection, personalised artwork and thumbnails, landing-page personalisation.
   - id: search_ranking
     label: Search & query understanding
     iconic: true
     weight: 3
     query: >-
-      E-commerce product search: query understanding, query rewriting and intent classification, semantic and
-      hybrid retrieval, learning to rank for product search results, relevance, search personalisation,
-      autocomplete and zero-result queries.
+      E-commerce product search: query understanding, query rewriting and intent classification, semantic and hybrid
+      retrieval, learning to rank for product search results, relevance, search personalisation, autocomplete,
+      spelling correction, facets and zero-result queries.
+  - id: shopping_agents
+    label: Shopping agents & conversational commerce
+    iconic: true
+    context: true   # generic outside retail: needs an e-commerce context to count fully
+    weight: 3
+    query: >-
+      AI shopping assistants for online retail: conversational product search and discovery for shoppers, agents that
+      compare and buy products on e-commerce sites, agentic checkout and payment protocols, retail customer service
+      chatbots.
+  # --- product & catalogue
+  - id: product_attributes
+    label: Product attributes & catalogue data
+    iconic: true
+    context: true   # generic outside retail: needs an e-commerce context to count fully
+    weight: 3
+    query: >-
+      Product data for e-commerce catalogues: attribute value extraction from product titles, descriptions and images,
+      product taxonomy and category classification, product matching and deduplication, product knowledge graphs,
+      catalogue enrichment and data quality, normalising brand, colour, material and size attributes.
+  - id: catalog_genai
+    label: GenAI product content & creative
+    iconic: true
+    context: true   # generic outside retail: needs an e-commerce context to count fully
+    weight: 2
+    query: >-
+      Generative AI for e-commerce content: generating product descriptions, titles and SEO copy, product image
+      generation and editing, on-model and lifestyle photography, marketing creative and banner generation, LLMs for
+      merchandising content at scale.
+  - id: visual_multimodal
+    label: Visual search & multimodal product understanding
+    iconic: true
+    context: true   # generic outside retail: needs an e-commerce context to count fully
+    weight: 2
+    query: >-
+      Visual search and image similarity for products, shop-the-look and street-to-shop retrieval, multimodal product
+      embeddings combining images and text, vision-language models for understanding product images.
+  - id: outfits_style
+    label: Outfits, style & virtual try-on
+    iconic: true
+    weight: 2
+    query: >-
+      Fashion compatibility and complete-the-look outfit recommendation, outfit generation, style and aesthetic
+      embeddings, fashion attribute and style understanding, virtual try-on of clothing.
   - id: size_fit
     label: Size & fit, returns
     iconic: true
@@ -35,33 +87,58 @@ topics:
     query: >-
       Size and fit recommendation for clothing and shoes, predicting the right size for a customer, fit feedback,
       reducing product returns, return prediction and return reasons in online fashion retail.
-  - id: visual_multimodal
-    label: Visual search & product understanding
-    iconic: true
-    context: true   # generic outside retail: needs an e-commerce context to count fully
-    weight: 3
-    query: >-
-      Visual search and image similarity for fashion products, multimodal product embeddings combining images and
-      text, vision-language models for product attributes, virtual try-on, style and complete-the-look outfit
-      recommendation.
-  - id: catalog_genai
-    label: GenAI for catalogue & content
+  # --- trends & customers
+  - id: trends_insights
+    label: Trend detection & demand signals
     iconic: true
     context: true   # generic outside retail: needs an e-commerce context to count fully
     weight: 2
     query: >-
-      Generative AI for e-commerce catalogue content: generating product descriptions and titles, product attribute
-      extraction and tagging, taxonomy classification, image generation for product photography, LLMs for
-      merchandising and content at scale.
-  - id: shopping_agents
-    label: Shopping agents & conversational commerce
+      Detecting emerging fashion and product trends from customer search queries, browsing behaviour, sales and social
+      media, search query trend analysis, trend forecasting for buying and assortment planning, popularity prediction
+      of new products.
+  - id: customer_intent
+    label: Customer behaviour & intent modelling
     iconic: true
     context: true   # generic outside retail: needs an e-commerce context to count fully
-    weight: 3
+    weight: 2
     query: >-
-      AI shopping assistants for online retail: conversational product search and discovery for shoppers, agents
-      that compare and buy products on e-commerce sites, agentic checkout and payment protocols, retail customer
-      service chatbots.
+      Modelling online shopper behaviour: session and purchase intent prediction from clickstreams, purchase
+      propensity, customer embeddings and user foundation models, customer segmentation, next-action prediction.
+  - id: marketing_clv
+    label: Marketing, CRM & CLV
+    iconic: true
+    context: true   # generic outside retail: needs an e-commerce context to count fully
+    weight: 2
+    query: >-
+      Customer lifetime value prediction, churn and retention modelling, marketing campaign targeting, uplift
+      modelling, marketing mix modelling and attribution, CRM personalisation of emails and push notifications,
+      loyalty programmes.
+  - id: ads_retail_media
+    label: Ads & retail media
+    iconic: true
+    context: true   # generic outside retail: needs an e-commerce context to count fully
+    weight: 1.5
+    query: >-
+      Retail media and online advertising: sponsored product ads, ad ranking and CTR prediction for ads, bidding and
+      budget pacing, auction design, promotion and coupon targeting on e-commerce platforms.
+  - id: reviews_cx
+    label: Reviews & customer experience
+    iconic: true
+    context: true   # generic outside retail: needs an e-commerce context to count fully
+    weight: 1.5
+    query: >-
+      Customer reviews and feedback: review mining and summarisation, sentiment and aspect analysis of product reviews,
+      voice of the customer, customer service ticket classification and automation in online retail.
+  - id: fraud_trust
+    label: Fraud, abuse & trust
+    iconic: true
+    context: true   # generic outside retail: needs an e-commerce context to count fully
+    weight: 1.5
+    query: >-
+      Fraud and abuse in e-commerce: payment fraud detection, promotion and coupon abuse, returns abuse, fake reviews,
+      account takeover and bot detection on online shopping platforms.
+  # --- operations & decisions
   - id: forecasting_pricing
     label: Forecasting, pricing & inventory
     iconic: true
@@ -70,22 +147,23 @@ topics:
     query: >-
       Demand forecasting for retail and fashion, time-series forecasting of sales, inventory and stock optimisation,
       dynamic pricing, markdown and promotion optimisation, supply chain planning.
-  - id: marketing_clv
-    label: Marketing, CLV & customer analytics
+  - id: fulfilment
+    label: Fulfilment & delivery
     iconic: true
     context: true   # generic outside retail: needs an e-commerce context to count fully
-    weight: 2
+    weight: 1
     query: >-
-      Customer lifetime value prediction, churn and retention modelling, marketing campaign targeting, uplift
-      modelling, marketing mix modelling and attribution, CRM personalisation of emails and push notifications.
+      E-commerce fulfilment and logistics: delivery date estimation, warehouse and order picking optimisation, last-mile
+      delivery routing, carrier selection, returns logistics.
   - id: experimentation
     label: Experimentation & causal inference
     iconic: true
     context: true   # generic outside retail: needs an e-commerce context to count fully
     weight: 2
     query: >-
-      Online A/B testing and experimentation platforms, variance reduction (CUPED), causal inference and
-      treatment effect estimation, off-policy evaluation of recommenders, bandits for online decision making.
+      Online A/B testing and experimentation platforms, variance reduction (CUPED), causal inference and treatment
+      effect estimation, off-policy evaluation of recommenders, bandits for online decision making.
+  # --- general interests (not THE ICONIC problems)
   - id: agents_production
     label: LLM agents & tooling in production
     weight: 2
