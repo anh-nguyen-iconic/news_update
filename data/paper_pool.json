@@ -1,43 +1,4 @@
 {
- "doi:10.1007/978-981-92-7738-4_10": {
-  "first_seen": "2026-11-07",
-  "item": {
-   "key": "doi:10.1007/978-981-92-7738-4_10",
-   "source": "openalex",
-   "source_name": "OpenAlex",
-   "kind": "paper",
-   "title": "Training-Free Multimodal Fashion Recommendation with Expert-Knowledge Alignment via ResRAG",
-   "url": "https://doi.org/10.1007/978-981-92-7738-4_10",
-   "summary": "",
-   "authors": [
-    "Jiahao Liang",
-    "熊天健",
-    "Xing Su",
-    "Jiayin Li",
-    "Yun Liu",
-    "Haoran Tang",
-    "Jintu Fan"
-   ],
-   "published": "2026-11-05T00:00:00Z",
-   "tags": [
-    "conference-paper"
-   ],
-   "metrics": {
-    "citations": 0.0
-   },
-   "affiliations": [
-    "Hong Kong Polytechnic University",
-    "Donghua University",
-    "Jilin University",
-    "Hong Kong Polytechnic University, Hong Kong, China",
-    "Donghua University, Shanghai, China",
-    "Jilin University, Changchun, China"
-   ],
-   "links": {
-    "OpenAlex": "https://openalex.org/W7225260276"
-   }
-  }
- },
  "doi:10.1145/3799682.3840106": {
   "first_seen": "2026-11-07",
   "item": {
@@ -134,7 +95,7 @@
     "Bing Wang (126120)",
     "Xiaoyi Zeng"
    ],
-   "published": "2026-11-03T00:00:00Z",
+   "published": "2026-11-06T00:00:00Z",
    "tags": [
     "conference-paper"
    ],
@@ -912,7 +873,10 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "University of Electronic Science and Technology of China",
+    "University of Electronic Science and Technology of China Chengdu , China"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2610.37584",
     "OpenAlex": "https://openalex.org/W7224085385"
@@ -1394,7 +1358,7 @@
     "Antonio Mallia",
     "Raffaele Perego"
    ],
-   "published": "2026-11-03T00:00:00Z",
+   "published": "2026-11-06T00:00:00Z",
    "tags": [
     "conference-paper"
    ],
@@ -1467,7 +1431,7 @@
     "Jialin Zhu",
     "Yuning Jiang"
    ],
-   "published": "2026-11-03T00:00:00Z",
+   "published": "2026-11-06T00:00:00Z",
    "tags": [
     "conference-paper"
    ],
@@ -1613,7 +1577,7 @@
     "Samia Batool",
     "Sidra Sidra"
    ],
-   "published": "2026-10-08T00:00:00Z",
+   "published": "2026-10-31T00:00:00Z",
    "tags": [
     "article"
    ],
@@ -2315,7 +2279,7 @@
     "Jingwei Wu",
     "Wenjing Zhang"
    ],
-   "published": "2026-11-03T00:00:00Z",
+   "published": "2026-11-06T00:00:00Z",
    "tags": [
     "conference-paper"
    ],
@@ -2504,9 +2468,9 @@
     "mean-pooled factorized latents"
    ],
    "metrics": {
-    "upvotes": 47.0,
+    "upvotes": 48.0,
     "comments": 2.0,
-    "github_stars": 19.0
+    "github_stars": 20.0
    },
    "affiliations": [
     "KAIST AI"
@@ -3120,50 +3084,6 @@
    }
   }
  },
- "arxiv:2610.08215": {
-  "first_seen": "2026-11-07",
-  "item": {
-   "key": "arxiv:2610.08215",
-   "source": "hf_papers",
-   "source_name": "HF Daily Papers",
-   "kind": "paper",
-   "title": "Learn2Play Bench: How Well Do LLM Agents Learn from Experience in Unfamiliar Environments?",
-   "url": "https://arxiv.org/abs/2610.08215",
-   "summary": "Learning from experience is essential for LLM agents to adapt to unfamiliar and dynmaic environments. Evaluating this ability is therefore important for understanding how effectively agents acquire and use new knowledge. Existing benchmarks have sought to evaluate this ability, but they primarily evaluate tasks whose rules are provided in the instructions or already familiar to pretrained models, making it difficult to distinguish learning from interactions from reasoning with existing knowledge. To address this, we introduce Learn2Play Bench, a benchmark of newly designed text-based games, whose rules are novel or counterintuitive, requiring agents to acquire knowledge through interaction rather than rely solely on pretrained knowledge. These games provide reproducible feedback and automatic scoring, enabling controlled evaluation of learning across repeated attempts. We also vary game instances to test whether agents can apply what they have learned to new situations. Therefore, we evaluate how backbone models, self-evolving methods, and agent harnesses affect agents' learning ability, revealing three findings: (1) Experience retention: Retaining complete records of actions and …",
-   "authors": [
-    "Yibo Li",
-    "Jinhang Qiu",
-    "Zhi Zheng",
-    "Qianyun Guo",
-    "Jiaying Wu",
-    "Shuo Ji",
-    "Bryan Hooi"
-   ],
-   "published": "2026-10-09T00:00:00Z",
-   "tags": [
-    "LLM agents",
-    "text-based games",
-    "experience retention",
-    "self-evolving methods",
-    "agent harnesses",
-    "learning from interaction"
-   ],
-   "metrics": {
-    "upvotes": 41.0,
-    "comments": 3.0,
-    "github_stars": 16.0
-   },
-   "affiliations": [
-    "National University of Singapore"
-   ],
-   "links": {
-    "HF": "https://huggingface.co/papers/2610.08215",
-    "PDF": "https://arxiv.org/pdf/2610.08215",
-    "Code": "https://github.com/liushiliushi/Learn2Play-Bench",
-    "Project": "https://liushiliushi.github.io/learn2play-bench-website/"
-   }
-  }
- },
  "arxiv:2610.24200": {
   "first_seen": "2026-11-07",
   "item": {
@@ -3211,7 +3131,7 @@
     "Vlastislav Dohnal",
     "Martin Aumüller"
    ],
-   "published": "2026-11-03T00:00:00Z",
+   "published": "2026-11-06T00:00:00Z",
    "tags": [
     "conference-paper"
    ],
@@ -3381,7 +3301,7 @@
    "metrics": {
     "upvotes": 23.0,
     "comments": 4.0,
-    "github_stars": 5.0
+    "github_stars": 4.0
    },
    "affiliations": [
     "IQuest"
@@ -4417,7 +4337,7 @@
    "metrics": {
     "upvotes": 44.0,
     "comments": 2.0,
-    "github_stars": 376.0
+    "github_stars": 379.0
    },
    "affiliations": [
     "ByteDance"
@@ -4462,7 +4382,7 @@
    "metrics": {
     "upvotes": 19.0,
     "comments": 4.0,
-    "github_stars": 63.0
+    "github_stars": 65.0
    },
    "affiliations": [
     "Microsoft Research"
@@ -4489,7 +4409,7 @@
     "Julio Cesar Canova",
     "Fernando Pereira dos Santos"
    ],
-   "published": "2026-10-26T00:00:00Z",
+   "published": "2026-10-27T00:00:00Z",
    "tags": [
     "conference-paper"
    ],
@@ -5671,12 +5591,12 @@
    "kind": "paper",
    "title": "From Demand Signals to Retail Decisions in Business Intelligence Research",
    "url": "https://doi.org/10.54216/ajbor.150105",
-   "summary": "Retail analytics has moved beyond improving point forecasts, yet evidence about the value of a forecast for pricing, replenishment, fulfillment, and managerial adoption remains dispersed.This structured review compares 36 journal studies published from 2023 through 2025, identified within a search window ending in January 2026, across four connected areas: demand forecasting (12), pricing and commercial levers (7), inventory and fulfillment (8), and decision systems (9).Each study is examined for its information setting, analytic approach, decision connection, and evidence boundary.The synthesis identifies four recurring discontinuities: sales data can conceal unmet demand; forecast scores can misrank policies; a policy that works in a model may be infeasible in a distributed retail organization; and staff may override recommendations whose value has not been made legible.A decision-centered evaluation structure links data availability, uncertainty estimation, feasible action, adoption, and realized economic outcomes.The paper develops a research agenda around observable-demand corrections, decision-calibrated uncertainty, joint pricing and fulfillment, transportable evaluations, …",
+   "summary": "Retail analytics has moved beyond improving point forecasts, yet evidence about the value of a forecast for pricing, replenishment, fulfillment, and managerial adoption remains dispersed. This structured review compares 36 journal studies published from 2023 through 2025, identified within a search window ending in January 2026, across four connected areas: demand forecasting (12), pricing and commercial levers (7), inventory and fulfillment (8), and decision systems (9). Each study is examined for its information setting, analytic approach, decision connection, and evidence boundary. The synthesis identifies four recurring discontinuities: sales data can conceal unmet demand; forecast scores can misrank policies; a policy that works in a model may be infeasible in a distributed retail organization; and staff may override recommendations whose value has not been made legible. A decision-centered evaluation structure links data availability, uncertainty estimation, feasible action, adoption, and realized economic outcomes. The paper develops a research agenda around observable-demand corrections, decision-calibrated uncertainty, joint pricing and fulfillment, transportable evaluati…",
    "authors": [
     "Mustafa Musa",
     "Raden  Nur Rachman Dzakiyullah"
    ],
-   "published": "2026-10-08T00:00:00Z",
+   "published": "2026-11-23T02:00:48.058737Z",
    "tags": [
     "article"
    ],
@@ -6182,8 +6102,8 @@
    "metrics": {
     "upvotes": 50.0,
     "comments": 2.0,
-    "github_stars": 472.0,
-    "citations": 5.0
+    "github_stars": 498.0,
+    "citations": 6.0
    },
    "affiliations": [
     "University of California, Berkeley",
@@ -6215,7 +6135,7 @@
     "Quan Z. Sheng",
     "Lina Yao"
    ],
-   "published": "2026-11-03T00:00:00Z",
+   "published": "2026-11-06T00:00:00Z",
    "tags": [
     "conference-paper"
    ],
@@ -6590,7 +6510,7 @@
    "metrics": {
     "upvotes": 40.0,
     "comments": 3.0,
-    "github_stars": 205.0
+    "github_stars": 200.0
    },
    "affiliations": [
     "National University of Singapore"
@@ -6639,7 +6559,7 @@
    "metrics": {
     "upvotes": 29.0,
     "comments": 3.0,
-    "github_stars": 66.0
+    "github_stars": 67.0
    },
    "affiliations": [
     "ant-international"
@@ -7844,9 +7764,9 @@
     "GUI-CLI hybrid benchmarks"
    ],
    "metrics": {
-    "upvotes": 49.0,
+    "upvotes": 50.0,
     "comments": 2.0,
-    "github_stars": 128.0,
+    "github_stars": 82.0,
     "citations": 0.0
    },
    "affiliations": [
@@ -8109,7 +8029,7 @@
    "metrics": {
     "upvotes": 18.0,
     "comments": 2.0,
-    "github_stars": 296.0
+    "github_stars": 302.0
    },
    "affiliations": [
     "Multimedia Computing Group-Nanjing University"
@@ -8306,7 +8226,7 @@
     "Junjie Bai",
     "Jianbo Zhu"
    ],
-   "published": "2026-11-03T00:00:00Z",
+   "published": "2026-11-06T00:00:00Z",
    "tags": [
     "conference-paper"
    ],
@@ -8350,7 +8270,7 @@
     "Chenyang Si",
     "Jian Liang"
    ],
-   "published": "2026-11-03T00:00:00Z",
+   "published": "2026-11-06T00:00:00Z",
    "tags": [
     "conference-paper"
    ],
@@ -8385,7 +8305,7 @@
    "authors": [
     "Badari Udupi Bindumadhav"
    ],
-   "published": "2026-11-03T00:00:00Z",
+   "published": "2026-11-06T00:00:00Z",
    "tags": [
     "conference-paper"
    ],
@@ -8587,7 +8507,7 @@
    "metrics": {
     "upvotes": 13.0,
     "comments": 5.0,
-    "github_stars": 56.0
+    "github_stars": 57.0
    },
    "affiliations": [
     "Brown University"
@@ -8792,43 +8712,6 @@
    }
   }
  },
- "arxiv:2611.08877": {
-  "first_seen": "2026-11-10",
-  "item": {
-   "key": "arxiv:2611.08877",
-   "source": "arxiv",
-   "source_name": "arXiv",
-   "kind": "paper",
-   "title": "The Relational Capacity Framework: A Lens for AI-Mediated Relationality",
-   "url": "https://arxiv.org/abs/2611.08877",
-   "summary": "A growing literature examines the impact of engaging with AI chatbots on our relationality: our ability to form relationships with others, maintain them through life's changes, and exit when needed. Currently, substantial work focuses on purpose-built AI companions (e.g. Replika, Character.AI), with less work investigating socioemotional uses of the more widely-used general-purpose chatbots. In this paper, we present a 100-person investigation into how people engage general-purpose AI for socioemotional needs. Participants' AI uses varied, from practicing specific social skills to seeking additional bandwidth and information as they navigated their social contexts. To explain this heterogeneity, we provide 8 states that describe how AI expands or contracts relationality for people with different levels of skills, bandwidth, and information. We then present a unified conceptual model for the role of technology in mediating human relationality, the Relational Capacity Framework, and outline future research designing appropriate roles for AI in human connection.",
-   "authors": [
-    "Emily Tseng",
-    "Patrick Gage Kelley",
-    "Renee Shelby",
-    "Ashley M. Walker"
-   ],
-   "published": "2026-11-09T05:00:00Z",
-   "tags": [
-    "cs.HC",
-    "cs.AI",
-    "cs.CY"
-   ],
-   "metrics": {
-    "citations": 0.0
-   },
-   "affiliations": [
-    "University of Washington",
-    "Google (United States)",
-    "University of Washington USA",
-    "Google Research USA",
-    "Google USA"
-   ],
-   "links": {
-    "PDF": "https://arxiv.org/pdf/2611.08877"
-   }
-  }
- },
  "doi:10.1145/3799682.3840169": {
   "first_seen": "2026-11-10",
   "item": {
@@ -8848,7 +8731,7 @@
     "Han Zhu",
     "Jian Xu"
    ],
-   "published": "2026-11-03T00:00:00Z",
+   "published": "2026-11-06T00:00:00Z",
    "tags": [
     "conference-paper"
    ],
@@ -10266,7 +10149,7 @@
     "cs.AI"
    ],
    "metrics": {
-    "citations": 0.0
+    "citations": 1.0
    },
    "affiliations": [],
    "links": {
@@ -11008,7 +10891,7 @@
    "metrics": {
     "upvotes": 21.0,
     "comments": 2.0,
-    "github_stars": 8.0
+    "github_stars": 9.0
    },
    "affiliations": [
     "University of Chinese Academy of Sciences"
@@ -11296,7 +11179,7 @@
    "metrics": {
     "upvotes": 29.0,
     "comments": 2.0,
-    "github_stars": 127.0
+    "github_stars": 128.0
    },
    "affiliations": [
     "beipo-ai"
@@ -11645,7 +11528,7 @@
     "private benchmarks"
    ],
    "metrics": {
-    "upvotes": 7.0,
+    "upvotes": 8.0,
     "comments": 2.0
    },
    "affiliations": [
@@ -11784,7 +11667,7 @@
    "metrics": {
     "upvotes": 39.0,
     "comments": 6.0,
-    "github_stars": 20.0
+    "github_stars": 21.0
    },
    "affiliations": [
     "Chinese Academic of Science Institute of Automation"
@@ -11923,7 +11806,7 @@
     "mixed-user-agent benchmark"
    ],
    "metrics": {
-    "upvotes": 11.0,
+    "upvotes": 12.0,
     "comments": 4.0,
     "citations": 0.0
    },
@@ -11976,7 +11859,7 @@
    "metrics": {
     "upvotes": 56.0,
     "comments": 10.0,
-    "github_stars": 43.0
+    "github_stars": 45.0
    },
    "affiliations": [
     "University of Washington"
@@ -12049,7 +11932,7 @@
     "cs.AI"
    ],
    "metrics": {
-    "citations": 0.0
+    "citations": 1.0
    },
    "affiliations": [],
    "links": {
@@ -12214,7 +12097,7 @@
    "metrics": {
     "upvotes": 8.0,
     "comments": 2.0,
-    "github_stars": 9.0
+    "github_stars": 10.0
    },
    "affiliations": [
     "National University of Singapore"
@@ -13116,7 +12999,7 @@
    "metrics": {
     "upvotes": 51.0,
     "comments": 3.0,
-    "github_stars": 76.0
+    "github_stars": 78.0
    },
    "affiliations": [
     "National University of Singapore"
@@ -13155,7 +13038,7 @@
    "published": "2026-11-03T00:00:00Z",
    "tags": [],
    "metrics": {
-    "upvotes": 16.0,
+    "upvotes": 15.0,
     "comments": 2.0
    },
    "affiliations": [
@@ -13529,7 +13412,7 @@
    "metrics": {
     "upvotes": 27.0,
     "comments": 6.0,
-    "github_stars": 106.0
+    "github_stars": 104.0
    },
    "affiliations": [
     "TokenRhythm"
@@ -13658,7 +13541,7 @@
    "metrics": {
     "upvotes": 44.0,
     "comments": 8.0,
-    "github_stars": 75.0,
+    "github_stars": 78.0,
     "citations": 0.0
    },
    "affiliations": [
@@ -13864,7 +13747,7 @@
    "metrics": {
     "upvotes": 50.0,
     "comments": 3.0,
-    "github_stars": 99.0,
+    "github_stars": 103.0,
     "citations": 0.0
    },
    "affiliations": [
@@ -14312,9 +14195,9 @@
     "embodied manipulation"
    ],
    "metrics": {
-    "upvotes": 6.0,
+    "upvotes": 7.0,
     "comments": 2.0,
-    "github_stars": 529.0
+    "github_stars": 540.0
    },
    "affiliations": [
     "Zhejiang University"
@@ -14603,43 +14486,6 @@
    }
   }
  },
- "arxiv:2611.16405": {
-  "first_seen": "2026-11-13",
-  "item": {
-   "key": "arxiv:2611.16405",
-   "source": "arxiv",
-   "source_name": "arXiv",
-   "kind": "paper",
-   "title": "AntEmbed: Dual-Mode Multimodal Embedding Model for Efficient and Fine-Grained Retrieval",
-   "url": "https://arxiv.org/abs/2611.16405",
-   "summary": "Discriminative embeddings encode original multimodal inputs efficiently but struggle with fine-grained semantics. Generative embeddings use reasoning to capture query intent and relevance evidence, but incur higher computational costs. We propose AntEmbed, a dual-mode multimodal embedding model that supports efficient retrieval and reasoning-enhanced fine-grained matching in a unified embedding space. First, we construct retrieval-oriented reasoning content that captures query intent and confusion-aware semantic evidence. We treat original and reasoning-enhanced candidate inputs as semantically equivalent views, and use multi-positive contrastive learning with a single embedding token to align discriminative and generative embeddings. Second, cross-mode self-distillation transfers fine-grained semantic information from reasoning-enhanced to original representations through candidate similarity-distribution distillation and query representation alignment. This strengthens discriminative embeddings without requiring additional online reasoning. Both retrieval modes share a single candidate index. On MMEB-v2, AntEmbed-8B achieves an overall score of 81.5 with reasoning-enhanced embed…",
-   "authors": [
-    "Kehang Jia",
-    "Teng Liu",
-    "Juntao Li",
-    "Hua Chen",
-    "Jinxiong Chang",
-    "Xiaobo Liang",
-    "Min Zhang"
-   ],
-   "published": "2026-11-12T07:12:37Z",
-   "tags": [
-    "cs.IR",
-    "comment:13 pages"
-   ],
-   "metrics": {
-    "citations": 0.0
-   },
-   "affiliations": [
-    "Soochow University",
-    "Ant Group (China)",
-    "Ant Group"
-   ],
-   "links": {
-    "PDF": "https://arxiv.org/pdf/2611.16405"
-   }
-  }
- },
  "arxiv:2611.15568": {
   "first_seen": "2026-11-13",
   "item": {
@@ -14821,7 +14667,7 @@
     "behavioral corrections"
    ],
    "metrics": {
-    "upvotes": 36.0,
+    "upvotes": 37.0,
     "comments": 7.0,
     "github_stars": 14.0,
     "citations": 0.0
@@ -15373,35 +15219,6 @@
    }
   }
  },
- "doi:10.21203/rs.3.rs-10028465/v1": {
-  "first_seen": "2026-11-16",
-  "item": {
-   "key": "doi:10.21203/rs.3.rs-10028465/v1",
-   "source": "openalex",
-   "source_name": "OpenAlex",
-   "kind": "paper",
-   "title": "Operational Identification of Purchase Intention in Retail Media Networks with Theory-Coherent Hidden Semi-Markov Dynamic",
-   "url": "https://doi.org/10.21203/rs.3.rs-10028465/v1",
-   "summary": "Abstract Retail media networks need ad decisions that react to temporally shifting shopping behavior rather than only to static transaction summaries. This paper tries to infer purchase intention from ever-changing clickstreams as an operational identification problem for a deployed advertising system. The proposed method fits time-dependent data to a covariate-dependent hidden semi-Markov model whose latent states are anchored by the Theory of Planned Behavior, the Consumer Decision Journey, and the Persuasion Knowledge Model. A retrieval-augmented language model supplies a theory-coherent reference posterior γ to stabilize the categorization. Semi-Markov inference uses this reference as a Kullback-Leibler regularizer in the expectation step while mapping retrieved context into the initial, transition, emission, and duration kernels. Closed-loop directional validation and revalidation are conducted through a 3-campaign experiment on a live platform. For illustrative purposes, the experiment, conducted with an anonymized omni-channel retailer covering 5.2 million active members, confirms an AUC of 0.717 for our theory-identified model, compared to 0.635 for an action-only covariat…",
-   "authors": [
-    "Tsung-Yin Ou",
-    "Yenming J. Chen"
-   ],
-   "published": "2026-11-13T00:00:00Z",
-   "tags": [
-    "preprint"
-   ],
-   "metrics": {
-    "citations": 0.0
-   },
-   "affiliations": [
-    "National Kaohsiung University of Science and Technology"
-   ],
-   "links": {
-    "OpenAlex": "https://openalex.org/W7226005150"
-   }
-  }
- },
  "doi:10.62441/actainnovations.vi.2580": {
   "first_seen": "2026-11-16",
   "item": {
@@ -15846,7 +15663,10 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Kyung Hee University",
+    "School of Computing , Kyung Hee University , Yongin-si , South Korea"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.17788"
    }
@@ -15861,7 +15681,7 @@
    "kind": "paper",
    "title": "Finding Your Buyer: How Configurational Analysis Reveals Five Purchase Segments",
    "url": "https://doi.org/10.21203/rs.3.rs-10890285/v1",
-   "summary": "Abstract Purpose — Live streaming commerce (LSC) research predominantly assumes trust, emotional attachment, and psychological ownership independently drive purchase intention through an additive logic. This study challenges that assumption by testing a configurational alternative: whether any single psychological mechanism is necessary for purchase, and whether multiple credibility configurations are jointly sufficient, among small farm food streamers—over 97% of LSC sellers yet largely unexamined. Design/methodology/approach — Survey data from 393 Chinese consumers with farm food LSC experience were analyzed using Necessary Condition Analysis (NCA) for necessity testing, fuzzy-set Qualitative Comparative Analysis (fsQCA) for sufficiency identification, and Partial Least Squares Structural Equation Modeling (PLS-SEM) for net effect estimation. Findings — NCA establishes no single condition—including trust—is necessary for high purchase intention. fsQCA identifies five distinct configurations sufficient for purchase, each representing a different consumer persona. PLS-SEM confirms significant net effects across all credibility dimensions while revealing that expertise does not ope…",
+   "summary": "Purpose — Live streaming commerce (LSC) research predominantly assumes trust, emotional attachment, and psychological ownership independently drive purchase intention through an additive logic. This study challenges that assumption by testing a configurational alternative: whether any single psychological mechanism is necessary for purchase, and whether multiple credibility configurations are jointly sufficient, among small farm food streamers—over 97% of LSC sellers yet largely unexamined. Design/methodology/approach — Survey data from 393 Chinese consumers with farm food LSC experience were analyzed using Necessary Condition Analysis (NCA) for necessity testing, fuzzy-set Qualitative Comparative Analysis (fsQCA) for sufficiency identification, and Partial Least Squares Structural Equation Modeling (PLS-SEM) for net effect estimation. Findings — NCA establishes no single condition—including trust—is necessary for high purchase intention. fsQCA identifies five distinct configurations sufficient for purchase, each representing a different consumer persona. PLS-SEM confirms significant net effects across all credibility dimensions while revealing that expertise does not operate thro…",
    "authors": [
     "Xiaojun Mai",
     "Sh.Ahmad Fauziah",
@@ -15961,12 +15781,12 @@
     "Zahra Khanalizadeh",
     "Negar Ziaeian"
    ],
-   "published": "2026-11-03T00:00:00Z",
+   "published": "2026-11-04T00:00:00Z",
    "tags": [
     "conference-paper"
    ],
    "metrics": {
-    "citations": 2.0
+    "citations": 3.0
    },
    "affiliations": [
     "Lyft (United States)",
@@ -16372,7 +16192,7 @@
    "published": "2026-11-13T00:00:00Z",
    "tags": [],
    "metrics": {
-    "upvotes": 13.0,
+    "upvotes": 14.0,
     "comments": 3.0
    },
    "affiliations": [
@@ -16483,7 +16303,9 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Stanford University"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.17585"
    }
@@ -16626,7 +16448,7 @@
     "designated safety lead agent"
    ],
    "metrics": {
-    "upvotes": 8.0,
+    "upvotes": 9.0,
     "comments": 2.0,
     "citations": 0.0
    },
@@ -16840,7 +16662,7 @@
    "published": "2026-11-16T00:00:00Z",
    "tags": [],
    "metrics": {
-    "upvotes": 10.0,
+    "upvotes": 11.0,
     "comments": 4.0,
     "github_stars": 1.0
    },
@@ -17097,7 +16919,9 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Fudan University"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.17821"
    }
@@ -17134,9 +16958,9 @@
     "fine-grained capability assessment"
    ],
    "metrics": {
-    "upvotes": 71.0,
+    "upvotes": 73.0,
     "comments": 5.0,
-    "github_stars": 27.0
+    "github_stars": 28.0
    },
    "affiliations": [
     "National University of Singapore"
@@ -17146,38 +16970,6 @@
     "PDF": "https://arxiv.org/pdf/2611.15777",
     "Code": "https://github.com/holdrain/SO-Arena",
     "Project": "https://lichenlillc.github.io/SO-Arena"
-   }
-  }
- },
- "doi:10.1038/s41598-026-80365-9": {
-  "first_seen": "2026-11-17",
-  "item": {
-   "key": "doi:10.1038/s41598-026-80365-9",
-   "source": "openalex",
-   "source_name": "OpenAlex",
-   "kind": "paper",
-   "title": "When do e-commerce prediction models fail over time? cross-task evidence on temporal reliability and model maintenance",
-   "url": "https://doi.org/10.1038/s41598-026-80365-9",
-   "summary": "Machine-learning models in e-commerce are often evaluated on randomly partitioned historical data, whereas deployment requires prediction on future observations under changing populations and information availability. We examine temporal reliability and model maintenance across four public dataset–task settings: late-delivery prediction among eventually delivered Olist orders, matched 24-h cart-to-purchase prediction in Retailrocket and Synerise RecSys 2025, and 30-day repeat-purchase prediction in Online Retail II. Sequential analyses restrict historical features, model updating, and recalibration to information and labels available at each prediction or deployment time. Random-to-future differences varied substantially: Olist showed pronounced deterioration, whereas the other settings showed smaller or qualitatively different changes. In the primary Olist XGBoost analysis, cumulative retraining improved ranking and modestly improved Brier accuracy, while sliding-window retraining improved ranking but worsened probability reliability. Cross-model, matched-exposure, and sensitivity analyses showed that maintenance effects depended on setting, period, model family, and design. Post…",
-   "authors": [
-    "Zongjun Lan",
-    "Yujiao Wang"
-   ],
-   "published": "2026-11-14T00:00:00Z",
-   "tags": [
-    "article"
-   ],
-   "metrics": {
-    "citations": 0.0
-   },
-   "affiliations": [
-    "Guangzhou College of Technology and Business",
-    "Zhejiang Guangsha Vocational and Technical University of Construction",
-    "School of Accounting, Guangzhou College of Technology and Business, Guangzhou, 510850, China",
-    "School of Management Engineering, Zhejiang Guangsha Vocational and Technical University of Construction, Dongyang, 3221…"
-   ],
-   "links": {
-    "OpenAlex": "https://openalex.org/W7232010490"
    }
   }
  },
@@ -17239,7 +17031,12 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Zhejiang University",
+    "Huawei Technologies (China)",
+    "Zhejiang University Hangzhou , Zhejiang , China",
+    "Huawei Technologies Co., Ltd. Hangzhou , Zhejiang , China"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.18244",
     "OpenAlex": "https://openalex.org/W7233871957"
@@ -17392,9 +17189,9 @@
     "n-ary frames"
    ],
    "metrics": {
-    "upvotes": 54.0,
+    "upvotes": 56.0,
     "comments": 4.0,
-    "github_stars": 3504.0,
+    "github_stars": 3511.0,
     "citations": 0.0
    },
    "affiliations": [],
@@ -17475,7 +17272,7 @@
     "backends"
    ],
    "metrics": {
-    "upvotes": 16.0,
+    "upvotes": 17.0,
     "comments": 2.0,
     "github_stars": 9.0
    },
@@ -17604,9 +17401,9 @@
     "sparse-thinking instruction tuning"
    ],
    "metrics": {
-    "upvotes": 138.0,
+    "upvotes": 152.0,
     "comments": 4.0,
-    "github_stars": 845.0,
+    "github_stars": 1299.0,
     "citations": 0.0
    },
    "affiliations": [],
@@ -17615,33 +17412,6 @@
     "PDF": "https://arxiv.org/pdf/2611.18397",
     "Code": "https://github.com/RainBowLuoCS/Gamer",
     "Project": "https://mihoyo-gamer.github.io/"
-   }
-  }
- },
- "arxiv:2611.19465": {
-  "first_seen": "2026-11-18",
-  "item": {
-   "key": "arxiv:2611.19465",
-   "source": "arxiv",
-   "source_name": "arXiv",
-   "kind": "paper",
-   "title": "VAST: Compiling Grounded Vulnerability Scenarios into Verifiable, Multi-Step Environments for Evaluating LLM Red-Team Agents",
-   "url": "https://arxiv.org/abs/2611.19465",
-   "summary": "Evaluating Large Language Model (LLM) security agents requires reproducible environments whose workflow difficulty can be varied and whose failures can be diagnosed. We present VAST (Verifiable Adversarial Scenario Training & Evaluation), a declarative range compiler separating vulnerability scenarios from a compiler-introduced workflow-hardening layer. Following a post-hoc code and AST audit across all topics, the main benchmark retains 109 seed edges (45 with strict upstream CVE annotations), 72 family identifiers (62 under shared-HMAC relay grouping), 81 topic configurations (76 core plus 5 bounded execution models), and 1,387 instances (359 canonical four-gate-revalidated specs plus 1,028 seed variants) in a 42:39 partition. On the TopicServer compiler stratum, a budget-matched 270-episode prompt contrast across 10 compiled mechanism-family clusters (30 P2/P3/P4 instances, 40 turns, temperature 0.0) shows that glm-5.3, grok-4.7, and deepseek-v4-pro solve 12/90 instances under contract_only and 14/90 under generic_hint (cluster sign p=1.00), whereas supplying the shared workflow protocol in full_guide lifts completion to 76/90 (28/30, 23/30, 25/30; cluster sign p<=0.00391). On …",
-   "authors": [
-    "Zhen Wan"
-   ],
-   "published": "2026-11-17T05:00:00Z",
-   "tags": [
-    "cs.CR",
-    "cs.AI"
-   ],
-   "metrics": {
-    "citations": 0.0
-   },
-   "affiliations": [],
-   "links": {
-    "PDF": "https://arxiv.org/pdf/2611.19465"
    }
   }
  },
@@ -17667,7 +17437,10 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "University of Groningen",
+    "Bar-Ilan University"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.20734"
    }
@@ -17762,34 +17535,6 @@
    }
   }
  },
- "arxiv:2611.20003": {
-  "first_seen": "2026-11-18",
-  "item": {
-   "key": "arxiv:2611.20003",
-   "source": "arxiv",
-   "source_name": "arXiv",
-   "kind": "paper",
-   "title": "The novelty exposed: ablation, reproducibility and transparency in 40 technical reports of open-weight large language models (LLMs)",
-   "url": "https://arxiv.org/abs/2611.20003",
-   "summary": "In 2025 alone, 48 new large language model (LLM) architectures were added to the Hugging Face transformers library, and many of them arrive with a technical report that presents the model as new. What is actually new in these models, and is it tested? We put this question to LLM technical reports. We look at three things: what the reference code shows about how new open-weight architectures differ from earlier ones; what 40 randomly sampled technical reports claim as new and whether they support it with ablation studies; and what they disclose for reproducibility and transparency. In the library, 39 of the 48 architectures added in 2025 take at least two of their three core blocks from another model, most often Llama, although part of this reflects how the library writes code. In the reports, 19 of 73 architectural or training novelty claims come with a controlled with/without comparison; 4 of 40 reports state more than one training run; 8 rerun the models they compare against under one setup; and 1 discloses data mixture, token count, and compute together. We also looked for known components given new names: none of five candidate cases hid its origin, though we did not study mod…",
-   "authors": [
-    "Bahaeddin T\\\"urko\\u{g}lu"
-   ],
-   "published": "2026-11-17T05:00:00Z",
-   "tags": [
-    "cs.CL",
-    "cs.AI",
-    "cs.LG"
-   ],
-   "metrics": {
-    "citations": 0.0
-   },
-   "affiliations": [],
-   "links": {
-    "PDF": "https://arxiv.org/pdf/2611.20003"
-   }
-  }
- },
  "arxiv:2611.19105": {
   "first_seen": "2026-11-18",
   "item": {
@@ -17815,7 +17560,12 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "University of Stuttgart",
+    "Fulda University of Applied Sciences",
+    "Institute for Parallel and Distributed Systems , University of Stuttgart , Stuttgart , Germany",
+    "Fulda University of Applied Sciences , Fulda , Germany"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.19105"
    }
@@ -17854,45 +17604,16 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "University of Science and Technology of China",
+    "University of Science and Technology of China , China",
+    "China",
+    "RUIMING TANG",
+    "Unaffiliated , China DEFU LIAN * , University of Science and Technology of China , China"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.19742",
     "OpenAlex": "https://openalex.org/W7235560190"
-   }
-  }
- },
- "arxiv:2611.19700": {
-  "first_seen": "2026-11-18",
-  "item": {
-   "key": "arxiv:2611.19700",
-   "source": "arxiv",
-   "source_name": "arXiv",
-   "kind": "paper",
-   "title": "Where Should LLM Agents Adapt at Test Time? In Context, in Weights, or Both",
-   "url": "https://arxiv.org/abs/2611.19700",
-   "summary": "LLM agents operating repeatedly in the same environment, such as a code repository, a database, or an application suite, encounter tasks that share latent structure. Experience can reveal this structure, allowing agents to reuse environment knowledge and learn from environmental feedback. Agents can adapt at test-time using this experience through two channels: retaining it in context and updating their weights. These channels are usually studied separately, leaving unclear what each contributes and when they complement each other. We compare in-context learning (ICL), reinforcement learning with verifiable rewards using GRPO, and self-distillation using SDPO, alone and in combination, using a shared online protocol and modular framework. Agents encounter matched task streams, are evaluated on each task before adapting to it, and learn only from their own attempts and environment feedback. We evaluate 14 adaptation mechanisms and a stateless baseline with Qwen3.5-9B on 109 tasks from four environments drawn from SWE-bench Verified, AppWorld, ScienceWorld, and BIRD-Critic-SQLite, using five task orders per environment. ICL provides the largest standalone gain: its best policy raise…",
-   "authors": [
-    "Parsa Mirtaheri",
-    "Mohammadreza Armandpour",
-    "Keivan Alizadeh",
-    "Iman Mirzadeh",
-    "Parshin Shojaee",
-    "Aryo Lotfi",
-    "David Harrison",
-    "Mehrdad Farajtabar"
-   ],
-   "published": "2026-11-17T05:00:00Z",
-   "tags": [
-    "cs.LG",
-    "cs.AI",
-    "cs.CL"
-   ],
-   "metrics": {
-    "citations": 0.0
-   },
-   "affiliations": [],
-   "links": {
-    "PDF": "https://arxiv.org/pdf/2611.19700"
    }
   }
  },
@@ -17917,7 +17638,10 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "GE Vernova (United States)",
+    "GE Vernova Advanced Research Center Niskayuna , NY , USA"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.20398"
    }
@@ -17945,7 +17669,11 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "National Taiwan University",
+    "National Taiwan University Taipei , Taiwan",
+    "Coupang California , USA"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.19320",
     "OpenAlex": "https://openalex.org/W7234805930"
@@ -18007,7 +17735,13 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Florida State University",
+    "Stevens Institute of Technology",
+    "YUSHUN DONG *",
+    "Florida State University , Computer Science , Tallahassee , FL , USA",
+    "Stevens Institute of Technology , Computer Science , Hoboken , NJ , USA"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.19061"
    }
@@ -18036,7 +17770,11 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Tongji University",
+    "School of Computer Science and Technology , Tongji University , Shanghai , China",
+    "Shanghai Highly Electrical Appliance Co., Ltd , Shanghai , China"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.19275"
    }
@@ -18094,7 +17832,12 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Tsinghua University",
+    "Shanghai Jiao Tong University",
+    "Tsinghua University , China",
+    "Shanghai Jiao Tong University , China"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.20484"
    }
@@ -18164,7 +17907,11 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Purdue University West Lafayette",
+    "Google LLC",
+    "Purdue University"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.19823"
    }
@@ -18196,7 +17943,11 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "University of Science and Technology of China",
+    "Ant Group (China)",
+    "Ant Digital Technologies , Ant Group"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.20736"
    }
@@ -18257,7 +18008,14 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Chinese Academy of Sciences",
+    "Institute of Automation",
+    "Nanjing University",
+    "Baidu (China)",
+    "Institute of Automation , Chinese Academy of Sciences",
+    "Baidu"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.21461"
    }
@@ -18285,7 +18043,9 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Jiangnan University"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.21129"
    }
@@ -18317,7 +18077,10 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "University of Dhaka",
+    "Department of Robotics and Mechatronics Engineering , University of Dhaka , Bangladesh"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.18908"
    }
@@ -18347,7 +18110,9 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Princeton University"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.20605"
    }
@@ -18380,7 +18145,13 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Harbin Institute of Technology",
+    "Nanyang Technological University",
+    "Harbin Institute of Technology , Shenzhen , China",
+    "Nanyang Technological University , Singapore",
+    "Pingan Group , China"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.19311"
    }
@@ -18411,7 +18182,12 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Alibaba Group (China)",
+    "University of Chinese Academy of Sciences",
+    "Fliggy , Alibaba Group , Beijing , China",
+    "University of Chinese Academy of Sciences , Beijing , China"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.20726"
    }
@@ -18443,7 +18219,10 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Wuhan University",
+    "School of Cyber Science and Engineering , Wuhan University"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.20671"
    }
@@ -18477,7 +18256,16 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "TWT GmbH Science & Innovation (Germany)",
+    "Massachusetts Institute of Technology",
+    "Siemens (Germany)",
+    "Technical University of Munich",
+    "Harvard University",
+    "National Technical University of Athens",
+    "Massachusetts Institute of Technology , Cambridge , MA , USA",
+    "TWT GmbH Science & Innovation , Stuttgart , Germany"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.20873"
    }
@@ -18509,7 +18297,10 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Beihang University",
+    "School of Artificial Intelligence , Beihang University , Beijing 100191 , China"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.20695"
    }
@@ -18553,7 +18344,10 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "IBM (India)",
+    "IBM Software India"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.19982"
    }
@@ -18590,7 +18384,12 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Mila - Quebec Artificial Intelligence Institute",
+    "Mozilla Foundation",
+    "Mila -Quebec AI Institute",
+    "Mozilla"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.20144"
    }
@@ -18628,7 +18427,16 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Beijing University of Posts and Telecommunications",
+    "Alibaba Group (China)",
+    "Minzu University of China",
+    "Beijing Institute of Technology",
+    "Chinese Academy of Sciences",
+    "Institute of Automation",
+    "Alibaba Group",
+    "Center for Research on Intelligent Perception and Computing , NLPR , CASIA"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.20430"
    }
@@ -18682,7 +18490,7 @@
     "requirement tracking"
    ],
    "metrics": {
-    "upvotes": 51.0,
+    "upvotes": 53.0,
     "comments": 4.0,
     "github_stars": 15.0
    },
@@ -18717,7 +18525,9 @@
    "metrics": {
     "citations": 1.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Navital Labs , Delhi , India"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.20924"
    }
@@ -18752,7 +18562,7 @@
     "SWE-bench Multilingual"
    ],
    "metrics": {
-    "upvotes": 7.0,
+    "upvotes": 8.0,
     "comments": 6.0,
     "github_stars": 0.0
    },
@@ -18788,7 +18598,14 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Indian Institute of Technology Delhi",
+    "University of Birmingham",
+    "University of Cambridge",
+    "Indian Institute of Technology Delhi , India",
+    "University of Birmingham , UK",
+    "University of Cambridge , UK"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.20031"
    }
@@ -18904,7 +18721,7 @@
    "published": "2026-11-17T00:00:00Z",
    "tags": [],
    "metrics": {
-    "upvotes": 86.0,
+    "upvotes": 90.0,
     "comments": 2.0
    },
    "affiliations": [
@@ -19042,7 +18859,13 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "University of Macau",
+    "Hong Kong Polytechnic University",
+    "University of Macau Macau , China",
+    "Hong Kong Polytechnic University Hong Kong , China",
+    "Hong Kong Polytechnic University , PolyU Research Centre for Privacy and Security Technologies in Future Smart Systems …"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.19140"
    }
@@ -19069,7 +18892,10 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Tarsus University",
+    "Department of Computer Engineering , Tarsus University , Tarsus , Mersin , 33400 , Türkiye"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.20071"
    }
@@ -19132,7 +18958,13 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Harbin Institute of Technology",
+    "Nanyang Technological University",
+    "Harbin Institute of Technology , Shenzhen , China",
+    "Nanyang Technological University , Singapore",
+    "Pingan Group , China"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.19299"
    }
@@ -19156,8 +18988,13 @@
     "cs.IR",
     "cs.CL"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Michigan State University",
+    "Department of Computer Science and Engineering Michigan State University , East Lansing , United States"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.22353"
    }
@@ -19186,8 +19023,14 @@
     "cs.IR",
     "cs.AI"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Hong Kong University of Science and Technology",
+    "The Hong Kong University of Science and Technology Hong Kong , China",
+    "Trip.com Group Shanghai , China"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.22838"
    }
@@ -19222,8 +19065,17 @@
     "cs.AI",
     "cs.MA"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Intel (United States)",
+    "University of California San Diego",
+    "Hewlett Packard Enterprise (United States)",
+    "Intel",
+    "UC San Diego",
+    "Hewlett Packard Enterprise"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.22245"
    }
@@ -19253,8 +19105,14 @@
     "cs.CV",
     "cs.LG"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Binghamton University",
+    "eBay (United States)",
+    "eBay Inc"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.22131"
    }
@@ -19287,8 +19145,15 @@
    "tags": [
     "cs.IR"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Tencent (China)",
+    "Wuhan University",
+    "Tencent Inc. , Beijing , China",
+    "School of Cyber Science and Engineering , Wuhan University Wuhan , China"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.22503"
    }
@@ -19316,8 +19181,19 @@
     "cs.AI",
     "cs.CL"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Kyoto Institute of Technology",
+    "RIKEN",
+    "Nagaoka University of Technology",
+    "Aichi Institute of Technology",
+    "The University of Osaka",
+    "Guardian Robot Project , RIKEN , Kyoto , Japan",
+    "Kyoto Institute of Technology , Kyoto , Japan",
+    "Nagaoka University of Technology , Nagaoka , Japan"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.22270"
    }
@@ -19357,9 +19233,9 @@
     "Environment Evolution Loop"
    ],
    "metrics": {
-    "upvotes": 14.0,
+    "upvotes": 15.0,
     "comments": 2.0,
-    "github_stars": 3.0
+    "github_stars": 5.0
    },
    "affiliations": [
     "IQuest"
@@ -19394,8 +19270,13 @@
     "cs.SE",
     "cs.AI"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Fraunhofer Institute for Experimental Software Engineering",
+    "Fraunhofer IESE Kaiserslautern , Germany"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.22323"
    }
@@ -19424,8 +19305,18 @@
     "cs.MA",
     "cs.SE"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Harvard University",
+    "Stanford University",
+    "Massachusetts Institute of Technology",
+    "Harvard University , USA",
+    "Bommarito Consulting , LLC",
+    "CodeX - The Stanford Center for Legal Informatics , Stanford University",
+    "Massachusetts Institute of Technology , USA"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.22991"
    }
@@ -19451,7 +19342,9 @@
     "cs.CL",
     "cs.CV"
    ],
-   "metrics": {},
+   "metrics": {
+    "citations": 0.0
+   },
    "affiliations": [],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.23127"
@@ -19478,8 +19371,13 @@
    "tags": [
     "cs.CV"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Alibaba Group (China)",
+    "Alibaba Group"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.22343"
    }
@@ -19507,8 +19405,16 @@
     "cs.CR",
     "cs.AI"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Universidad de Murcia",
+    "Technical University of Denmark",
+    "Department of Information and Communication Engineering , University of Murcia , Murcia , 30100 , Spain",
+    "SCORPION Cybertech , CEEIM , Campus Universitario de Espinardo , 7 , 30100 , Spain",
+    "Department of Applied Mathematics and Computer Science , Technical University of Denmark , Kongens Lyngby , Denmark"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.22589"
    }
@@ -19537,8 +19443,18 @@
     "cs.LG",
     "cs.PF"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "University of Science and Technology of China",
+    "Beijing Normal University",
+    "Zhejiang University",
+    "East China Normal University",
+    "Alibaba Group (China)",
+    "Dmall Inc",
+    "Alibaba Group"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.21688"
    }
@@ -19569,8 +19485,19 @@
     "cs.CL",
     "cs.LG"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "University of Oxford",
+    "MRC Weatherall Institute of Molecular Medicine",
+    "Imperial College London",
+    "University College London",
+    "Nanyang Technological University",
+    "Department of Engineering Science , University of Oxford , Oxford , UK",
+    "MRC Weatherall Institute of Molecular Medicine , University of Oxford , Oxford , UK",
+    "Department of Materials , Imperial College London , London , UK"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.22017"
    }
@@ -19601,7 +19528,7 @@
    "published": "2026-11-17T00:00:00Z",
    "tags": [],
    "metrics": {
-    "upvotes": 19.0,
+    "upvotes": 20.0,
     "comments": 2.0,
     "github_stars": 4.0
    },
@@ -19644,8 +19571,15 @@
     "cs.AI",
     "cs.CL"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Beijing Institute of Technology",
+    "Alibaba Group (China)",
+    "Beijing University of Posts and Telecommunications",
+    "Alibaba Group"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.22777"
    }
@@ -19670,7 +19604,9 @@
    "tags": [
     "cs.AI"
    ],
-   "metrics": {},
+   "metrics": {
+    "citations": 0.0
+   },
    "affiliations": [],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.22432"
@@ -19738,7 +19674,9 @@
     "cs.SE",
     "cs.AI"
    ],
-   "metrics": {},
+   "metrics": {
+    "citations": 0.0
+   },
    "affiliations": [],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.21797"
@@ -19766,8 +19704,15 @@
     "cs.AI",
     "cs.SE"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Ulsan National Institute of Science and Technology",
+    "Pohang University of Science and Technology",
+    "Safe AI Research Center , UNIST , Republic of Korea",
+    "Department of Computer Science and Engineering , POSTECH , Republic of Korea"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.22888"
    }
@@ -19820,8 +19765,13 @@
     "cs.LG",
     "cs.SE"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Karlsruhe Institute of Technology",
+    "Karlsruhe Institute of Technology Karlsruhe , Germany"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.23678"
    }
@@ -19859,7 +19809,9 @@
     "cs.AI",
     "cs.MA"
    ],
-   "metrics": {},
+   "metrics": {
+    "citations": 0.0
+   },
    "affiliations": [],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.23588"
@@ -19892,8 +19844,16 @@
     "cs.LG",
     "cs.MA"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Beijing Institute of Technology",
+    "Minzu University of China",
+    "Sun Yat-sen University",
+    "Shandong University",
+    "Shandong University , Weihai"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.23362"
    }
@@ -19920,7 +19880,9 @@
    "tags": [
     "cs.AI"
    ],
-   "metrics": {},
+   "metrics": {
+    "citations": 0.0
+   },
    "affiliations": [],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.24221"
@@ -19948,8 +19910,13 @@
     "cs.AI",
     "cs.GT"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Columbia University",
+    "MQube Cognition"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.23403"
    }
@@ -19974,7 +19941,9 @@
     "cs.LG",
     "cs.IR"
    ],
-   "metrics": {},
+   "metrics": {
+    "citations": 0.0
+   },
    "affiliations": [],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.24757"
@@ -20006,7 +19975,9 @@
    "tags": [
     "cs.CV"
    ],
-   "metrics": {},
+   "metrics": {
+    "citations": 0.0
+   },
    "affiliations": [],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.24042"
@@ -20034,8 +20005,15 @@
     "cs.AI",
     "physics.comp-ph"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Stanford University",
+    "Department of Mechanical Engineering , Stanford University , Stanford , CA 94305 , USA",
+    "Institute for Computational and Mathematical Engineering , Stanford University , Stanford , CA 94305 , USA",
+    "Department of Energy Science & Engineering , Stanford University , Stanford , CA 94305 , USA"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.23473"
    }
@@ -20061,8 +20039,13 @@
     "cs.AI",
     "cs.SE"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Nestlé (Singapore)",
+    "Neo Research Singapore"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.24491"
    }
@@ -20087,8 +20070,12 @@
     "cs.DB",
     "cs.AI"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Megagon Labs Mountain View , California , USA"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.23629"
    }
@@ -20115,7 +20102,6 @@
     "citations": 0.0
    },
    "affiliations": [
-    "Dimension Technologies (United States)",
     "New Dimension Education Centre Chennai"
    ],
    "links": {
@@ -20143,8 +20129,14 @@
     "cs.MA",
     "cs.SE"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Carnegie Mellon University",
+    "Columbia University (alum) , USA",
+    "Carnegie Mellon University (alum) , USA"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.23990"
    }
@@ -20168,8 +20160,13 @@
     "cs.LG",
     "cs.AI"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "University of Huddersfield",
+    "Department of Computer Science , University of Huddersfield , UK"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.24728"
    }
@@ -20195,8 +20192,13 @@
     "cs.AI",
     "cs.SE"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Rice University",
+    "The Quarry Lane School"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.23611"
    }
@@ -20220,8 +20222,15 @@
     "cs.SE",
     "cs.AI"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Wuhan University",
+    "University of Warwick",
+    "University of Warwick , Coventry , United Kingdom",
+    "Wuhan University , Wuhan , China"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.23732"
    }
@@ -20311,8 +20320,19 @@
     "astro-ph.GA",
     "cs.NE"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "University of Portsmouth",
+    "University of Trento",
+    "Aston University",
+    "Montana State University",
+    "Linköping University",
+    "Aarhus University",
+    "Unlayer AI Amsterdam , the Netherlands",
+    "Institute of Cosmology and Gravitation University of Portsmouth Portsmouth , UK"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.24347"
    }
@@ -20338,8 +20358,14 @@
     "cs.LG",
     "stat.ME"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "University of California, Berkeley",
+    "Department of Statistics , University of California , Berkeley , Berkeley , California , USA",
+    "University of California , Berkeley , USA"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.23638"
    }
@@ -20364,8 +20390,14 @@
     "cs.AI",
     "cs.PL"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "University of Colorado Boulder",
+    "University of Colorado System",
+    "College of Engineering and Applied Science University of Colorado Boulder"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.23249"
    }
@@ -20446,8 +20478,14 @@
    "tags": [
     "cs.AI"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "National Research University Higher School of Economics",
+    "National Research University Higher School of Economics Moscow , Russia",
+    "Independent researcher Moscow , Russia"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.23749"
    }
@@ -20474,8 +20512,15 @@
     "cs.AI",
     "cs.SE"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Advanced Micro Devices (Singapore)",
+    "Nanyang Technological University",
+    "AMD Singapore",
+    "NTU Singapore"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.24324"
    }
@@ -20499,8 +20544,12 @@
     "cs.SE",
     "cs.AI"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Chengdu , China"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.23353"
    }
@@ -20526,8 +20575,14 @@
     "cs.SE",
     "cs.AI"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "University of California, Irvine",
+    "University of Wollongong",
+    "University of California , Irvine"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.23283"
    }
@@ -20559,7 +20614,9 @@
    "tags": [
     "cs.CV"
    ],
-   "metrics": {},
+   "metrics": {
+    "citations": 0.0
+   },
    "affiliations": [],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.24116"
@@ -20587,8 +20644,13 @@
    "tags": [
     "cs.AI"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Minjiang University",
+    "Minjiang University Fuzhou , China"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.24357"
    }
@@ -20614,8 +20676,17 @@
    "tags": [
     "cs.AI"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Nanyang Technological University",
+    "Nanjing University of Science and Technology",
+    "Monash University",
+    "VinUniversity",
+    "Nanyang Technological University , Singapore",
+    "Project Lead"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.24294"
    }
@@ -20775,7 +20846,7 @@
    "published": "2026-11-18T00:00:00Z",
    "tags": [],
    "metrics": {
-    "upvotes": 160.0,
+    "upvotes": 167.0,
     "comments": 3.0
    },
    "affiliations": [
@@ -20807,8 +20878,13 @@
    "tags": [
     "cs.AI"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Mila - Quebec Artificial Intelligence Institute",
+    "Mila -Quebec Artificial Intelligence Institute"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.23817"
    }
@@ -20836,8 +20912,15 @@
     "cs.CL",
     "cs.NE"
    ],
-   "metrics": {},
-   "affiliations": [],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "York University",
+    "Vector Institute",
+    "Queen's University",
+    "Queens University"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.23509"
    }
@@ -20847,8 +20930,8 @@
   "first_seen": "2026-11-20",
   "item": {
    "key": "arxiv:2611.24651",
-   "source": "arxiv",
-   "source_name": "arXiv",
+   "source": "hf_papers",
+   "source_name": "HF Daily Papers",
    "kind": "paper",
    "title": "Piccolo: Co-Evolving Decision Models and Data through Recursive Self-Improvement",
    "url": "https://arxiv.org/abs/2611.24651",
@@ -20872,25 +20955,517 @@
     "Bolin Ding",
     "Jingren Zhou"
    ],
-   "published": "2026-11-19T05:00:00Z",
-   "tags": [
-    "cs.CL",
-    "cs.AI",
-    "cs.CV"
-   ],
+   "published": "2026-11-19T00:00:00Z",
+   "tags": [],
    "metrics": {
-    "upvotes": 11.0,
+    "upvotes": 14.0,
     "comments": 2.0,
-    "github_stars": 58.0
+    "github_stars": 62.0
    },
    "affiliations": [
     "agentscope-ai"
    ],
    "links": {
-    "PDF": "https://arxiv.org/pdf/2611.24651",
     "HF": "https://huggingface.co/papers/2611.24651",
+    "PDF": "https://arxiv.org/pdf/2611.24651",
     "Code": "https://github.com/agentscope-ai/Piccolo",
     "Project": "https://decisionplayground.agentscope.io/"
+   }
+  }
+ },
+ "doi:10.63922/ijebir.v5i06.7177": {
+  "first_seen": "2026-11-23",
+  "item": {
+   "key": "doi:10.63922/ijebir.v5i06.7177",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "AI-Driven Retail Supply Chain: A Systematic Literature Review of Inventory Intelligence, Demand Forecasting, and Operational Resilience",
+   "url": "https://doi.org/10.63922/ijebir.v5i06.7177",
+   "summary": "Logistics disruptions and market fluctuations demand the integration of intelligent systems into contemporary retail supply chains. Objective: To examine the contribution of Artificial Intelligence (AI) to improving inventory intelligence, demand forecasting accuracy, and the building of retail operational resilience. Method: A Systematic Literature Review following the PRISMA 2020 protocol on the ScienceDirect and JSTOR databases (2020–2026). Of 257 initially identified studies, 30 core empirical articles were selected for synthesis. Results: Research trends are dominated by computational quantitative approaches. Machine learning-based demand forecasting has been shown to accelerate automated replenishment. Inventory intelligence using deep reinforcement learning algorithms effectively optimizes multi-echelon inventory under market uncertainty. Meanwhile, operational resilience is accelerated through Digital Twin and Generative AI technologies for real-time risk mitigation. Conversely, lumpy demand patterns are the main negative limiting factor that triggers the risk of stockouts. Conclusion: AI integration transforms retail supply chain management from reactive to prescriptive, …",
+   "authors": [
+    "Diwa Andira Putra",
+    "M.Tarikh Azis",
+    "Satriadi Satriadi",
+    "Rezi Rezi",
+    "Diky Darmansyah"
+   ],
+   "published": "2026-11-19T00:00:00Z",
+   "tags": [
+    "review"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Tanjungpura University",
+    "Universitas Maritim Raja Ali Haji",
+    "Department of Management, STIE Pembangunan Tanjungpinang, Tanjungpinang, Indonesia"
+   ],
+   "links": {
+    "OpenAlex": "https://openalex.org/W7237366582"
+   }
+  }
+ },
+ "doi:10.1007/978-981-92-8107-7_42": {
+  "first_seen": "2026-11-23",
+  "item": {
+   "key": "doi:10.1007/978-981-92-8107-7_42",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Hybrid Retail Demand Forecasting with Pretrained Time-Series Models and Business Signals",
+   "url": "https://doi.org/10.1007/978-981-92-8107-7_42",
+   "summary": "",
+   "authors": [
+    "Thanh Thao Nguyen",
+    "Hung-Nghiep Tran"
+   ],
+   "published": "2026-11-20T00:00:00Z",
+   "tags": [
+    "conference-paper"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Vietnam National University Ho Chi Minh City",
+    "University of Information Technology",
+    "University of Information Technology, Ho Chi Minh City, Vietnam",
+    "Vietnam National University, Ho Chi Minh City, Vietnam"
+   ],
+   "links": {
+    "OpenAlex": "https://openalex.org/W7236819924"
+   }
+  }
+ },
+ "doi:10.1145/3769300": {
+  "first_seen": "2026-11-23",
+  "item": {
+   "key": "doi:10.1145/3769300",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Challenges and Methods of Causal Promotions Recommendation in E-commerce",
+   "url": "https://doi.org/10.1145/3769300",
+   "summary": "This article tackles the challenges of causal promotions recommendation in e-commerce, with a focus on scalable, real-world implementations for managing large-scale promotional campaigns. We begin by outlining the unique domain-specific complexities of promotions in dynamic settings such as online travel platforms, including triggered costs, sparse conversions, and multi-product interactions. To address these, we introduce a steering framework that enables systematic, continuous experimentation and measurement. We then present methods and best practices for causal uplift modeling and constrained optimization, highlighting a retrospective estimation approach that leverages transaction-only data. These contributions are validated through real-world deployments at Booking.com, demonstrating how causal machine learning can be operationalized to optimize promotions effectively. Our work bridges rigorous methodology with practical business needs, offering a blueprint for balancing strategic impact and operational constraints in industrial settings.",
+   "authors": [
+    "Dmitri Goldenberg",
+    "Amit Livne",
+    "Carlos Herrero-Gómez",
+    "Javier Albert",
+    "Itsik Adiv",
+    "Igor Spivak",
+    "Ran Dach",
+    "Felipe Moraes",
+    "Hugo Manuel Proença",
+    "Bracha Shapira"
+   ],
+   "published": "2026-10-28T00:00:00Z",
+   "tags": [
+    "article"
+   ],
+   "metrics": {
+    "citations": 4.0
+   },
+   "affiliations": [
+    "Ben-Gurion University of the Negev",
+    "Ben-Gurion University of the Negev, Tel Aviv, Israel",
+    "Booking.com, Tel Aviv, Israel",
+    "Ben-Gurion University of the Negev, Beer Sheva Israel",
+    "Booking.com, Amsterdam, Netherlands",
+    "Ben-Gurion University of the Negev, Beer Sheva, Israel"
+   ],
+   "links": {
+    "OpenAlex": "https://openalex.org/W4414685888"
+   }
+  }
+ },
+ "doi:10.1371/journal.pone.0362973": {
+  "first_seen": "2026-11-23",
+  "item": {
+   "key": "doi:10.1371/journal.pone.0362973",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "CogD-ML: Cognitive determinants of social commerce purchase intention in Bangladesh using machine learning and explainable AI",
+   "url": "https://doi.org/10.1371/journal.pone.0362973",
+   "summary": "Cognitive factors are associated with online purchase intentions in developing economies, and the linear models conventionally used to study them can miss non-linear patterns. We report an applied integration of the Theory of Planned Behavior (TPB) with machine learning and explainable AI (XAI) to predict social media-driven e-commerce purchase intentions in Bangladesh. Survey data from 352 young, student-dominated consumers captured attitudes, subjective norms, perceived behavioral control, and purchase behavior on validated Likert scale items. After reliability-based labeling and feature selection, we ran an ablation across seven classical classifiers and one multilayer perceptron, with stratified five-fold cross-validation, threshold sensitivity analysis, and a cross-domain check. With all TPB constructs included, support vector machines and AdaBoost reached 92% accuracy on the held-out test set, and cross-validated mean accuracy ranged from 0.84 to 0.88 for every model except the decision tree. These figures should be read against a positive-class prevalence of 82.1%, which inflates accuracy and F1 relative to imbalance-robust measures. Transfer to an independent North Indian …",
+   "authors": [
+    "Saikat Barua",
+    "Raiyan Rahman",
+    "Abul Kalam Al Azad",
+    "Sifat Momen"
+   ],
+   "published": "2026-11-20T00:00:00Z",
+   "tags": [
+    "article"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "North South University",
+    "North South University, Dhaka, Bangladesh"
+   ],
+   "links": {
+    "OpenAlex": "https://openalex.org/W7237029377"
+   }
+  }
+ },
+ "doi:10.5267/j.ijdns.2026.31": {
+  "first_seen": "2026-11-23",
+  "item": {
+   "key": "doi:10.5267/j.ijdns.2026.31",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Behavioral segmentation in e-commerce: A systematic literature review of data-driven meth-ods, applications, and research directions",
+   "url": "https://doi.org/10.5267/j.ijdns.2026.31",
+   "summary": "The topic of behavioral segmentation has emerged as an important research area in e-commerce since online stores increasingly depend on customer data for personalized, recommendation, retention, pricing, and marketing decisions. Behavioral segmentation is focused on observable actions such as browsing, clicking, buying, cart interaction, channel use, response to discounts, churn, and engagement. The existing studies are split across different methods, data sets, behavioral variables, and application areas making it difficult to understand the role that behavioral segmentation plays in e-commerce. The reviewed papers presented below are a systematic review of 44 studies in e-commerce behavioral segmentation published between 2016 and 2026. The selected papers were analyzed according to the selection process, inspired by the PRISMA framework. The selected papers were reviewed along with their segments, behavioral data sources, application areas, and limitations. Behavioral segmentation techniques are dominated by RFM-based models, clustering algorithms, and machine learning. Deep learning, explainable AI, dynamic segmentation, and recommendation models are starting to dominate. Most…",
+   "authors": [
+    "Omar El Aalouche",
+    "Fayçal Messaoudi"
+   ],
+   "published": "2026-11-23T02:00:48.058737Z",
+   "tags": [
+    "review"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Sidi Mohamed Ben Abdellah University",
+    "National School of Applied Sciences , Sidi Mohamed Ben Abdellah University , Fez , Morocco",
+    "National School of Business and Management , Sidi Mohamed Ben Abdellah University , Fez , Morocco"
+   ],
+   "links": {
+    "OpenAlex": "https://openalex.org/W7163907458"
+   }
+  }
+ },
+ "arxiv:2611.26248": {
+  "first_seen": "2026-11-23",
+  "item": {
+   "key": "arxiv:2611.26248",
+   "source": "hf_papers",
+   "source_name": "HF Daily Papers",
+   "kind": "paper",
+   "title": "TwinLab-Bench: Evaluating AI Scientists in Agentic Twins of Real Labs",
+   "url": "https://arxiv.org/abs/2611.26248",
+   "summary": "AI agents are increasingly expected to act as AI scientists, which requires three increasingly open abilities: carrying out a given computational workflow correctly, choosing the next measurements from a given design space, and designing their own experiments. Existing benchmarks mainly evaluate the first two abilities, in a terminal or in a closed loop that selects from predefined candidates. Evaluating the third ability requires reliably executing an experiment that an agent designs, with readings grounded in a real laboratory. We introduce TwinLab-Bench, which evaluates AI scientists on self-designed experiments in 52 tasks from laboratories in the physical sciences, the life sciences, and engineering. The benchmark supports more than 100 experimental action types, and the agent's report is scored by comparison with a hidden answer taken from real laboratory records. Each task has its own TwinLab agent, an agent that serves as the environment and executes the experiments that the tested agent designs, reading the raw materials of the laboratory and calling calculators that are built from its records. Compared with a language model that sees only the task description, the TwinLa…",
+   "authors": [
+    "Yang Wan",
+    "Linchao Zhu"
+   ],
+   "published": "2026-11-20T00:00:00Z",
+   "tags": [],
+   "metrics": {
+    "upvotes": 7.0,
+    "comments": 2.0,
+    "github_stars": 6.0
+   },
+   "affiliations": [
+    "Zhejiang University"
+   ],
+   "links": {
+    "HF": "https://huggingface.co/papers/2611.26248",
+    "PDF": "https://arxiv.org/pdf/2611.26248",
+    "Code": "https://github.com/ZJUSCL/TwinLab-Bench",
+    "Project": "https://twinlab-bench.github.io/"
+   }
+  }
+ },
+ "arxiv:2611.17460": {
+  "first_seen": "2026-11-23",
+  "item": {
+   "key": "arxiv:2611.17460",
+   "source": "hf_papers",
+   "source_name": "HF Daily Papers",
+   "kind": "paper",
+   "title": "Unfinished-Bench: Measuring Rule Violations by Persistent Agents in Realistic Work Environments",
+   "url": "https://arxiv.org/abs/2611.17460",
+   "summary": "AI agents are increasingly equipped with persistence toward task completion to run delegated work autonomously for long periods, under many unstated constraints from internal documents and other people's authority. When completion requires violating a rule, the agent must decide alone, yet benchmarks of instruction-rule conflicts state the rule in the prompt or keep it hidden and do not evaluate persistence. We present Unfinished-Bench, a benchmark that gives models persistence in autonomous runs without a user, in realistic work environments with embedded rules. In each of its 97 scenarios across 7 organizations and 7 risk categories, the goal and the rule cannot both hold. We find that persistence raised violations of a rule in an internal document from 32.2% to 43.6%, five times the 8.5% for the same rule stated by the user. Of the document-rule violations, 98.3% occurred after the rule was displayed, and in 89% of a judged sample the agent first wrote down the rule. Violations of rules placed in the environment without user oversight can lead to serious incidents, so persistence-driven risks need to be evaluated. Benchmark documentation: https://francis21c.github.io/unfinished…",
+   "authors": [
+    "Seunghyun Lee",
+    "Jaehui Hwang",
+    "Dongyoon Han",
+    "Sangdoo Yun"
+   ],
+   "published": "2026-11-19T00:00:00Z",
+   "tags": [],
+   "metrics": {
+    "upvotes": 9.0,
+    "comments": 3.0,
+    "github_stars": 1.0
+   },
+   "affiliations": [
+    "NAVER AI Lab"
+   ],
+   "links": {
+    "HF": "https://huggingface.co/papers/2611.17460",
+    "PDF": "https://arxiv.org/pdf/2611.17460",
+    "Code": "https://github.com/naver-ai/unfinished-bench",
+    "Project": "https://francis21c.github.io/unfinished-bench/"
+   }
+  }
+ },
+ "arxiv:2611.26408": {
+  "first_seen": "2026-11-23",
+  "item": {
+   "key": "arxiv:2611.26408",
+   "source": "hf_papers",
+   "source_name": "HF Daily Papers",
+   "kind": "paper",
+   "title": "Training Vision Models for LLM-Driven Weight-Space Programming",
+   "url": "https://arxiv.org/abs/2611.26408",
+   "summary": "It has been demonstrated that, in certain settings, large language models can perform weight-space programming to directly modify the weights of neural networks. However, it is unknown how dedicated training of these networks can contribute to the successes of weight-space programming. We present a benchmark of LLM-driven weight-space programming on vision models, in which five LLMs edit convolutional networks and vision transformers on relabeling and error-correction tasks on Waterbirds, CIFAR-100, PACS and Entity-30. We report more than 2,600 such edit processes, whereby each edit is scored on held-out images for success, side effects and accuracy loss. We compare standard training with label smoothing, gradient-based editable training, and our Edit-Ready Training (ERT), a novel method that rehearses the direct, closed-form weight edits LLMs perform. We show that preparing networks for editing raises the success of LLM edits substantially where standard networks are hard to edit. ERT further achieves the highest mean score for GPT-6 Astra and Claude Opus 5.5 across all evaluated baselines. We will release our LLM testing framework alongside all tasks, editing trajectories and sc…",
+   "authors": [
+    "Timo Ropinski",
+    "Sebastian Kranz"
+   ],
+   "published": "2026-11-20T00:00:00Z",
+   "tags": [],
+   "metrics": {
+    "upvotes": 17.0,
+    "comments": 3.0,
+    "citations": 0.0
+   },
+   "affiliations": [],
+   "links": {
+    "HF": "https://huggingface.co/papers/2611.26408",
+    "PDF": "https://arxiv.org/pdf/2611.26408"
+   }
+  }
+ },
+ "doi:10.4018/979-8-3373-9139-7.ch002": {
+  "first_seen": "2026-11-23",
+  "item": {
+   "key": "doi:10.4018/979-8-3373-9139-7.ch002",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "AI-Enabled Carbon-Aware Replenishment for Retail and Manufacturing: Linking Demand Forecasting to Proxy-Based Scope 2 CO2e Outcomes",
+   "url": "https://doi.org/10.4018/979-8-3373-9139-7.ch002",
+   "summary": "This chapter develops a reproducible carbon-aware replenishment framework linking data-driven demand forecasting to operational and proxy-based environmental outcomes in retail and manufacturing. Using the UCI Online Retail dataset, daily demand is forecast with a managerial baseline, the 7-day moving average, and an interpretable data-driven OLS model based on lagged demand and calendar effects. Forecasts are embedded into a single-echelon order-up-to replenishment simulation under fixed lead time and lost sales assumptions. Results show that the OLS-based model improves MAPE from 35.14% to 27.25% and reduces average inventory, total replenishment volume, waste-risk exposure, and proxy-based Scope 2 CO2e estimates across all tested EI/EF scenarios. However, service performance does not improve automatically, as fill rate declines under unchanged policy settings. The findings show that environmental and operational benefits from data-driven forecasting depend not only on better forecasts, but also on replenishment policy recalibration, bias monitoring, and transparent governance.",
+   "authors": [
+    "Ural Gökay ÇİÇEKLİ",
+    "Ewelina Idziak",
+    "Murat Kocamaz"
+   ],
+   "published": "2026-11-19T00:00:00Z",
+   "tags": [
+    "book-chapter"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Ege University",
+    "Kazimierz Wielki University in Bydgoszcz",
+    "Azerbaijan State University of Economics",
+    "Department of Business Administration, Ege University, Turkey",
+    "Uniwersytet Kazimierza Wielkiego, Poland & Azerbaijan State University of Economics, Azerbaijan"
+   ],
+   "links": {
+    "OpenAlex": "https://openalex.org/W7236583238"
+   }
+  }
+ },
+ "doi:10.56975/ijvra.v4i11.712385": {
+  "first_seen": "2026-11-23",
+  "item": {
+   "key": "doi:10.56975/ijvra.v4i11.712385",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "SHAPING PURCHASE INTENTIONS IN THE DIGITAL AGE: THE EFFECT OF SOCIAL MEDIA ON FASHION PRODUCTS CHOICES",
+   "url": "https://doi.org/10.56975/ijvra.v4i11.712385",
+   "summary": "Social media influencers (SMIs) have become important intermediaries in fashion marketing because they combine perceived similarity, source credibility, and sustained relational interaction with followers. This study examines how attitude homophily and attractiveness shape trustworthiness, expertise, and parasocial relationship, and how these perceived characterizations are associated with consumers’ purchase intention for fashion products in Delhi-NCR, India. This study adopts a quantitative causal research design using partial least squares structural equation modeling (PLS-SEM). Data were collected through a structured online questionnaire from 110 respondents selected through purposive sampling. The measurement model demonstrated strong internal consistency and convergent validity, with composite reliability values ranging from 0.926 to 0.957 and average variance extracted values ranging from 0.716 to 0.816. Discriminant validity was generally supported; the HTMT value between purchase intention and expertise was 0.878, exceeding the conservative 0.85 benchmark but remaining below 0.90. In the structural model, expertise had the strongest direct association with purchase inten…",
+   "authors": [
+    "Disha Gupta"
+   ],
+   "published": "2026-11-01T00:00:00Z",
+   "tags": [
+    "article"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "G.L. Bajaj Institute of Technology and Management Greater Noida",
+    "GL Bajaj Institute of Management & Research, Greater Noida, India"
+   ],
+   "links": {
+    "OpenAlex": "https://openalex.org/W7226018716"
+   }
+  }
+ },
+ "arxiv:2611.24654": {
+  "first_seen": "2026-11-23",
+  "item": {
+   "key": "arxiv:2611.24654",
+   "source": "hf_papers",
+   "source_name": "HF Daily Papers",
+   "kind": "paper",
+   "title": "CurvDelta: Low-Curvature Delta Modeling For Surgical Learning and Unlearning",
+   "url": "https://arxiv.org/abs/2611.24654",
+   "summary": "A central challenge in adapting large language models (LLMs) is capability preservation: an adaptation can achieve its target while degrading general capabilities. We introduce CurvDelta, a scalable framework that incorporates the preservation constraint into the parameterization of the model update. By analyzing the local geometry of the preservation constraint around the pre-adaptation model, CurvDelta constructs a low-curvature space in which parameter updates leave the preservation loss nearly invariant. We make its construction practical for LLMs through Kronecker-factored approximate curvature (K-FAC) and a factorized projection. We also introduce CurvLoRA, a low-rank variant within the same preservation geometry, designed for more efficient adaptation. Both methods apply to preservation-constrained adaptation tasks such as capability learning and selective unlearning. We evaluate our methods on mathematical reasoning, code generation, and knowledge unlearning. For mathematical reasoning and code generation, our approaches achieve competitive downstream performance while better preserving general capabilities, offering a favorable acquisition--retention trade-off relative to…",
+   "authors": [
+    "Zeguan Xiao",
+    "Zhuocheng Liang",
+    "Yun Chen",
+    "Yong Wang",
+    "Guanhua Chen",
+    "Pinyan Lu"
+   ],
+   "published": "2026-11-19T00:00:00Z",
+   "tags": [
+    "large language models",
+    "capability preservation",
+    "CurvDelta",
+    "preservation constraint",
+    "parameterization",
+    "local geometry",
+    "low-curvature space",
+    "preservation loss",
+    "Kronecker-factored approximate curvature",
+    "K-FAC"
+   ],
+   "metrics": {
+    "upvotes": 26.0,
+    "comments": 2.0,
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Shanghai University of Finance and Economics",
+    "Alibaba Group (China)",
+    "Southern University of Science and Technology",
+    "Alibaba Group"
+   ],
+   "links": {
+    "HF": "https://huggingface.co/papers/2611.24654",
+    "PDF": "https://arxiv.org/pdf/2611.24654",
+    "Project": "https://xiaozi-max.github.io/CurvDelta/"
+   }
+  }
+ },
+ "arxiv:2611.21053": {
+  "first_seen": "2026-11-23",
+  "item": {
+   "key": "arxiv:2611.21053",
+   "source": "hf_papers",
+   "source_name": "HF Daily Papers",
+   "kind": "paper",
+   "title": "System 1 agents: a method for local, reliable and fast agentic AI",
+   "url": "https://arxiv.org/abs/2611.21053",
+   "summary": "Agentic artificial intelligence could automate analyses of sensitive clinical data, but current agents depend on large language models (LLMs). Cloud LLMs expose patient data. Local LLMs hallucinate, and an invented value in a tool call propagates through every later step. Here we present a method to build System 1 agents: local agents that call tools without generating text. A deterministic compiler turns each tool's schema and the request into multiple-choice questions whose options come from the request and the schema, then a one-pass decision model answers them. On 1,952 requests to 157 biomedical tools, the best System 1 agent chose the right tool, or correctly declined, for 97.0% of requests, significantly ahead of all 18 local LLM-agent settings (best 95.2%). The System 1 agent filled 97.0% of 6,056 stated argument values. No System 1 call contained invented content, against 5.5-19.7% of LLM calls. The System 1 Agents framework is freely available as open-source software at https://github.com/eltzanis/SystemOneAgents.",
+   "authors": [
+    "Eleftherios Tzanis",
+    "Michail E. Klontzas"
+   ],
+   "published": "2026-11-20T00:00:00Z",
+   "tags": [
+    "agentic artificial intelligence",
+    "large language models (LLMs)",
+    "local LLMs",
+    "cloud LLMs",
+    "tool calls",
+    "hallucination",
+    "System 1 agents",
+    "deterministic compiler",
+    "tool schema",
+    "multiple-choice questions"
+   ],
+   "metrics": {
+    "upvotes": 6.0,
+    "comments": 7.0,
+    "github_stars": 15.0,
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Artificial Intelligence and Translational Imaging (ATI) Lab , Department of Radiology",
+    "Division of Radiology"
+   ],
+   "links": {
+    "HF": "https://huggingface.co/papers/2611.21053",
+    "PDF": "https://arxiv.org/pdf/2611.21053",
+    "Code": "https://github.com/eltzanis/SystemOneAgents"
+   }
+  }
+ },
+ "doi:10.56345/ijrdv13n349": {
+  "first_seen": "2026-11-23",
+  "item": {
+   "key": "doi:10.56345/ijrdv13n349",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Artificial Intelligence and Airport Retail Profitability: A Management Framework for Enhancing Non-Aeronautical Revenue",
+   "url": "https://doi.org/10.56345/ijrdv13n349",
+   "summary": "Retail is one of the main sources of non-aeronautical revenue for airports, yet many airport shops are still managed with little passenger segmentation, fixed promotions and reactive inventory planning. Artificial intelligence (AI) offers new ways to improve these decisions. This paper examines how AI can support airport retail management in seven areas: passenger analytics, demand forecasting, personalized marketing, inventory optimization, pricing, passenger-flow analysis and real-time customer engagement. Drawing on an integrative review of research on airport commercial management, passenger shopping behavior and AI in retail, we develop a management framework that links data inputs and AI applications to retail decisions and profitability indicators, such as conversion rate, average transaction value and sales per passenger. The main argument is that AI helps airports and concessionaires move from a passenger-volume model to a passenger-value model. In this model, profit depends less on how many passengers pass through the terminal and more on how much value each passenger creates. The framework differs from earlier work in two ways. Unlike studies of the determinants of non-…",
+   "authors": [
+    "Altin Gjini",
+    "Aliona Zeqiri"
+   ],
+   "published": "2026-11-20T00:00:00Z",
+   "tags": [
+    "article"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Aleksandër Moisiu University",
+    "Academy of Sciences of Albania",
+    "University “Aleksandër Moisiu” Durrës, Durrës, Albania",
+    "A&A Group, Tirana, Albania"
+   ],
+   "links": {
+    "OpenAlex": "https://openalex.org/W7237157096"
+   }
+  }
+ },
+ "arxiv:2611.26107": {
+  "first_seen": "2026-11-23",
+  "item": {
+   "key": "arxiv:2611.26107",
+   "source": "hf_papers",
+   "source_name": "HF Daily Papers",
+   "kind": "paper",
+   "title": "HiUni: Harmonizing Understanding and Generation in Shared Visual Space",
+   "url": "https://arxiv.org/abs/2611.26107",
+   "summary": "Unified multimodal models aim to support visual understanding and generation within a single framework. However, prevailing approaches often separate their visual representations or backbone computation to accommodate the different requirements of these two tasks, which limits the degree of unification. In this paper, we present HiUni, which revisits this design choice and explores whether a pretrained vision language model can be directly extended into a unified model with extensive parameter sharing. Specifically, HiUni reuses the same language-aligned ViT and dense Transformer backbone for both capabilities, while confining task-specific computation to the output side. Yet such a design introduces two key challenges. Generation in pixel space is difficult to optimize, and semantic abstraction in pretrained ViT discards fine spatial details required for synthesis. To address these challenges, HiUni introduces a Pixel Diffusion Head tailored to direct pixel-space optimization and a lightweight HiGate pathway that provides fine-grained spatial details near the output stage. Extensive experiments show that HiUni achieves a similar average understanding score to the pretrained VLM w…",
+   "authors": [
+    "Jiahao Hu",
+    "Jingdong Du",
+    "Yichen Zhang",
+    "Yi Song",
+    "Zhenyu Zhang",
+    "Jiaxin Niu",
+    "Ruihang Li",
+    "Xiangzhao Hao",
+    "Yiqian Zhang",
+    "Yong Huang",
+    "Zefeng Zhang",
+    "Zheyuan Gu",
+    "Shuohuan Wang"
+   ],
+   "published": "2026-11-20T00:00:00Z",
+   "tags": [],
+   "metrics": {
+    "upvotes": 25.0,
+    "comments": 2.0,
+    "github_stars": 15.0
+   },
+   "affiliations": [
+    "ernie-research"
+   ],
+   "links": {
+    "HF": "https://huggingface.co/papers/2611.26107",
+    "PDF": "https://arxiv.org/pdf/2611.26107",
+    "Code": "https://github.com/ernie-research/HiUni",
+    "Project": "https://ernie-research.github.io/HiUni"
    }
   }
  }
