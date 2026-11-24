@@ -387,7 +387,7 @@
     "S. Athinarayanan",
     "R. Sunder"
    ],
-   "published": "2026-10-30T00:00:00Z",
+   "published": "2026-11-24T10:29:06.609298Z",
    "tags": [
     "article"
    ],
@@ -662,7 +662,7 @@
     "Chen Gao",
     "Yong Li"
    ],
-   "published": "2026-11-03T00:00:00Z",
+   "published": "2026-11-06T00:00:00Z",
    "tags": [
     "conference-paper"
    ],
@@ -751,7 +751,7 @@
     "Han Li",
     "Kun Gai"
    ],
-   "published": "2026-11-03T00:00:00Z",
+   "published": "2026-11-06T00:00:00Z",
    "tags": [
     "conference-paper"
    ],
@@ -1386,7 +1386,7 @@
    "kind": "paper",
    "title": "Leveraging Large Language Models for Domain‐Agnostic Aspect‐Aware Recommendation",
    "url": "https://doi.org/10.1111/exsy.70464",
-   "summary": "ABSTRACT The growth of e‐commerce and the corresponding increase in the number of online reviews have driven the demand for recommender systems that capture user preferences. Online reviews contain detailed evaluations of item aspects, and recent studies have employed aspect‐based sentiment analysis (ABSA) to incorporate fine‐grained user sentiment for improved personalisation. However, existing ABSA‐based recommendation approaches rely on predefined aspect categories, which prevents them from capturing user preferences for specific aspect terms and limits their generalisation across diverse domains. To address these limitations, this study proposes a novel ABSA‐based recommendation framework, domain‐agnostic aspect‐aware recommendation (DAAR), which leverages large language models (LLMs) to extract aspect terms and integrate them with sentiment information. First, aspect terms that represent the targets of user evaluation are extracted from review texts using LLMs. Then, semantic representations of the aspect terms are generated using Phrase‐BERT based on bidirectional encoder representations from transformers (BERT), and sentiment scores for each aspect term are obtained through…",
+   "summary": "The growth of e‐commerce and the corresponding increase in the number of online reviews have driven the demand for recommender systems that capture user preferences. Online reviews contain detailed evaluations of item aspects, and recent studies have employed aspect‐based sentiment analysis (ABSA) to incorporate fine‐grained user sentiment for improved personalisation. However, existing ABSA‐based recommendation approaches rely on predefined aspect categories, which prevents them from capturing user preferences for specific aspect terms and limits their generalisation across diverse domains. To address these limitations, this study proposes a novel ABSA‐based recommendation framework, domain‐agnostic aspect‐aware recommendation (DAAR), which leverages large language models (LLMs) to extract aspect terms and integrate them with sentiment information. First, aspect terms that represent the targets of user evaluation are extracted from review texts using LLMs. Then, semantic representations of the aspect terms are generated using Phrase‐BERT based on bidirectional encoder representations from transformers (BERT), and sentiment scores for each aspect term are obtained through a sentim…",
    "authors": [
     "Donghyeon Kim",
     "Soohyun Woo",
@@ -1743,7 +1743,7 @@
     "Ta Minh-Thanh",
     "Nguyen Thai-Nghe"
    ],
-   "published": "2026-11-03T00:00:00Z",
+   "published": "2026-11-04T00:00:00Z",
    "tags": [
     "conference-paper"
    ],
@@ -1752,7 +1752,9 @@
    },
    "affiliations": [
     "Vinh Long University of Technology Education",
-    "Vinh Long University of Technology Education, Vinh Long, Viet Nam"
+    "Can Tho University",
+    "Vinh Long University of Technology Education, Vinh Long, Viet Nam",
+    "Can Tho University, Can Tho, Viet Nam"
    ],
    "links": {
     "OpenAlex": "https://openalex.org/W7225169415"
@@ -2840,7 +2842,7 @@
     "Nanditha B",
     "Mrs. Kaveri"
    ],
-   "published": "2026-10-27T00:00:00Z",
+   "published": "2026-10-31T00:00:00Z",
    "tags": [
     "article"
    ],
@@ -2933,49 +2935,6 @@
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.06521",
     "OpenAlex": "https://openalex.org/W7225346029"
-   }
-  }
- },
- "arxiv:2610.15765": {
-  "first_seen": "2026-11-07",
-  "item": {
-   "key": "arxiv:2610.15765",
-   "source": "hf_papers",
-   "source_name": "HF Daily Papers",
-   "kind": "paper",
-   "title": "A Decade in a Day: Synthesizing Agent-Native Interfaces from Human-Oriented Software Evolution",
-   "url": "https://arxiv.org/abs/2610.15765",
-   "summary": "Large language model agents are emerging as an important new class of users of desktop applications. However, existing desktop interfaces were designed for human end users or application developers, leaving agents to interpret visual controls or discover and compose low-level software operations. This mismatch can hinder even capable agents, yet it remains unclear what interface properties make desktop software easier for agents to use. To study this question, we treat software evolution as a natural source of interface variation and introduce DeskIF-Bench, a benchmark of 255 artifact-verified tasks across six desktop applications. By holding the task, agent, and verifier fixed while varying the software release, we measure how interface changes affect agent performance. Across two models and six applications, the newest release consistently outperforms the oldest. Trajectory analysis identifies three relevant interface properties: discoverability, granularity, and observability. Guided by these properties, we develop ANIS, a framework that synthesizes agent-native interfaces from the capabilities of installed applications. On an expanded evaluation of 368 tasks across eight appli…",
-   "authors": [
-    "Alan Wu",
-    "Wei Tao",
-    "Yiwen Guo"
-   ],
-   "published": "2026-10-14T00:00:00Z",
-   "tags": [
-    "large language model agents",
-    "desktop applications",
-    "DeskIF-Bench",
-    "discoverability",
-    "granularity",
-    "observability",
-    "ANIS",
-    "agent-native interfaces",
-    "SDK",
-    "atomic interfaces"
-   ],
-   "metrics": {
-    "upvotes": 18.0,
-    "comments": 2.0,
-    "github_stars": 2.0
-   },
-   "affiliations": [
-    "Tencent"
-   ],
-   "links": {
-    "HF": "https://huggingface.co/papers/2610.15765",
-    "PDF": "https://arxiv.org/pdf/2610.15765",
-    "Code": "https://github.com/co-evolve-lab/ANIS"
    }
   }
  },
@@ -3208,7 +3167,7 @@
    "authors": [
     "Xoshimova Dilobar Kuchkarovna"
    ],
-   "published": "2026-10-26T00:00:00Z",
+   "published": "2026-11-24T10:29:06.609298Z",
    "tags": [
     "article"
    ],
@@ -3256,60 +3215,6 @@
    ],
    "links": {
     "OpenAlex": "https://openalex.org/W7221701396"
-   }
-  }
- },
- "arxiv:2610.35013": {
-  "first_seen": "2026-11-07",
-  "item": {
-   "key": "arxiv:2610.35013",
-   "source": "hf_papers",
-   "source_name": "HF Daily Papers",
-   "kind": "paper",
-   "title": "Multiscale Policy Optimization for Long-Horizon LLM Agents",
-   "url": "https://arxiv.org/abs/2610.35013",
-   "summary": "Long-horizon LLM agents interact with their environments through complete assistant turns while generating each action token by token. We observe that critic values vary primarily across turns, motivating optimization anchored at turns with finer credit allocation among tokens. We propose Multiscale Policy Optimization (MPO), combining Multiscale Advantage Estimation (MAE) and turn-level importance sampling to align credit assignment and policy updates at the turn scale. Extensive experiments across search, tool-use, and automation tasks with 4B and 30B-A3B models demonstrate consistent gains over strong RL baselines.",
-   "authors": [
-    "Tao Ren",
-    "Hui Yang",
-    "Jia Deng",
-    "Tingyang Chen",
-    "Qiyao Wang",
-    "Shuo Tang",
-    "Ziyang Zeng",
-    "Yuhua Jiang",
-    "Guanghao Li",
-    "Huatong Song",
-    "Yining Li",
-    "Yifan Luo",
-    "Kunbao Ding",
-    "Feng Chang",
-    "Chuan Hao",
-    "Ran Tao",
-    "Bryan Dai",
-    "Jiafeng Liang",
-    "Jinyang Jiang"
-   ],
-   "published": "2026-10-28T00:00:00Z",
-   "tags": [
-    "Multiscale Policy Optimization",
-    "Multiscale Advantage Estimation",
-    "turn-level importance sampling",
-    "critic values",
-    "long-horizon LLM agents"
-   ],
-   "metrics": {
-    "upvotes": 23.0,
-    "comments": 4.0,
-    "github_stars": 4.0
-   },
-   "affiliations": [
-    "IQuest"
-   ],
-   "links": {
-    "HF": "https://huggingface.co/papers/2610.35013",
-    "PDF": "https://arxiv.org/pdf/2610.35013",
-    "Code": "https://github.com/IQuestLab/Multiscale-Policy-Optimization"
    }
   }
  },
@@ -3424,7 +3329,7 @@
    "metrics": {
     "upvotes": 16.0,
     "comments": 2.0,
-    "github_stars": 118.0,
+    "github_stars": 119.0,
     "citations": 3.0
    },
    "affiliations": [
@@ -4337,7 +4242,7 @@
    "metrics": {
     "upvotes": 44.0,
     "comments": 2.0,
-    "github_stars": 379.0
+    "github_stars": 382.0
    },
    "affiliations": [
     "ByteDance"
@@ -4382,7 +4287,7 @@
    "metrics": {
     "upvotes": 19.0,
     "comments": 4.0,
-    "github_stars": 65.0
+    "github_stars": 70.0
    },
    "affiliations": [
     "Microsoft Research"
@@ -5596,7 +5501,7 @@
     "Mustafa Musa",
     "Raden  Nur Rachman Dzakiyullah"
    ],
-   "published": "2026-11-23T02:00:48.058737Z",
+   "published": "2026-11-24T10:29:06.609298Z",
    "tags": [
     "article"
    ],
@@ -5878,7 +5783,7 @@
    "metrics": {
     "upvotes": 76.0,
     "comments": 2.0,
-    "github_stars": 65.0
+    "github_stars": 67.0
    },
    "affiliations": [
     "Video Rebirth"
@@ -6102,8 +6007,8 @@
    "metrics": {
     "upvotes": 50.0,
     "comments": 2.0,
-    "github_stars": 498.0,
-    "citations": 6.0
+    "github_stars": 520.0,
+    "citations": 7.0
    },
    "affiliations": [
     "University of California, Berkeley",
@@ -6423,7 +6328,7 @@
     "scaling analyses"
    ],
    "metrics": {
-    "upvotes": 42.0,
+    "upvotes": 43.0,
     "comments": 7.0,
     "github_stars": 23.0
    },
@@ -6643,7 +6548,7 @@
     "Arlet Silvana Aquije Chacaliaza",
     "Christian Cipriano"
    ],
-   "published": "2026-10-26T00:00:00Z",
+   "published": "2026-10-27T00:00:00Z",
    "tags": [
     "conference-paper"
    ],
@@ -7620,7 +7525,7 @@
    ],
    "metrics": {
     "upvotes": 36.0,
-    "comments": 5.0,
+    "comments": 6.0,
     "github_stars": 35.0
    },
    "affiliations": [],
@@ -7766,7 +7671,7 @@
    "metrics": {
     "upvotes": 50.0,
     "comments": 2.0,
-    "github_stars": 82.0,
+    "github_stars": 89.0,
     "citations": 0.0
    },
    "affiliations": [
@@ -8029,7 +7934,7 @@
    "metrics": {
     "upvotes": 18.0,
     "comments": 2.0,
-    "github_stars": 302.0
+    "github_stars": 305.0
    },
    "affiliations": [
     "Multimedia Computing Group-Nanjing University"
@@ -8476,7 +8381,7 @@
    "metrics": {
     "upvotes": 8.0,
     "comments": 5.0,
-    "github_stars": 16.0
+    "github_stars": 17.0
    },
    "affiliations": [
     "Tsinghua University"
@@ -8507,7 +8412,7 @@
    "metrics": {
     "upvotes": 13.0,
     "comments": 5.0,
-    "github_stars": 57.0
+    "github_stars": 60.0
    },
    "affiliations": [
     "Brown University"
@@ -8777,7 +8682,7 @@
     "continually trainable"
    ],
    "metrics": {
-    "upvotes": 12.0,
+    "upvotes": 14.0,
     "comments": 5.0
    },
    "affiliations": [
@@ -10598,7 +10503,7 @@
     "embodiment"
    ],
    "metrics": {
-    "upvotes": 53.0,
+    "upvotes": 54.0,
     "comments": 2.0,
     "github_stars": 4.0
    },
@@ -11062,7 +10967,7 @@
    "metrics": {
     "upvotes": 45.0,
     "comments": 4.0,
-    "github_stars": 254.0
+    "github_stars": 256.0
    },
    "affiliations": [
     "Renmin University of China"
@@ -11179,7 +11084,7 @@
    "metrics": {
     "upvotes": 29.0,
     "comments": 2.0,
-    "github_stars": 128.0
+    "github_stars": 129.0
    },
    "affiliations": [
     "beipo-ai"
@@ -11340,7 +11245,7 @@
     "preprint"
    ],
    "metrics": {
-    "upvotes": 39.0,
+    "upvotes": 40.0,
     "comments": 2.0,
     "citations": 0.0
    },
@@ -11528,7 +11433,7 @@
     "private benchmarks"
    ],
    "metrics": {
-    "upvotes": 8.0,
+    "upvotes": 9.0,
     "comments": 2.0
    },
    "affiliations": [
@@ -11666,7 +11571,7 @@
    ],
    "metrics": {
     "upvotes": 39.0,
-    "comments": 6.0,
+    "comments": 7.0,
     "github_stars": 21.0
    },
    "affiliations": [
@@ -11857,9 +11762,9 @@
    "published": "2026-11-10T00:00:00Z",
    "tags": [],
    "metrics": {
-    "upvotes": 56.0,
+    "upvotes": 53.0,
     "comments": 10.0,
-    "github_stars": 45.0
+    "github_stars": 46.0
    },
    "affiliations": [
     "University of Washington"
@@ -13412,7 +13317,7 @@
    "metrics": {
     "upvotes": 27.0,
     "comments": 6.0,
-    "github_stars": 104.0
+    "github_stars": 105.0
    },
    "affiliations": [
     "TokenRhythm"
@@ -13539,9 +13444,9 @@
    "published": "2026-11-09T00:00:00Z",
    "tags": [],
    "metrics": {
-    "upvotes": 44.0,
+    "upvotes": 43.0,
     "comments": 8.0,
-    "github_stars": 78.0,
+    "github_stars": 80.0,
     "citations": 0.0
    },
    "affiliations": [
@@ -13747,7 +13652,7 @@
    "metrics": {
     "upvotes": 50.0,
     "comments": 3.0,
-    "github_stars": 103.0,
+    "github_stars": 104.0,
     "citations": 0.0
    },
    "affiliations": [
@@ -14197,7 +14102,7 @@
    "metrics": {
     "upvotes": 7.0,
     "comments": 2.0,
-    "github_stars": 540.0
+    "github_stars": 542.0
    },
    "affiliations": [
     "Zhejiang University"
@@ -14669,7 +14574,7 @@
    "metrics": {
     "upvotes": 37.0,
     "comments": 7.0,
-    "github_stars": 14.0,
+    "github_stars": 15.0,
     "citations": 0.0
    },
    "affiliations": [
@@ -15753,7 +15658,7 @@
     "preprint"
    ],
    "metrics": {
-    "citations": 0.0
+    "citations": 1.0
    },
    "affiliations": [
     "Universidad de Granada",
@@ -16373,7 +16278,7 @@
    "published": "2026-11-06T00:00:00Z",
    "tags": [],
    "metrics": {
-    "upvotes": 47.0,
+    "upvotes": 48.0,
     "comments": 1.0,
     "citations": 0.0
    },
@@ -16960,7 +16865,7 @@
    "metrics": {
     "upvotes": 73.0,
     "comments": 5.0,
-    "github_stars": 28.0
+    "github_stars": 29.0
    },
    "affiliations": [
     "National University of Singapore"
@@ -17189,9 +17094,9 @@
     "n-ary frames"
    ],
    "metrics": {
-    "upvotes": 56.0,
+    "upvotes": 57.0,
     "comments": 4.0,
-    "github_stars": 3511.0,
+    "github_stars": 3516.0,
     "citations": 0.0
    },
    "affiliations": [],
@@ -17401,9 +17306,9 @@
     "sparse-thinking instruction tuning"
    ],
    "metrics": {
-    "upvotes": 152.0,
+    "upvotes": 159.0,
     "comments": 4.0,
-    "github_stars": 1299.0,
+    "github_stars": 1459.0,
     "citations": 0.0
    },
    "affiliations": [],
@@ -18161,8 +18066,8 @@
   "first_seen": "2026-11-18",
   "item": {
    "key": "arxiv:2611.20726",
-   "source": "arxiv",
-   "source_name": "arXiv",
+   "source": "openalex",
+   "source_name": "OpenAlex",
    "kind": "paper",
    "title": "PEETS: Preference-aware Embeddings with Explicit Tree Structure for Auxiliary Product Bundling",
    "url": "https://arxiv.org/abs/2611.20726",
@@ -18175,9 +18080,9 @@
     "Huawei Cao",
     "Shuhan Song"
    ],
-   "published": "2026-11-17T05:00:00Z",
+   "published": "2026-11-16T00:00:00Z",
    "tags": [
-    "cs.AI"
+    "preprint"
    ],
    "metrics": {
     "citations": 0.0
@@ -18189,7 +18094,8 @@
     "University of Chinese Academy of Sciences , Beijing , China"
    ],
    "links": {
-    "PDF": "https://arxiv.org/pdf/2611.20726"
+    "PDF": "https://arxiv.org/pdf/2611.20726",
+    "OpenAlex": "https://openalex.org/W7234807040"
    }
   }
  },
@@ -18492,7 +18398,7 @@
    "metrics": {
     "upvotes": 53.0,
     "comments": 4.0,
-    "github_stars": 15.0
+    "github_stars": 16.0
    },
    "affiliations": [
     "Tokenwave.AI"
@@ -18721,7 +18627,7 @@
    "published": "2026-11-17T00:00:00Z",
    "tags": [],
    "metrics": {
-    "upvotes": 90.0,
+    "upvotes": 92.0,
     "comments": 2.0
    },
    "affiliations": [
@@ -19004,8 +18910,8 @@
   "first_seen": "2026-11-19",
   "item": {
    "key": "arxiv:2611.22838",
-   "source": "arxiv",
-   "source_name": "arXiv",
+   "source": "openalex",
+   "source_name": "OpenAlex",
    "kind": "paper",
    "title": "Better Rankers, Worse Retrievers: The Hidden Cost of RL Post-Training in Generative Recommendation",
    "url": "https://arxiv.org/abs/2611.22838",
@@ -19018,10 +18924,9 @@
     "Yang Xiang",
     "Can Yang"
    ],
-   "published": "2026-11-18T05:00:00Z",
+   "published": "2026-11-17T00:00:00Z",
    "tags": [
-    "cs.IR",
-    "cs.AI"
+    "preprint"
    ],
    "metrics": {
     "citations": 0.0
@@ -19032,7 +18937,8 @@
     "Trip.com Group Shanghai , China"
    ],
    "links": {
-    "PDF": "https://arxiv.org/pdf/2611.22838"
+    "PDF": "https://arxiv.org/pdf/2611.22838",
+    "OpenAlex": "https://openalex.org/W7236083302"
    }
   }
  },
@@ -19355,8 +19261,8 @@
   "first_seen": "2026-11-19",
   "item": {
    "key": "arxiv:2611.22343",
-   "source": "arxiv",
-   "source_name": "arXiv",
+   "source": "hf_papers",
+   "source_name": "HF Daily Papers",
    "kind": "paper",
    "title": "PURE: A Diagnostic Benchmark for Multi-Granularity Multimodal Identity Matching",
    "url": "https://arxiv.org/abs/2611.22343",
@@ -19367,19 +19273,31 @@
     "Jin Cao",
     "Liang Ding"
    ],
-   "published": "2026-11-18T05:00:00Z",
+   "published": "2026-11-23T00:00:00Z",
    "tags": [
-    "cs.CV"
+    "multimodal large language models (MLLMs)",
+    "multi-granularity multimodal identity matching",
+    "modality ablations",
+    "multimodal evidence",
+    "visual difference localization",
+    "variant-level rule judgment",
+    "evidence-grounded judgment",
+    "base-level matching",
+    "variant-level matching",
+    "direct matching"
    ],
    "metrics": {
-    "citations": 0.0
+    "upvotes": 8.0,
+    "comments": 2.0,
+    "github_stars": 3.0
    },
    "affiliations": [
-    "Alibaba Group (China)",
-    "Alibaba Group"
+    "Alibaba multimodal & industrial AI"
    ],
    "links": {
-    "PDF": "https://arxiv.org/pdf/2611.22343"
+    "HF": "https://huggingface.co/papers/2611.22343",
+    "PDF": "https://arxiv.org/pdf/2611.22343",
+    "Code": "https://github.com/alibaba-multimodal-industrial-ai/PURE"
    }
   }
  },
@@ -19530,7 +19448,7 @@
    "metrics": {
     "upvotes": 20.0,
     "comments": 2.0,
-    "github_stars": 4.0
+    "github_stars": 5.0
    },
    "affiliations": [
     "Tencent Hunyuan"
@@ -19607,7 +19525,12 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Hong Kong University of Science and Technology",
+    "The Hong Kong University of Science and Technology (Guangzhou)",
+    "AI Thrust , Hong Kong University of Science and Technology (Guangzhou )",
+    "LIGHTSPEED"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.22432"
    }
@@ -19944,7 +19867,11 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Microsoft (India)",
+    "Microsoft , India",
+    "DeepL , UK"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.24757"
    }
@@ -19978,7 +19905,14 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Tribhuvan University",
+    "University of Aberdeen",
+    "IOE Pulchowk Campus , Tribhuvan University , Nepal",
+    "NAAMII , Nepal",
+    "Fogsphere (Redev.AI Ltd , UK)",
+    "University of Aberdeen , UK"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.24042"
    }
@@ -20617,7 +20551,14 @@
    "metrics": {
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Jingdong (China)",
+    "University of Chinese Academy of Sciences",
+    "Northeastern University",
+    "JD.com , Beijing , China",
+    "University of Chinese Academy of Sciences , Beijing , China",
+    "Software College , Northeastern University , Shenyang , China"
+   ],
    "links": {
     "PDF": "https://arxiv.org/pdf/2611.24116"
    }
@@ -20960,7 +20901,7 @@
    "metrics": {
     "upvotes": 14.0,
     "comments": 2.0,
-    "github_stars": 62.0
+    "github_stars": 64.0
    },
    "affiliations": [
     "agentscope-ai"
@@ -21127,7 +21068,7 @@
     "Omar El Aalouche",
     "Fayçal Messaoudi"
    ],
-   "published": "2026-11-23T02:00:48.058737Z",
+   "published": "2026-11-24T10:29:06.609298Z",
    "tags": [
     "review"
    ],
@@ -21163,7 +21104,7 @@
    "metrics": {
     "upvotes": 7.0,
     "comments": 2.0,
-    "github_stars": 6.0
+    "github_stars": 7.0
    },
    "affiliations": [
     "Zhejiang University"
@@ -21196,7 +21137,7 @@
    "tags": [],
    "metrics": {
     "upvotes": 9.0,
-    "comments": 3.0,
+    "comments": 4.0,
     "github_stars": 1.0
    },
    "affiliations": [
@@ -21227,11 +21168,14 @@
    "published": "2026-11-20T00:00:00Z",
    "tags": [],
    "metrics": {
-    "upvotes": 17.0,
+    "upvotes": 19.0,
     "comments": 3.0,
     "citations": 0.0
    },
-   "affiliations": [],
+   "affiliations": [
+    "Universität Ulm",
+    "Ulm University"
+   ],
    "links": {
     "HF": "https://huggingface.co/papers/2611.26408",
     "PDF": "https://arxiv.org/pdf/2611.26408"
@@ -21333,7 +21277,7 @@
     "K-FAC"
    ],
    "metrics": {
-    "upvotes": 26.0,
+    "upvotes": 24.0,
     "comments": 2.0,
     "citations": 0.0
    },
@@ -21378,7 +21322,7 @@
     "multiple-choice questions"
    ],
    "metrics": {
-    "upvotes": 6.0,
+    "upvotes": 8.0,
     "comments": 7.0,
     "github_stars": 15.0,
     "citations": 0.0
@@ -21417,7 +21361,6 @@
    },
    "affiliations": [
     "Aleksandër Moisiu University",
-    "Academy of Sciences of Albania",
     "University “Aleksandër Moisiu” Durrës, Durrës, Albania",
     "A&A Group, Tirana, Albania"
    ],
@@ -21454,7 +21397,7 @@
    "published": "2026-11-20T00:00:00Z",
    "tags": [],
    "metrics": {
-    "upvotes": 25.0,
+    "upvotes": 23.0,
     "comments": 2.0,
     "github_stars": 15.0
    },
@@ -21466,6 +21409,2880 @@
     "PDF": "https://arxiv.org/pdf/2611.26107",
     "Code": "https://github.com/ernie-research/HiUni",
     "Project": "https://ernie-research.github.io/HiUni"
+   }
+  }
+ },
+ "arxiv:2608.15662": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2608.15662",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Sequential Multimodal Evidence Optimization for Product Media Ranking in E-Commerce",
+   "url": "https://arxiv.org/abs/2608.15662",
+   "summary": "On modern e-commerce stores, customers consume ordered slates of heterogeneous product media—such as images, videos, and 3D renders—before making purchase decisions. Existing media-ranking systems often optimize myopic engagement proxies such as clicks or dwell time, even though product media assets are cooperative informational components of the same item that together help customers find the information they need through sequential interaction. We present Sequential Multimodal Evidence Optimization (SMEO), a two-stage utility-guided framework for customer-oriented media sequencing. SMEO first learns a trajectory utility model from consumed media prefixes to estimate how ordered evidence helps customers reach a purchase decision, while mitigating position-bias and variable-depth imbalance in logged data. Recognizing that customer attention is a limited resource, it then trains an autoregressive ranking policy with survival-weighted reward-to-go that prioritizes the most decision-relevant information early, so customers can find what they need with less effort. By decoupling utility learning from policy optimization, SMEO enables stable offline learning from biased logs and post-h…",
+   "authors": [
+    "Prasenjit Dey",
+    "Frank Mcintyre",
+    "Arnab Sinha"
+   ],
+   "published": "2026-11-06T00:00:00Z",
+   "tags": [
+    "conference-paper"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Amazon (United States)",
+    "Amazon.com Inc., Seattle, WA, USA"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2608.15662",
+    "OpenAlex": "https://openalex.org/W7203720804"
+   }
+  }
+ },
+ "doi:10.83842/recommendesyssoc": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "doi:10.83842/recommendesyssoc",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Recommender Systems: Society, Culture and Change",
+   "url": "https://doi.org/10.83842/recommendesyssoc",
+   "summary": "",
+   "authors": [],
+   "published": "2026-11-22T00:00:00Z",
+   "tags": [
+    "paratext"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [],
+   "links": {
+    "OpenAlex": "https://openalex.org/W7237898060"
+   }
+  }
+ },
+ "doi:10.83842/recommendesyspla": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "doi:10.83842/recommendesyspla",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Recommender Systems: Platform Engineering",
+   "url": "https://doi.org/10.83842/recommendesyspla",
+   "summary": "",
+   "authors": [],
+   "published": "2026-11-22T00:00:00Z",
+   "tags": [
+    "paratext"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [],
+   "links": {
+    "OpenAlex": "https://openalex.org/W7237864325"
+   }
+  }
+ },
+ "doi:10.83842/recommendesyssys": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "doi:10.83842/recommendesyssys",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Recommender Systems: Systems Optimisation",
+   "url": "https://doi.org/10.83842/recommendesyssys",
+   "summary": "",
+   "authors": [],
+   "published": "2026-11-22T00:00:00Z",
+   "tags": [
+    "paratext"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [],
+   "links": {
+    "OpenAlex": "https://openalex.org/W7237572827"
+   }
+  }
+ },
+ "arxiv:2502.03041": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2502.03041",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Large Language Model as Universal Retriever in Industrial-Scale Recommender System",
+   "url": "https://arxiv.org/abs/2502.03041",
+   "summary": "In real-world recommender systems, different retrieval objectives are typically addressed using task-specific datasets with carefully designed model architectures. We demonstrate that Large Language Models (LLMs) can function as universal retrievers, capable of handling multiple objectives within a generative retrieval framework. To address the model expressiveness and inference efficiency issues of generative retrieval, we propose multi-query representation and transferable discriminative mapping layers to model complex user-item relationships, and incorporate probabilistic sampling to reduce computation costs. Finally, our Universal Retrieval Model (URM) can adaptively generate a set from tens of millions of candidates based on an arbitrary given objective while keeping the latency within tens of milliseconds. Applied to industrial-scale data, URM outperforms expert models elaborately designed for different retrieval objectives in offline experiments and achieves a 3.13% revenue increase on our online advertising platform. URM also demonstrates strong performance in impression and GMV for long-tail and cold-start items.",
+   "authors": [
+    "Junguang Jiang",
+    "Yanwen Huang",
+    "Liu Bin",
+    "Xiaoyu Kong",
+    "Xinhang Li",
+    "Ziru Xu",
+    "Han Zhu",
+    "Jian Xu",
+    "Bo Zheng"
+   ],
+   "published": "2026-11-06T00:00:00Z",
+   "tags": [
+    "conference-paper"
+   ],
+   "metrics": {
+    "citations": 20.0
+   },
+   "affiliations": [
+    "Alibaba Group (China)",
+    "Taobao & Tmall Group of Alibaba, Beijing, China"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2502.03041",
+    "OpenAlex": "https://openalex.org/W4407213747"
+   }
+  }
+ },
+ "doi:10.58532/nbennuramlv6s2b9p1c2": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "doi:10.58532/nbennuramlv6s2b9p1c2",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "AI FOR PREDICTIVE CONSUMER BEHAVIOR IN E-COMMERCE",
+   "url": "https://doi.org/10.58532/nbennuramlv6s2b9p1c2",
+   "summary": "The rapid expansion of e-commerce has produced massive consumer interaction data, creating opportunities for intelligent platforms capable of predicting consumer behavior and supporting data-driven decisions. This research proposes an AI-enabled predictive consumer behavior analytics framework integrating transformer-based Natural Language Processing (NLP), collaborative filtering recommendation models, reinforcement learning-based pricing strategies, deep learning inventory forecasting, and explainable AI (XAI) to enhance transparency. The system focuses on five major objectives: (i) real-time sentiment understanding using BERT and RoBERTa, (ii) hybrid recommendation systems integrating collaborative and content-based filtering, (iii) dynamic pricing through reinforcement learning, (iv) demand and inventory forecasting using ARIMA and LSTM, and (v) consumer analytics dashboards supported by XAI techniques such as LIME and SHAP. Real-world research demonstrates that advanced recommendation engines like Amazon’s collaborative filtering contribute up to 35% of sales, while Netflix improved accuracy significantly through matrix factorization models. Deep learning-driven demand foreca…",
+   "authors": [
+    "Kuraganti Santhi"
+   ],
+   "published": "2026-11-01T00:00:00Z",
+   "tags": [
+    "book-chapter"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [],
+   "links": {
+    "OpenAlex": "https://openalex.org/W7237051038"
+   }
+  }
+ },
+ "arxiv:2602.12972": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2602.12972",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Jointly Optimizing Debiased CTR and Uplift for Coupons Marketing: A Unified Causal Framework",
+   "url": "https://arxiv.org/abs/2602.12972",
+   "summary": "In online advertising, marketing interventions such as coupons introduce significant confounding bias into Click-Through Rate (CTR) prediction. Observed clicks reflect a mixture of users' intrinsic preferences and the uplift induced by these interventions. This causes conventional models to miscalibrate base CTRs, which distorts downstream ranking and billing decisions. Furthermore, marketing interventions often operate as multi-valued treatments with varying magnitudes, introducing additional complexity to CTR prediction. To address these issues, we propose the Uni fied M ulti- V alued T reatment Network (UniMVT). Specifically, UniMVT disentangles confounding factors from treatment-sensitive representations, enabling a full-space counterfactual inference module to jointly reconstruct the debiased base CTR and intensity-response curves. To handle the complexity of multi-valued treatments, UniMVT employs an auxiliary intensity estimation task to capture treatment propensities and devise a unit uplift objective that normalizes the intervention effect. This ensures comparable estimation across the continuous coupon-value spectrum. UniMVT simultaneously achieves debiased CTR predictio…",
+   "authors": [
+    "Siyun Yang",
+    "Shixiao Yang",
+    "Jian Wang",
+    "Di Fan",
+    "Kehe Cai",
+    "Haoyan Fu",
+    "Jiaming Zhang",
+    "Wenjin Wu",
+    "Peng Jiang"
+   ],
+   "published": "2026-11-06T00:00:00Z",
+   "tags": [
+    "conference-paper"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Kuaishou (China)",
+    "Beijing Institute of Technology",
+    "Kuaishou Technology, Beijing, China",
+    "Beijing Institute of Technology, Beijing, China",
+    "Kuaishou Technology, Beijng, China",
+    "Independent Researcher, Beijing, China"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2602.12972",
+    "OpenAlex": "https://openalex.org/W7129091349"
+   }
+  }
+ },
+ "doi:10.83842/recommendesysedg718": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "doi:10.83842/recommendesysedg718",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Recommender Systems: Edge Intelligence",
+   "url": "https://doi.org/10.83842/recommendesysedg718",
+   "summary": "",
+   "authors": [],
+   "published": "2026-11-22T00:00:00Z",
+   "tags": [
+    "paratext"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [],
+   "links": {
+    "OpenAlex": "https://openalex.org/W7238000317"
+   }
+  }
+ },
+ "arxiv:2603.03988": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2603.03988",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "SORT: A Systematically Optimized Ranking Transformer for Industrial-scale Recommenders",
+   "url": "https://arxiv.org/abs/2603.03988",
+   "summary": "While Transformers have achieved remarkable success in LLMs through superior scalability, their application in industrial-scale ranking models remains nascent, hindered by the challenges of high feature sparsity and low label density. In this paper, we propose SORT (Systematically Optimized Ranking Transformer), a scalable model designed to bridge the gap between Transformers and industrial-scale ranking models. We address the high feature sparsity and low label density challenges through a series of optimizations, including request-centric sample organization, local attention, query pruning and generative pre-training. Furthermore, we introduce a suite of refinements to the tokenization, multi-head attention (MHA), and feed-forward network (FFN) modules, which collectively stabilize the training process and enlarge the model capacity. To maximize hardware efficiency, we optimize our training system to elevate the model FLOPs utilization (MFU) to 45%. Extensive experiments demonstrate that SORT outperforms strong baselines and exhibits excellent scalability across data size, model size and sequence length, while remaining flexible at integrating diverse features. Finally, online A…",
+   "authors": [
+    "Chunqi Wang",
+    "Bingchao Wu",
+    "Taotian Pang",
+    "Jiahao Wang",
+    "Jie Yang",
+    "Jia Liu",
+    "Hao F. Zhang",
+    "Hai Zhu",
+    "Lei Shen",
+    "Shizhun Wang",
+    "Bing Wang",
+    "Xiaoyi Zeng"
+   ],
+   "published": "2026-11-06T00:00:00Z",
+   "tags": [
+    "conference-paper"
+   ],
+   "metrics": {
+    "citations": 7.0
+   },
+   "affiliations": [
+    "Alibaba Group (China)",
+    "Alibaba International Digital Commercial Group, Hangzhou, China",
+    "Alibaba International Digital Commercial Group, Beijing, China"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2603.03988",
+    "OpenAlex": "https://openalex.org/W7133813281"
+   }
+  }
+ },
+ "arxiv:2608.16274": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2608.16274",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Decoupled Temporal Encoding for Generative Recommendation",
+   "url": "https://arxiv.org/abs/2608.16274",
+   "summary": "Positional encoding is a fundamental component of Transformer-based generative recommendation models, where user histories are modeled as autoregressive item sequences. Most positional encoding methods are inherited from natural language processing and mainly represent discrete item order. However, recommendation sequences go beyond ordered lists, as timestamps and temporal effects also shape item relations. Our work is motivated by a real-world food delivery and instant retail recommendation system, where user behavior exhibits multi-level temporal regularities, including recency effects, meal-time peaks, weekday-weekend shifts, and promotion-driven traffic bursts. Existing methods partially address this issue through timestamp features, interval embeddings, decay functions, or attention biases, but they usually inject heterogeneous temporal signals through a unified representation or a single modeling pathway, making it difficult to distinguish broad temporal dynamics from local order cues. To address this limitation, we propose Decoupled Temporal Encoding (DTE), a lightweight framework for generative recommendation. DTE separates temporal dynamics from order information through…",
+   "authors": [
+    "Pengfei Jia",
+    "J Wang",
+    "Jingmao Li",
+    "Ge Zhang",
+    "Shi Feng"
+   ],
+   "published": "2026-11-06T00:00:00Z",
+   "tags": [
+    "conference-paper"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Yale University",
+    "Rajax Network Techology (Taobao Shangou of Alibaba), Beijing, China",
+    "Department of Biostatistics, Yale School of Public Health, New Haven, USA"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2608.16274",
+    "OpenAlex": "https://openalex.org/W7203671197"
+   }
+  }
+ },
+ "arxiv:2601.05513": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2601.05513",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "LEAPS: An LLM-Empowered Adaptive Plugin in Taobao AI Search",
+   "url": "https://arxiv.org/abs/2601.05513",
+   "summary": "The rapid rise of large language models has shifted user search behavior from discrete keywords to natural-language, multi-constraint queries—a shift existing e-commerce search architectures struggle to accommodate. Users face a dilemma: precise natural-language queries often trigger zero-result scenarios, while forced simplification yields noisy, generic results that overwhelm decision-making. To address this, we propose LEAPS (LLM-Empowered Adaptive Plugin in Taobao AI Search), which upgrades traditional search pipelines via a ''Broaden-and-Refine'' paradigm by attaching plugins at both ends. (1) Upstream, a Query Expander generates adaptive, complementary query combinations to maximize the candidate set, trained via a three-stage strategy of inverse data augmentation, posterior-knowledge supervised fine-tuning, and diversity-aware reinforcement learning. (2) Downstream, a Relevance Verifier filters noise by synthesizing multi-source signals (e.g., OCR text, reviews) with chain-of-thought reasoning. Extensive offline experiments and online A/B testing show that LEAPS significantly enhances the conversational shopping experience, while its non-intrusive architecture preserves est…",
+   "authors": [
+    "Lei Wang",
+    "Jinhang Wu",
+    "Zhibin Wang",
+    "Biye Li"
+   ],
+   "published": "2026-11-06T00:00:00Z",
+   "tags": [
+    "conference-paper"
+   ],
+   "metrics": {
+    "citations": 1.0
+   },
+   "affiliations": [
+    "Alibaba Group (China)",
+    "Taobao & Tmall Group, Alibaba, Hangzhou, China"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2601.05513",
+    "OpenAlex": "https://openalex.org/W7123283912"
+   }
+  }
+ },
+ "doi:10.83842/recommendesyseff": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "doi:10.83842/recommendesyseff",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Recommender Systems: Efficient Intelligence",
+   "url": "https://doi.org/10.83842/recommendesyseff",
+   "summary": "",
+   "authors": [],
+   "published": "2026-11-22T00:00:00Z",
+   "tags": [
+    "paratext"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [],
+   "links": {
+    "OpenAlex": "https://openalex.org/W7237927950"
+   }
+  }
+ },
+ "arxiv:2609.27953": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2609.27953",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "The Recall Ceiling of LLM Recommendation Reranking",
+   "url": "https://arxiv.org/abs/2609.27953",
+   "summary": "Some LLM-based recommendation rerankers are evaluated under an oracle protocol that guarantees the ground-truth item is present in the scored set, either by injecting it into the candidate list or by scoring it against sampled negatives. We show that this protocol overestimates realistic performance by 92-95% in NDCG@10 across three primary Amazon datasets, so oracle results do not transfer to deployment. The root cause is a recall ceiling: realistic retrieval covers only 2-19% of relevant items at K=100 across eight datasets in three domains (Amazon products, MovieLens movies, MIND news), placing a deterministic upper bound on any closed-candidate reranker's top-k NDCG (Theorem 1, E[NDCG@k] <= Recall@|W_pi| under LOO evaluation, where W_pi is the reranker's own candidate window). Under realistic retrieval, every optimisation strategy we tested fails to produce a statistically significant improvement over the CF baseline on our primary Amazon datasets: prompt engineering, model scaling across a 168x parameter range, sequential models, three supervised neural rerankers (LambdaMART, RankNet, MLP) under a disjoint train/eval user split, a LoRA-fine-tuned LLaMA-3.2-3B reranker, and a …",
+   "authors": [
+    "Zhaohui Wang"
+   ],
+   "published": "2026-11-06T00:00:00Z",
+   "tags": [
+    "conference-paper"
+   ],
+   "metrics": {
+    "citations": 1.0
+   },
+   "affiliations": [
+    "University of Southern California",
+    "University of Southern California,Viterbi School of Engineering, Los Angeles, CA, USA"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2609.27953",
+    "OpenAlex": "https://openalex.org/W7214191998"
+   }
+  }
+ },
+ "doi:10.83842/recommendesysopt": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "doi:10.83842/recommendesysopt",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Recommender Systems Optimisation",
+   "url": "https://doi.org/10.83842/recommendesysopt",
+   "summary": "",
+   "authors": [],
+   "published": "2026-11-22T00:00:00Z",
+   "tags": [
+    "paratext"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [],
+   "links": {
+    "OpenAlex": "https://openalex.org/W7238247519"
+   }
+  }
+ },
+ "doi:10.83842/recommendesysedg": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "doi:10.83842/recommendesysedg",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Recommender Systems: Edge Intelligence and Applications",
+   "url": "https://doi.org/10.83842/recommendesysedg",
+   "summary": "",
+   "authors": [],
+   "published": "2026-11-22T00:00:00Z",
+   "tags": [
+    "paratext"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [],
+   "links": {
+    "OpenAlex": "https://openalex.org/W7237612410"
+   }
+  }
+ },
+ "doi:10.62222/krva3141": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "doi:10.62222/krva3141",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Agentic Commerce and SME Competitiveness: An Integrative Review and Theory-Informed Research Framework",
+   "url": "https://doi.org/10.62222/krva3141",
+   "summary": "Research background: Artificial intelligence is shifting online shopping from recommendation-based assistance towards delegated search, comparison, configuration, and, in emerging cases, transaction execution. For SMEs, this transition may expand market access while simultaneously creating new forms of algorithmic gatekeeping and platform dependence. Purpose of the article: This integrative review develops a theory-informed explanation of how agentic commerce may affect SME competitiveness. Competitiveness is conceptualised as the joint ability to capture agent-mediated demand while preserving strategic option value, customer access, and bargaining autonomy over time. Methods: Seventeen documented OpenAlex title-and-abstract queries were used to identify English-language journal articles published between 2015 and July 2026. Following deduplication and eligibility screening, 117 Scopus- and/or Web of Science-indexed articles were reviewed in full, comprising 82 consumer-agent studies and 35 SME-platform studies. A concept-centric synthesis was conducted using dynamic capabilities and resource dependence as the principal theoretical lenses. The review does not claim exhaustive cove…",
+   "authors": [
+    "Sarkawt Ali Ahmed Al-Dawoodii",
+    "Veronika Svatošová"
+   ],
+   "published": "2026-11-24T10:29:06.609298Z",
+   "tags": [
+    "article"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Tomas Bata University in Zlín",
+    "Mendel University in Brno",
+    "Tomas Bata University in Zlín, Faculty of Management and Economics, Czech Republic",
+    "Mendel University in Brno, Faculty of Regional Development and International Studies, Czech Republic"
+   ],
+   "links": {
+    "OpenAlex": "https://openalex.org/W7204950591"
+   }
+  }
+ },
+ "url:https://hal.science/hal-05870925": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "url:https://hal.science/hal-05870925",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Graph-Based Discovery of Product Exposure Neighborhoods in E-Commerce Search",
+   "url": "https://hal.science/hal-05870925",
+   "summary": "Product discovery in e-commerce is increasingly mediated by search engines, where products repeatedly compete for user attention across thousands of search queries. Existing methods primarily characterize product relationships through textual similarity or customer behavior, overlooking the relationships induced by repeated co-exposure on Search Engine Results Pages (SERPs). Consequently, sellers lack a compact, temporal representation of the products that consistently share their observed search space. This paper introduces the notion of an exposure neighborhood, defined as the set of products that repeatedly co-occur with a target product under comparable search visibility across multiple queries and SERP snapshots. We construct a bipartite queryproduct graph from repeated SERP observations and project it into an exposure graph that reveals persistent exposure neighborhoods around each product. Experiments with real-world Amazon SERP data show that the resulting neighborhoods show considerable temporal durability despite ranking volatility, while remaining substantially distinct from title-based similarity. A temporal holdout further shows that the proposed normalized exposure s…",
+   "authors": [
+    "Lydia Douaidi",
+    "Hamamache Kheddouci",
+    "Antoine Huet"
+   ],
+   "published": "2026-11-19T00:00:00Z",
+   "tags": [
+    "conference-paper"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [],
+   "links": {
+    "OpenAlex": "https://openalex.org/W7238598289"
+   }
+  }
+ },
+ "doi:10.83842/recommendesysmod": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "doi:10.83842/recommendesysmod",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Recommender Systems: Model Governance",
+   "url": "https://doi.org/10.83842/recommendesysmod",
+   "summary": "",
+   "authors": [],
+   "published": "2026-11-22T00:00:00Z",
+   "tags": [
+    "paratext"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [],
+   "links": {
+    "OpenAlex": "https://openalex.org/W7238498555"
+   }
+  }
+ },
+ "arxiv:2609.05110": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2609.05110",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Embedding Surgery: Localized Updates for Adaptive Ranking Correction in Dense Retrieval",
+   "url": "https://arxiv.org/abs/2609.05110",
+   "summary": "Dense retrieval systems are core components of modern search engines, recommendation platforms, and retrieval-augmented generation pipelines. They encode documents and queries into dense embeddings, enabling efficient semantic search via vector similarity. However, because document embeddings are computed offline and stored in static indexes, these systems struggle to adapt to user feedback or evolving search intent. To address this limitation, we introduce embedding surgery, a lightweight approach for adaptive ranking correction in dense retrieval. The method applies localized, minimal updates to selected document embeddings at query time, guided by editorial feedback, user interactions, or pseudo-labels from large language models. We formulate embedding surgery as a convex optimization problem that enforces ranking constraints while minimizing modifications to the affected document representations. We integrate embedding surgery into standard dense retrieval pipelines and evaluate it on TREC Deep Learning, TREC Robust, TREC CAsT, and MS MARCO benchmarks. Results show consistent improvements (e.g., up to +60.64% relative improvement in nDCG@10 on DL-Hard under editorial feedback)…",
+   "authors": [
+    "Maddalena Amendola",
+    "Antonio Mallia",
+    "Raffaele Perego"
+   ],
+   "published": "2026-11-06T00:00:00Z",
+   "tags": [
+    "conference-paper"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Institute of Informatics and Telematics",
+    "Istituto di Scienza e Tecnologie dell'Informazione \"Alessandro Faedo\"",
+    "IIT-CNR, Pisa, Italy",
+    "Seltz, San Francisco, California, USA",
+    "ISTI-CNR, Pisa, Italy"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2609.05110",
+    "OpenAlex": "https://openalex.org/W7211978749"
+   }
+  }
+ },
+ "arxiv:2611.29613": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.29613",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "Weight Coding: Evolving Web-Scale Recommenders through Direct Weight Edits with LLM Agents",
+   "url": "https://arxiv.org/abs/2611.29613",
+   "summary": "Web-scale recommender models evolve primarily through retraining or fine-tuning. We propose \\emph{weight coding}, a methodology for model evolution through direct, executable weight edits. A large language model (LLM) agent inspects model structure and parameters, formulates hypotheses, and implements edits using evaluation feedback. The loop progresses from localized changes to targeted searches and composition, allowing edited components to adapt to one another. A cached engine enables rapid forward evaluation without backpropagation. On Pinterest's 147M-parameter Image Search two-tower retriever, weight coding improves held-out recall@10 of production model by up to 15.0 percentage points (+24\\% relative) with few edits in about 1/4 GPU hours of a full post-training finetune, while a common launch only improves around 1\\%. After reinitializing the entire 13.6M-parameter interaction module randomly while retaining the surrounding trained model, searching 2,448 mixing and normalization parameters yields 9.8 points above production. Offline gains span the full funnel including dense retrieval, generative retrieval and ranking, with up to 1.37B learnable parameters and different ed…",
+   "authors": [
+    "Junpeng Hou",
+    "Jiaxing Qu",
+    "Derek Cheng",
+    "Jaewon Yang",
+    "Abhinav Naikawadi",
+    "Karthik Subbian"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.IR",
+    "cs.AI",
+    "cs.LG"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.29613"
+   }
+  }
+ },
+ "arxiv:2609.02671": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2609.02671",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Recommender System as Slow and Fast Thinkers",
+   "url": "https://arxiv.org/abs/2609.02671",
+   "summary": "Sequential recommendation models are foundational to modern personalized services, yet their effectiveness varies substantially across heterogeneous user environments. In particular, static one-pass recommenders often perform well on common behavior patterns but degrade on operationally challenging user groups, such as users with longer histories or less mainstream item profiles. To address this limitation, we propose \\textsc{DS-Frame}, an adaptive fast--slow inference framework for sequential recommendation. \\textsc{DS-Frame} combines a Fast System for efficient routine prediction, a Slow System for iterative latent refinement, and a learned selector that routes each sample under a controllable computation budget. Experiments on five real-world datasets show that \\textsc{DS-Frame} consistently improves representative sequential recommendation backbones, with larger gains on challenging groups and effective accuracy--efficiency trade-offs. This highlights the potential of adaptive inference for more efficient and robust recommendation. Code is available at \\href{https://github.com/ZichenYuan233/Recommender-System-as-Slow-and-Fast-Thinkers}{this link}.",
+   "authors": [
+    "Zichen Yuan",
+    "Xiaoxuan Dong",
+    "Linkun Dai",
+    "Jinwei Yang",
+    "Jining Luan",
+    "Dexu Yu",
+    "Chunxiao Li",
+    "Joemon M. Jose",
+    "Youhua Li",
+    "Hanwen Du",
+    "Junchen Fu"
+   ],
+   "published": "2026-11-06T00:00:00Z",
+   "tags": [
+    "conference-paper"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "City University of Hong Kong",
+    "University of Electronic Science and Technology of China",
+    "Shanghai Jiao Tong University",
+    "University of Science and Technology of China",
+    "University of Glasgow",
+    "The Ohio State University",
+    "City University of Hong Kong, Hong Kong, Hong Kong",
+    "University of Electronic Science and Technology of China, Chengdu, China"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2609.02671",
+    "OpenAlex": "https://openalex.org/W7204675449"
+   }
+  }
+ },
+ "arxiv:2611.24464": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.24464",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Platform Recommendation and Competition in Search Markets",
+   "url": "https://arxiv.org/abs/2611.24464",
+   "summary": "Recommendation rules affect both sellers' incentives and the alternatives consumers expect to find. We develop a framework for evaluating these rules with heterogeneous sellers, endogenous pricing and advertising, and costly consumer search. For a broad class of separable recommendation scores, we establish conditions under which a unique market equilibrium exists. Three applications illustrate the use of the framework. A stronger reward for low prices does not necessarily lower equilibrium prices and benefit consumers when products are sufficiently differentiated in qualities. Quality guidance can lower the price of each product and benefit consumers while raising the average transaction price. With heterogeneous match distributions, a reward for the best initial inspection can help consumers with advertising fixed and harm them when advertising adjusts. A two-type design extension shows that no finite optimum over implementable outcomes uses positive weights on both quality and low prices, even when the platform values consumer surplus.",
+   "authors": [
+    "Sanxi Li",
+    "Jun Yu",
+    "Zhang Mingsheng"
+   ],
+   "published": "2026-11-18T00:00:00Z",
+   "tags": [
+    "preprint"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Renmin University of China",
+    "Shanghai University of Finance and Economics",
+    "School of Economics , Renmin University of China",
+    "School of Economics , Shanghai University of Finance and Economics"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.24464",
+    "OpenAlex": "https://openalex.org/W7236618861"
+   }
+  }
+ },
+ "arxiv:2608.18855": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2608.18855",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Think-to-Personalize: Unifying Reasoning and Retrieval for User-Centric Personalized Dense Retrieval",
+   "url": "https://arxiv.org/abs/2608.18855",
+   "summary": "Dense retrieval has become a cornerstone of modern local-lifestyle e-commerce search by encoding queries and items into semantic embedding spaces. While recent advancements have transitioned from BERT-based embedding models to Large Language Models (LLMs), most approaches still treat LLMs as static text encoders, neglecting their inherent reasoning capabilities. Furthermore, standard dense retrieval models remain query-centric, which is insufficient in e-commerce scenarios where sparse and ambiguous queries create an intent gap that can only be bridged by the rich context of user history. Meanwhile, existing personalized retrieval methods typically rely on implicit embedding interactions, which lack the reasoning capability to effectively disambiguate user intent from noisy historical behaviors. To address these challenges, we propose Think-to-Personalize (TTP), a novel framework that unifies explicit user-centric intent reasoning with dense retrieval. By reasoning over the user's historical purchase sequence, TTP explicitly deduces latent personalized needs and generates an intent-enhanced query, which is then encoded into a unified dense embedding. Specifically, we design a two-…",
+   "authors": [
+    "Angqing Jiang",
+    "Gaoming Zhang",
+    "Jianchun Song",
+    "Kena Qi",
+    "Dayao Chen",
+    "Wei Lin",
+    "Defu Lian"
+   ],
+   "published": "2026-11-06T00:00:00Z",
+   "tags": [
+    "conference-paper"
+   ],
+   "metrics": {
+    "citations": 4.0
+   },
+   "affiliations": [
+    "University of Science and Technology of China",
+    "Meituan (China)",
+    "University of science and technology of China, Hefei, China",
+    "Meituan, Beijing, China"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2608.18855",
+    "OpenAlex": "https://openalex.org/W7203897776"
+   }
+  }
+ },
+ "arxiv:2608.11980": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2608.11980",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Learning from Unreachable Rewards: Hint-Conditioned Reinforcement Learning for Generative Recommendation",
+   "url": "https://arxiv.org/abs/2608.11980",
+   "summary": "Semantic-ID generative recommenders represent each item as a short sequence of discrete semantic tokens and predict the next item by autoregressively generating this token sequence. This paradigm enables a unified generation interface for item IDs, histories, and item text, but it also creates a structured optimization bottleneck during reward-based post-training: when an early semantic token enters the wrong branch of the item-token space, finite rollout groups rarely reach the ground-truth item, so group-relative optimization receives identical zero rewards and produces no useful advantage. We propose Hint-Conditioned Generative Recommendation (\\method), a semantic-ID generative recommendation framework that recovers learning signal for such hard training instances. HCGRec diagnoses each instance with checkpoint rollouts and supplies a minimal target-prefix hint only when the current generator cannot reach the correct item. The model then generates the unhinted suffix under the hinted semantic branch, turning zero-reward groups into informative comparisons over item-token completions. Hinting also changes token identity: hinted prefix tokens are oracle-provided item context, whi…",
+   "authors": [
+    "Kangning Zhang",
+    "Haotian Fang",
+    "Xukun Luo",
+    "Hao Yin",
+    "Yang Gao",
+    "Peng Yan",
+    "Weiwen Liu",
+    "Weinan Zhang",
+    "Yong Yu"
+   ],
+   "published": "2026-11-06T00:00:00Z",
+   "tags": [
+    "conference-paper"
+   ],
+   "metrics": {
+    "citations": 5.0
+   },
+   "affiliations": [
+    "Shanghai Jiao Tong University",
+    "Meituan (China)",
+    "Shanghai Jiao Tong University, Shanghai, China",
+    "Mei Tuan, Beijing, China"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2608.11980",
+    "OpenAlex": "https://openalex.org/W7202395206"
+   }
+  }
+ },
+ "arxiv:2611.30203": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.30203",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "ToWo-VTON: Take-Off Wear-On Virtual Try-On via Topology-aware Decoupling",
+   "url": "https://arxiv.org/abs/2611.30203",
+   "summary": "Virtual Try-On (VTON) aims to synthesize garment transfer without physical trials. Although recent methods perform well on upper-body garments, they still struggle in lower-body and full-body scenarios with complex occlusions and large silhouette changes. To address this limitation, we introduce ToWo (Take-Off Wear-On), a two-stage paradigm that decouples body structure estimation from garment synthesis. Take-Off first generates a tight-fitting body proxy that provides estimated structural guidance, and Wear-On then synthesizes the target garment conditioned on this prior. This decoupling reduces source-garment interference, supporting garment placement under substantial silhouette variations. Built on this paradigm, we propose ToWo-VTON, a unified topology-aware framework with structure-aware supervision. We construct the Body-Fitting DressCode (BFDC) dataset via body-aware diffusion and VLM-based filtering to provide body-proxy supervision across upper-, lower-, and full-body cases. We instantiate ToWo-VTON on both diffusion-based and MLLM-guided backbones. For diffusion-based models, we fine-tune on BFDC using the body proxy as the person input. For the MLLM-guided model, we us…",
+   "authors": [
+    "Zhenchen Wan",
+    "Tianxi Chen",
+    "Runqi Lin",
+    "Tianyi Bo",
+    "Ce Chen",
+    "Jiaxin Huang",
+    "Yanwu Xu",
+    "Tongliang Liu",
+    "Mingming Gong"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.CV"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.30203"
+   }
+  }
+ },
+ "arxiv:2510.09393": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2510.09393",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "ChoirRec: Semantic User Grouping via LLMs for Conversion Rate Prediction of Low-Activity Users",
+   "url": "https://arxiv.org/abs/2510.09393",
+   "summary": "Accurately predicting conversion rates (CVR) for low-activity users remains a fundamental challenge in large-scale e-commerce recommender systems. For these users, existing approaches face three critical limitations: (i) data dominated by high-activity users may introduce noisy and mismatched signals for learning low-activity users' preferences; (ii) insufficient interaction information; and (iii) a systemic training bias toward high-activity users. To address these challenges, we propose ChoirRec, a novel framework that uses Large Language Models (LLMs) to identify semantically similar users and transfer reliable knowledge from richer user groups to low-activity users.ChoirRec comprises three components: (i) a Semantic Group Generation module that utilizes LLMs to form reliable, cross-activity user clusters, thereby filtering out noisy signals; (ii) a Hierarchical Representation module that enriches sparse user embeddings with informative group-level priors to mitigate data insufficiency; and (iii) a Multi-granularity Module that employs a dual-channel architecture and adaptive fusion mechanism to ensure effective learning and utilization of group knowledge. We conduct extensive …",
+   "authors": [
+    "Dakai Zhai",
+    "Jiong Gao",
+    "Boya Du",
+    "Ning Tang",
+    "Junwei Xu",
+    "Qijie Shen",
+    "Jialin Zhu",
+    "Yuning Jiang"
+   ],
+   "published": "2026-11-06T00:00:00Z",
+   "tags": [
+    "conference-paper"
+   ],
+   "metrics": {
+    "citations": 1.0
+   },
+   "affiliations": [
+    "Alibaba Group (China)",
+    "Tsinghua Shenzhen International Graduate School",
+    "Tsinghua University",
+    "Taobao & Tmall Group of Alibaba, Hangzhou, China",
+    "Shenzhen International Graduate School, Tsinghua University, Shenzhen, China"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2510.09393",
+    "OpenAlex": "https://openalex.org/W4417100853"
+   }
+  }
+ },
+ "arxiv:2605.31003": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2605.31003",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Graph-GRPO: Dependency-Aware Credit Assignment for Generative E-commerce Search Relevance",
+   "url": "https://arxiv.org/abs/2605.31003",
+   "summary": "Search relevance modeling is a core task in e-commerce search systems, assessing how well a user query matches candidate products. Rather than relying on a single holistic matching signal, relevance judgment often requires structured reasoning over query understanding, product understanding, and facet-level matching. With large language models (LLMs), this process is increasingly formulated as chain-of-thought (CoT) reasoning and optimized with reinforcement learning (RL). However, existing RL methods mainly rely on outcome-level rewards and treat the entire reasoning chain as a single optimization unit. This makes it difficult to distinguish faulty reasoning steps from correct intermediate ones, leading to misaligned credit assignment. Although process-reward methods provide denser supervision, they often treat reasoning steps independently and ignore dependency-driven error propagation, making responsibility attribution difficult and limiting the optimization of structured relevance reasoning. We propose Graph-GRPO, a graph-structured extension of GRPO for multi-component relevance reasoning. Graph-GRPO constructs a relevance reasoning dependency graph, where CoT steps are model…",
+   "authors": [
+    "Jiarui Che",
+    "Yifei Chen",
+    "Zhixing Tian",
+    "Chenyang Wang",
+    "Ziguang Cheng"
+   ],
+   "published": "2026-11-06T00:00:00Z",
+   "tags": [
+    "conference-paper"
+   ],
+   "metrics": {
+    "citations": 1.0
+   },
+   "affiliations": [
+    "Nankai University",
+    "Jingdong (China)",
+    "Nankai University, Tianjin, China",
+    "JD.COM, Beijing, China"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2605.31003",
+    "OpenAlex": "https://openalex.org/W7163033840"
+   }
+  }
+ },
+ "arxiv:2602.07309": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2602.07309",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Semantic Search At LinkedIn",
+   "url": "https://arxiv.org/abs/2602.07309",
+   "summary": "Semantic search with large language models (LLMs) enables retrieval by meaning rather than keyword overlap, but scaling it requires major inference efficiency advances. We present LinkedIn's LLM-based semantic search framework for AI Job Search and AI People Search, combining an LLM relevance judge, embedding-based retrieval, and a compact Small Language Model trained via multi-teacher distillation to jointly optimize relevance and engagement. A prefill-oriented inference architecture co-designed with model pruning, context compression, and text–embedding hybrid interactions boosts ranking throughput by over 75× under fixed latency constraint while preserving near–teacher-level NDCG, enabling one of the first production LLM-based ranking systems with efficiency comparable to traditional approaches and delivering significant gains in quality and user engagement.",
+   "authors": [
+    "Fedor Borisyuk",
+    "Sriram Vasudevan",
+    "Muchen Wu",
+    "Guoyao Li",
+    "Benjamin Hoan Le",
+    "Shaobo Zhang",
+    "Qianqi Kay Shen",
+    "Yuchin Juan",
+    "Kayhan Behdin",
+    "Liming Dong",
+    "Kaixu Yang",
+    "Shusen Jing",
+    "Ravi Kiran Pothamsetty",
+    "Rajat Arora",
+    "Sophie Yanying Sheng",
+    "Vitaly Abdrashitov",
+    "Yang Zhao",
+    "Lin Su",
+    "Xiaoqing Wang",
+    "Chujie Zheng",
+    "Sarang Metkar",
+    "Rupesh Gupta",
+    "Igor Lapchuk",
+    "David Nicolas Racca",
+    "Madhumitha Mohan",
+    "Yanbo Li",
+    "Haojun Li",
+    "Saloni Gandhi",
+    "Xueying Lu",
+    "Chetan Bhole",
+    "Ali Hooshmand",
+    "Xin Yang",
+    "Raghavan Muthuregunathan",
+    "Jiajun Zhang",
+    "Mathew Teoh",
+    "Adam S. Coler",
+    "Abhinav Gupta",
+    "Xiaojing Ma",
+    "Sundara Raman Ramachandran",
+    "Morteza Ramezani",
+    "Yubo Wang",
+    "Lijuan Zhang",
+    "Richard Li",
+    "Jian Sheng",
+    "Chanh Nguyen",
+    "Yen-Chi Chen",
+    "Chuanrui Zhu",
+    "Claire Zhang",
+    "Jiahao Xu",
+    "Deepti Kulkarni",
+    "Qing Lan",
+    "Arvind Subramaniam",
+    "Ata Fatahibaarzi",
+    "Steven Shimizu",
+    "Yanning Chen",
+    "Zhipeng Wang (Grady)",
+    "Ran He",
+    "Zhengze Zhou",
+    "Qingquan Song",
+    "Yun Dai",
+    "Caleb Johnson",
+    "Ping Liu",
+    "Shaghayegh Gharghabi",
+    "Gokulraj Mohanasundaram",
+    "Juan Bottaro",
+    "Santhosh Sachindran",
+    "Qi Guo",
+    "Yunxiang Ren",
+    "Chengming Jiang",
+    "Di Mo",
+    "Luke Simon",
+    "Jianqiang Shen",
+    "Jingwei Wu",
+    "Wenjing Zhang"
+   ],
+   "published": "2026-11-06T00:00:00Z",
+   "tags": [
+    "conference-paper"
+   ],
+   "metrics": {
+    "citations": 2.0
+   },
+   "affiliations": [
+    "LinkedIn (United States)",
+    "LinkedIn, Mountain View, CA, USA"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2602.07309",
+    "OpenAlex": "https://openalex.org/W7128513156"
+   }
+  }
+ },
+ "arxiv:2611.30662": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.30662",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "WeMM-Ecom: Advancing Multimodal Content Understanding for WeChat E-Commerce",
+   "url": "https://arxiv.org/abs/2611.30662",
+   "summary": "We present WeMM-Ecom, a family of multimodal large language models that deliver frontier e-commerce capabilities while achieving state-of-the-art general-purpose performance at their respective scales. The family spans five sizes, from a 0.8B dense model to a 35B mixture-of-experts model with 3B active parameters. Our training pipeline begins with two-stage continued pre-training that progressively raises the proportion of e-commerce data within a diverse multimodal data mixture, followed by hybrid-thinking post-training that combines on-policy distillation and reinforcement learning to support both non-thinking and thinking modes. For evaluation, we construct a comprehensive suite of 28 e-commerce benchmarks (23 in-house and five open-source) covering eight business scenarios and complement it with 64 public general-purpose benchmarks. On the e-commerce suite, WeMM-Ecom-35B-A3B surpasses substantially larger open-source flagship models, including Qwen3.8-Flash-Next, HY4, and DeepSeek-V4.1-Flash. On the general-purpose suite, every WeMM-Ecom model surpasses its similarly sized Qwen3.5 counterpart, with the lightweight variants (e.g., WeMM-Ecom-2B) showing clear advantages over lea…",
+   "authors": [
+    "Binhui Xie",
+    "Jinmin Li",
+    "Haomiao Tang",
+    "Guangting Wang",
+    "Song Jin",
+    "Jianwei Zhu",
+    "Fengyun Rao",
+    "Jing Lyu"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.AI",
+    "cs.CV",
+    "multimodal large language models",
+    "dense model",
+    "mixture-of-experts model",
+    "active parameters",
+    "continued pre-training",
+    "multimodal data mixture",
+    "hybrid-thinking post-training",
+    "on-policy distillation",
+    "reinforcement learning",
+    "non-thinking mode"
+   ],
+   "metrics": {
+    "upvotes": 49.0,
+    "comments": 1.0,
+    "github_stars": 22.0
+   },
+   "affiliations": [
+    "Tencent"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.30662",
+    "HF": "https://huggingface.co/papers/2611.30662",
+    "Code": "https://github.com/Tencent/WeMM-Ecom",
+    "Project": "https://huggingface.co/collections/tencent/wemm-ecom"
+   }
+  }
+ },
+ "arxiv:2602.07442": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2602.07442",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "EchoTrace: Diagnosing Recursive Risks in LLM-Powered Recommender Systems",
+   "url": "https://arxiv.org/abs/2602.07442",
+   "summary": "Large language models (LLMs) are increasingly integrated into recommender systems as data augmenters, profile generators, and recommendation modules. While these roles can enhance semantic understanding and recommendation quality, they also introduce LLM-specific risks such as bias and hallucination. These risks become more critical in feedback-loop settings, where LLM-generated signals and recommendations recursively shape future training data and recommendation dynamics. In this paper, we propose a role-aware, phase-wise diagnostic framework for analyzing how LLM-induced risks emerge, propagate, and accumulate in LLM-powered recommender systems. Our framework combines controlled feedback-loop simulation with longitudinal phase-wise diagnosis across LLM-generated content, recommendation outputs, feedback-loop dynamics, and ecosystem-level effects. Experiments on widely used benchmarks show that LLM-based components can amplify popularity bias, introduce spurious signals through hallucination, and gradually produce polarized and self-reinforcing exposure patterns over time. The code for EchoTrace is available at https://github.com/DongUk-Park/EchoTrace.",
+   "authors": [
+    "Donguk Park",
+    "Dongwon Lee",
+    "Yeon-Chang Lee"
+   ],
+   "published": "2026-11-06T00:00:00Z",
+   "tags": [
+    "conference-paper"
+   ],
+   "metrics": {
+    "citations": 4.0
+   },
+   "affiliations": [
+    "Ulsan National Institute of Science and Technology",
+    "Pennsylvania State University",
+    "Ulsan National Institute of Science and Technology (UNIST), Ulsan, Republic of Korea",
+    "The Pennsylvania State University, University Park, PA, USA"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2602.07442",
+    "OpenAlex": "https://openalex.org/W7128511984"
+   }
+  }
+ },
+ "arxiv:2405.17959": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2405.17959",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Multimodal attention fusion-based sequential recommendation system",
+   "url": "https://arxiv.org/abs/2405.17959",
+   "summary": "Sequential recommendation (SR) systems, which model dynamic user preferences from past behaviors, play a crucial role in e-commerce platforms. Recent studies on these systems have considered various types of information such as images and texts. However, multimodal data have not yet been fully exploited in SR settings. In this study, we propose an attention-based SR method that employs multimodal data for items such as images, texts, and categories. Specifically, we introduce a Multimodal Fusion Module that performs independent attention over item ID sequences and multimodal representations, and combines them through a Multimodal Fusion Function. In addition, modality-specific reconstruction losses for images, texts, and categories are incorporated as a multitask learning objective, serving as an implicit regularizer that improves generalization across diverse product domains. Experiments on four Amazon datasets demonstrate that the proposed method achieves the best overall results on three of the four datasets, yielding improvements of up to 2.5% in Recall@20 and 1.4% in NDCG@10 over the strongest baseline.",
+   "authors": [
+    "Hyungtaik Oh",
+    "Wonkeun Jo",
+    "Dongil Kim"
+   ],
+   "published": "2026-11-01T00:00:00Z",
+   "tags": [
+    "article"
+   ],
+   "metrics": {
+    "citations": 2.0
+   },
+   "affiliations": [
+    "Chungnam National University",
+    "Korea Astronomy and Space Science Institute",
+    "Ewha Womans University",
+    "Department of Computer Science and Engineering, Chungnam National University, 99 Daehak–ro, Yuseong–gu, 34134, Daejeon,…",
+    "Center for Space Exploration Technology, Division of Space Exploration, Korea Astronomy and Space Science Institute, 77…",
+    "Department of Data Science, Ewha Womans University, 52 Ewhayeodae–gil, Seodaemun–gu, 03760, Seoul, Republic of Korea"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2405.17959",
+    "OpenAlex": "https://openalex.org/W4399151736"
+   }
+  }
+ },
+ "arxiv:2609.00086": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2609.00086",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Retrieval, Scoring, and Decoding Shape Performance and Stability in LLM-based Conversational Recommendation",
+   "url": "https://arxiv.org/abs/2609.00086",
+   "summary": "Large language models (LLMs) are increasingly used as rerankers in conversational recommender systems, yet measured gains depend strongly on the retrieval and inference protocol. On the ReDial conversational movie recommendation benchmark, we compare proprietary, open-weight, and fine-tuned LLM rerankers with collaborative-filtering and sequential baselines in a shared retrieve-then-rerank pipeline. We vary candidate-pool size, first-stage retriever, and decoding temperature. With a shared semantic top-250 candidate pool and strict candidate-aware scoring, the best proprietary reranker reaches NDCG@10 of 0.1497, compared with 0.0939 for the strongest non-LLM baseline. The same reranker reaches 0.2925 in zero-shot generation, showing that unconstrained scoring can yield a much larger apparent advantage than matched-pool evaluation. No evaluated open-weight LLM outperforms the tuned shallow autoencoder baseline under this protocol. For the strongest proprietary and open-weight rerankers, switching from semantic to collaborative-filtering candidates raises NDCG@10 by more than 50%, showing that measured reranker performance is highly sensitive to candidate generation. For the best pr…",
+   "authors": [
+    "Ante Lojić Kapetanović",
+    "Tomislav Đuričić",
+    "Andro Merćep",
+    "Emanuel Lacić"
+   ],
+   "published": "2026-11-06T00:00:00Z",
+   "tags": [
+    "conference-paper"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Infobip, Split, Croatia",
+    "Infobip, Zagreb, Croatia"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2609.00086",
+    "OpenAlex": "https://openalex.org/W7206190774"
+   }
+  }
+ },
+ "arxiv:2611.28671": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.28671",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "The Evaluation Substrate Matters: Benchmarking Multi-Agent Serving Substrates",
+   "url": "https://arxiv.org/abs/2611.28671",
+   "summary": "Multi-agent systems (MAS) usually coordinate heterogeneous models and tools to solve complex tasks, creating a growing need for reliable evaluation. However, a multi-agent workflow that is fastest in one serving environment can lose its advantage in another, even when its models, prompts, and task remain fixed. This makes a benchmark result conditional on how the workflow is executed. We introduce MASSys, a benchmark for measuring this dependence in multi-agent large language model (LLM) systems. MASSys executes the same candidate-task pairs across serving substrates and load regimes, using five workload families spanning software repair, research synthesis, financial analysis, interactive control, and diagram generation. It records task quality alongside delivery, latency, cost, resource pressure, and failure evidence. In a controlled motivation diagnostic, the Star workflow falls from first to fourth in mean-latency rank under KV-cache pressure, while Chain rises from fourth to first. The substrate sweeps further show that increasing load creates long runtime tails and timeout pressure. In several task families, quality among evaluated outputs changes less than effective quality…",
+   "authors": [
+    "Haoyuan Zheng",
+    "Dongting Li",
+    "Hancheng Ye",
+    "Qinsi Wang",
+    "Mingyuan Ma",
+    "Yuncheng Yao",
+    "Yifei Wang",
+    "Baijun Zhou",
+    "Zishan Shao",
+    "Tingjun Chen",
+    "Hai Helen Li",
+    "Danyang Zhuo",
+    "Yiran Chen"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.MA",
+    "cs.AI",
+    "cs.LG"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.28671"
+   }
+  }
+ },
+ "arxiv:2611.28706": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.28706",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "SkillLens: An Interactive Human-LLM System for Diagnosing and Refining Agent Skills",
+   "url": "https://arxiv.org/abs/2611.28706",
+   "summary": "LLM agents increasingly rely on reusable skills, yet maintaining them requires developers to connect revisions with changes in behavior and task outcomes. Existing workflows fragment evidence across versions, evaluation cases, and execution traces. We present SkillLens, an interactive human-LLM system for diagnosing and refining agent skills. A formative study with five developers and researchers identified challenges in prioritizing failures, reconstructing case-level evidence, and preserving context across revisions. SkillLens links performance changes, case transitions, skill diffs, invocation sequences, traces, and outputs in a recoverable workflow, while keeping model-generated explanations and refinements under human review. Through a between-subjects user study with 20 participants, we show that SkillLens supports developers in diagnosing and refining agent skills through a more usable and less demanding workflow than the baseline. These findings highlight the value of linking version comparisons, case-level evidence, and human-reviewed refinement across skill iterations.",
+   "authors": [
+    "Shuo Yan",
+    "Rui Sheng",
+    "Xiaoyan Gu",
+    "Lian Lian",
+    "Chengran Xu",
+    "Yifang Wang"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.HC",
+    "cs.AI"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.28706"
+   }
+  }
+ },
+ "arxiv:2611.29467": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.29467",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "Beyond Accuracy: A Diagnostic Benchmark for Hypothesis-Driven Experiment Planning in LLM Agents",
+   "url": "https://arxiv.org/abs/2611.29467",
+   "summary": "Evaluating large language model (LLM) agents on scientific tasks typically reduces to final-task accuracy, which obscures where reasoning succeeds or breaks down. We introduce a benchmark and diagnostic evaluation framework for hypothesis-driven adaptive experimental planning in closed-world system identification, instantiated in kinetic mechanism identification. The framework goes beyond final accuracy in two ways. First, we evaluate exploration behavior by quantifying the extent to which agents exhibit space-filling or corner-seeking patterns in the experimental design space. Second, we decompose the reasoning process into four interpretable steps: belief update, hypothesis discrimination, discriminative experiment design, and predictive reasoning under interventions, each scored separately on reasoning traces. Across ten LLM agents, we find that stronger agents outperform both adaptive (Bayesian optimization) and non-adaptive (Latin hypercube) baselines and exhibit exploration patterns inconsistent with naive heuristics. Decomposing reasoning reveals that the stronger agents score consistently well across all four steps, whereas weaker agents often succeed at belief update and …",
+   "authors": [
+    "Ryo Kuroki",
+    "Amin Mansouri",
+    "Philippe Schwaller"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CL"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.29467"
+   }
+  }
+ },
+ "arxiv:2611.29824": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.29824",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "Memphis: A Case Study in Seeding an Agent Task from a Model's Real-World Attempt",
+   "url": "https://arxiv.org/abs/2611.29824",
+   "summary": "Agent benchmarks are usually made harder by scaling up the data their tasks are built from, yet models that do well on them still fail at real work. We propose building simulated tasks from a model's own attempt at an open-ended task in the real world, so that the model's failures in the simulation resemble its failures in reality. As a case study, we had GPT-6.1 Sol manage two human workers in Cairo over chat for five shifts, with a budget of 7,000 Egyptian pounds, to build as many USB desk lamps as it could. It built two. From the real-world attempt's transcript, we build Memphis, an evaluation in a model-simulated world. Memphis is hard: GPT-6.1 Sol delivers 1.0 lamp per trial on average and repeats its real-world mistakes, buying too few stands and giving up the search for them. With a one-page hint on where to buy parts and who can wire them, it delivers 9.2. Claude Opus 5.5 delivers 2.2 without the hint and 4.6 with it. We release the task, the trials, the audits, and a redacted record of the real-world evaluation.",
+   "authors": [
+    "Ibrahim A. Ahmed",
+    "Ahmed Sameh Khalil"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.AI",
+    "cs.LG"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.29824"
+   }
+  }
+ },
+ "arxiv:2611.28787": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.28787",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "DiscernBench: Evaluating Cooperative Discernment of LLM Agents in Institutional Settings",
+   "url": "https://arxiv.org/abs/2611.28787",
+   "summary": "The deployment of large language models in operational settings demands evaluation of judgment under institutional constraint. We introduce DiscernBench, a benchmark for evaluating cooperative discernment: the ability of an agent to determine whether to comply with, refuse, or escalate a request in an institutional setting. DiscernBench comprises scenarios derived from real-world incident reports across domains such as aviation, law enforcement, and emergency management. We evaluate eight LLMs across three decision-making configurations and analyze both final decisions and the intermediate judgments produced during multi-agent deliberation. Under disagreement, Final Responders exhibit model- and role-dependent aggregation patterns in which a lone specialist recommendation can disproportionately influence the collective decision, a phenomenon we term Minority-Signal Override. Role-specialized multi-agent deliberation raises average over-escalation from 3.79% under direct single-agent judgment to 28.27%, with the direction and magnitude of minority-signal influence varying substantially across models and specialist roles. These results reveal distinct collective decision behaviors t…",
+   "authors": [
+    "Disha Sheshanarayana",
+    "Tanishka Magar"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.AI",
+    "cs.CL"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.28787"
+   }
+  }
+ },
+ "arxiv:2611.31063": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.31063",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "From Local Errors to System Failures: Modeling and Benchmarking Error Propagation in Multi-Agent LLM Systems",
+   "url": "https://arxiv.org/abs/2611.31063",
+   "summary": "In multi-agent systems (MAS) built on large language models (LLMs), errors can propagate through intermediate messages and compromise final answers. However, outcome-based evaluation obscures how agents amplify, attenuate, or correct these errors. We propose Response-Aware Error Propagation among Agents (REPA), a structural model that connects measured local responses to system-level error propagation. REPA separately estimates input assembly and agent processing across multiple error channels, while theoretical analysis relates local modeling errors to endpoint prediction error. Experiments span three Qwen base models, six MAS workflows, and ten knowledge and reasoning settings in ErrPropBench-10. REPA achieves a mean condition-level Spearman correlation of 0.84 across base models, compared with 0.47 for direct regression. Controlled experiments also demonstrate its utility for targeted recovery. REPA-guided retrieval-augmented generation (RAG) improves accuracy over no retrieval by an average of 19 percentage points with 16% additional tokens. By linking local agent behavior to system susceptibility, REPA provides an interpretable foundation for studying error propagation and de…",
+   "authors": [
+    "Wenlong Yu",
+    "Bingxu Lu",
+    "Qilong Wang",
+    "Qinghua Hu",
+    "Qianru Sun"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.MA",
+    "cs.AI"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.31063"
+   }
+  }
+ },
+ "arxiv:2611.30546": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.30546",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "Fetch, Read, Reuse: How AI Search Agents Bend the Web's Rules",
+   "url": "https://arxiv.org/abs/2611.30546",
+   "summary": "AI search agents form a new and fast-growing class of web traffic. Like a browser, they fetch pages on demand for one user; like a transcoding proxy, they rewrite what they fetch; and like a shared cache, they answer other users' questions from the stored copy. The rules publishers rely on, such as robots.txt, Retry-After, and Cache-Control, were written for more familiar clients, so the agent's vendor decides which of them to follow. We present a black-box measurement study of how these agents fetch, read, and reuse pages, covering the search APIs of OpenAI, Anthropic, xAI, and Google and the consumer apps of ten services. We find that OpenAI and xAI do not honor robots.txt, and no service acts on Retry-After. Services silently read less than the origin served: OpenAI drops some formats, no service reads JavaScript-only content, and xAI reads only the first 0.5 MB of a page. OpenAI, Anthropic, and xAI share fetched pages across users and largely ignore Cache-Control, so answers can reflect outdated pages for 30 minutes to a day or more. Publishers therefore lack effective control: directives are advisory and followed selectively, describe the served page rather than the rewritten…",
+   "authors": [
+    "Yixi Chen",
+    "Zafar A. Qazi",
+    "Marco Canini",
+    "Suhaib A. Fahmy"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.NI",
+    "cs.IR"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.30546"
+   }
+  }
+ },
+ "arxiv:2605.23310": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2605.23310",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "From Head to Tail: Asymmetric Knowledge Transfer in Long-tail Recommendation with Generative Semantic IDs",
+   "url": "https://arxiv.org/abs/2605.23310",
+   "summary": "Long-tail recommendation in real-world e-commerce platforms remains challenging due to severe data imbalance. Existing methods often struggle to combine content-based multimodal features with collaborative signals. Many of these methods also ignore an important asymmetry in knowledge transfer between head and tail IDs: noisy signals from tail IDs can hurt representation learning for head IDs. This paper presents AKT-Rec, a framework for A symmetric K nowledge T ransfer in long-tail Rec ommendation that uses LLM-generated semantic IDs. AKT-Rec uses Multimodal LLMs (MLLMs) with supervised fine-tuning to align content representations with collaborative information for both items and users, producing semantic representations. It then discretizes these representations into semantic IDs with a Residual-Quantized VAE (RQ-VAE), which yields semantic clusters of similar entities. AKT-Rec has two main components: (1) Cluster-Guided Adaptive Embedding , which decomposes each ID representation into a cluster-level embedding that captures shared semantics and an individual embedding. Through an asymmetric contrastive objective and an activity-aware gating mechanism, this module directs knowled…",
+   "authors": [
+    "Chenyi Yan",
+    "Ruocong Tang",
+    "Xing Fang",
+    "Yang Huang",
+    "He Guo",
+    "Jing Wang"
+   ],
+   "published": "2026-11-06T00:00:00Z",
+   "tags": [
+    "conference-paper"
+   ],
+   "metrics": {
+    "citations": 1.0
+   },
+   "affiliations": [
+    "Alibaba Group (China)",
+    "Peking University",
+    "Alibaba Group, HangZhou, China",
+    "Peking University, HangZhou, China"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2605.23310",
+    "OpenAlex": "https://openalex.org/W7162313945"
+   }
+  }
+ },
+ "arxiv:2611.28341": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.28341",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "When Tools Fail, Agents Fabricate: Silent Failure and Verification-First Oversight in Tool-Using LLM Agents",
+   "url": "https://arxiv.org/abs/2611.28341",
+   "summary": "Tool-using LLM agents must recover when a tool call fails, by retrying, switching tools, or revising their plan. We study how agents fail when tools fail, using RetryRealistic, a sandboxed yet realistic testbed for controlled fault injection in which agents operate on a real OS filesystem with genuine permission enforcement, SQLite databases, a deterministic local HTTP server, and a constrained shell, across 8 tools, 9 fault types with controlled persistence, and 30 multi-step tasks. Evaluating four agents over 2,100 faulted runs against ground truth, we find that recovery is unreliable (19-68% correct) and frequently silent: 6-26% of runs end in a confident fabrication, a wrong answer asserted as fact. The failure mode is governed more by the fault type than by the model: faults that return partial data drive fabrication (up to 38%), while hard denials drive honest failure. The mechanism is what we call silent ingestion: the agent accepts faulted data as valid on first contact without retrying or flagging the problem, then builds a fabricated answer on top of it. We show that fabrication is reducible: a verification-first Monitor, grounding checks in structured tool outputs and i…",
+   "authors": [
+    "G\\\"un Kaynar",
+    "Boshen Yan",
+    "Carl Kingsford"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.AI",
+    "cs.CL",
+    "cs.SE"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.28341"
+   }
+  }
+ },
+ "arxiv:2611.31052": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.31052",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "From Head to Tail: LLM-Augmented Sequential Recommendation and Trade-off Optimization",
+   "url": "https://arxiv.org/abs/2611.31052",
+   "summary": "Recommender systems exhibit popularity bias, often under-serving long-tail and cold-start items with sparse interaction data. We propose a group-specific data augmentation approach that leverages LLMs to generate synthetic interactions, formulated as a constrained optimization problem, maximizing group-specific NDCG@20 and coverage while bounding overall NDCG@20 degradation within an acceptable threshold. Items are partitioned by interaction frequency to find the optimal augmentation strategy for each group. We further study combining the augmentation across groups simultaneously and find that while individual optimal strategies navigate the multi-group augmentation design, they are not simply additive. We further ablate on the LLM-based augmentation itself, comparing LLM scales, augmentation configuration under token constraints, finding that augmentation quality scales with contextual richness, albeit at a proportionally higher cost. Experiments with SASRec demonstrate the effectiveness of the proposed approach, achieving over 100% and 60% improvement in group-specific NDCG@20 for extreme and regular long-tail items, respectively, on our industrial dataset, and 40%, 25% for Movi…",
+   "authors": [
+    "Adeep Hande",
+    "Shaghayegh Agah",
+    "Neeraj Sharma",
+    "Karina Halevy",
+    "Sardar Hamidian"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.IR",
+    "cs.AI"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.31052"
+   }
+  }
+ },
+ "arxiv:2502.09806": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2502.09806",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Two-Sided Prioritized Ranking: A Coherency-Preserving Design for Marketplace Experiments",
+   "url": "https://arxiv.org/abs/2502.09806",
+   "summary": "Online marketplaces frequently run pricing experiments in environments where users choose from a list of items. In these settings, items compete for users’ limited attention and demand, creating interference among items within a list: Changing prices for any item can affect the demand for others, biasing estimates from item-level A/B tests. In addition, a key consideration in pricing experiments is preserving platform coherency across prices and item availability. This requirement rules out experimental designs such as user-level A/B tests as they violate platform coherency. We propose Two-Sided Prioritized Ranking (TSPR) to estimate the total average treatment effect of price changes in such settings. TSPR exploits position bias in ranked search results to create variation in treatment exposure without compromising coherency. TSPR randomizes both users and items and reorders ranked lists, prioritizing treated items for one group of users and untreated items for the other. All users see the same items at consistent prices, but differ in exposure to treatment as they pay disproportionate attention across ranks. In semi-synthetic simulations based on Expedia hotel search data, TSPR …",
+   "authors": [
+    "Mahyar Habibi",
+    "Zahra Khanalizadeh",
+    "Negar Ziaeian"
+   ],
+   "published": "2026-11-04T00:00:00Z",
+   "tags": [
+    "conference-paper"
+   ],
+   "metrics": {
+    "citations": 3.0
+   },
+   "affiliations": [
+    "Lyft (United States)",
+    "University of Washington",
+    "University of Warwick",
+    "Lyft, Toronto, Canada",
+    "Economics, University of Washington, Seattle, USA",
+    "Economics, University of Warwick, Coventry, United Kingdom"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2502.09806",
+    "OpenAlex": "https://openalex.org/W4407632352"
+   }
+  }
+ },
+ "arxiv:2611.29356": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.29356",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "Automatic Construction of Persian E-Commerce Dialogue Datasets for Conversational Product Search",
+   "url": "https://arxiv.org/abs/2611.29356",
+   "summary": "Conversational product search lets users find products through a multi-turn dialogue instead of a single keyword query, but Persian lacks the large conversational datasets needed to train and evaluate such systems; existing Persian e-commerce dialogue resources cover few categories and small catalogs. We present a framework that builds such a dataset automatically from a real e-commerce catalog and release the resulting dataset. The framework crawls 12,926 products in seven categories of the Digikala marketplace, groups them into 170 semantically coherent clusters, and selects the question the assistant asks at every turn with the Regularized Partition Balance (RPB) score. The RPB score accounts for feature coverage, the probability that the user can answer and the number of values, and generalizes entropy-based question selection. An LLM then verbalizes each question plan into a natural Persian dialogue. In a simulation on the full catalog, the RPB score needs 0.11 fewer turns than the strongest entropy baseline when the difficulty of answering differs between features, and is practically equivalent to it when it does not. Using only a free LLM API, we generated 1,000 requirement…",
+   "authors": [
+    "Fariba Nafar",
+    "Hassan Naderi"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.CL"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.29356"
+   }
+  }
+ },
+ "arxiv:2611.30259": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.30259",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "Attributing Security Outcomes in LLM-Agent Evaluations: The Role of Content-Free State",
+   "url": "https://arxiv.org/abs/2611.30259",
+   "summary": "Security benchmarks for LLM agents record whether each attack succeeded and compare agents, attacks, and defenses by attack success rate (ASR). Such comparisons are valid only if the agent, the attack, and the defense cause each verdict. We show that verdicts also depend on content-free state: details of a run that carry no information about the system under test, such as the Python hash seed, the order of tools or evidence, and the scoring of failed runs. We require that this state influence no verdict (decision noninterference) and treat it as untrusted input, because evaluators and requesters of LLM-based gates can choose it. Our framework, TARE (Testing Attribution of Reported Effects), attributes a reported effect to the agent, attack, or defense only if it exceeds the measured influence of content-free state. On Agent Security Bench (ASB), runs with a fixed hash seed are identical for seven agents from four model families, yet changing the seed changes up to 17% of an agent's verdicts while the ASR moves by at most 5 points. The seed acts through the tool order: sorting the tool list instead of reverse-sorting it raises the ASR by up to 19 points, because ASB's naming conven…",
+   "authors": [
+    "Abdelmonaim Bounite",
+    "Zangir Iklassov"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.CR",
+    "cs.AI",
+    "cs.LG"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.30259"
+   }
+  }
+ },
+ "arxiv:2611.28153": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.28153",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "From Observation to Explanation: Mechanistic Interpretability of LLM-Generated Code for Principled Repair",
+   "url": "https://arxiv.org/abs/2611.28153",
+   "summary": "Large language models (LLMs) have transformed software development, yet our understanding of how they generate code remains critically underdeveloped. We address this gap by triangulating evidence across three layers. Longitudinally, autonomous agent-attributed code is statistically indistinguishable from human code under a semantic modification definition (HR = 1.019, p = 0.490), yet attracts disproportionately corrective modifications in production (49.1% vs 37.9% human baseline). This finding demands a causal explanation. Empirically, existing benchmarks overestimate LLM capabilities: models that achieve 84 to 89% correctness on synthetic tasks attain only 24 to 35% on real-world class-level code. Behaviourally, detection systems reveal puzzling asymmetries: GPT-3.5 is far more detectable than modern models (AUC-ROC = 0.96, a 27-point gap), even though modern models produce mutually similar code structures; yet no single feature reliably distinguishes AI-generated from human code at the class level, and the leading commercial detector achieves only 15 to 64% recall. Together, these findings raise a question that empirical studies cannot answer: why do LLMs generate code with th…",
+   "authors": [
+    "Musfiqur Rahman"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.SE",
+    "cs.AI"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.28153"
+   }
+  }
+ },
+ "arxiv:2611.30139": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.30139",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "AutoSECO: Automated Skill Evolution for Cross-Problem Combinatorial Optimization with General-Purpose LLM Agents",
+   "url": "https://arxiv.org/abs/2611.30139",
+   "summary": "General-purpose large language model (LLM) agents can develop complete solvers for combinatorial optimization problems. Their specialization, however, often relies on workflows engineered for individual problems, limiting the reuse of development expertise. We propose AutoSECO, an automated skill evolution method that learns reusable solver-development guidance from experience. The challenge is that external evaluation measures the completed solver, while the skill guides decisions during development. AutoSECO connects this feedback to guidance deficiencies by tracing performance shortfalls through solver code and recorded development decisions. Revisions are expressed as general instructions and retained only if a fresh solver developed under the revised skill achieves a lower mean evaluation gap. Evolved solely on the traveling salesperson problem (TSP), the skill guides fresh agents in developing solvers for capacitated vehicle routing, job-shop scheduling, and three-dimensional bin packing without further skill evolution. On TSP, the final mean benchmark gap is 0.52\\%, compared with 0.98\\% for the skill-evolution baseline SkillOpt. Across all four problems, the evolved skill a…",
+   "authors": [
+    "Zirui Zhu",
+    "Cong Zhang",
+    "Ni Zhang",
+    "Kuan Xu",
+    "Zhiguang Cao"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.AI"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.30139"
+   }
+  }
+ },
+ "arxiv:2605.21812": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2605.21812",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "CASTLE: Contrastive and Seed-Guided Training for Cold-Start Natural Language Search",
+   "url": "https://arxiv.org/abs/2605.21812",
+   "summary": "Deploying natural language search systems presents a critical cold-start challenge: no real user queries to learn linguistic patterns, and no relevance labels to train ranking models. We present CASTLE (Contrastive And Seed-guided Training for natural Language sEarch), an LLM-based framework for generating synthetic queries and relevance labels from structured catalog data, powering Airbnb's natural language search across its full lifecycle. CASTLE makes three contributions. First, we generate realistic queries by combining structure-guided prompting with seed queries from user research, using template, few-shot, and attribute-grounded prompt variants together with explicit variety mechanisms to prevent query collapse. Second, we produce relevance labels by construction via contrastive listing pairs derived from booking sessions---achieving near-zero false positives without LLM judgment. Third, CASTLE's structured input design is flexible: incorporating richer signals---such as guest reviews and photo captions---alongside listing attributes enables generation of niche, long-tail queries that reflect subjective user preferences (e.g. ''cozy cabin with fireplace'') beyond what catal…",
+   "authors": [
+    "Wendy Ran Wei",
+    "Hao Li",
+    "Weiwei Guo",
+    "Xiaowei Liu",
+    "Xueyin Chen",
+    "Chun How Tan",
+    "Malay Haldar",
+    "Soumyadip Banerjee",
+    "Kedar Bellare",
+    "Huiji Gao",
+    "Stephanie Moyerman",
+    "Sanjeev Katariya"
+   ],
+   "published": "2026-11-06T00:00:00Z",
+   "tags": [
+    "conference-paper"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Airbnb (United States)",
+    "Airbnb, San Francisco, CA, USA"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2605.21812",
+    "OpenAlex": "https://openalex.org/W7162129210"
+   }
+  }
+ },
+ "arxiv:2611.25288": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.25288",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Intelligent Embedding Pruning for Large-Scale Recommendation Models",
+   "url": "https://arxiv.org/abs/2611.25288",
+   "summary": "Modern recommendation systems face substantial memory pressure, largely from the sparse embedding layer that maps high-cardinality categorical features into dense vectors. In-training embedding pruning (ITEP) removes less important embedding rows during training, yielding end-to-end memory savings but sometimes degrading accuracy because per-table pruning ratios are set by size-based heuristics. We use feature importance (FI) to guide these ratios (FI-ITEP), assigning higher pruning to tables tied to less important features. Across three large-scale recommendation models, FI-ITEP achieves 20--40% total memory reduction while matching or improving accuracy relative to percentile-based ITEP. Because the feature-importance signal requires minimal resources to compute, these memory savings translate into concrete systems benefits: the same models train on fewer GPU trainers (e.g., 112 to 80) with higher per-GPU throughput, saving 1,000+ GPU-hours per model launch. We reproduce these trends on the open-source DLRM (Criteo 1TB) and quantify the end-to-end training-time and GPU-cost tradeoff---including the burden of computing FI---offering practical guidance for embedding pruning in rea…",
+   "authors": [
+    "Anish Khazane",
+    "Alex Saad–Falcon",
+    "Guanchu Wu",
+    "Marcio Porto",
+    "Jasper Shan",
+    "Fei Yu",
+    "Eugene Shulga",
+    "Intaik Park",
+    "Yongzhe Zhang",
+    "Xiaoyu Deng",
+    "Sheng Luo",
+    "Xiaoya Wang"
+   ],
+   "published": "2026-11-18T00:00:00Z",
+   "tags": [
+    "preprint"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Machine Learning for Systems Workshop at NeurIPS 2026 , Sydney , Australia"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.25288",
+    "OpenAlex": "https://openalex.org/W7237230956"
+   }
+  }
+ },
+ "arxiv:2611.29274": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.29274",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "MetaSkill: Reusable Problem-Solving Methods for Adaptive Skill Orchestration in LLM Agents",
+   "url": "https://arxiv.org/abs/2611.29274",
+   "summary": "Reusable skills provide specialized procedures, but large language model (LLM) agents must still determine how to organize and adapt their use. We introduce MetaSkill, a two-layer framework for reusing problem-solving methods across tasks and domains. The method layer selects from 26 curated methods and binds abstract roles to task objects. The execution layer uses the instantiated method to identify intermediate objectives, coordinate native skills, and guide repair or method reselection. On 89 SkillsBench tasks and 995 ToolHop examples, MetaSkill outperforms the evaluated baselines in all six configurations, with accuracy gains of 3.51-13.48% over the strongest baseline. Ablations support explicit method-guided orchestration beyond direct method injection and further gains from method reselection.",
+   "authors": [
+    "Tianxing Wang",
+    "Mingming Zhao",
+    "Shuai Huang",
+    "Chaoyue Niu",
+    "Huiyang Xu",
+    "Fan Wu",
+    "Guihai Chen"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.AI",
+    "cs.SE"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.29274"
+   }
+  }
+ },
+ "arxiv:2511.21032": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2511.21032",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "ELBO TDS : Temporal Distribution Shift Generalization for Industry-Scale Recommender Systems",
+   "url": "https://arxiv.org/abs/2511.21032",
+   "summary": "Temporal distribution shift (TDS) degrades the generalization of recommender systems: models trained on past interactions face systematically different user behavior in future time windows. While incremental training on recent data is widely used in industry production, it can over-adapt to transient patterns and exacerbate instability. Existing approaches such as invariant learning and self-supervised learning offer partial solutions but often suffer from unstable temporal generalization, representation collapse, or inefficient data utilization. To address these limitations, we propose ELBOTDS, a probabilistic framework for temporally robust recommendation. First, we identify key shifting factors on real-world production data and design a simple yet effective data augmentation strategy that simulate realistic time-varying factors to extend the training support. Second, we derive a self-supervised variational objective ELBOTDS to harness the benefits of this extended distribution while preventing representation collapse. Extensive experiments on both a public benchmark and a large-scale industrial dataset demonstrate ELBOTDS consistently improves next-period ranking performance ov…",
+   "authors": [
+    "Yuxuan Zhu",
+    "Cong Fu",
+    "Yabo Ni",
+    "Anxiang Zeng",
+    "Yuan Fang"
+   ],
+   "published": "2026-11-06T00:00:00Z",
+   "tags": [
+    "conference-paper"
+   ],
+   "metrics": {
+    "citations": 1.0
+   },
+   "affiliations": [
+    "Nanyang Technological University",
+    "Singapore Management University",
+    "Shopee, Singapore, Singapore",
+    "Nanyang Technological University, Singapore, Singapore",
+    "Singapore Management University, Singapore, Singapore"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2511.21032",
+    "OpenAlex": "https://openalex.org/W4416783528"
+   }
+  }
+ },
+ "arxiv:2609.15598": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2609.15598",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Self-Evolving Memory for Generative Recommendation",
+   "url": "https://arxiv.org/abs/2609.15598",
+   "summary": "Generative recommendation has emerged as a promising end-to-end paradigm for personalized recommendation. In real-world recommendation scenarios, however, user preferences continuously evolve over time, making self-evolving an essential capability for generative recommender systems. Existing evolving strategies, such as continual retraining and distillation-based adaptation, directly update the shared model parameters using streaming interactions. Nevertheless, we find that directly applying such strategies to generative recommendation introduces a critical issue, termed evolution conflict . Specifically, heterogeneous preference shifts from different users are optimized within a fully shared autoregressive parameter space, causing dominant behavioral patterns to progressively dominate the model evolution process while underrepresented patterns become increasingly overlooked. To address this issue, we propose a self-evolving memory paradigm for generative recommendation, aiming to enable effective evolution across heterogeneous behavioral patterns. We further identify three key principles for effective self-evolving recommendation systems, including isolated memorization, reinforc…",
+   "authors": [
+    "Xinyu Lin",
+    "Zhuosong Jiang",
+    "Zixiao Suo",
+    "Siqin Wang",
+    "Hanqing Zeng",
+    "Hanchao Yu",
+    "Yinglong Xia",
+    "Jiang Zhang",
+    "Aashu Singh",
+    "Fei Liu",
+    "Wenjie Wang",
+    "Fuli Feng",
+    "Yang Song",
+    "Qifan Wang",
+    "Tat‐Seng Chua"
+   ],
+   "published": "2026-11-06T00:00:00Z",
+   "tags": [
+    "conference-paper"
+   ],
+   "metrics": {
+    "citations": 1.0
+   },
+   "affiliations": [
+    "National University of Singapore",
+    "Meta (United States)",
+    "National University of Singapore, Singapore, Singapore",
+    "Meta AI, Menlo Park, CA, USA",
+    "Meta AI, Menlo Park, USA"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2609.15598",
+    "OpenAlex": "https://openalex.org/W7213292908"
+   }
+  }
+ },
+ "arxiv:2611.31201": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.31201",
+   "source": "hf_papers",
+   "source_name": "HF Daily Papers",
+   "kind": "paper",
+   "title": "Embo-Harness: Towards Understanding Frontier-Model-as-Policy Harness",
+   "url": "https://arxiv.org/abs/2611.31201",
+   "summary": "Frontier multimodal models exhibit extraordinary generalization in generating robot actions from observations and instructions, enabling a new paradigm in which they serve directly as policies within closed-loop robotic harnesses. However, the design principles of such harnesses, and the capabilities underlying their strong performance, remain unclear. We present Embo-Harness, a framework for systematically studying frontier-model-as-policy harnesses. We investigate four components of the robotic agentic loop, namely, prompting, planning, action execution, and tool use, and distill six empirical findings into a practical recipe. This recipe prioritizes interfaces that exploit the model's native visual reasoning and tool-use capabilities over handcrafted plans, skills, or action priors, and identifies effective choices for action representation, chunking, reasoning effort, visual observations, short multi-action sequences, and policy refinement. On RoboLab-120, Embo-Harness achieves an 83.3\\% success rate, outperforming the strongest reported baseline by 26.2 percentage points. It also succeeds in 15 of 20 zero-shot trials across four real-world manipulation tasks. Beyond performan…",
+   "authors": [
+    "Xiao-Ming Wu",
+    "Kang Liao",
+    "Yuexiao Ma",
+    "Taolin Zhang",
+    "Mingqian Zhou",
+    "Nuo Chen",
+    "Ziming Li",
+    "Yihang Luo",
+    "Rui Li",
+    "Zhonghua Wu",
+    "Tianyu Xie",
+    "Xiawu Zheng",
+    "Zhongang Cai",
+    "Zhi Hou",
+    "Chen Change Loy"
+   ],
+   "published": "2026-11-24T00:00:00Z",
+   "tags": [
+    "frontier multimodal models",
+    "robot policies",
+    "closed-loop robotic harnesses",
+    "frontier-model-as-policy",
+    "prompting",
+    "planning",
+    "action execution",
+    "tool use",
+    "visual reasoning",
+    "action representation"
+   ],
+   "metrics": {
+    "upvotes": 76.0,
+    "comments": 1.0,
+    "github_stars": 7.0
+   },
+   "affiliations": [
+    "MMLab@NTU"
+   ],
+   "links": {
+    "HF": "https://huggingface.co/papers/2611.31201",
+    "PDF": "https://arxiv.org/pdf/2611.31201",
+    "Code": "https://github.com/DravenALG/Embo-Harness",
+    "Project": "https://dravenalg.github.io/projects/Embo-Harness/"
+   }
+  }
+ },
+ "doi:10.83842/recommendesyspri": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "doi:10.83842/recommendesyspri",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Recommender Systems: Privacy and Security",
+   "url": "https://doi.org/10.83842/recommendesyspri",
+   "summary": "",
+   "authors": [],
+   "published": "2026-11-22T00:00:00Z",
+   "tags": [
+    "paratext"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [],
+   "links": {
+    "OpenAlex": "https://openalex.org/W7237612842"
+   }
+  }
+ },
+ "arxiv:2609.34383": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2609.34383",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Correcting to Predict: Pseudo-Value Correction for Multimodal Attribute Value Extraction",
+   "url": "https://arxiv.org/abs/2609.34383",
+   "summary": "Product attribute value extraction (AVE) is a fundamental task in e-commerce, aiming to identify specific values of predefined attributes from multimodal product profiles such as text and images. While multimodal large language models (MLLMs) have shown promise for AVE, they face challenges in extracting implicit attributes that require joint reasoning over visual and textual cues, often confusing semantically similar values. However, existing methods often fail to resolve such ambiguities because the correct value often depends on subtle multimodal cues that are easy to miss or override. To address this challenge, we propose Correcting to Predict (C2P), a framework that treats attribute extraction as a correction process. Given an initial pseudo-value such as a retrieved candidate or placeholder, the model learns to correct it using multimodal evidence. During training, diverse pseudo-values help the model learn evidence-based correction behavior, and a self-consistency refinement stage further reduces sensitivity to pseudo-value perturbations. At inference, a fixed placeholder triggers the learned correction behavior, enabling efficient single-pass prediction without online retr…",
+   "authors": [
+    "Junhao Zhang",
+    "Feiran Hu",
+    "Xiao Hu",
+    "Baoliang Cui",
+    "Xiaoyi Zeng"
+   ],
+   "published": "2026-11-06T00:00:00Z",
+   "tags": [
+    "conference-paper"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Alibaba Group (China)",
+    "Alibaba International Digital Commerce Group, Hangzhou, China"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2609.34383",
+    "OpenAlex": "https://openalex.org/W7214744105"
+   }
+  }
+ },
+ "arxiv:2611.31082": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.31082",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "ChiProgramBench: Can LLM Agents Rebuild Efficient Circuits from Pin-Level Experiments?",
+   "url": "https://arxiv.org/abs/2611.31082",
+   "summary": "Understanding a system that can be run but not inspected is a core engineering skill: one designs experiments, forms hypotheses about hidden state and timing, discards those that observations refute, and finally builds a replacement that works and is efficient. To evaluate this capability of LLM agents in the hardware domain, we present ChiProgramBench, 18 tasks derived from open-source processors, accelerators, codecs, transforms, interconnects, and control circuits. Agents can only drive and read the pins of a hidden, stateful simulated reference, then submit a gate-level netlist made of public library cells. Agents work in two settings: black-box discovery gives only anonymized functional pins and the interfaces of fixed memories, while function-guided reconstruction adds the circuit's purpose and each pin's role. Hidden test cases compare outputs with the reference cycle by cycle; power, delay, and area earn credit relative to the reference only when every case passes. Across 432 trials of 6 LLM agent configurations, successful agents recover algorithms and numerical conventions, yet only 12.0% of black-box and 14.8% of function-guided trials pass every case. Function-guided r…",
+   "authors": [
+    "Tianrun Gou",
+    "Qingyao Yang",
+    "Wendong Xu",
+    "Liang Chen",
+    "Kuan Li",
+    "Ngai Wong"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.AI",
+    "cs.AR"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.31082"
+   }
+  }
+ },
+ "arxiv:2611.26613": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.26613",
+   "source": "hf_papers",
+   "source_name": "HF Daily Papers",
+   "kind": "paper",
+   "title": "AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control",
+   "url": "https://arxiv.org/abs/2611.26613",
+   "summary": "Frontier multimodal language agents such as GPT-6 Astra have demonstrated strong capabilities in controlling robots directly via low-level numerical actions without high-level primitives. However, existing benchmarks report only episode-level success rates, which show neither how these agents succeed nor where they fail. In this paper, we present a systematic action-level analysis of frontier agents on direct robot control across 12 manipulation benchmarks. We introduce AgentRoboCritic, an intent-grounded critique framework in which the policy agent states a local intent alongside each action, and a critic evaluates the action's outcome and failure mode against this intent. Our action-level analysis demonstrates the promising capabilities of frontier agents on direct robot control, including closed-loop recovery from local execution failures, reliable semantic grounding across diverse scenes, and strong zero-shot manipulation without task-specific adaptation. It also identifies their current limitations, including task-relevant physical execution bottlenecks such as grasping and alignment, and uneven recovery across failure modes. Finally, we validate our critic on a 400-action hu…",
+   "authors": [
+    "Yiyang Du",
+    "Yuxuan Kuang",
+    "Qitao Zhao",
+    "Yixuan Wang",
+    "Zhanqiu Guo",
+    "Yi Xu",
+    "Xin Li",
+    "Wenbin He",
+    "Liu Ren",
+    "Chenyan Xiong"
+   ],
+   "published": "2026-11-23T00:00:00Z",
+   "tags": [],
+   "metrics": {
+    "upvotes": 8.0,
+    "comments": 2.0,
+    "github_stars": 4.0
+   },
+   "affiliations": [
+    "Chenyan Xiong Research Group at CMU"
+   ],
+   "links": {
+    "HF": "https://huggingface.co/papers/2611.26613",
+    "PDF": "https://arxiv.org/pdf/2611.26613",
+    "Code": "https://github.com/cxcscmu/AgentRoboCritic",
+    "Project": "https://adu2021.github.io/blog/AgentRoboCritic/"
+   }
+  }
+ },
+ "arxiv:2611.30422": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.30422",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "HWRE-Bench: Can LLM Agents Understand Hardware They Did Not Design?",
+   "url": "https://arxiv.org/abs/2611.30422",
+   "summary": "Hardware benchmarks for LLM agents all run the design flow forward, from a specification to RTL, a layout or a bug fix. We ask the reverse question: given an implemented artifact, such as a layout, a gate-level netlist or a protected simulation model, can an agent work out what it does well enough to act on that knowledge? We introduce HWRE-Bench, a benchmark for agentic hardware reverse engineering built on one observation. Each step of the forward flow discards information (names, hierarchy, word-level structure, generator parameters, the programming model), and a reverse-engineering task asks the agent to recover what was lost and to prove it with an executable deliverable that the artifact alone cannot supply. Since layout extraction is now mechanical and a correct netlist is already a cycle-exact model, every task carries a mandatory copy-the-netlist control that must score zero. HWRE-Bench spans five tracks (Extract, Abstract, Audit, Interoperate, Modify), four information-loss levels and white- versus black-box access, all on original designs. We report a pilot of 148 rollouts from two agents on four seed tasks under 16 conditions, with stage-annotated trajectories. Agents …",
+   "authors": [
+    "Peilong Zhou",
+    "Cangyuan Li",
+    "Kaiyan Chang",
+    "Ying Wang"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.AI"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.30422"
+   }
+  }
+ },
+ "doi:10.83842/modelgovrec": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "doi:10.83842/modelgovrec",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Model Governance in Recommender Systems",
+   "url": "https://doi.org/10.83842/modelgovrec",
+   "summary": "",
+   "authors": [],
+   "published": "2026-11-22T00:00:00Z",
+   "tags": [
+    "paratext"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [],
+   "links": {
+    "OpenAlex": "https://openalex.org/W7237438438"
+   }
+  }
+ },
+ "arxiv:2611.28844": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.28844",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "AgriManager: A Framework and Benchmark for LLM-RL Generalization in Agricultural Management",
+   "url": "https://arxiv.org/abs/2611.28844",
+   "summary": "Agricultural management is heterogeneous along two axes. The first is distributional shift within a fixed task interface: weather, crops, and prices vary across years and locations while sensors, actions, and objective stay fixed. The second is structural shift across interfaces: different farms expose different observed variables, available actions, and management objectives. We formalize the second axis as schema shift: variation in the policy-facing schema $\\Sigma = (\\Sigma_O, \\Sigma_A, \\Sigma_R)$ between training and deployment. We test whether LLM-RL generalizes across both axes with AgriManager, to our knowledge the first framework that trains LLM policies with RL across multiple process-based crop simulators, unifying DSSAT, WOFOST, and Cycles. We design a three-tier generalization ladder: Tier 1 within-schema distributional shift, Tier 2 single-axis schema shift along $\\Sigma_O / \\Sigma_A / \\Sigma_R$, Tier 3 compositional schema shift across simulators, all scored on a frozen held-out test suite with three training seeds per method. Within fixed schemas, Qwen3-4B trained by RL with explicit reasoning exceeds neural-network PPO trained with the same interaction budget; with…",
+   "authors": [
+    "Chi Gui",
+    "Junwen Zheng",
+    "Ritwik Nigam",
+    "Qianlan Yang",
+    "Meagan Lang",
+    "Vardhan Dongre",
+    "Jeremiah Barr",
+    "Yu-Xiong Wang",
+    "Vikram S. Adve"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.LG"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.28844"
+   }
+  }
+ },
+ "arxiv:2608.28649": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2608.28649",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Can Large Language Models Identify Meaningful Touchpoints in Conversion Attribution?",
+   "url": "https://arxiv.org/abs/2608.28649",
+   "summary": "Touchpoint selection in conversion attribution, namely identifying meaningful touchpoints contributing to conversions, is essential for e-commerce recommendation and online advertising. Current selection methods rely heavily on collaborative-filtering-based heuristics, which fail to align with user-perceived semantic intent. Through human annotation, we reveal a significant semantic gap: many implicitly-related, semantically relevant touchpoints remain undetected by existing rules. Therefore, we systematically evaluate the capability of Large Language Models (LLMs) in identifying these hidden associations. Our evaluation shows that while LLMs effectively uncover a substantial portion of implicitly-related touchpoints, significant room for improvement remains in their selection performance. Furthermore, we analyze the impact of different prompting strategies and foundation model choices on identification performance, providing valuable insights into their reasoning patterns and effectiveness. These insights offer a new roadmap for transitioning conversion attribution from mechanical rule-matching to human-aligned semantic reasoning. Moreover, we leverage the LLM-attributed conversi…",
+   "authors": [
+    "Jinqi Wu",
+    "Sishuo Chen",
+    "Zhangming Chan",
+    "Yong Bai",
+    "Chao Yi",
+    "Han Zhu",
+    "Shuodian Yu",
+    "Lei Zhang",
+    "Sheng Chen",
+    "Chenfei Hou",
+    "Jian Xu",
+    "Chaoyou Fu"
+   ],
+   "published": "2026-11-06T00:00:00Z",
+   "tags": [
+    "conference-paper"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Nanjing University",
+    "Alibaba Group (China)",
+    "State Key Laboratory for Novel Software Technology, Nanjing University, Nanjing, China and School of Intelligence Scien…",
+    "Taobao & Tmall Group of Alibaba, Beijing, China"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2608.28649",
+    "OpenAlex": "https://openalex.org/W7204910944"
+   }
+  }
+ },
+ "arxiv:2609.28972": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2609.28972",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Cross-Country Code-Mixing for Generative Recommendation",
+   "url": "https://arxiv.org/abs/2609.28972",
+   "summary": "Cross-country recommendation on modern e-commerce platforms is typically deployed with disjoint user and item ID spaces across markets, removing the shared anchors that conventional cross-domain methods rely on. Generative recommendation (GR) mitigates this by mapping items into a shared token space and training a unified model, but existing approaches keep behavior sequences strictly country-specific, so knowledge transfer occurs only at the parameter level and remains absent at the data level. Inspired by code-switching corpora in multilingual natural language processing, we propose CMRec, a cross-country GR framework that injects cross-country supervision at the data level via dual-constrained, context-aware code-mixing. CMRec first learns a shared semantic codebook from multi-modal content and behavioral co-occurrence across countries. It then uses this codebook to synthesize mixed-country sequences via token-level substitutions that satisfy both static (content) and dynamic (e.g., price, audience, popularity) constraints. Finally, it introduces a context-aware loss that reweights mixed samples according to their plausibility in the current sequence. Experiments on two real-wo…",
+   "authors": [
+    "Yuan Gao",
+    "Hao Deng",
+    "Haibo Xing",
+    "Yi Xu",
+    "Lingyu Mu",
+    "Jinxin Hu",
+    "Yu Zhang",
+    "Xiaoyi Zeng"
+   ],
+   "published": "2026-11-06T00:00:00Z",
+   "tags": [
+    "conference-paper"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Alibaba Group (China)",
+    "Alibaba International Digital Commerce Group, Beijing, China",
+    "Alibaba International Digital Commerce Group, Hangzhou, China"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2609.28972",
+    "OpenAlex": "https://openalex.org/W7214368108"
+   }
+  }
+ },
+ "arxiv:2611.29255": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.29255",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "NoeVera: Can Knowledge Guide Experiments and Experiments Refine Knowledge?",
+   "url": "https://arxiv.org/abs/2611.29255",
+   "summary": "With the growing demand for large language model (LLM) services, optimizing LLM serving systems is becoming increasingly complex, and the bottleneck is no longer predicting how a given configuration will perform. The harder problem is deciding what to investigate: which mechanisms matter for a workload, which configurations are worth testing, and what evidence a decision still needs. In this work, we present NoeVera, an agentic Second Brain that goes beyond just one-shot retrieval by turning papers, code, benchmarks, and experimental results into a persistent, provenance-preserving knowledge base with three planes: source evidence, reusable synthesis, and agent memory. Decision-aware retrieval assembles compact evidence packs, role-specific agents reason over them and invoke a simulator (Vidur or GAUSS) whenever quantitative support is needed, and every finding is written back as a scoped evidence record, so knowledge guides experiments and experiments refine knowledge. In configuration search over four serving scenarios, NoeVera comes within 5% of the optimum in a median of 6-7 simulator calls, versus 9 for Bayesian optimization and 15 for a knowledge-free agent with the same too…",
+   "authors": [
+    "Pinaki Prasad Guha Neogi",
+    "Spyros Mastorakis",
+    "Ankur Mallick",
+    "Saravan Rajmohan",
+    "Victor R\\\"uhle"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.AI",
+    "cs.CL",
+    "cs.DC",
+    "cs.IR",
+    "cs.LG"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.29255"
+   }
+  }
+ },
+ "arxiv:2611.29619": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.29619",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "Wactorz: Self-Writing LLM Agents That Discover, Repair, and Migrate at the Edge",
+   "url": "https://arxiv.org/abs/2611.29619",
+   "summary": "Most LLM agent frameworks build a crew that runs a task and exits. Physical environments (e.g., homes, labs, factory floors) need agents that stay up for months, survive their own bugs, and run on whatever hardware is already next to the sensors. We present Wactorz, an open-source runtime in which LLM-generated agents are long-lived, supervised actors: a planner turns a chat request into Python, compiles it into a new actor at runtime, and a supervisor restarts that actor alone, with its state intact, when it crashes. All coordination rides on MQTT, so agents can be spawned on, and live-migrated between, edge nodes such as a Raspberry Pi, and every internal event is a topic external systems can subscribe to. The recorded demo builds a camera-to-lamp automation from one chat request, adds a second agent that is auto-wired to the first by topic and carries a deliberate division-by-zero, watches that agent repair its own code without losing its count, then deploys a fresh Raspberry Pi node and live-migrates the agent onto it, in under four minutes of wall-clock time and \\$0.13 of model usage. This extended version adds what the two-page demonstration paper could not: the Wiring view …",
+   "authors": [
+    "Panagiotis Kasnesis",
+    "Lazaros Toumanidis",
+    "Amalia Contiero Syropoulou",
+    "Christos Chatzigeorgiou"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.AI"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.29619"
+   }
+  }
+ },
+ "arxiv:2611.30962": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.30962",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "Self-Evolving Evaluation Environments for Computer-Use Agents",
+   "url": "https://arxiv.org/abs/2611.30962",
+   "summary": "Computer-use agents (CUAs) are rapidly improving, yet their evaluation remains largely static. Existing benchmarks provide a strong foundation, but fixed difficulty ceilings, limited feature coverage, and coarse aggregate scores progressively weaken their discriminative and diagnostic value. We introduce CUA-SEE, a closed-loop evaluation environment that co-evolves tasks and executable verifiers from rollout evidence. It disentangles three objectives: benchmark evolution expands evaluation scope through cohort-calibrated difficulty and coverage growth; diagnostic evolution increases resolution through agent-conditional capability-boundary probes; and verifier evolution improves precision by translating changing requirements into state-grounded checkpoints with adversarial validation. Across multiple agents, applications, and rounds, CUA-SEE generates challenging, measurable tasks while preserving process-level evidence. Our results position adaptive evaluation as a scalable counterpart to self-evolving agents, continuously tracking what agents can do, where their boundaries lie, and how reliably progress is measured.",
+   "authors": [
+    "Wenhao Wang",
+    "Panrong Tong",
+    "Quyu Kong",
+    "Pengxiang Li",
+    "Haowen Yang",
+    "chenglin Cai",
+    "Siheng Chen",
+    "Yue Wang"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.AI",
+    "cs.CV"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.30962"
+   }
+  }
+ },
+ "arxiv:2611.25606": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.25606",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Generative News Recommendation Reproduces Popularity: A Memorization-Based Analysis",
+   "url": "https://arxiv.org/abs/2611.25606",
+   "summary": "Text-based generative recommenders can go beyond ranking existing items by directly generating item titles or other textual representations. In the news domain, this raises a societal concern that models may repeatedly surface already popular articles and thereby narrow the diversity of information to which users are exposed. We investigate training-data memorization as one mechanism behind this concentration. Using approximately 20 million browsing sessions from a Japanese news service, we continually trained an instruction-tuned Llama 3 8B model to generate the next article title in a session. The generated-title distribution was more concentrated and less diverse than the distribution of titles observed in the browsing logs. Frequently repeated target titles exhibited greater verbatim and approximate memorization, and more strongly memorized titles were generated in response to a wider range of prompts. These findings support a pathway in which popularity in behavioral logs becomes repeated training text, is preferentially memorized, and is subsequently reproduced by a generative recommender. An exploratory target-level deduplication condition reduced both memorization and outp…",
+   "authors": [
+    "Shotaro Ishihara"
+   ],
+   "published": "2026-11-19T00:00:00Z",
+   "tags": [
+    "preprint"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Nikkei Inc. Tokyo , Japan"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.25606",
+    "OpenAlex": "https://openalex.org/W7237076823"
+   }
+  }
+ },
+ "arxiv:2611.28477": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.28477",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "ESM-Bench: A Benchmark for Evaluating Whether AI Agents Understand Earth System Model Physics and Code",
+   "url": "https://arxiv.org/abs/2611.28477",
+   "summary": "AI coding agents that modify Earth System Model (ESM) code must preserve both software interfaces and the physical assumptions encoded in them. We introduce ESM-Bench, a benchmark of 60 developer-commit tasks from 6 repositories: Noah-MP, CLM5, SUMMA, ParFlow, MOM6, and VIC. The v5 corpus contains 17 physics-based bug fixes, 16 process-representation modifications, 13 parameterization-scheme selections, and 14 parameter-optimization tasks. Each task includes a scientific objective, parent-commit source files, a reference diff, and three stored prompt variants. An artifact audit confirms that all 60 reference diffs apply to their supplied starting files. We define an eight-item patch-review rubric and audit five archived patch fixtures against the implemented local checkers. None of the five fixture diffs applies to its supplied starting files, yet three text-pattern checkers return a pass. A ParFlow expression replay disagrees with the reference slopes, and a MOM6 pattern check detects an omitted update. Inspection also identifies a retained VIC reference assignment that overwrites the intended vegetation-specific albedo. These findings expose limits of reference patches and local…",
+   "authors": [
+    "Koutian Wu",
+    "Yuxuan Cao",
+    "Gengchen Mai",
+    "Zeping Liu"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.AI",
+    "cs.LG",
+    "physics.ao-ph",
+    "physics.geo-ph"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.28477"
+   }
+  }
+ },
+ "arxiv:2611.29462": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.29462",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "MoR4Rec: Mixture-of-Recursion for Sequential Recommendation",
+   "url": "https://arxiv.org/abs/2611.29462",
+   "summary": "Sequential recommender systems aim to predict a user's next interaction by modeling temporal dependencies in historical behavior sequences. To capture such dependencies, recent approaches increasingly rely on attention-based architectures, particularly transformers. While effective at modeling long-range sequential patterns, these models apply a fixed computation depth to all interaction items, treating them as equally complex. However, user behavior is inherently heterogeneous, with many interactions following simple repetitive patterns, whereas others require modeling higher-order dependencies. This mismatch leads to inefficient utilization of model capacity and unnecessary computational overhead, particularly in deep transformer-based architectures. To address this issue, we propose MoR4Rec, a sequential recommendation framework based on a Mixture-of-Recursion paradigm, which enables item-wise adaptive computation through a shared transformer backbone. A learned routing mechanism dynamically assigns each item to an appropriate recursion depth, allocating deeper computation to complex interactions while processing simpler patterns more efficiently. To improve computational effic…",
+   "authors": [
+    "Tiwari Ankit Satyaprakash",
+    "Adamya Shyam",
+    "Vikas Kumar",
+    "Bharti Rana",
+    "Venkateswara Rao Kagita"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.IR",
+    "cs.AI"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.29462"
+   }
+  }
+ },
+ "arxiv:2611.29727": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.29727",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "Admitted Is Not Effective: Lessons from a Notary-Gated Retrospective Loop in an Agentic Pipeline",
+   "url": "https://arxiv.org/abs/2611.29727",
+   "summary": "Agentic software development pipelines with frozen prompts can repeat the same mistakes across pull requests (PRs), yet ungoverned additions to instruction files grow without bound and do not generally improve task success. We present a retrospective loop for a four-stage large language model (LLM) pipeline in which a Retrospective agent proposes edits to learned rules every ten PRs and a Notary admits, merges, or rejects them while recording each decision in a provenance ledger. In a pre-registered study of 880 PRs on two Python repositories, the loop ran end to end and the Notary admitted 55 of 89 proposals, rejecting 8 that cited nonexistent evidence. However, held-out review comments and hidden-test resolution did not improve after ten retrospectives. Tracing each step of the loop, we found that sparse review signal (0.45 comments/PR) left little to learn from and that rules admitted on their stated evidence did not show measurable held-out effects. We derive six lessons and argue that governed loops should admit and retire every learned rule as a testable hypothesis.",
+   "authors": [
+    "Lo Gullstrand Heander",
+    "Emma S\\\"oderberg",
+    "Christofer Rydenf\\\"alt"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.SE",
+    "cs.AI"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.29727"
+   }
+  }
+ },
+ "arxiv:2611.28025": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.28025",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "Measuring Human-AI and AI-AI Teams in Multi-turn Layout Creation",
+   "url": "https://arxiv.org/abs/2611.28025",
+   "summary": "Co-creating layouts such as websites and slides is a useful testbed for evaluating multi-turn instruction following of LLM systems. Since an intended layout's appearance cannot be well expressed in a single turn, the user must wait for the LLM to generate a layout then iteratively refine it with the LLM over multiple turns. We present a small-scale, exploratory (n=6) study of this multi-turn process to compare the differences of human-AI and AI-AI teams on the same layout-generation task. Given a reference wire-frame layout, a participant or a language model 'speaker' issues natural-language instructions to a fixed 'listener' LLM over multiple turns until the speaker is satisfied. Rather than an LLM as the judge, we fit a scoring function over geometric layout features using curated human preference data (n=19). We find that LLMs tend to encode the entire layout in the first turn, while humans iterate over many turns on average, writing much shorter instructions. We also find that human-AI teams consistently scored lower than AI-AI teams. This gap is driven by a limiter of human participants in specifying precise sizes and positions (e.g. 42 pixels to the right). Humans perform al…",
+   "authors": [
+    "Rajvir Singh Naginder Singh Virdi",
+    "Yewen Pu"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.HC",
+    "cs.AI",
+    "cs.CL"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.28025"
+   }
+  }
+ },
+ "arxiv:2601.18213": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2601.18213",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Generative Chain of Behavior for User Trajectory Prediction",
+   "url": "https://arxiv.org/abs/2601.18213",
+   "summary": "Modeling long-term user behavior trajectories is essential for understanding evolving preferences and enabling proactive recommendations. However, most sequential recommenders focus on next-item prediction, overlooking dependencies across multiple future actions. We propose Generative Chain of Behavior (GCB), a generative framework that models user interactions as an autoregressive chain of semantic behaviors over multiple future steps. GCB first encodes items into semantic IDs via RQ-VAE with k-means refinement, forming a discrete latent space that preserves semantic proximity. On top of this space, a transformer-based autoregressive generator predicts multi-step future behaviors conditioned on user history, capturing long-horizon intent transitions and generating coherent trajectories. Experiments on benchmark datasets show that GCB achieves strong multi-step prediction performance while generating coherent long-horizon behavior trajectories. Beyond these results, GCB provides a unified generative formulation for modeling user preference evolution.",
+   "authors": [
+    "Chengkai Huang",
+    "Xiaodi Chen",
+    "Hongtao Huang",
+    "Quan Z. Sheng",
+    "Lina Yao"
+   ],
+   "published": "2026-11-06T00:00:00Z",
+   "tags": [
+    "conference-paper"
+   ],
+   "metrics": {
+    "citations": 4.0
+   },
+   "affiliations": [
+    "UNSW Sydney",
+    "Beijing Normal-Hong Kong Baptist University",
+    "University of New South Wales, Sydney, NSW, Australia",
+    "Beijing Normal-Hong Kong Baptist University, Zhuhai, China"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2601.18213",
+    "OpenAlex": "https://openalex.org/W7125799182"
+   }
+  }
+ },
+ "arxiv:2602.02033": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2602.02033",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "One Size, Many Fits: Aligning Diverse Group-Wise Click Preferences in Large-Scale Advertising Image Generation",
+   "url": "https://arxiv.org/abs/2602.02033",
+   "summary": "Advertising image generation has increasingly focused on online metrics like Click-Through Rate (CTR), yet existing approaches adopt a ''one-size-fits-all'' strategy that optimizes for overall CTR while neglecting preference diversity among user groups. This leads to suboptimal performance for specific groups, failing to satisfy group-wise visual preferences. To bridge this gap, we present One Size, Many Fits (OSMF), a unified framework that aligns diverse group-wise click preferences in large-scale advertising image generation. OSMF begins with product-aware adaptive grouping, which dynamically organizes users based on their attributes and product characteristics, representing each group with rich collective preference features. Building on these groups, preference-conditioned image generation employs a Group-aware Multimodal Large Language Model (G-MLLM) to generate tailored images for each group. The G-MLLM is pre-trained to simultaneously comprehend group features and generate advertising images. Subsequently, we fine-tune the G-MLLM using our proposed Group-DPO for group-wise preference alignment, which effectively enhances each group's CTR on the generated images. To further…",
+   "authors": [
+    "Shuo Lu",
+    "Haohan Wang",
+    "Wei Feng",
+    "W. Wang",
+    "Shen Zhang",
+    "Ke Cao",
+    "Jiahao Fan",
+    "Jingjing Lv",
+    "Changping Peng",
+    "Ching Law",
+    "Bing Zhan",
+    "Yuan Xu",
+    "Huizai Yao",
+    "Yongcan Yu",
+    "Chenyang Si",
+    "Jian Liang"
+   ],
+   "published": "2026-11-06T00:00:00Z",
+   "tags": [
+    "conference-paper"
+   ],
+   "metrics": {
+    "citations": 7.0
+   },
+   "affiliations": [
+    "Institute of Automation",
+    "Jingdong (China)",
+    "The Hong Kong University of Science and Technology (Guangzhou)",
+    "Nanjing University",
+    "University of Chinese Academy of Sciences",
+    "NLPR & MAIS, CASIA, Beijing, China",
+    "JD.com, Beijing, China",
+    "HKUST(gz), Guangzhou, China"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2602.02033",
+    "OpenAlex": "https://openalex.org/W7127399735"
+   }
+  }
+ },
+ "doi:10.33774/coe-2026-hp53s": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "doi:10.33774/coe-2026-hp53s",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "AI Driven Marketing: The Role of Artificial Intelligence In Predictive Analytics for Customer Intent",
+   "url": "https://doi.org/10.33774/coe-2026-hp53s",
+   "summary": "Predictive analytics has emerged as one of the most consequential applications of artificial intelligence (AI) in contemporary marketing, enabling organisations to anticipate rather than merely react to customer behaviour. This paper examines the theoretical foundations, technical methods, and practical applications of predictive analytics for customer intent, drawing on academic and industry literature published largely between 2016 and 2025. It reviews the principal machine learning techniques used to forecast purchase intent, churn, and lead quality, including gradient-boosted trees, support vector machines, and clustering-based segmentation, and situates these methods within established behavioural theories such as the Theory of Planned Behaviour and the Stimulus-Organism-Response model. The paper then examines four core application domains: purchase intent prediction in e-commerce, churn prediction and retention, lead scoring and personalisation, and uplift modelling and dynamic pricing, illustrating each with evidence from recent empirical studies. Finally, it considers the ethical, regulatory, and organisational challenges associated with predictive intent modelling, includ…",
+   "authors": [
+    "Sarvshresth Virat Pushkar"
+   ],
+   "published": "2026-11-12T00:00:00Z",
+   "tags": [
+    "preprint"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "University of Lucknow",
+    "Institute of management and sciences , Lucknow University, Lucknow University Second Campus Jankipuram, Lucknow Univers…"
+   ],
+   "links": {
+    "OpenAlex": "https://openalex.org/W7224803542"
+   }
+  }
+ },
+ "doi:10.1145/3840395": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "doi:10.1145/3840395",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "One Size Does Not Fit All: Adaptive Interest Representation Learning for Multi-interest Recommendation",
+   "url": "https://doi.org/10.1145/3840395",
+   "summary": "Sequential recommendation (SR) aims to predict users’ next interactions by modeling contextual patterns in their historical behavior sequences. Recent advancements in SR introduce multi-interest models that use multiple vectors to represent users’ diverse interests. However, existing methods predefine the number of interest vectors as a hyperparameter, limiting their adaptability to real-world scenarios where the number of interests varies across users. Our experiments show that this fixed-number interest representation suffers from a critical limitation: overfitting for users with simple interests, underfitting for users with complex interests, and a lack of interest prioritization. To address these limitations, we propose A daptive i nterest r epresentation learning for multi-interest Rec ommendation (AirRec), a two-stage framework that adaptively adjusts the number of interest representations for each user’s behavior sequence. Specifically, the first stage focuses on interest foundation construction: to compensate for the lack of auxiliary information, we decompose item co-occurrence data to extract atomic interests, which act as the basic units for interest representation mode…",
+   "authors": [
+    "Yaokun Liu",
+    "Yifan Liu",
+    "Ruichen Yao",
+    "Zelin Li",
+    "Dong Wang"
+   ],
+   "published": "2026-10-28T00:00:00Z",
+   "tags": [
+    "article"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "University of Illinois Urbana-Champaign",
+    "University of Illinois at Urbana-Champaign, Champaign, United States",
+    "University of Illinois Urbana-Champaign, Champaign, United States",
+    "University of Illinois Urbana-Champaign, Urbana, United States"
+   ],
+   "links": {
+    "OpenAlex": "https://openalex.org/W7202343333"
+   }
+  }
+ },
+ "arxiv:2611.30778": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.30778",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "What Quality Engineers Need to Know About Generative AI: Structured Data Extraction",
+   "url": "https://arxiv.org/abs/2611.30778",
+   "summary": "In this expository paper, we explain how quality engineers can use large language models (LLMs) and vision-language models (VLMs) for structured data extraction. We introduce the relevant concepts, discuss structured extraction from a measurement-system perspective, and demonstrate its implementation in R and Python. We then present two freely available web-based applications (apps): (a) extracting information from automotive recall notices and (b) monitoring quality engineering research on arXiv. To ensure the accuracy of our AI-driven structured extraction, human evaluators validated the results. In the first app, four reviewers assessed information extracted from 30 recall notices using two models, with 98.6% of the 720 field-level ratings judged fully correct. In the second app, 21 authors evaluated information extracted from 45 of their arXiv papers. All paper summaries were rated mostly correct or correct, although the evaluations identified problems with some classification fields and mathematical expressions. These results demonstrate the practical potential of structured data extraction while emphasizing the need to validate the extracted information. We make both apps an…",
+   "authors": [
+    "Fadel M. Megahed",
+    "Ying-Ju Chen",
+    "Yamin Dahwich",
+    "Zhao-Wei Chen",
+    "Lucas K. Hung",
+    "Arthur Carvalho",
+    "L. Allison Jones-Farmer",
+    "Ibrahim Yousif",
+    "Inez M. Zwetsloot"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.CE",
+    "cs.CL"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.30778"
+   }
+  }
+ },
+ "arxiv:2608.19595": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2608.19595",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "SSR-GRPO: Integrating Supervision and Semantic IDs into Reinforcement Learning for Dense Retrieval in E-commerce",
+   "url": "https://arxiv.org/abs/2608.19595",
+   "summary": "Embedding-based retrieval (EBR) is a prevailing method in modern e-commerce search, retrieving relevant items from billions of candidates in response to users' queries. While recent methods often fine-tune large language models (LLMs) for representation learning, they typically lack robust mechanisms for handling complex and implicit semantics. To address this, Retrieval-GRPO (R-GRPO) was recently proposed as a multi-objective Reinforcement Learning (RL) framework for dense retrieval. It computes rewards using top- K items dynamically retrieved per query. While this approach partially mitigates retrieval challenges, the limited candidate pool sampled per batch often introduces noisy samples into the top- K results. Moreover, the LLM used for computing relevance rewards in R-GRPO is trained with an RL framework similar to R-GRPO itself. This inherent similarity makes it difficult to provide unbiased and impartial assessment results. To tackle these issues, we propose Supervised Retrieval-GRPO with Semantic Identifiers (SSR-GRPO). Specifically, our method first proposes a dual-perspective framework for relevance assessment. It leverages both Semantic Identifiers (SIDs) produced by q…",
+   "authors": [
+    "Guangxin Song",
+    "Xing Fang",
+    "Mingmin Jin",
+    "Jing Wang",
+    "Bokang Wang",
+    "Zhentao Song",
+    "Junjie Bai",
+    "Jianbo Zhu"
+   ],
+   "published": "2026-11-06T00:00:00Z",
+   "tags": [
+    "conference-paper"
+   ],
+   "metrics": {
+    "citations": 0.0
+   },
+   "affiliations": [
+    "Alibaba Group (China)",
+    "Alibaba Group, Hangzhou, China"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2608.19595",
+    "OpenAlex": "https://openalex.org/W7203867589"
+   }
+  }
+ },
+ "arxiv:2302.03525": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2302.03525",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "Multi-Task Deep Recommender Systems: A Survey",
+   "url": "https://arxiv.org/abs/2302.03525",
+   "summary": "Multi-task learning (MTL) aims at learning related tasks in a unified model to achieve mutual improvement among tasks considering their shared knowledge. It is an important topic in recommendation due to the demand for multi-task prediction considering performance and efficiency. Although MTL has been well studied and developed, there is still a lack of systematic review in the recommendation community. To fill the gap, we provide a comprehensive review of existing multi-task deep recommender systems (MTDRS) in this survey. To be specific, the problem definition of MTDRS is first given, and it is compared with other related areas. Next, the development of MTDRS is depicted and the taxonomy is introduced from the task relation and methodology aspects. Specifically, the task relation is categorized into parallel, cascaded, and auxiliary with main, while the methodology is grouped into parameter sharing, optimization, and training mechanism. The survey concludes by summarizing the application and public datasets of MTDRS and highlighting the challenges and future directions of the field.",
+   "authors": [
+    "Yuhao Wang",
+    "Ha Tsz Lam",
+    "Yi Wong",
+    "Ziru Liu",
+    "Wanyu Wang",
+    "Yichao Wang",
+    "Yichao Wang",
+    "Bo Chen",
+    "Huifeng Guo",
+    "Ruiming Tang",
+    "Xiangyu Zhao"
+   ],
+   "published": "2026-10-30T00:00:00Z",
+   "tags": [
+    "article"
+   ],
+   "metrics": {
+    "citations": 84.0
+   },
+   "affiliations": [
+    "City University of Hong Kong",
+    "Huawei Technologies (China)",
+    "City University of Hong Kong, Hong Kong, Hong Kong",
+    "Huawei Noah’s Ark Lab, Shenzhen, China"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2302.03525",
+    "OpenAlex": "https://openalex.org/W4319654004"
+   }
+  }
+ },
+ "arxiv:2611.29440": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.29440",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "Agentic Discovery of Simple Symbolic Inventory Policies",
+   "url": "https://arxiv.org/abs/2611.29440",
+   "summary": "Designing simple inventory policies becomes increasingly difficult as operational features and system configurations expand. We develop an Agentic Inventory-Policy Discovery System based on explicitly defined simple operational formula (SOF) policy and template classes. Large language models (LLMs) revise symbolic structures, while a numerical engine fits parameters separately for each instance and evaluates the induced policies. Multicriteria parent selection, state-specific operational diagnostics, and reusable symbolic motifs guide structural evolution. A three-stage progression develops shared templates across instances and configurations with varying state dimensions. Experiments on 15,600 instances spanning 50 demand distributions cover lead times, perishability, their combination, and lead times with limited customer patience. The discovered templates improve aggregate empirical performance over evaluated SOF benchmarks and are competitive with policies requiring more elaborate online computations. For a lost-sales system with a three-period lead time, we develop an average-cost decomposition and prove that, under specified demand and cost conditions, a capped dual-shortfal…",
+   "authors": [
+    "Xi Chen",
+    "Yuze Chen",
+    "Baichuan Mo",
+    "Jie Ying",
+    "Yuan Zhou"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "math.OC",
+    "cs.AI"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.29440"
+   }
+  }
+ },
+ "arxiv:2611.29716": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.29716",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "Fin-RSI: A Unified Library of Financial Skills, Checks, and Self-Improvement for LLM Agents",
+   "url": "https://arxiv.org/abs/2611.29716",
+   "summary": "As large language models (LLMs) become more capable, financial agents need tools they can readily discover and use. Yet financial software is fragmented across libraries with different interfaces and conventions, making it difficult to build reliable agent workflows. We present Fin-RSI, a unified Python library of financial skills, checks, and self-improvement designed for LLM agents. It brings together tools for market analysis, forecasting, portfolio construction, and trading research through shared interfaces across models and agent frameworks. Agents can find suitable tools from natural-language requests, reuse tested implementations, and improve generated programs through checking and feedback. Developers can extend the library with new tools without rebuilding integrations for each model. Across 20 open-weight models on six trading-position tasks, tool discovery increased the proportion of episodes producing valid programs from 9.7% to 29.2%; for models with at least 14 billion parameters, it rose from 23.6% to 64.6%. We release the library and benchmark as a shared resource for the community and plan to expand its tools and task coverage as financial agents evolve.",
+   "authors": [
+    "Wanghao Ye",
+    "Shwai He",
+    "Sihan Chen",
+    "Yiting Wang",
+    "Bowei Tian",
+    "Guoheng Sun",
+    "Ziyi Wang",
+    "Ziyao Wang",
+    "Yexiao He",
+    "Zheyu Shen",
+    "Meng Liu",
+    "Yuning Zhang",
+    "Meng Feng",
+    "Yifei Dong",
+    "Yanhong Qian",
+    "Yang Wang",
+    "Siyuan Peng",
+    "Yilong Dai",
+    "Zhenle Duan",
+    "Joshua Liu",
+    "Lang Xiong",
+    "Aarosh Das",
+    "Zhaoyi Liu",
+    "Daeun Jung",
+    "Aditya Sarkar",
+    "Parastoo Pilevar",
+    "Xiaochuan Gong",
+    "Yancheng Zhu",
+    "Yingying Fan",
+    "Qiong Wang",
+    "Ang Li"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.AI"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.29716"
+   }
+  }
+ },
+ "arxiv:2611.31237": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.31237",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "Let Vision-Language Models Generate Images through Their Representations",
+   "url": "https://arxiv.org/abs/2611.31237",
+   "summary": "Recent unified multimodal models aim to combine visual understanding and generation within a single model, yet effectively integrating the two capabilities remains challenging. Leveraging pretrained vision-language models offers a way to build on already learned multimodal knowledge, but making this knowledge effectively accessible to visual generation remains nontrivial. We find that a central challenge lies in the heterogeneous visual representations used for understanding and generation. To address this challenge, we introduce Integral, which converts a pretrained vision-language model into a unified multimodal model by constructing a shared visual representation space across the two capabilities. Integral implements this design through two complementary components. Abstraction Fusion constructs shared visual tokens by aggregating hierarchical representations from the frozen vision encoder, while Block-wise MoT introduces a lightweight generative stream that interacts with the vision-language model only at block boundaries. Our approach effectively preserves the pretrained understanding capability while extending it to strong visual generation. Controlled comparisons further de…",
+   "authors": [
+    "JB Kim",
+    "Byungwoo Jeon",
+    "Kyungmin Lee",
+    "Hyeonmo Kang",
+    "Cheonbok Park",
+    "Shinyoung Joo",
+    "Jinwoo Shin",
+    "Jeonghoon Kim"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.CV",
+    "cs.LG"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.31237"
+   }
+  }
+ },
+ "arxiv:2507.00479": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2507.00479",
+   "source": "openalex",
+   "source_name": "OpenAlex",
+   "kind": "paper",
+   "title": "On Mitigating Data Sparsity in Conversational Recommender Systems",
+   "url": "https://arxiv.org/abs/2507.00479",
+   "summary": "Conversational recommender systems (CRSs) infer user preferences from dialogue contexts, but they suffer from severe data sparsity in both dialogue and entity spaces. Dialogue data are linguistically diverse and open-ended, making it difficult to generalize across varied expressions. Meanwhile, existing CRS models often rely on large knowledge graphs, where only a small fraction of entities receive effective supervision during training, leaving the majority under-trained or entirely unseen at inference time. To address these challenges, we propose DACRS, a novel CRS framework consisting of three modules: Dialogue Augmentation, Knowledge-Guided Entity Modeling, and Dialogue–Entity Matching. The Dialogue Augmentation module adopts a two-stage augmentation pipeline to enrich dialogue contexts and improve robustness to linguistic variation. The Knowledge-Guided Entity Modeling module leverages knowledge graphs through entity substitution and an entity similarity constraint to enhance representation learning for sparsely supervised and unseen entities. Finally, the Dialogue–Entity Matching module integrates dialogue representations with mentioned entity embeddings via dialogue-guided a…",
+   "authors": [
+    "Sixiao Zhang",
+    "Mingrui Liu",
+    "Wei Yuan",
+    "Hongzhi Yin",
+    "Cheng Long"
+   ],
+   "published": "2026-11-06T00:00:00Z",
+   "tags": [
+    "conference-paper"
+   ],
+   "metrics": {
+    "citations": 1.0
+   },
+   "affiliations": [
+    "Nanyang Technological University",
+    "The University of Queensland",
+    "Nanyang Technological University, Singapore, Singapore",
+    "The University of Queensland, Brisbane, Australia"
+   ],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2507.00479",
+    "OpenAlex": "https://openalex.org/W4416878717"
+   }
+  }
+ },
+ "arxiv:2611.31002": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.31002",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "RoboUniverse-10K: Toward the Scaling Era of Agentic Robotics via Real-to-Sim Environments",
+   "url": "https://arxiv.org/abs/2611.31002",
+   "summary": "Agentic Robotics, in which foundation models act as coding agents to control robots through executable programs, has emerged as a compelling paradigm for embodied intelligence. Yet unlike software engineering, where massive executable environments power post-training, robotics remains constrained by small, manual benchmarks and in-distribution evaluation. To bridge this gap, we introduce RoboUniverse-10K, 10,807 interactive, resettable, and verifiable physics environments built from real-world videos via an automated Real2Sim and quality assurance pipeline. Each runs in an isolated, Harbor-compatible harness that hides privileged states and grading logic to mirror real-world sensing. From the same pipeline, we hold out 500 unseen tasks to establish RoboUniverse-Verified, an expert-verified zero-shot benchmark. Evaluating 11 closed- and open-source models reveals a huge gap: frontier models reach 85.8\\% success, while open-source baselines lag at 2.6\\% to 10.0\\%, bottlenecked by low-level grasping, deformable-object manipulation, and post-contact physical control. Finally, we collect about 17K multi-turn trajectories totaling 0.79B tokens with GPT-6 Astra and perform full-parameter…",
+   "authors": [
+    "Jinkun Liu",
+    "Yingze Wang",
+    "Situ Wang",
+    "Deyao Hong",
+    "Mingju Gao",
+    "Wenyi Li",
+    "Yizhe Chi",
+    "Youjie Zheng",
+    "Kaisen Yang",
+    "Xiangyang Wang",
+    "Bingxiang He",
+    "Yuxin Zuo",
+    "Boyuan Chen",
+    "Yue Chen",
+    "Cheng Qian",
+    "Tianxing Chen",
+    "Huichi Zhou",
+    "Huaxiu Yao",
+    "Hao Tang",
+    "Hao Zhou",
+    "Ya-Qin Zhang",
+    "Calvin Xiao",
+    "Tiga Altman",
+    "Huan-ang Gao"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.RO",
+    "cs.CL"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.31002"
+   }
+  }
+ },
+ "arxiv:2611.29596": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.29596",
+   "source": "arxiv",
+   "source_name": "arXiv",
+   "kind": "paper",
+   "title": "Similarity-Constrained Reweighting for Complex Query Answering on Knowledge Graphs",
+   "url": "https://arxiv.org/abs/2611.29596",
+   "summary": "Machine learning models for Complex Query Answering (CQA) on knowledge graphs estimate the likelihood of answers that are not reachable via direct traversal. Recent work has proposed extending such queries with soft entity constraints, which require the target variable to be similar or dissimilar to specified sets of entities. We study a more general formulation where similarity constraints are specified on an arbitrary variable in a query, and introduce SCORE: a computationally efficient and interpretable method for incorporating similarity constraints on an arbitrary variable of a query. SCORE is based on a lightweight and interpretable score adjustment function that only requires tuning two hyperparameters on a validation set. Our experiments show that SCORE effectively incorporates preferences while maintaining strong query answering performance. It significantly improves ranking quality when constraints apply to the target variable and performs effectively in the more general case involving constraints on intermediate variables, and its performance remains robust when applied to several existing methods for CQA. Our implementation is available at https://github.com/dfdazac/sc…",
+   "authors": [
+    "Daniel Daza",
+    "Alberto Bernardi",
+    "Luca Costabello",
+    "Christophe Gueret",
+    "Michael Cochez",
+    "Martijn Schut"
+   ],
+   "published": "2026-11-24T05:00:00Z",
+   "tags": [
+    "cs.AI",
+    "cs.LG"
+   ],
+   "metrics": {},
+   "affiliations": [],
+   "links": {
+    "PDF": "https://arxiv.org/pdf/2611.29596"
+   }
+  }
+ },
+ "arxiv:2611.27689": {
+  "first_seen": "2026-11-24",
+  "item": {
+   "key": "arxiv:2611.27689",
+   "source": "hf_papers",
+   "source_name": "HF Daily Papers",
+   "kind": "paper",
+   "title": "Embodied-Harness: Towards Recursive Self-Improvement for Robotic Manipulation",
+   "url": "https://arxiv.org/abs/2611.27689",
+   "summary": "Vision-language model (VLM)-based agents offer a promising approach to robotic manipulation, yet remain limited by inadequate memory organization, uncertain failure attribution, and limited reuse of execution experience. We propose Embodied-Harness, a dual-agent framework that improves manipulation by refining the execution harness without updating model parameters. The Actor interacts with the environment through a robot-control interface, while the Reflector converts execution evidence into reusable operational guidance. Hierarchical Memory Architecture maintains short-term execution context and long-term experiential knowledge to support execution and reflection. Evidence-based Experience Reflection grounds failure diagnosis in observed interactions, while Recursive Harness Self-Improvement refines operational guidance across successive attempts. Experiments on RoboTwin 2.0, RoboSPA, and RMBench demonstrate the effectiveness of Embodied-Harness in generalization under environmental variations, spatial reasoning, long-horizon planning, and memory-dependent manipulation. Our method achieves success rates of 82.4%, 76.7%, and 94.4% on the three benchmarks, respectively. Real-world…",
+   "authors": [
+    "Zhenxuan Fan",
+    "Zhuoya Wang",
+    "Yuqian Yuan",
+    "Wenqiao Zhang",
+    "Juncheng Li",
+    "Jun Xiao",
+    "Siliang Tang",
+    "Yueting Zhuang"
+   ],
+   "published": "2026-11-24T00:00:00Z",
+   "tags": [
+    "vision-language model (VLM)",
+    "VLM-based agents",
+    "dual-agent framework",
+    "execution harness",
+    "hierarchical memory architecture",
+    "short-term execution context",
+    "long-term experiential knowledge",
+    "evidence-based experience reflection",
+    "recursive harness self-improvement",
+    "long-horizon planning"
+   ],
+   "metrics": {
+    "upvotes": 7.0,
+    "comments": 1.0
+   },
+   "affiliations": [
+    "Zhejiang University"
+   ],
+   "links": {
+    "HF": "https://huggingface.co/papers/2611.27689",
+    "PDF": "https://arxiv.org/pdf/2611.27689"
    }
   }
  }
